@@ -1,0 +1,1436 @@
+[
+  {
+    "sku": "30117",
+    "name": "Gel Premium",
+    "nameZh": "Gel Premium 頂級凝膠款",
+    "slug": "30117-gel-premium",
+    "category": "Cycling",
+    "line": "Comfort Line",
+    "price": 1620.0,
+    "currency": "TWD",
+    "colours": [
+      "white, neon yellow, red, black, dark grey"
+    ],
+    "sizes": [
+      "white: XS, S, M, L, XL, XXL, 3XL; neonyellow: XS, S, M, L, XL, XXL, 3XL; red: XS, S, M, L, XL, XXL, 3XL; black: XS, S, M, L, XL, XXL, 3XL; dk.grey: XS, S, M, L, XL, XXL, 3XL"
+    ],
+    "materials": "彈性纖維、微網布、數位紋理布、感應面料",
+    "description": "CHIBA Gel Premium 自行車系列。",
+    "images": [
+      "/assets/products/cycling/30117-gel-premium/cycling__30117__07ceb0c17854f324__30117_01_1.jpg",
+      "/assets/products/cycling/30117-gel-premium/cycling__30117__9ed1894e289cc550__30117_01_2.jpg",
+      "/assets/products/cycling/30117-gel-premium/cycling__30117__b54b5bebf6f610b6__30117_03-1_1.jpg",
+      "/assets/products/cycling/30117-gel-premium/cycling__30117__abd4bec8ea46c2ff__30117_03-1_2.jpg",
+      "/assets/products/cycling/30117-gel-premium/cycling__30117__b41a7b466cefdb60__30117_04_1.jpg",
+      "/assets/products/cycling/30117-gel-premium/cycling__30117__f580ec2d01263928__30117_04_2.jpg",
+      "/assets/products/cycling/30117-gel-premium/cycling__30117__37b66d999c691497__30117_10_1.jpg",
+      "/assets/products/cycling/30117-gel-premium/cycling__30117__0af120a801963ead__30117_10_2.jpg",
+      "/assets/products/cycling/30117-gel-premium/cycling__30117__486f1c2e30dd05c4__30117_19_1.jpg",
+      "/assets/products/cycling/30117-gel-premium/cycling__30117__f758d6d1c5a98124__30117_19_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Gel Premium 頂級凝膠款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3010226",
+    "name": "Gel Master",
+    "nameZh": "Gel Master 凝膠大師款",
+    "slug": "3010226-gel-master",
+    "category": "Cycling",
+    "line": "Comfort Line",
+    "price": 1740.0,
+    "currency": "TWD",
+    "colours": [
+      "white, red, black, olive, pink"
+    ],
+    "sizes": [
+      "white: XS, S, M, L, XL, XXL; red: XS, S, M, L, XL, XXL; black: XS, S, M, L, XL, XXL; olive: XS, S, M, L, XL, XXL; pink: XS, S, M, L"
+    ],
+    "materials": "微網布、潛水布、萊卡、Verde面料",
+    "description": "CHIBA Gel Master 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3010226-gel-master/cycling__3010226__13a3e38b28a0d5c6__3010226_01_1.jpg",
+      "/assets/products/cycling/3010226-gel-master/cycling__3010226__7046a2bcfadfd459__3010226_01_2.jpg",
+      "/assets/products/cycling/3010226-gel-master/cycling__3010226__8eb1a37af85c4fda__3010226_04_1.jpg",
+      "/assets/products/cycling/3010226-gel-master/cycling__3010226__016861cf0acd125a__3010226_04_2.jpg",
+      "/assets/products/cycling/3010226-gel-master/cycling__3010226__dc5d928e5525e35b__3010226_10_1.jpg",
+      "/assets/products/cycling/3010226-gel-master/cycling__3010226__d7a91fc286147f35__3010226_10_2.jpg",
+      "/assets/products/cycling/3010226-gel-master/cycling__3010226__dce3c3f142a3da16__3010226_20-1_1.jpg",
+      "/assets/products/cycling/3010226-gel-master/cycling__3010226__b008973cec6276d1__3010226_20-1_2.jpg",
+      "/assets/products/cycling/3010226-gel-master/cycling__3010226__2fd894755ee99ccd__3010226_23_1.jpg",
+      "/assets/products/cycling/3010226-gel-master/cycling__3010226__31a33cd5c18f878e__3010226_23_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Gel Master 凝膠大師款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3010320",
+    "name": "Cool Air",
+    "nameZh": "Cool Air 涼感透氣款",
+    "slug": "3010320-cool-air",
+    "category": "Cycling",
+    "line": "Comfort Line",
+    "price": 1240.0,
+    "currency": "TWD",
+    "colours": [
+      "white, neon yellow, red, black"
+    ],
+    "sizes": [
+      "white: XS, S, M, L, XL, XXL, 3XL; neonyellow: XS, S, M, L, XL, XXL, 3XL; red: XS, S, M, L, XL, XXL, 3XL; black: XS, S, M, L, XL, XXL, 3XL"
+    ],
+    "materials": "彈性纖維、微網布、數位紋理布、透氣網布",
+    "description": "CHIBA Cool Air 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__d5b80f13fbc8fc27__3010320_01_1.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__8fdf1254ed6b9c34__3010320_01_2.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__9f7c6d35555cfaad__3010320_01_3.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__e53e02bfc8f639cf__3010320_01_4.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__1a9ed9c2bc490f8d__3010320_01_5.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__529fba1190678d33__3010320_01_6.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__a7986b17ffa56c67__3010320_01_7.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__ae4eb0a19c7d486b__3010320_03-1_1.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__5db2c2a157365251__3010320_03-1_2.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__cf61c578764ff2af__3010320_03-1_3.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__bd47243e64f5b843__3010320_03-1_4.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__c027715a990de1b1__3010320_03-1_5.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__2156c87e8caf11fc__3010320_03-1_6.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__79560c9e22c110bd__3010320_03-1_7.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__9682359aaf4771e9__3010320_03-1_8.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__8738d7ea9e5d6539__3010320_03-1_9.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__af4293d37eecc705__3010320_04_1.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__6db6b2a6f279afac__3010320_04_2.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__bdd138fff722891b__3010320_04_3.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__aa463e426e340234__3010320_04_4.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__10e8aed60149b5a3__3010320_04_5.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__fdf45fd6e7dc3b71__3010320_04_6.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__77ab11346cbff842__3010320_04_7.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__787c5381f9b3733d__3010320_04_9.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__405a8af356e36aba__3010320_10_1.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__cd5289390bb756bd__3010320_10_2.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__3fb1f18dbe200d02__3010320_10_3.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__a35c4870348123b4__3010320_10_4.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__6c54af61ecdcfdcf__3010320_10_5.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__65a1769eec6b0628__3010320_10_6.jpg",
+      "/assets/products/cycling/3010320-cool-air/cycling__3010320__d80f52b181d45d3a__3010320_10_7.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Cool Air 涼感透氣款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3010424",
+    "name": "Ergo Superlight",
+    "nameZh": "Ergo Superlight 人體工學超輕款",
+    "slug": "3010424-ergo-superlight",
+    "category": "Cycling",
+    "line": "Comfort Line",
+    "price": 1160.0,
+    "currency": "TWD",
+    "colours": [
+      "white, red, turquoise, dark grey, olive, violet"
+    ],
+    "sizes": [
+      "white: XS, S, M, L, XL, XXL; red: XS, S, M, L, XL, XXL; tourquise: XS, S, M, L, XL, XXL; dk.grey: XS, S, M, L, XL, XXL; olive: XS, S, M, L, XL, XXL; violett: XS, S, M, L, XL, XXL"
+    ],
+    "materials": "壓紋掌心、Opy 80面料、聚酯纖維",
+    "description": "CHIBA Ergo Superlight 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3010424-ergo-superlight/cycling__3010424__5e4e279cab99b735__3010424_01_1.jpg",
+      "/assets/products/cycling/3010424-ergo-superlight/cycling__3010424__a0946de4e3ce83a9__3010424_01_2.jpg",
+      "/assets/products/cycling/3010424-ergo-superlight/cycling__3010424__e80e3707f81af212__3010424_04_1.jpg",
+      "/assets/products/cycling/3010424-ergo-superlight/cycling__3010424__19613fbe04f87f22__3010424_04_2.jpg",
+      "/assets/products/cycling/3010424-ergo-superlight/cycling__3010424__489c7068486b474d__3010424_18_1.jpg",
+      "/assets/products/cycling/3010424-ergo-superlight/cycling__3010424__aa0ebe458333caa2__3010424_18_2.jpg",
+      "/assets/products/cycling/3010424-ergo-superlight/cycling__3010424__dbae12476331841c__3010424_19_1.jpg",
+      "/assets/products/cycling/3010424-ergo-superlight/cycling__3010424__1b1a540105792fc8__3010424_19_2.jpg",
+      "/assets/products/cycling/3010424-ergo-superlight/cycling__3010424__e1e5edca81a488f7__3010424_20-1_1.jpg",
+      "/assets/products/cycling/3010424-ergo-superlight/cycling__3010424__2ecbf4f979d98eb1__3010424_20-1_2.jpg",
+      "/assets/products/cycling/3010424-ergo-superlight/cycling__3010424__49533772b57e4716__3010424_27_1.jpg",
+      "/assets/products/cycling/3010424-ergo-superlight/cycling__3010424__4e7fa296061b230f__3010424_27_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Ergo Superlight 人體工學超輕款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3010524",
+    "name": "Air Plus Reflex",
+    "nameZh": "Air Plus Reflex 進階透氣反光款",
+    "slug": "3010524-air-plus-reflex",
+    "category": "Cycling",
+    "line": "Comfort Line",
+    "price": 1450.0,
+    "currency": "TWD",
+    "colours": [
+      "neon yellow, red, black, dark grey"
+    ],
+    "sizes": [
+      "neonyellow: XS, S, M, L, XL, XXL; red: XS, S, M, L, XL, XXL; black: XS, S, M, L, XL, XXL; dk.grey: XS, S, M, L, XL, XXL"
+    ],
+    "materials": "微網布、彈性纖維、Clarino人造皮、透氣網布",
+    "description": "CHIBA Air Plus Reflex 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3010524-air-plus-reflex/cycling__3010524__26c742f7162262a7__3010524_03-1_1.jpg",
+      "/assets/products/cycling/3010524-air-plus-reflex/cycling__3010524__5525567ae1ffa116__3010524_03-1_2.jpg",
+      "/assets/products/cycling/3010524-air-plus-reflex/cycling__3010524__10ce87f81a8ddd96__3010524_04_1.jpg",
+      "/assets/products/cycling/3010524-air-plus-reflex/cycling__3010524__26bb138d47c327a6__3010524_04_2.jpg",
+      "/assets/products/cycling/3010524-air-plus-reflex/cycling__3010524__d6817682fb20d1cd__3010524_10_1.jpg",
+      "/assets/products/cycling/3010524-air-plus-reflex/cycling__3010524__7afff129ca98f089__3010524_10_2.jpg",
+      "/assets/products/cycling/3010524-air-plus-reflex/cycling__3010524__48c9bc51efcc00c6__3010524_19_1.jpg",
+      "/assets/products/cycling/3010524-air-plus-reflex/cycling__3010524__51140745810710b3__3010524_19_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Air Plus Reflex 進階透氣反光款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3010626",
+    "name": "Gel Super Comfort",
+    "nameZh": "Gel Super Comfort 凝膠超舒適款",
+    "slug": "3010626-gel-super-comfort",
+    "category": "Cycling",
+    "line": "Comfort Line",
+    "price": 1660.0,
+    "currency": "TWD",
+    "colours": [
+      "white, red, black, dk. grey, olive"
+    ],
+    "sizes": [
+      "white: XS, S, M, L, XL, XXL; red: XS, S, M, L, XL, XXL; black: XS, S, M, L, XL, XXL; dk.grey: XS, S, M, L, XL, XXL; olive: XS, S, M, L, XL, XXL"
+    ],
+    "materials": "針織頂布、萊卡、Verde面料、Poron避震墊",
+    "description": "CHIBA Gel Super Comfort 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3010626-gel-super-comfort/cycling__3010626__cfb5151f6dafd196__3010626_01_1.jpg",
+      "/assets/products/cycling/3010626-gel-super-comfort/cycling__3010626__c85c48ee0246c4d8__3010626_01_2.jpg",
+      "/assets/products/cycling/3010626-gel-super-comfort/cycling__3010626__d056c1d76d185daa__3010626_04_1.jpg",
+      "/assets/products/cycling/3010626-gel-super-comfort/cycling__3010626__59b6fd851fcfcc99__3010626_04_2.jpg",
+      "/assets/products/cycling/3010626-gel-super-comfort/cycling__3010626__febc0b563cc90a60__3010626_10_1.jpg",
+      "/assets/products/cycling/3010626-gel-super-comfort/cycling__3010626__6e4c55815a4d41e9__3010626_10_2.jpg",
+      "/assets/products/cycling/3010626-gel-super-comfort/cycling__3010626__2d6b11d9542e0a4e__3010626_19_1.jpg",
+      "/assets/products/cycling/3010626-gel-super-comfort/cycling__3010626__c8f0132ad4d19eb3__3010626_19_2.jpg",
+      "/assets/products/cycling/3010626-gel-super-comfort/cycling__3010626__48ee76b521510e9f__3010626_20-1_1.jpg",
+      "/assets/products/cycling/3010626-gel-super-comfort/cycling__3010626__1e1654d84e4f1b8c__3010626_20-1_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Gel Super Comfort 凝膠超舒適款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3017126",
+    "name": "Tour Master",
+    "nameZh": "Tour Master 長途巡航大師款",
+    "slug": "3017126-tour-master",
+    "category": "Cycling",
+    "line": "Comfort Line",
+    "price": 1860.0,
+    "currency": "TWD",
+    "colours": [
+      "black"
+    ],
+    "sizes": [
+      "black: XS, S, M, L, XL, XXL"
+    ],
+    "materials": "飛織面料、Clarino人造皮、Poron避震墊、毛巾布",
+    "description": "CHIBA Tour Master 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3017126-tour-master/cycling__3017126__1fe1758de8a62360__3017126_10_1.jpg",
+      "/assets/products/cycling/3017126-tour-master/cycling__3017126__75751f8ffd9b0afb__3017126_10_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Tour Master 長途巡航大師款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3019124",
+    "name": "Lady Gel Premium III",
+    "nameZh": "Lady Gel Premium III 女款頂級凝膠手套 III",
+    "slug": "3019124-lady-gel-premium-iii",
+    "category": "Cycling",
+    "line": "Comfort Line",
+    "price": 1450.0,
+    "currency": "TWD",
+    "colours": [
+      "black/black, black/turquoise, black/pink"
+    ],
+    "sizes": [
+      "black/black: XS, S, M, L; black/tourquise: XS, S, M, L; black/pink: XS, S, M, L"
+    ],
+    "materials": "Fantasia面料、Econyl強效網布、透氣網布",
+    "description": "CHIBA Lady Gel Premium III 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3019124-lady-gel-premium-iii/cycling__3019124__656fbf4807548647__3019124_1010_1.jpg",
+      "/assets/products/cycling/3019124-lady-gel-premium-iii/cycling__3019124__a6d2cd7653b41847__3019124_1010_2.jpg",
+      "/assets/products/cycling/3019124-lady-gel-premium-iii/cycling__3019124__de139577b96b26c7__3019124_1010_20.jpg",
+      "/assets/products/cycling/3019124-lady-gel-premium-iii/cycling__3019124__4d246a0a74e6c2d5__3019124_1018_1.jpg",
+      "/assets/products/cycling/3019124-lady-gel-premium-iii/cycling__3019124__32f11ac07fe69ae0__3019124_1018_2.jpg",
+      "/assets/products/cycling/3019124-lady-gel-premium-iii/cycling__3019124__182d0138a700d920__3019124_1018_20.jpg",
+      "/assets/products/cycling/3019124-lady-gel-premium-iii/cycling__3019124__dc43bf5d0ca3ed57__3019124_1023-1_1.jpg",
+      "/assets/products/cycling/3019124-lady-gel-premium-iii/cycling__3019124__46ed4cdbd7f46c95__3019124_1023-1_2.jpg",
+      "/assets/products/cycling/3019124-lady-gel-premium-iii/cycling__3019124__8adc671674c88a7d__3019124_1023-1_20.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Lady Gel Premium III 女款頂級凝膠手套 III"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3019221",
+    "name": "Lady Gel",
+    "nameZh": "Lady Gel 女款凝膠手套",
+    "slug": "3019221-lady-gel",
+    "category": "Cycling",
+    "line": "Comfort Line",
+    "price": 1330.0,
+    "currency": "TWD",
+    "colours": [
+      "black/white, black/black, black/turquoise, black/pink"
+    ],
+    "sizes": [
+      "black/white: XS, S, M, L; black/black: XS, S, M, L; black/tourquise: XS, S, M, L; black/pink: XS, S, M, L"
+    ],
+    "materials": "飛織面料、Activedry吸濕排汗布、透氣網布、Clarino人造皮",
+    "description": "CHIBA Lady Gel 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__1dbbf423c9543517__3019221_1001_1.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__695f06c8154f41ff__3019221_1001_2.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__03214a6cebddaf27__3019221_1001_3.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__5869c7d9b6f083ba__3019221_1001_4.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__a8e82539604ac8ce__3019221_1001_5.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__3526e2bd11aa5c8c__3019221_1001_6.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__419857692ca8cb04__3019221_1001_7.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__1679d5d8f96857d4__3019221_1001_8.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__92d1f48e7ee2dd0f__3019221_1001_9.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__dd8cc9a1d7b6b22f__3019221_1010_1.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__6d118dc0b68a089c__3019221_1010_2.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__bb9543bbf939706f__3019221_1010_3.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__d584f150db9a7ff6__3019221_1010_4.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__b0d309377881027f__3019221_1010_5.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__6a885dbf4a791cd7__3019221_1010_6.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__834cbcc88ad41f2d__3019221_1010_7.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__1733bcf3594488dd__3019221_1010_8.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__d5c56f8a9e9388fc__3019221_1010_9.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__576286a4a5c91fa0__3019221_1018_1.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__3740959a31f8a562__3019221_1018_2.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__1432e60128e36e54__3019221_1018_3.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__60c5633ecdc4a22d__3019221_1018_4.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__f1f8962bdde2f3c5__3019221_1018_5.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__b8a7d663ad7785c2__3019221_1018_6.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__53f255d1c33fbebf__3019221_1018_7.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__71a6ba7b6a3a93e5__3019221_1018_8.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__2b0a129eef7188c2__3019221_1018_9.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__5324d05f0837aebf__3019221_1023-1_1.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__70cdc47b26865a03__3019221_1023-1_2.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__dbc1271965b8511e__3019221_1023-1_3.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__5988f132b39d5440__3019221_1023-1_4.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__20f620ecb16644b9__3019221_1023-1_5.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__bf70bb632768e8c3__3019221_1023-1_6.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__88d7a832d38fc0ca__3019221_1023-1_7.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__5233a0d1b4b5f295__3019221_1023-1_9.jpg",
+      "/assets/products/cycling/3019221-lady-gel/cycling__3019221__79e457a0b0727966__3019221_1023_8.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Lady Gel 女款凝膠手套"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3020026",
+    "name": "Breeze",
+    "nameZh": "Breeze 微風透氣手套",
+    "slug": "3020026-breeze",
+    "category": "Cycling",
+    "line": "Active Line",
+    "price": 1450.0,
+    "currency": "TWD",
+    "colours": [
+      "red, royal, black"
+    ],
+    "sizes": [
+      "red: XS, S, M, L, XL, XXL, 3XL; royal blue: XS, S, M, L, XL, XXL, 3XL; black: XS, S, M, L, XL, XXL, 3XL"
+    ],
+    "materials": "凹凸紋理布、萊卡、麂皮布、透氣網布",
+    "description": "CHIBA Breeze 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3020026-breeze/cycling__3020026__efdd2466c17c2046__3020026_04-1.jpg",
+      "/assets/products/cycling/3020026-breeze/cycling__3020026__79a179a83fc611ca__3020026_04_2.jpg",
+      "/assets/products/cycling/3020026-breeze/cycling__3020026__3426eb6faa045871__3020026_06-1.jpg",
+      "/assets/products/cycling/3020026-breeze/cycling__3020026__beece7ba68bd0889__3020026_06_1.jpg",
+      "/assets/products/cycling/3020026-breeze/cycling__3020026__22608282e35c7508__3020026_06_2.jpg",
+      "/assets/products/cycling/3020026-breeze/cycling__3020026__99aa8b2d1e3ae4d8__3020026_10_1.jpg",
+      "/assets/products/cycling/3020026-breeze/cycling__3020026__04677773dd3513ed__3020026_10_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Breeze 微風透氣手套"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3020224",
+    "name": "Pure Nature",
+    "nameZh": "Pure Nature 天然純粹款",
+    "slug": "3020224-pure-nature",
+    "category": "Cycling",
+    "line": "Active Line",
+    "price": 1120.0,
+    "currency": "TWD",
+    "colours": [
+      "beige/brown, beige/black, black/black, turquoise/navy"
+    ],
+    "sizes": [
+      "beige/black: XS, S, M, L, XL, XXL; beige/brown: XS, S, M, L, XL, XXL; black/black: XS, S, M, L, XL, XXL; tourquise/navy: XS, S, M, L, XL, XXL"
+    ],
+    "materials": "棉質鉤織、真皮",
+    "description": "CHIBA Pure Nature 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3020224-pure-nature/cycling__3020224__ba072181e7d3c754__3020224_0210_1.jpg",
+      "/assets/products/cycling/3020224-pure-nature/cycling__3020224__c467fe0055ebe6c0__3020224_0210_2.jpg",
+      "/assets/products/cycling/3020224-pure-nature/cycling__3020224__dfb7497c67427ddd__3020224_0222_1.jpg",
+      "/assets/products/cycling/3020224-pure-nature/cycling__3020224__0ba7366c0cb559d8__3020224_0222_2.jpg",
+      "/assets/products/cycling/3020224-pure-nature/cycling__3020224__2d4a7403c0dd57c7__3020224_1010_1.jpg",
+      "/assets/products/cycling/3020224-pure-nature/cycling__3020224__268afda292b66f77__3020224_1010_2.jpg",
+      "/assets/products/cycling/3020224-pure-nature/cycling__3020224__f8e616ceeaa2436a__3020224_1807_1.jpg",
+      "/assets/products/cycling/3020224-pure-nature/cycling__3020224__0ba237c2918e68b6__3020224_1807_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Pure Nature 天然純粹款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3020326",
+    "name": "Air Master",
+    "nameZh": "Air Master 透氣大師款",
+    "slug": "3020326-air-master",
+    "category": "Cycling",
+    "line": "Active Line",
+    "price": 700.0,
+    "currency": "TWD",
+    "colours": [
+      "black"
+    ],
+    "sizes": [
+      "black: XS, S, M, L, XL, XXL"
+    ],
+    "materials": "針織頂布、Verde面料、記憶軟墊",
+    "description": "CHIBA Air Master 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3020326-air-master/cycling__3020326__6b279b96732095bd__3020326_10_1.jpg",
+      "/assets/products/cycling/3020326-air-master/cycling__3020326__e69f46ce865a8a84__3020326_10_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Air Master 透氣大師款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3020426",
+    "name": "Comfort",
+    "nameZh": "Comfort 舒適款",
+    "slug": "3020426-comfort",
+    "category": "Cycling",
+    "line": "Active Line",
+    "price": 790.0,
+    "currency": "TWD",
+    "colours": [
+      "white, red, royal, black, olive"
+    ],
+    "sizes": [
+      "white: XS, S, M, L, XL, XXL, 3XL; red: XS, S, M, L, XL, XXL, 3XL; royal blue: XS, S, M, L, XL, XXL, 3XL; black: XS, S, M, L, XL, XXL, 3XL; olive: XS, S, M, L, XL, XXL, 3XL"
+    ],
+    "materials": "細格紋布、Clarino人造皮",
+    "description": "CHIBA Comfort 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3020426-comfort/cycling__3020426__9903592e6d120a4e__3020426_01_1.jpg",
+      "/assets/products/cycling/3020426-comfort/cycling__3020426__18382942fb0fc2bf__3020426_01_2.jpg",
+      "/assets/products/cycling/3020426-comfort/cycling__3020426__2b416c3ef2190d2d__3020426_04_1.jpg",
+      "/assets/products/cycling/3020426-comfort/cycling__3020426__b3b80cee4cf05b65__3020426_04_2.jpg",
+      "/assets/products/cycling/3020426-comfort/cycling__3020426__36e3641e80bffe0f__3020426_06_1.jpg",
+      "/assets/products/cycling/3020426-comfort/cycling__3020426__90d32b63c93663af__3020426_06_2.jpg",
+      "/assets/products/cycling/3020426-comfort/cycling__3020426__20723bab04981a87__3020426_10_1.jpg",
+      "/assets/products/cycling/3020426-comfort/cycling__3020426__f3a0aa40848aeb0a__3020426_10_2.jpg",
+      "/assets/products/cycling/3020426-comfort/cycling__3020426__fd70822ba30923ea__3020426_20-1_1.jpg",
+      "/assets/products/cycling/3020426-comfort/cycling__3020426__aa51456933b58036__3020426_20-1_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Comfort 舒適款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3020522",
+    "name": "ECO Glove Pro",
+    "nameZh": "ECO Glove Pro 環保專業手套",
+    "slug": "3020522-eco-glove-pro",
+    "category": "Cycling",
+    "line": "Active Line",
+    "price": 1240.0,
+    "currency": "TWD",
+    "colours": [
+      "navy, black, light blue, dark grey olive, rose"
+    ],
+    "sizes": [
+      "navy: XS, S, M, L, XL, XXL; black: XS, S, M, L, XL, XXL; lt.blue: XS, S, M, L, XL, XXL; dk.grey: XS, S, M, L, XL, XXL; olive: XS, S, M, L, XL, XXL; rosa: XS, S, M, L, XL, XXL"
+    ],
+    "materials": "Econyl再生尼龍、麂皮布、乳膠",
+    "description": "CHIBA ECO Glove Pro 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__7f6cc80afc72d33b__3020522_07_1.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__591083df9915f180__3020522_07_2.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__58e50083033ec22f__3020522_10_1.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__c64b086a79ce4524__3020522_10_2.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__3dd95d4f810fa3e1__3020522_10_3.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__df83870cf31d5165__3020522_10_4.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__3c4e3355c0cee534__3020522_10_5.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__e61d133fcf9e87b7__3020522_10_6.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__379181375f1c0a9b__3020522_10_7.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__de1f9de9db7ef6bf__3020522_10_8.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__26a3d6114bddb06f__3020522_10_9.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__48f5a7409f1c0f49__3020522_11_1.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__dc61c948ff32a90d__3020522_11_2.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__a356f497ca3785a3__3020522_19_1.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__a8ef9812376bf0d1__3020522_19_2.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__397489c04ca47f58__3020522_19_3.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__387e98024178a2de__3020522_19_4.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__92dd336ca2076b7a__3020522_19_5.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__391f69da879cb4f5__3020522_19_6.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__44f770e9ac19a413__3020522_19_7.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__c67fbbf6422e8d36__3020522_19_8.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__447afcf46c27a21d__3020522_19_9.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__4a7f1f3729665c09__3020522_20-1_1.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__0a5b872a5761f949__3020522_20-1_2.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__df47e2fa50dec6a7__3020522_29_1.jpg",
+      "/assets/products/cycling/3020522-eco-glove-pro/cycling__3020522__9b393c7e549e9347__3020522_29_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "ECO Glove Pro 環保專業手套"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3020622",
+    "name": "Sport",
+    "nameZh": "Sport 運動款",
+    "slug": "3020622-sport",
+    "category": "Cycling",
+    "line": "Active Line",
+    "price": 900.0,
+    "currency": "TWD",
+    "colours": [
+      "white, neon yellow, red, royal, black, dk.grey"
+    ],
+    "sizes": [
+      "white: XS, S, M, L, XL, XXL; neonyellow: XS, S, M, L, XL, XXL; red: XS, S, M, L, XL, XXL; royal blue: XS, S, M, L, XL, XXL; black: XS, S, M, L, XL, XXL; dk.grey: XS, S, M, L, XL, XXL"
+    ],
+    "materials": "微網布、Econyl再生尼龍、Vitech面料、透氣網布",
+    "description": "CHIBA Sport 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3020622-sport/cycling__3020622__088ccd9fdd8b50dc__3020622_01_1.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__5d4f225202ab73b7__3020622_01_2.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__1590d64c6c676d2a__3020622_03-1_1.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__2ef6c706ac4bf1ae__3020622_03-1_2.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__e61fdb6774e2cd03__3020622_03-1_3.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__019b89c6f0890a04__3020622_03-1_4.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__272a09cb1aeb90d5__3020622_03-1_5.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__3116961b4425dd31__3020622_03-1_6.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__b7b78e68f9fb4c59__3020622_03-1_7.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__72999b10e3aac984__3020622_03-1_8.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__4079b1ac5ea2c28d__3020622_03-1_9.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__f6dc0eb0659b49f7__3020622_04_1.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__053fbf7ad61395b3__3020622_04_2.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__0fae329e7d421d61__3020622_06_1.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__23921b4de58f3079__3020622_06_2.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__8283060a15aa8d29__3020622_10_1.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__ff54fe2443798ce7__3020622_10_2.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__b5d8d0d8568e4463__3020622_10_3.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__21b1a1d0f0d111db__3020622_10_4.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__6ce95d1523fdaa89__3020622_10_5.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__393230209390b085__3020622_10_6.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__c2d551282243da5f__3020622_10_7.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__c231382533dcb371__3020622_10_8.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__63b53b54983523f6__3020622_10_9.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__2fd599edf8577fd3__3020622_19_02.jpg",
+      "/assets/products/cycling/3020622-sport/cycling__3020622__8db56c5b482b55c6__3020622_19_1.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Sport 運動款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3027126",
+    "name": "Blade II",
+    "nameZh": "Blade II 刀鋒 II",
+    "slug": "3027126-blade-ii",
+    "category": "Cycling",
+    "line": "Active Line",
+    "price": 1240.0,
+    "currency": "TWD",
+    "colours": [
+      "red, black, dark grey, olive"
+    ],
+    "sizes": [
+      "red: XS, S, M, L, XL, XXL, 3XL; black: XS, S, M, L, XL, XXL, 3XL; dk.grey: XS, S, M, L, XL, XXL, 3XL; olive: XS, S, M, L, XL, XXL, 3XL"
+    ],
+    "materials": "微網布、潛水布、Verde面料",
+    "description": "CHIBA Blade II 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3027126-blade-ii/cycling__3027126__c1a9aca84e8860e1__3027126_04_1.jpg",
+      "/assets/products/cycling/3027126-blade-ii/cycling__3027126__2c4a6d75e8f2d7a5__3027126_04_2.jpg",
+      "/assets/products/cycling/3027126-blade-ii/cycling__3027126__eb0dde8adfa0c3f1__3027126_10_1.jpg",
+      "/assets/products/cycling/3027126-blade-ii/cycling__3027126__6cd071c36b30746b__3027126_10_2.jpg",
+      "/assets/products/cycling/3027126-blade-ii/cycling__3027126__3fa8e1e78eacd19f__3027126_19_1.jpg",
+      "/assets/products/cycling/3027126-blade-ii/cycling__3027126__5b3b2409e168064c__3027126_19_2.jpg",
+      "/assets/products/cycling/3027126-blade-ii/cycling__3027126__943ce438429f8b49__3027126_20-1_1.jpg",
+      "/assets/products/cycling/3027126-blade-ii/cycling__3027126__0b864a5a3019bb3a__3027126_20-1_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Blade II 刀鋒 II"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3027423",
+    "name": "ECO Glove Pro touring",
+    "nameZh": "ECO Glove Pro Touring 環保長途巡航手套",
+    "slug": "3027423-eco-glove-pro-touring",
+    "category": "Cycling",
+    "line": "Active Line",
+    "price": 1420.0,
+    "currency": "TWD",
+    "colours": [
+      "black, dk.grey, olive"
+    ],
+    "sizes": [
+      "black: XS, S, M, L, XL, XXL; dk.grey: XS, S, M, L, XL, XXL; olive: XS, S, M, L, XL, XXL"
+    ],
+    "materials": "Econyl再生尼龍、麂皮布、軟木",
+    "description": "CHIBA ECO Glove Pro touring 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3027423-eco-glove-pro-touring/cycling__3027423__7a0c4bf81ee88ec2__3027423_10_1.jpg",
+      "/assets/products/cycling/3027423-eco-glove-pro-touring/cycling__3027423__688dfb34a42eb641__3027423_10_2.jpg",
+      "/assets/products/cycling/3027423-eco-glove-pro-touring/cycling__3027423__f740bbfa25e77df4__3027423_19_1.jpg",
+      "/assets/products/cycling/3027423-eco-glove-pro-touring/cycling__3027423__ad2c01196278462f__3027423_19_2.jpg",
+      "/assets/products/cycling/3027423-eco-glove-pro-touring/cycling__3027423__bf0b9884657ba268__3027423_20-1_1.jpg",
+      "/assets/products/cycling/3027423-eco-glove-pro-touring/cycling__3027423__cdcb7aa995fdf113__3027423_20-1_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "ECO Glove Pro Touring 環保長途巡航手套"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3029125",
+    "name": "Lady Air Plus",
+    "nameZh": "Lady Air Plus 女款進階透氣手套",
+    "slug": "3029125-lady-air-plus",
+    "category": "Cycling",
+    "line": "Active Line",
+    "price": 1240.0,
+    "currency": "TWD",
+    "colours": [
+      "black/white, black/black, black/turquoise, black/pink"
+    ],
+    "sizes": [
+      "black/white: XS, S, M, L; black/black: XS, S, M, L; black/tourquise: XS, S, M, L; black/pink: XS, S, M, L"
+    ],
+    "materials": "微網布、Econyl再生尼龍、壓紋掌心",
+    "description": "CHIBA Lady Air Plus 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3029125-lady-air-plus/cycling__3029125__178ea47e27f1a6a6__3029125_1001_catalog_p32_Im7.png"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Lady Air Plus 女款進階透氣手套"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3030122",
+    "name": "Solar II",
+    "nameZh": "Solar II 陽光 II",
+    "slug": "3030122-solar-ii",
+    "category": "Cycling",
+    "line": "Race Line",
+    "price": 1160.0,
+    "currency": "TWD",
+    "colours": [
+      "black/neon yellow, black/red, black/black, black/petrol"
+    ],
+    "sizes": [
+      "black/neonyellow: XS, S, M, L, XL, XXL; black/red: XS, S, M, L, XL, XXL; black/black: XS, S, M, L, XL, XXL; black/petrol: XS, S, M, L, XL, XXL"
+    ],
+    "materials": "Lycra Solar曬痕萊卡、51025面料",
+    "description": "CHIBA Solar II 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3030122-solar-ii/cycling__3030122__58ef654e3f0975e6__3030122_1003-1-9.jpg",
+      "/assets/products/cycling/3030122-solar-ii/cycling__3030122__0e879f635011dcfb__3030122_1003-1_1.jpg",
+      "/assets/products/cycling/3030122-solar-ii/cycling__3030122__c336f1b7d5f0c066__3030122_1003-1_2.jpg",
+      "/assets/products/cycling/3030122-solar-ii/cycling__3030122__789531b78168b848__3030122_1003-1_3.jpg",
+      "/assets/products/cycling/3030122-solar-ii/cycling__3030122__16e16c2c7e7605b4__3030122_1003-1_4.jpg",
+      "/assets/products/cycling/3030122-solar-ii/cycling__3030122__d49be37ecb224d47__3030122_1003-1_5.jpg",
+      "/assets/products/cycling/3030122-solar-ii/cycling__3030122__39890a2fb8ddba7d__3030122_1003-1_6.jpg",
+      "/assets/products/cycling/3030122-solar-ii/cycling__3030122__b64f308a8ecd7288__3030122_1003-1_7.jpg",
+      "/assets/products/cycling/3030122-solar-ii/cycling__3030122__a334d09ef81e969f__3030122_1003-1_8.jpg",
+      "/assets/products/cycling/3030122-solar-ii/cycling__3030122__fd1791db0c13e7e4__3030122_1004_1.jpg",
+      "/assets/products/cycling/3030122-solar-ii/cycling__3030122__29d3714419e6e6e7__3030122_1004_2.jpg",
+      "/assets/products/cycling/3030122-solar-ii/cycling__3030122__2751c77559baf654__3030122_1010_1.jpg",
+      "/assets/products/cycling/3030122-solar-ii/cycling__3030122__17f6c1d198f89e56__3030122_1010_2.jpg",
+      "/assets/products/cycling/3030122-solar-ii/cycling__3030122__b1f521fde204b9ed__3030122_1010_3.jpg",
+      "/assets/products/cycling/3030122-solar-ii/cycling__3030122__f84820ef41594000__3030122_1010_4.jpg",
+      "/assets/products/cycling/3030122-solar-ii/cycling__3030122__b73d0b88c1a71913__3030122_1010_5.jpg",
+      "/assets/products/cycling/3030122-solar-ii/cycling__3030122__d4b1f1648d741d5d__3030122_1010_6.jpg",
+      "/assets/products/cycling/3030122-solar-ii/cycling__3030122__d75ae5f6851d09c5__3030122_1010_7.jpg",
+      "/assets/products/cycling/3030122-solar-ii/cycling__3030122__13a58a98ce6056ea__3030122_1010_8.jpg",
+      "/assets/products/cycling/3030122-solar-ii/cycling__3030122__7fbfa7cd06a9fae1__3030122_1010_9.jpg",
+      "/assets/products/cycling/3030122-solar-ii/cycling__3030122__d98664250ba19d67__3030122_1028_1.jpg",
+      "/assets/products/cycling/3030122-solar-ii/cycling__3030122__42d14dd7c69ec38e__3030122_1028_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Solar II 陽光 II"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3030224",
+    "name": "Evolution",
+    "nameZh": "Evolution 進化款",
+    "slug": "3030224-evolution",
+    "category": "Cycling",
+    "line": "Race Line",
+    "price": 1580.0,
+    "currency": "TWD",
+    "colours": [
+      "white, black, dark grey"
+    ],
+    "sizes": [
+      "white: XS, S, M, L, XL, XXL; black: XS, S, M, L, XL, XXL; dk.grey: XS, S, M, L, XL, XXL"
+    ],
+    "materials": "壓紋掌心、針織面料",
+    "description": "CHIBA Evolution 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3030224-evolution/cycling__3030224__ddf6dc18945c6385__3030224_01_1.jpg",
+      "/assets/products/cycling/3030224-evolution/cycling__3030224__432594f6bdab6661__3030224_01_2.jpg",
+      "/assets/products/cycling/3030224-evolution/cycling__3030224__3f15ebb920660144__3030224_10_1.jpg",
+      "/assets/products/cycling/3030224-evolution/cycling__3030224__85240fd4af472533__3030224_10_2.jpg",
+      "/assets/products/cycling/3030224-evolution/cycling__3030224__b8fb7f31da9a9749__3030224_19_1.jpg",
+      "/assets/products/cycling/3030224-evolution/cycling__3030224__ce9b1fea17097afa__3030224_19_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Evolution 進化款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3030524",
+    "name": "Team Glove Pro",
+    "nameZh": "Team Glove Pro 車隊專業款",
+    "slug": "3030524-team-glove-pro",
+    "category": "Cycling",
+    "line": "Race Line",
+    "price": 1120.0,
+    "currency": "TWD",
+    "colours": [
+      "neon yellow, red, black,"
+    ],
+    "sizes": [
+      "neonyellow: XS, S, M, L, XL, XXL, 3XL; red: XS, S, M, L, XL, XXL, 3XL; black: XS, S, M, L, XL, XXL, 3XL"
+    ],
+    "materials": "細格紋布、Econyl再生尼龍、壓紋掌心",
+    "description": "CHIBA Team Glove Pro 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3030524-team-glove-pro/cycling__3030524__e1ae472330ffc325__3030524_03-1_1.jpg",
+      "/assets/products/cycling/3030524-team-glove-pro/cycling__3030524__973738518579b99b__3030524_03-1_2.jpg",
+      "/assets/products/cycling/3030524-team-glove-pro/cycling__3030524__e60fd99f5fd3d2f1__3030524_04_1.jpg",
+      "/assets/products/cycling/3030524-team-glove-pro/cycling__3030524__7fd7f77551a92cc7__3030524_04_2.jpg",
+      "/assets/products/cycling/3030524-team-glove-pro/cycling__3030524__70a50672e411e5b7__3030524_10_1.jpg",
+      "/assets/products/cycling/3030524-team-glove-pro/cycling__3030524__b0e7bfb84fd66fef__3030524_10_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Team Glove Pro 車隊專業款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3037124",
+    "name": "Viper",
+    "nameZh": "Viper 毒蛇款",
+    "slug": "3037124-viper",
+    "category": "Cycling",
+    "line": "Race Line",
+    "price": 1660.0,
+    "currency": "TWD",
+    "colours": [
+      "black, dark grey, olive"
+    ],
+    "sizes": [
+      "black: XS, S, M, L, XL, XXL; dk.grey: XS, S, M, L, XL, XXL; olive: XS, S, M, L, XL, XXL"
+    ],
+    "materials": "針織面料、Clarino人造皮、HY32m面料",
+    "description": "CHIBA Viper 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3037124-viper/cycling__3037124__aba400fda894793f__3037124_10_1.jpg",
+      "/assets/products/cycling/3037124-viper/cycling__3037124__ae6c7e4340c2d815__3037124_10_2.jpg",
+      "/assets/products/cycling/3037124-viper/cycling__3037124__833c531420b436cf__3037124_19_1.jpg",
+      "/assets/products/cycling/3037124-viper/cycling__3037124__b4b138c660daa56f__3037124_19_2.jpg",
+      "/assets/products/cycling/3037124-viper/cycling__3037124__aff3dc4430780819__3037124_20-1_1.jpg",
+      "/assets/products/cycling/3037124-viper/cycling__3037124__595c1f9b4670f190__3037124_20-1_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Viper 毒蛇款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3037225",
+    "name": "Double Six",
+    "nameZh": "Double Six 雙六款",
+    "slug": "3037225-double-six",
+    "category": "Cycling",
+    "line": "Race Line",
+    "price": 1240.0,
+    "currency": "TWD",
+    "colours": [
+      "black, dark grey, olive"
+    ],
+    "sizes": [
+      "black: XS, S, M, L, XL, XXL, 3XL; dk.grey: XS, S, M, L, XL, XXL, 3XL; olive: XS, S, M, L, XL, XXL, 3XL"
+    ],
+    "materials": "AW 95-383面料、Clarino人造皮",
+    "description": "CHIBA Double Six 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3037225-double-six/cycling__3037225__be949f853ed5003e__3037225_10_1.jpg",
+      "/assets/products/cycling/3037225-double-six/cycling__3037225__f923a5403f9aa6c5__3037225_10_2.jpg",
+      "/assets/products/cycling/3037225-double-six/cycling__3037225__18983a53cb8bc993__3037225_19_1.jpg",
+      "/assets/products/cycling/3037225-double-six/cycling__3037225__f15408e187872aeb__3037225_19_2.jpg",
+      "/assets/products/cycling/3037225-double-six/cycling__3037225__1326a9c87f73c926__3037225_20-1_1.jpg",
+      "/assets/products/cycling/3037225-double-six/cycling__3037225__87dc572ef22f5935__3037225_20-1_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Double Six 雙六款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3040518",
+    "name": "Gel Comfort",
+    "nameZh": "Gel Comfort 凝膠舒適款",
+    "slug": "3040518-gel-comfort",
+    "category": "Cycling",
+    "line": "Comfort Line",
+    "price": 1160.0,
+    "currency": "TWD",
+    "colours": [
+      "red, royal, black, black/orange, dark grey, olive"
+    ],
+    "sizes": [
+      "red: XS, S, M, L, XL, XXL, 3XL; royal blue: XS, S, M, L, XL, XXL, 3XL; black: XS, S, M, L, XL, XXL, 3XL, 4XL; black/orange: XS, S, M, L, XL, XXL, 3XL; dk.grey: XS, S, M, L, XL, XXL, 3XL; olive: XS, S, M, L, XL, XXL, 3XL"
+    ],
+    "materials": "微網布、彈性纖維、雙圈毛巾布、透氣網布",
+    "description": "CHIBA Gel Comfort 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__ffda842fd1fbc89c__3040518_04_1.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__faa0022f1e4c1147__3040518_04_2.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__1c3572a372ef367f__3040518_04_3.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__9d3371ba274a10ab__3040518_04_4.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__10206a8224cbcf15__3040518_04_5.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__9cd6ff5f6d2c2f52__3040518_04_6.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__d295bcc75e08e7c2__3040518_04_7.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__6037b7067e86bed0__3040518_04_8.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__5f74bebab3655bb8__3040518_06_1.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__a03a4d1b44e213bd__3040518_06_2.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__fcf98f2b7e9f41e3__3040518_06_3.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__ad902b34f0234514__3040518_06_4.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__098cc34284cce923__3040518_06_5.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__2aadf9f5a7358e8e__3040518_06_6.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__e5a1285535cc9216__3040518_06_7.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__150831fdf1866e81__3040518_1005_1.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__2151028a84c646b8__3040518_1005_2.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__04356edeec4da5ce__3040518_1005_3.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__5d77d8f4510c69c5__3040518_1005_4.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__feb8a06d7c281755__3040518_1005_5.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__cd39d29a78930ade__3040518_1005_6.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__9fc53d4f828d2197__3040518_1005_7.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__1bf27fc6c920eff7__3040518_10_1.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__8a89960f6d162475__3040518_10_2.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__aaa06194581d7be8__3040518_10_3.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__23399f79cfa65100__3040518_10_4.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__8d5358612a23de79__3040518_10_5.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__ffdc01e9eacff1fb__3040518_10_6.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__9907fff04852a8f8__3040518_10_7.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__127d8ea4147635fc__3040518_19_1.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__a550a09491d6cb5a__3040518_19_2.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__3bc595cd7b47d37c__3040518_19_3.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__73924a5618145c25__3040518_19_4.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__494499f393f08658__3040518_19_5.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__b4966032a241dfb0__3040518_19_6.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__9bfb9c4a33554f67__3040518_19_7.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__3c0a3b4011bb31ac__3040518_20-1_1.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__e99ff5a26063325c__3040518_20-1_2.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__69dfb99803cb5183__3040518_20-1_3.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__69ecd549e5d5a7cf__3040518_20-1_4.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__25b267bce44baac7__3040518_20-1_5.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__d8263ddc6af272cc__3040518_20-1_6.jpg",
+      "/assets/products/cycling/3040518-gel-comfort/cycling__3040518__c272f8f3f1beff59__3040518_20-1_7.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Gel Comfort 凝膠舒適款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3050122",
+    "name": "Youth",
+    "nameZh": "Youth 青少年款",
+    "slug": "3050122-youth",
+    "category": "Cycling",
+    "line": "Youth",
+    "price": 750.0,
+    "currency": "TWD",
+    "colours": [
+      "neon yellow, red, royal, black"
+    ],
+    "sizes": [
+      "neonyellow: XS, XS/S, S, S/M; red: XS, XS/S, S, S/M; royal blue: XS, XS/S, S, S/M; black: XS, XS/S, S, S/M"
+    ],
+    "materials": "微網布、Econyl再生尼龍、透氣網布、Vitel面料",
+    "description": "CHIBA Youth 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3050122-youth/cycling__3050122__c10eb903945dcbb3__3050122_03-1_1.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__dd12d44f73fd3fc3__3050122_03-1_2.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__74c3b3f6299bac61__3050122_03-1_3.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__93582314e2c721dd__3050122_03-1_4.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__b098d1d26fb9ffa9__3050122_03-1_5.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__3d18188f9057560c__3050122_03-1_6.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__c9053c00498cf2ae__3050122_03-1_7.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__d1a6d77bd0df0ac1__3050122_03-1_8.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__b208751ce5a2de28__3050122_03-1_9.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__a7e6e5ea08084a13__3050122_04_1.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__9b81862ca9c91244__3050122_04_2.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__eeef7b8aa806fae1__3050122_04_3.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__c25765ef8d1574da__3050122_04_4.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__6db0da6553bc0e8e__3050122_04_5.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__4c431326eaf184cc__3050122_04_6.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__6e343f7493b631b0__3050122_04_7.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__d20744dd888523ab__3050122_04_8.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__1e5980c38ed3cf8e__3050122_04_9.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__b0539cd154466f13__3050122_06_1.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__8a3f1091c8c56b14__3050122_06_2.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__93cb61dfbdf32924__3050122_06_3.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__fdcb9ac2f8933046__3050122_06_4.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__0adc1a0470c574ca__3050122_06_5.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__b811c01cbbddd4a1__3050122_06_6.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__3bb802453459192b__3050122_06_7.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__f2295858579fd314__3050122_06_8.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__3c27fb460c74ea16__3050122_06_9.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__1bbc355098b1df46__3050122_10_1.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__2d5401fd1b235ed4__3050122_10_2.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__a7cb675097d0fc43__3050122_10_3.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__c6d95115f4138fe1__3050122_10_4.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__95d6ea3d5af96dd3__3050122_10_5.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__90e423b85bcf9b14__3050122_10_6.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__954f1cf0f3012f4d__3050122_10_7.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__960cca9709c7bb12__3050122_10_8.jpg",
+      "/assets/products/cycling/3050122-youth/cycling__3050122__d3b1efc5ffcc11f2__3050122_10_9.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Youth 青少年款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3050224",
+    "name": "Kids",
+    "nameZh": "Kids 兒童款",
+    "slug": "3050224-kids",
+    "category": "Cycling",
+    "line": "Kids",
+    "price": 540.0,
+    "currency": "TWD",
+    "colours": [
+      "red, royal, turquoise, pink"
+    ],
+    "sizes": [
+      "red: XS, S, M, L; royal blue: XS, S, M, L; tourquise: XS, S, M, L; pink: XS, S, M, L"
+    ],
+    "materials": "Econyl再生尼龍、HY 32N面料",
+    "description": "CHIBA Kids 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3050224-kids/cycling__3050224__d3e5eafdc702ce7a__3050224_04_1.jpg",
+      "/assets/products/cycling/3050224-kids/cycling__3050224__1edb44dfc531edaf__3050224_04_2.jpg",
+      "/assets/products/cycling/3050224-kids/cycling__3050224__30d3418dac5b9999__3050224_06_1.jpg",
+      "/assets/products/cycling/3050224-kids/cycling__3050224__27f6a26e4f6170c3__3050224_06_2.jpg",
+      "/assets/products/cycling/3050224-kids/cycling__3050224__619c62dab8320cbd__3050224_18_1.jpg",
+      "/assets/products/cycling/3050224-kids/cycling__3050224__03abd3d53a32b448__3050224_18_2.jpg",
+      "/assets/products/cycling/3050224-kids/cycling__3050224__48081204c363354f__3050224_23_1.jpg",
+      "/assets/products/cycling/3050224-kids/cycling__3050224__a60c88e1611f4a49__3050224_23_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Kids 兒童款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3060125",
+    "name": "BioXCell Eco Pro",
+    "nameZh": "BioXCell Eco Pro 環保專業款",
+    "slug": "3060125-bioxcell-eco-pro",
+    "category": "Cycling",
+    "line": "BioXCell Line",
+    "price": 1650.0,
+    "currency": "TWD",
+    "colours": [
+      "black, dark grey, olive"
+    ],
+    "sizes": [
+      "black: XS, S, M, L, XL, XXL; dk.grey: XS, S, M, L, XL, XXL; olive: XS, S, M, L, XL, XXL"
+    ],
+    "materials": "Econyl再生尼龍、Clarino人造皮、乳膠",
+    "description": "CHIBA BioXCell Eco Pro 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3060125-bioxcell-eco-pro/cycling__3060125__14b7bd36f9ab9268__3060125_10_1.jpg",
+      "/assets/products/cycling/3060125-bioxcell-eco-pro/cycling__3060125__d5f20b2572e9cd42__3060125_10_2.jpg",
+      "/assets/products/cycling/3060125-bioxcell-eco-pro/cycling__3060125__b1f7fc8ece0a3728__3060125_19_1.jpg",
+      "/assets/products/cycling/3060125-bioxcell-eco-pro/cycling__3060125__009bce60f51be6a2__3060125_19_2.jpg",
+      "/assets/products/cycling/3060125-bioxcell-eco-pro/cycling__3060125__7ac9bd53ff1d4595__3060125_20-1_1.jpg",
+      "/assets/products/cycling/3060125-bioxcell-eco-pro/cycling__3060125__dfadc668928200c9__3060125_20-1_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "BioXCell Eco Pro 環保專業款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3060224",
+    "name": "BioXCell Pro",
+    "nameZh": "BioXCell Pro 專業款",
+    "slug": "3060224-bioxcell-pro",
+    "category": "Cycling",
+    "line": "BioXCell Line",
+    "price": 1860.0,
+    "currency": "TWD",
+    "colours": [
+      "white, neon yellow, red, black, dk.grey"
+    ],
+    "sizes": [
+      "white: XS, S, M, L, XL, XXL, 3XL; neonyellow: XS, S, M, L, XL, XXL, 3XL; red: XS, S, M, L, XL, XXL, 3XL; black: XS, S, M, L, XL, XXL, 3XL, 4XL; dk.grey: XS, S, M, L, XL, XXL, 3XL"
+    ],
+    "materials": "壓紋掌心、微網布、網布",
+    "description": "CHIBA BioXCell Pro 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3060224-bioxcell-pro/cycling__3060224__513aa74604a5a0bd__3060224_01_1.jpg",
+      "/assets/products/cycling/3060224-bioxcell-pro/cycling__3060224__b391338cac14beb4__3060224_01_2.jpg",
+      "/assets/products/cycling/3060224-bioxcell-pro/cycling__3060224__05c8e11066b4aeab__3060224_03-1_1.jpg",
+      "/assets/products/cycling/3060224-bioxcell-pro/cycling__3060224__7515b06c17b01df5__3060224_03-1_2.jpg",
+      "/assets/products/cycling/3060224-bioxcell-pro/cycling__3060224__df1f4206439bdb1f__3060224_04_1.jpg",
+      "/assets/products/cycling/3060224-bioxcell-pro/cycling__3060224__6d401f8fff736e5a__3060224_04_2.jpg",
+      "/assets/products/cycling/3060224-bioxcell-pro/cycling__3060224__2fb5e63976f1a90e__3060224_10_1.jpg",
+      "/assets/products/cycling/3060224-bioxcell-pro/cycling__3060224__e868bfcc1508611d__3060224_10_2.jpg",
+      "/assets/products/cycling/3060224-bioxcell-pro/cycling__3060224__83301071b28db6bd__3060224_19_1.jpg",
+      "/assets/products/cycling/3060224-bioxcell-pro/cycling__3060224__c5c31df1e391fb91__3060224_19_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "BioXCell Pro 專業款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3060324",
+    "name": "BioXCell Super Fly",
+    "nameZh": "BioXCell Super Fly 超輕飛掠款",
+    "slug": "3060324-bioxcell-super-fly",
+    "category": "Cycling",
+    "line": "BioXCell Line",
+    "price": 1580.0,
+    "currency": "TWD",
+    "colours": [
+      "orange/blk, blk/neon yellow, blk/blk, blk/pink"
+    ],
+    "sizes": [
+      "orange/black: XS, S, M, L, XL, XXL, 3XL; black/neonyellow: XS, S, M, L, XL, XXL, 3XL; black/black: XS, S, M, L, XL, XXL, 3XL; black/pink: XS, S, M, L, XL, XXL, 3XL"
+    ],
+    "materials": "壓紋掌心、針織頂布、彈性纖維",
+    "description": "CHIBA BioXCell Super Fly 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3060324-bioxcell-super-fly/cycling__3060324__f794410c55b184a2__3060324_0510_1.jpg",
+      "/assets/products/cycling/3060324-bioxcell-super-fly/cycling__3060324__aa7c929b6294b7f1__3060324_0510_2.jpg",
+      "/assets/products/cycling/3060324-bioxcell-super-fly/cycling__3060324__f441c964ff9de012__3060324_1003-1_1.jpg",
+      "/assets/products/cycling/3060324-bioxcell-super-fly/cycling__3060324__ffd0245c98bec4bf__3060324_1003-1_2.jpg",
+      "/assets/products/cycling/3060324-bioxcell-super-fly/cycling__3060324__524e1d0725f052ae__3060324_1010_1.jpg",
+      "/assets/products/cycling/3060324-bioxcell-super-fly/cycling__3060324__236d9a8a46fd383e__3060324_1010_2.jpg",
+      "/assets/products/cycling/3060324-bioxcell-super-fly/cycling__3060324__ece35005b6378c8b__3060324_1023-1_1.jpg",
+      "/assets/products/cycling/3060324-bioxcell-super-fly/cycling__3060324__ad818f793d790d28__3060324_1023-1_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "BioXCell Super Fly 超輕飛掠款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3060426",
+    "name": "BioXCell Comfort",
+    "nameZh": "BioXCell Comfort 舒適款",
+    "slug": "3060426-bioxcell-comfort",
+    "category": "Cycling",
+    "line": "BioXCell Line",
+    "price": 2080.0,
+    "currency": "TWD",
+    "colours": [
+      "white, red, black, dark grey, olive"
+    ],
+    "sizes": [
+      "white: XS, S, M, L, XL, XXL; red: XS, S, M, L, XL, XXL; black: XS, S, M, L, XL, XXL; dk.grey: XS, S, M, L, XL, XXL; olive: XS, S, M, L, XL, XXL"
+    ],
+    "materials": "壓紋掌心、針織頂布、彈性纖維",
+    "description": "CHIBA BioXCell Comfort 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3060426-bioxcell-comfort/cycling__3060426__dc002ca59b5d6226__3060426_01_1.jpg",
+      "/assets/products/cycling/3060426-bioxcell-comfort/cycling__3060426__7958691ca0afcb03__3060426_01_2.jpg",
+      "/assets/products/cycling/3060426-bioxcell-comfort/cycling__3060426__52aaef4bd189468d__3060426_04_1.jpg",
+      "/assets/products/cycling/3060426-bioxcell-comfort/cycling__3060426__827b9a2e19beb35e__3060426_04_2.jpg",
+      "/assets/products/cycling/3060426-bioxcell-comfort/cycling__3060426__98bc363b213cc7ad__3060426_10_1.jpg",
+      "/assets/products/cycling/3060426-bioxcell-comfort/cycling__3060426__7a26ee134017acc8__3060426_10_2.jpg",
+      "/assets/products/cycling/3060426-bioxcell-comfort/cycling__3060426__82e36863e66dae5f__3060426_19_1.jpg",
+      "/assets/products/cycling/3060426-bioxcell-comfort/cycling__3060426__4bea245181a64b4a__3060426_19_2.jpg",
+      "/assets/products/cycling/3060426-bioxcell-comfort/cycling__3060426__dbeea39830fd8d12__3060426_20-1_1.jpg",
+      "/assets/products/cycling/3060426-bioxcell-comfort/cycling__3060426__d965b3bead0fb576__3060426_20-1_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "BioXCell Comfort 舒適款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3060526",
+    "name": "BioXCell Tan Through",
+    "nameZh": "BioXCell Tan Through 透光防曬款",
+    "slug": "3060526-bioxcell-tan-through",
+    "category": "Cycling",
+    "line": "BioXCell Line",
+    "price": 1860.0,
+    "currency": "TWD",
+    "colours": [
+      "white/black/red/black, royal/black, dk.grey/black"
+    ],
+    "sizes": [
+      "white/black: XS, S, M, L, XL, XXL; red/black: XS, S, M, L, XL, XXL; royal blue/black: XS, S, M, L, XL, XXL; dk.grey/black: XS, S, M, L, XL, XXL"
+    ],
+    "materials": "壓紋掌心、Lycra Solar曬痕萊卡、彈性面料",
+    "description": "CHIBA BioXCell Tan Through 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3060526-bioxcell-tan-through/cycling__3060526__79518bba5b698954__3060526_0110_1.jpg",
+      "/assets/products/cycling/3060526-bioxcell-tan-through/cycling__3060526__503b7941d01ca707__3060526_0110_2.jpg",
+      "/assets/products/cycling/3060526-bioxcell-tan-through/cycling__3060526__afb63e5f0e82dd49__3060526_0410_1.jpg",
+      "/assets/products/cycling/3060526-bioxcell-tan-through/cycling__3060526__f1f09b8c67348a83__3060526_0410_2.jpg",
+      "/assets/products/cycling/3060526-bioxcell-tan-through/cycling__3060526__d92777171b88290e__3060526_0610_1.jpg",
+      "/assets/products/cycling/3060526-bioxcell-tan-through/cycling__3060526__a8e2aeaa62947b4b__3060526_0610_2.jpg",
+      "/assets/products/cycling/3060526-bioxcell-tan-through/cycling__3060526__c9f4686409c78e10__3060526_1910_1.jpg",
+      "/assets/products/cycling/3060526-bioxcell-tan-through/cycling__3060526__f7b759f53122362e__3060526_1910_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "BioXCell Tan Through 透光防曬款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3060820",
+    "name": "BioXCell Air",
+    "nameZh": "BioXCell Air 透氣款",
+    "slug": "3060820-bioxcell-air",
+    "category": "Cycling",
+    "line": "BioXCell Line",
+    "price": 1740.0,
+    "currency": "TWD",
+    "colours": [
+      "white, neon yellow, red, royal, black"
+    ],
+    "sizes": [
+      "white: XS, S, M, L, XL, XXL, 3XL; neonyellow: XS, S, M, L, XL, XXL, 3XL; red: XS, S, M, L, XL, XXL, 3XL; royal blue: XS, S, M, L, XL, XXL, 3XL; black: XS, S, M, L, XL, XXL, 3XL"
+    ],
+    "materials": "Flashlan面料、微網布、雙圈毛巾布、透氣網布",
+    "description": "CHIBA BioXCell Air 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__802407b2933fcc6e__3060820_01_1.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__c7245e483ad99adb__3060820_01_2.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__1f3cd0c2331b2593__3060820_01_3.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__66db3a91302bc1a9__3060820_01_4.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__35749cf00f2ff563__3060820_01_5.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__041ec4466d881fbd__3060820_01_6.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__8b3b11a669090dc1__3060820_01_7.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__60dc690bdc4695bb__3060820_03-1_1.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__8045c72e4a2fec6f__3060820_03-1_2.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__c9d56011c405666b__3060820_03-1_3.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__5729ea14dca9cd4e__3060820_03-1_4.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__7354cde291fb6f03__3060820_03-1_5.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__864cd09e7b8f4e31__3060820_03-1_6.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__85e1316bfbbb5d35__3060820_03-1_7.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__68835b76fc9aabd4__3060820_03-1_8.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__9f2fd0355a8e90a4__3060820_03-1_9.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__4a2a74b9bc19f645__3060820_04_1.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__a3e1f9d9876a44c9__3060820_04_2.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__7b785890e7b94e60__3060820_04_3.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__efa66bee0baf0848__3060820_04_4.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__b196a635ea91b0a6__3060820_04_5.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__1197c609086bff0e__3060820_04_6.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__e32055dad0bd2520__3060820_04_7.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__4c15f6f45b073293__3060820_04_8.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__f890bb1a188cd6d7__3060820_06_1.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__9ca44686f9e3d93c__3060820_06_2.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__9b6689f56d9ae137__3060820_06_3.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__6a17928b92d9a5c8__3060820_06_4.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__98991bdffa87271e__3060820_06_5.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__e833a0b68316bd15__3060820_06_6.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__989ce7c338ae7d27__3060820_06_7.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__ce47d2a7f9778ab9__3060820_10_1.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__0b9c28f94ba6a2fa__3060820_10_2.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__1af78f77f4f69b23__3060820_10_3.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__db9f00b2f5b51559__3060820_10_4.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__d2f3e15ce36279d9__3060820_10_5.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__0fa0167a3634fbcf__3060820_10_6.jpg",
+      "/assets/products/cycling/3060820-bioxcell-air/cycling__3060820__d2d0e5b6010f6907__3060820_10_7.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "BioXCell Air 透氣款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3067125",
+    "name": "BioXCell Touring",
+    "nameZh": "BioXCell Touring 長途巡航款",
+    "slug": "3067125-bioxcell-touring",
+    "category": "Cycling",
+    "line": "BioXCell Line",
+    "price": 2280.0,
+    "currency": "TWD",
+    "colours": [
+      "red, black, olive"
+    ],
+    "sizes": [
+      "red: XS, S, M, L, XL, XXL, 3XL; black: XS, S, M, L, XL, XXL, 3XL; olive: XS, S, M, L, XL, XXL, 3XL"
+    ],
+    "materials": "萊卡、Verde面料、Clarino人造皮、Poron避震墊",
+    "description": "CHIBA BioXCell Touring 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3067125-bioxcell-touring/cycling__3067125__60482bd116237396__3067125_04_1.jpg",
+      "/assets/products/cycling/3067125-bioxcell-touring/cycling__3067125__c9d1d1c288bc30fd__3067125_04_2.jpg",
+      "/assets/products/cycling/3067125-bioxcell-touring/cycling__3067125__2833f113d1c97b8c__3067125_10_1.jpg",
+      "/assets/products/cycling/3067125-bioxcell-touring/cycling__3067125__a212d142d8495257__3067125_10_2.jpg",
+      "/assets/products/cycling/3067125-bioxcell-touring/cycling__3067125__11745a7865c15549__3067125_20-1_1.jpg",
+      "/assets/products/cycling/3067125-bioxcell-touring/cycling__3067125__8d138af89e400aa5__3067125_20-1_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "BioXCell Touring 長途巡航款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3069122",
+    "name": "BioXCell Lady",
+    "nameZh": "BioXCell Lady 女款",
+    "slug": "3069122-bioxcell-lady",
+    "category": "Cycling",
+    "line": "BioXCell Line",
+    "price": 1660.0,
+    "currency": "TWD",
+    "colours": [
+      "white, black, pink, petrol"
+    ],
+    "sizes": [
+      "white: XS, S, M, L; black: XS, S, M, L; pink: XS, S, M, L; petrol: XS, S, M, L"
+    ],
+    "materials": "Bristol萊卡、Verde面料、Clarino人造皮、Poron避震墊",
+    "description": "CHIBA BioXCell Lady 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3069122-bioxcell-lady/cycling__3069122__0e672c3fe10a59cc__3069122_01_1.jpg",
+      "/assets/products/cycling/3069122-bioxcell-lady/cycling__3069122__6144707c2b78f34c__3069122_01_2.jpg",
+      "/assets/products/cycling/3069122-bioxcell-lady/cycling__3069122__813e004c23d0fc91__3069122_01_3.jpg",
+      "/assets/products/cycling/3069122-bioxcell-lady/cycling__3069122__d65f961147caf597__3069122_01_4.jpg",
+      "/assets/products/cycling/3069122-bioxcell-lady/cycling__3069122__24d25e51c315237a__3069122_01_5.jpg",
+      "/assets/products/cycling/3069122-bioxcell-lady/cycling__3069122__b57ce430228d1035__3069122_01_6.jpg",
+      "/assets/products/cycling/3069122-bioxcell-lady/cycling__3069122__a5a29ac45ae67ccc__3069122_01_7.jpg",
+      "/assets/products/cycling/3069122-bioxcell-lady/cycling__3069122__be55caa9fec07241__3069122_01_8.jpg",
+      "/assets/products/cycling/3069122-bioxcell-lady/cycling__3069122__7c64f15efb138160__3069122_01_9.jpg",
+      "/assets/products/cycling/3069122-bioxcell-lady/cycling__3069122__9e2c02ff2e516aa1__3069122_10_1.jpg",
+      "/assets/products/cycling/3069122-bioxcell-lady/cycling__3069122__f016e46d3f50093f__3069122_10_2.jpg",
+      "/assets/products/cycling/3069122-bioxcell-lady/cycling__3069122__5f407fff8cb5cf47__3069122_10_3.jpg",
+      "/assets/products/cycling/3069122-bioxcell-lady/cycling__3069122__80bd4d41260e2f0c__3069122_10_4.jpg",
+      "/assets/products/cycling/3069122-bioxcell-lady/cycling__3069122__0f13a1f93f0a32e4__3069122_10_5.jpg",
+      "/assets/products/cycling/3069122-bioxcell-lady/cycling__3069122__8c826e7b2b70e847__3069122_10_6.jpg",
+      "/assets/products/cycling/3069122-bioxcell-lady/cycling__3069122__d69191d8a4e0a251__3069122_10_7.jpg",
+      "/assets/products/cycling/3069122-bioxcell-lady/cycling__3069122__95a6d159f6dd672a__3069122_10_8.jpg",
+      "/assets/products/cycling/3069122-bioxcell-lady/cycling__3069122__0aca30c6e290a84b__3069122_10_9.jpg",
+      "/assets/products/cycling/3069122-bioxcell-lady/cycling__3069122__21b8bfcc24fae754__3069122_23_1.jpg",
+      "/assets/products/cycling/3069122-bioxcell-lady/cycling__3069122__aee00d4d4896633e__3069122_23_2.jpg",
+      "/assets/products/cycling/3069122-bioxcell-lady/cycling__3069122__0d1276d38dcc5c9d__3069122_28_1.jpg",
+      "/assets/products/cycling/3069122-bioxcell-lady/cycling__3069122__fbcbbbd53e2e69f2__3069122_28_2.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "BioXCell Lady 女款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3070820",
+    "name": "Superlight",
+    "nameZh": "Superlight 超輕量款",
+    "slug": "3070820-superlight",
+    "category": "Cycling",
+    "line": "Race Line",
+    "price": 1450.0,
+    "currency": "TWD",
+    "colours": [
+      "black/black, black/neon yellow, black/red"
+    ],
+    "sizes": [
+      "black/neonyellow: XS, S, M, L, XL, XXL; black/red: XS, S, M, L, XL, XXL; black/black: XS, S, M, L, XL, XXL"
+    ],
+    "materials": "飛織面料、Verde面料、彈性纖維",
+    "description": "CHIBA Superlight 自行車系列。",
+    "images": [
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__70bd7b2df5c1a877__3070820_1003-1_1.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__515350a0d0df17f0__3070820_1003-1_2.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__f5e9bce23e9c144c__3070820_1003-1_3.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__4064546a8ab36533__3070820_1003-1_4.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__dba977aef64eea0e__3070820_1003-1_5.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__5a84dd74cf34dbee__3070820_1003-1_6.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__b8edc515bb3f1e4e__3070820_1003-1_7.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__694098a9b68e9a94__3070820_1003-1_8.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__e619c0413d59d368__3070820_1003-1_9.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__718d12f76a8fa957__3070820_1004_1.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__ee5c7b6cf7b36a72__3070820_1004_2.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__c186ce5d86443402__3070820_1004_3.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__985a17107ad09648__3070820_1004_4.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__4f04b6dfad61dc59__3070820_1004_5.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__32dd5cf70297b3e1__3070820_1004_6.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__141fb92e656f9eb7__3070820_1004_7.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__b1fca2121e66b7dc__3070820_1004_8.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__39116a329cdfedd2__3070820_1010_1.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__6e0e832818856e32__3070820_1010_2.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__52f86ff2b7281d8a__3070820_1010_3.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__a85e4e7ceec88f6b__3070820_1010_4.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__9f2ecd79db2235be__3070820_1010_5.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__0592d48045c9acb9__3070820_1010_6.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__db2a2285171c1337__3070820_1010_7.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__f58d69e80fe22230__3070820_1010_8.jpg",
+      "/assets/products/cycling/3070820-superlight/cycling__3070820__2fd897bce56134fd__3070820_1010_9.jpg"
+    ],
+    "variants": [],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Superlight 超輕量款"
+      },
+      "en": null
+    }
+  }
+]

@@ -1,0 +1,3491 @@
+[
+  {
+    "sku": "3019124",
+    "name": "Lady Gel Premium III",
+    "nameZh": "女款 Gel Premium III",
+    "slug": "3019124-lady-gel-premium-iii",
+    "category": "Fitness",
+    "line": "LADY LINE",
+    "price": 1500.0,
+    "currency": "TWD",
+    "colours": [
+      "black/black/1010",
+      "black/pink/1023-1",
+      "black/turquoise/1018"
+    ],
+    "sizes": [
+      "XS-4XL",
+      "XS-4XL",
+      "XS-4XL"
+    ],
+    "materials": "air mesh; microfibre; poron gel",
+    "description": "掌面採用網布與超細纖維貼片，搭配 Poron 凝膠襯墊。",
+    "images": [
+      "/assets/products/fitness/3019124-lady-gel-premium-iii/black-black-1010/fitness__3019124__black-black-1010__656fbf4807548647__3019124-1010-1.jpg",
+      "/assets/products/fitness/3019124-lady-gel-premium-iii/black-black-1010/fitness__3019124__black-black-1010__a6d2cd7653b41847__3019124-1010-2.jpg",
+      "/assets/products/fitness/3019124-lady-gel-premium-iii/black-pink-1023-1/fitness__3019124__black-pink-1023-1__dc43bf5d0ca3ed57__3019124-1023-1-1.jpg",
+      "/assets/products/fitness/3019124-lady-gel-premium-iii/black-pink-1023-1/fitness__3019124__black-pink-1023-1__46ed4cdbd7f46c95__3019124-1023-1-2.jpg",
+      "/assets/products/fitness/3019124-lady-gel-premium-iii/black-turquoise-1018/fitness__3019124__black-turquoise-1018__4d246a0a74e6c2d5__3019124-1018-1.jpg",
+      "/assets/products/fitness/3019124-lady-gel-premium-iii/black-turquoise-1018/fitness__3019124__black-turquoise-1018__32f11ac07fe69ae0__3019124-1018-2.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|3019124|BLACK/BLACK/1010",
+        "colour": "black/black/1010",
+        "sizes": "XS-4XL",
+        "price": 1500.0,
+        "images": [
+          "/assets/products/fitness/3019124-lady-gel-premium-iii/black-black-1010/fitness__3019124__black-black-1010__656fbf4807548647__3019124-1010-1.jpg",
+          "/assets/products/fitness/3019124-lady-gel-premium-iii/black-black-1010/fitness__3019124__black-black-1010__a6d2cd7653b41847__3019124-1010-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用網布與超細纖維貼片，搭配 Poron 凝膠襯墊。"
+      },
+      {
+        "key": "Fitness|3019124|BLACK/PINK/1023-1",
+        "colour": "black/pink/1023-1",
+        "sizes": "XS-4XL",
+        "price": 1500.0,
+        "images": [
+          "/assets/products/fitness/3019124-lady-gel-premium-iii/black-pink-1023-1/fitness__3019124__black-pink-1023-1__dc43bf5d0ca3ed57__3019124-1023-1-1.jpg",
+          "/assets/products/fitness/3019124-lady-gel-premium-iii/black-pink-1023-1/fitness__3019124__black-pink-1023-1__46ed4cdbd7f46c95__3019124-1023-1-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用網布與超細纖維貼片，搭配 Poron 凝膠襯墊。"
+      },
+      {
+        "key": "Fitness|3019124|BLACK/TURQUOISE/1018",
+        "colour": "black/turquoise/1018",
+        "sizes": "XS-4XL",
+        "price": 1500.0,
+        "images": [
+          "/assets/products/fitness/3019124-lady-gel-premium-iii/black-turquoise-1018/fitness__3019124__black-turquoise-1018__4d246a0a74e6c2d5__3019124-1018-1.jpg",
+          "/assets/products/fitness/3019124-lady-gel-premium-iii/black-turquoise-1018/fitness__3019124__black-turquoise-1018__32f11ac07fe69ae0__3019124-1018-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用網布與超細纖維貼片，搭配 Poron 凝膠襯墊。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "女款 Gel Premium III"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3020522",
+    "name": "ECO Glove Pro",
+    "nameZh": "ECO Glove Pro",
+    "slug": "3020522-eco-glove-pro",
+    "category": "Fitness",
+    "line": "LADY LINE",
+    "price": 1250.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10",
+      "darkgrey/19",
+      "light blue/11",
+      "navy/07",
+      "olive/20-1",
+      "rose/29"
+    ],
+    "sizes": [
+      "XS-4XL",
+      "XS-4XL",
+      "XS-4XL",
+      "XS-4XL",
+      "XS-4XL",
+      "XS-4XL"
+    ],
+    "materials": "recycled Nylon; recycled microfibre; natural latex; Cotton; cork",
+    "description": "手背採用再生尼龍，掌面使用再生超細纖維、天然乳膠襯墊及棉質內襯，標誌採用軟木。",
+    "images": [
+      "/assets/products/fitness/3020522-eco-glove-pro/black-10/fitness__3020522__black-10__4728186490e8f9ed__3020522-10-1.jpg",
+      "/assets/products/fitness/3020522-eco-glove-pro/black-10/fitness__3020522__black-10__1e99a1b7eaac9af0__3020522-10-2.jpg",
+      "/assets/products/fitness/3020522-eco-glove-pro/darkgrey-19/fitness__3020522__darkgrey-19__fc623e373efeec98__3020522-19-1.jpg",
+      "/assets/products/fitness/3020522-eco-glove-pro/darkgrey-19/fitness__3020522__darkgrey-19__f665295ef06f5b9d__3020522-19-2.jpg",
+      "/assets/products/fitness/3020522-eco-glove-pro/light-blue-11/fitness__3020522__light-blue-11__89c2a6023e36d994__3020522-11-1.jpg",
+      "/assets/products/fitness/3020522-eco-glove-pro/light-blue-11/fitness__3020522__light-blue-11__f234941e198a5aa3__3020522-11-2.jpg",
+      "/assets/products/fitness/3020522-eco-glove-pro/navy-07/fitness__3020522__navy-07__90e7bbc2e3c2a8a4__3020522-07-1.jpg",
+      "/assets/products/fitness/3020522-eco-glove-pro/navy-07/fitness__3020522__navy-07__4d75608751ad3a24__3020522-07-2.jpg",
+      "/assets/products/fitness/3020522-eco-glove-pro/olive-20-1/fitness__3020522__olive-20-1__3eb655979efeeebd__3020522-20-1-1.jpg",
+      "/assets/products/fitness/3020522-eco-glove-pro/olive-20-1/fitness__3020522__olive-20-1__a6a9643ef916e53d__3020522-20-1-2.jpg",
+      "/assets/products/fitness/3020522-eco-glove-pro/rose-29/fitness__3020522__rose-29__bf2a0259bb004c13__3020522-29-1.jpg",
+      "/assets/products/fitness/3020522-eco-glove-pro/rose-29/fitness__3020522__rose-29__bda88b447b32f98a__3020522-29-2.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|3020522|BLACK/10",
+        "colour": "black/10",
+        "sizes": "XS-4XL",
+        "price": 1250.0,
+        "images": [
+          "/assets/products/fitness/3020522-eco-glove-pro/black-10/fitness__3020522__black-10__4728186490e8f9ed__3020522-10-1.jpg",
+          "/assets/products/fitness/3020522-eco-glove-pro/black-10/fitness__3020522__black-10__1e99a1b7eaac9af0__3020522-10-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用再生尼龍，掌面使用再生超細纖維、天然乳膠襯墊及棉質內襯，標誌採用軟木。"
+      },
+      {
+        "key": "Fitness|3020522|DARKGREY/19",
+        "colour": "darkgrey/19",
+        "sizes": "XS-4XL",
+        "price": 1250.0,
+        "images": [
+          "/assets/products/fitness/3020522-eco-glove-pro/darkgrey-19/fitness__3020522__darkgrey-19__fc623e373efeec98__3020522-19-1.jpg",
+          "/assets/products/fitness/3020522-eco-glove-pro/darkgrey-19/fitness__3020522__darkgrey-19__f665295ef06f5b9d__3020522-19-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用再生尼龍，掌面使用再生超細纖維、天然乳膠襯墊及棉質內襯，標誌採用軟木。"
+      },
+      {
+        "key": "Fitness|3020522|LIGHT BLUE/11",
+        "colour": "light blue/11",
+        "sizes": "XS-4XL",
+        "price": 1250.0,
+        "images": [
+          "/assets/products/fitness/3020522-eco-glove-pro/light-blue-11/fitness__3020522__light-blue-11__89c2a6023e36d994__3020522-11-1.jpg",
+          "/assets/products/fitness/3020522-eco-glove-pro/light-blue-11/fitness__3020522__light-blue-11__f234941e198a5aa3__3020522-11-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用再生尼龍，掌面使用再生超細纖維、天然乳膠襯墊及棉質內襯，標誌採用軟木。"
+      },
+      {
+        "key": "Fitness|3020522|NAVY/07",
+        "colour": "navy/07",
+        "sizes": "XS-4XL",
+        "price": 1250.0,
+        "images": [
+          "/assets/products/fitness/3020522-eco-glove-pro/navy-07/fitness__3020522__navy-07__90e7bbc2e3c2a8a4__3020522-07-1.jpg",
+          "/assets/products/fitness/3020522-eco-glove-pro/navy-07/fitness__3020522__navy-07__4d75608751ad3a24__3020522-07-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用再生尼龍，掌面使用再生超細纖維、天然乳膠襯墊及棉質內襯，標誌採用軟木。"
+      },
+      {
+        "key": "Fitness|3020522|OLIVE/20-1",
+        "colour": "olive/20-1",
+        "sizes": "XS-4XL",
+        "price": 1250.0,
+        "images": [
+          "/assets/products/fitness/3020522-eco-glove-pro/olive-20-1/fitness__3020522__olive-20-1__3eb655979efeeebd__3020522-20-1-1.jpg",
+          "/assets/products/fitness/3020522-eco-glove-pro/olive-20-1/fitness__3020522__olive-20-1__a6a9643ef916e53d__3020522-20-1-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用再生尼龍，掌面使用再生超細纖維、天然乳膠襯墊及棉質內襯，標誌採用軟木。"
+      },
+      {
+        "key": "Fitness|3020522|ROSE/29",
+        "colour": "rose/29",
+        "sizes": "XS-4XL",
+        "price": 1250.0,
+        "images": [
+          "/assets/products/fitness/3020522-eco-glove-pro/rose-29/fitness__3020522__rose-29__bf2a0259bb004c13__3020522-29-1.jpg",
+          "/assets/products/fitness/3020522-eco-glove-pro/rose-29/fitness__3020522__rose-29__bda88b447b32f98a__3020522-29-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用再生尼龍，掌面使用再生超細纖維、天然乳膠襯墊及棉質內襯，標誌採用軟木。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "ECO Glove Pro"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3040018",
+    "name": "Retro",
+    "nameZh": "Retro",
+    "slug": "3040018-retro",
+    "category": "Fitness",
+    "line": "ALLROUND LINE",
+    "price": 850.0,
+    "currency": "TWD",
+    "colours": [
+      "beige/brown 0222",
+      "black/brown 1022"
+    ],
+    "sizes": [
+      "XS-4XL",
+      "XS-4XL"
+    ],
+    "materials": "microfibre",
+    "description": "掌面採用帶通氣孔的超細纖維，搭配鉤織手背。",
+    "images": [
+      "/assets/products/fitness/3040018-retro/beige-brown-0222/fitness__3040018__beige-brown-0222__2587e7ec888852f7__3040018-0222-1.jpg",
+      "/assets/products/fitness/3040018-retro/beige-brown-0222/fitness__3040018__beige-brown-0222__73dfe1c926c6bb32__3040018-0222-2.jpg",
+      "/assets/products/fitness/3040018-retro/black-brown-1022/fitness__3040018__black-brown-1022__7effa2cb245ad899__3040018-1022-1.jpg",
+      "/assets/products/fitness/3040018-retro/black-brown-1022/fitness__3040018__black-brown-1022__134d3196f3cffc44__3040018-1022-2.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|3040018|BEIGE/BROWN 0222",
+        "colour": "beige/brown 0222",
+        "sizes": "XS-4XL",
+        "price": 850.0,
+        "images": [
+          "/assets/products/fitness/3040018-retro/beige-brown-0222/fitness__3040018__beige-brown-0222__2587e7ec888852f7__3040018-0222-1.jpg",
+          "/assets/products/fitness/3040018-retro/beige-brown-0222/fitness__3040018__beige-brown-0222__73dfe1c926c6bb32__3040018-0222-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用帶通氣孔的超細纖維，搭配鉤織手背。"
+      },
+      {
+        "key": "Fitness|3040018|BLACK/BROWN 1022",
+        "colour": "black/brown 1022",
+        "sizes": "XS-4XL",
+        "price": 850.0,
+        "images": [
+          "/assets/products/fitness/3040018-retro/black-brown-1022/fitness__3040018__black-brown-1022__7effa2cb245ad899__3040018-1022-1.jpg",
+          "/assets/products/fitness/3040018-retro/black-brown-1022/fitness__3040018__black-brown-1022__134d3196f3cffc44__3040018-1022-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用帶通氣孔的超細纖維，搭配鉤織手背。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Retro"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "30410",
+    "name": "Athletic",
+    "nameZh": "Athletic",
+    "slug": "30410-athletic",
+    "category": "Fitness",
+    "line": "ALLROUND LINE",
+    "price": 550.0,
+    "currency": "TWD",
+    "colours": [
+      "black uni/101",
+      "black/white/1001"
+    ],
+    "sizes": [
+      "XS-4XL",
+      "XS-4XL"
+    ],
+    "materials": "cotton; Microfibre",
+    "description": "手背採用鉤織棉，掌面採用超細纖維。",
+    "images": [
+      "/assets/products/fitness/30410-athletic/black-uni-101/fitness__30410__black-uni-101__5e1d85e7e7700a8d__30410-101-1.jpg",
+      "/assets/products/fitness/30410-athletic/black-uni-101/fitness__30410__black-uni-101__f14d6e96108f4275__30410-101-2.jpg",
+      "/assets/products/fitness/30410-athletic/black-white-1001/fitness__30410__black-white-1001__5dea917d1af210f4__30410-1001-1.jpg",
+      "/assets/products/fitness/30410-athletic/black-white-1001/fitness__30410__black-white-1001__5a4acd31b1d12225__30410-1001-2.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|30410|BLACK UNI/101",
+        "colour": "black uni/101",
+        "sizes": "XS-4XL",
+        "price": 550.0,
+        "images": [
+          "/assets/products/fitness/30410-athletic/black-uni-101/fitness__30410__black-uni-101__5e1d85e7e7700a8d__30410-101-1.jpg",
+          "/assets/products/fitness/30410-athletic/black-uni-101/fitness__30410__black-uni-101__f14d6e96108f4275__30410-101-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用鉤織棉，掌面採用超細纖維。"
+      },
+      {
+        "key": "Fitness|30410|BLACK/WHITE/1001",
+        "colour": "black/white/1001",
+        "sizes": "XS-4XL",
+        "price": 550.0,
+        "images": [
+          "/assets/products/fitness/30410-athletic/black-white-1001/fitness__30410__black-white-1001__5dea917d1af210f4__30410-1001-1.jpg",
+          "/assets/products/fitness/30410-athletic/black-white-1001/fitness__30410__black-white-1001__5a4acd31b1d12225__30410-1001-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用鉤織棉，掌面採用超細纖維。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Athletic"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40111",
+    "name": "Air Wrap 2.0",
+    "nameZh": "Air Wrap 2.0",
+    "slug": "40111-air-wrap-2-0",
+    "category": "Fitness",
+    "line": "WORKOUT LINE",
+    "price": 1250.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "XS-4XL"
+    ],
+    "materials": "3D fabric; silicone",
+    "description": "掌面採用具通氣結構的 3D 織物及矽膠印花。",
+    "images": [
+      "/assets/products/fitness/40111-air-wrap-2-0/black-10/fitness__40111__black-10__f944e5af55b68e03__40111-10-1.jpg",
+      "/assets/products/fitness/40111-air-wrap-2-0/black-10/fitness__40111__black-10__88d2b247028ebb5e__40111-10-2.jpg",
+      "/assets/products/fitness/40111-air-wrap-2-0/black-10/fitness__40111__black-10__24505c9a68fdba90__40111-10-3.jpg",
+      "/assets/products/fitness/40111-air-wrap-2-0/black-10/fitness__40111__black-10__fbe16ddd052eb629__40111-10-4.jpg",
+      "/assets/products/fitness/40111-air-wrap-2-0/black-10/fitness__40111__black-10__da8dbfa291bbd110__40111-10-5.jpg",
+      "/assets/products/fitness/40111-air-wrap-2-0/black-10/fitness__40111__black-10__ce604f3cac66576b__40111-10-6.jpg",
+      "/assets/products/fitness/40111-air-wrap-2-0/black-10/fitness__40111__black-10__54d2e088f1c0f0d2__40111-10-7.jpg",
+      "/assets/products/fitness/40111-air-wrap-2-0/black-10/fitness__40111__black-10__d73a4f01832c2cf0__40111-10-8.jpg",
+      "/assets/products/fitness/40111-air-wrap-2-0/black-10/fitness__40111__black-10__63b5c620ce8a3b24__40111-10-9.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40111|BLACK/10",
+        "colour": "black/10",
+        "sizes": "XS-4XL",
+        "price": 1250.0,
+        "images": [
+          "/assets/products/fitness/40111-air-wrap-2-0/black-10/fitness__40111__black-10__f944e5af55b68e03__40111-10-1.jpg",
+          "/assets/products/fitness/40111-air-wrap-2-0/black-10/fitness__40111__black-10__88d2b247028ebb5e__40111-10-2.jpg",
+          "/assets/products/fitness/40111-air-wrap-2-0/black-10/fitness__40111__black-10__24505c9a68fdba90__40111-10-3.jpg",
+          "/assets/products/fitness/40111-air-wrap-2-0/black-10/fitness__40111__black-10__fbe16ddd052eb629__40111-10-4.jpg",
+          "/assets/products/fitness/40111-air-wrap-2-0/black-10/fitness__40111__black-10__da8dbfa291bbd110__40111-10-5.jpg",
+          "/assets/products/fitness/40111-air-wrap-2-0/black-10/fitness__40111__black-10__ce604f3cac66576b__40111-10-6.jpg",
+          "/assets/products/fitness/40111-air-wrap-2-0/black-10/fitness__40111__black-10__54d2e088f1c0f0d2__40111-10-7.jpg",
+          "/assets/products/fitness/40111-air-wrap-2-0/black-10/fitness__40111__black-10__d73a4f01832c2cf0__40111-10-8.jpg",
+          "/assets/products/fitness/40111-air-wrap-2-0/black-10/fitness__40111__black-10__63b5c620ce8a3b24__40111-10-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用具通氣結構的 3D 織物及矽膠印花。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Air Wrap 2.0"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40125",
+    "name": "Wristguard V",
+    "nameZh": "Wristguard V",
+    "slug": "40125-wristguard-v",
+    "category": "Fitness",
+    "line": "WORKOUT LINE",
+    "price": 1200.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "XS-4XL"
+    ],
+    "materials": "Microfibre",
+    "description": "掌面採用超細纖維，附有雙魔鬼氈護腕。",
+    "images": [
+      "/assets/products/fitness/40125-wristguard-v/black-10/fitness__40125__black-10__d4ed7e3b115521cb__40125-10-1.jpg",
+      "/assets/products/fitness/40125-wristguard-v/black-10/fitness__40125__black-10__4be635db169e8392__40125-10-2.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40125|BLACK/10",
+        "colour": "black/10",
+        "sizes": "XS-4XL",
+        "price": 1200.0,
+        "images": [
+          "/assets/products/fitness/40125-wristguard-v/black-10/fitness__40125__black-10__d4ed7e3b115521cb__40125-10-1.jpg",
+          "/assets/products/fitness/40125-wristguard-v/black-10/fitness__40125__black-10__4be635db169e8392__40125-10-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用超細纖維，附有雙魔鬼氈護腕。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Wristguard V"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40135",
+    "name": "Wristguard Protect",
+    "nameZh": "Wristguard Protect",
+    "slug": "40135-wristguard-protect",
+    "category": "Fitness",
+    "line": "WORKOUT LINE",
+    "price": 850.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "XS-4XL"
+    ],
+    "materials": "Microfibre",
+    "description": "掌面採用超細纖維，附有護腕與 Quick-Pull 脫卸輔助設計。",
+    "images": [
+      "/assets/products/fitness/40135-wristguard-protect/black-10/fitness__40135__black-10__51b4e6cf3b6bcee9__40135-10-1.jpg",
+      "/assets/products/fitness/40135-wristguard-protect/black-10/fitness__40135__black-10__b62697d8b78dab24__40135-10-2.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40135|BLACK/10",
+        "colour": "black/10",
+        "sizes": "XS-4XL",
+        "price": 850.0,
+        "images": [
+          "/assets/products/fitness/40135-wristguard-protect/black-10/fitness__40135__black-10__51b4e6cf3b6bcee9__40135-10-1.jpg",
+          "/assets/products/fitness/40135-wristguard-protect/black-10/fitness__40135__black-10__b62697d8b78dab24__40135-10-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用超細纖維，附有護腕與 Quick-Pull 脫卸輔助設計。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Wristguard Protect"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40148",
+    "name": "Iron III",
+    "nameZh": "Iron III",
+    "slug": "40148-iron-iii",
+    "category": "Fitness",
+    "line": "WORKOUT LINE",
+    "price": 1450.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "XS-4XL"
+    ],
+    "materials": "Microfibre; silicone",
+    "description": "掌面採用超細纖維及矽膠印花，設有整合式拉帶。",
+    "images": [
+      "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__2e46c13787f494d4__40148-10-1.jpg",
+      "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__3fcfa09d940f92f6__40148-10-10.jpg",
+      "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__20c445524388f67d__40148-10-11.jpg",
+      "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__238010c46ce772bc__40148-10-12.jpg",
+      "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__a8c551dc3ac32ad7__40148-10-13.jpg",
+      "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__307dfdefe6521002__40148-10-14.jpg",
+      "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__45e2c72a773c7f49__40148-10-2.jpg",
+      "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__28d7008bb0185c3a__40148-10-3.jpg",
+      "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__0712b8bf64202a6c__40148-10-4.jpg",
+      "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__08f7ff4a02e89410__40148-10-5.jpg",
+      "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__ed6ab0ce234f3652__40148-10-6.jpg",
+      "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__ad4c84bc32ea254e__40148-10-7.jpg",
+      "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__1d155fd8353ad875__40148-10-8.jpg",
+      "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__80d5f3b97019241b__40148-10-9.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40148|BLACK/10",
+        "colour": "black/10",
+        "sizes": "XS-4XL",
+        "price": 1450.0,
+        "images": [
+          "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__2e46c13787f494d4__40148-10-1.jpg",
+          "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__3fcfa09d940f92f6__40148-10-10.jpg",
+          "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__20c445524388f67d__40148-10-11.jpg",
+          "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__238010c46ce772bc__40148-10-12.jpg",
+          "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__a8c551dc3ac32ad7__40148-10-13.jpg",
+          "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__307dfdefe6521002__40148-10-14.jpg",
+          "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__45e2c72a773c7f49__40148-10-2.jpg",
+          "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__28d7008bb0185c3a__40148-10-3.jpg",
+          "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__0712b8bf64202a6c__40148-10-4.jpg",
+          "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__08f7ff4a02e89410__40148-10-5.jpg",
+          "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__ed6ab0ce234f3652__40148-10-6.jpg",
+          "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__ad4c84bc32ea254e__40148-10-7.jpg",
+          "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__1d155fd8353ad875__40148-10-8.jpg",
+          "/assets/products/fitness/40148-iron-iii/black-10/fitness__40148__black-10__80d5f3b97019241b__40148-10-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用超細纖維及矽膠印花，設有整合式拉帶。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Iron III"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40165",
+    "name": "XTR Gel",
+    "nameZh": "XTR Gel",
+    "slug": "40165-xtr-gel",
+    "category": "Fitness",
+    "line": "WORKOUT LINE",
+    "price": 1100.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "XS-4XL"
+    ],
+    "materials": "Microfibre; Gel",
+    "description": "掌面採用超細纖維與凝膠襯墊。",
+    "images": [
+      "/assets/products/fitness/40165-xtr-gel/black-10/fitness__40165__black-10__ddfc64a76ec77e3f__40165-10-1.jpg",
+      "/assets/products/fitness/40165-xtr-gel/black-10/fitness__40165__black-10__f09231e6764b6bad__40165-10-2.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40165|BLACK/10",
+        "colour": "black/10",
+        "sizes": "XS-4XL",
+        "price": 1100.0,
+        "images": [
+          "/assets/products/fitness/40165-xtr-gel/black-10/fitness__40165__black-10__ddfc64a76ec77e3f__40165-10-1.jpg",
+          "/assets/products/fitness/40165-xtr-gel/black-10/fitness__40165__black-10__f09231e6764b6bad__40165-10-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用超細纖維與凝膠襯墊。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "XTR Gel"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40175",
+    "name": "Grippad PRO",
+    "nameZh": "Grippad PRO",
+    "slug": "40175-grippad-pro",
+    "category": "Fitness",
+    "line": "WORKOUT LINE",
+    "price": 850.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "S/M, L/XL"
+    ],
+    "materials": "Airprene",
+    "description": "手背採用 Airprene，設有加大的握持面。",
+    "images": [
+      "/assets/products/fitness/40175-grippad-pro/black-10/fitness__40175__black-10__f14f2f7cd21f3474__40175-10-1.jpg",
+      "/assets/products/fitness/40175-grippad-pro/black-10/fitness__40175__black-10__2d02eb68db11c221__40175-10-2.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40175|BLACK/10",
+        "colour": "black/10",
+        "sizes": "S/M, L/XL",
+        "price": 850.0,
+        "images": [
+          "/assets/products/fitness/40175-grippad-pro/black-10/fitness__40175__black-10__f14f2f7cd21f3474__40175-10-1.jpg",
+          "/assets/products/fitness/40175-grippad-pro/black-10/fitness__40175__black-10__2d02eb68db11c221__40175-10-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用 Airprene，設有加大的握持面。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Grippad PRO"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40186",
+    "name": "Motivation Grippad",
+    "nameZh": "Motivation Grippad",
+    "slug": "40186-motivation-grippad",
+    "category": "Fitness",
+    "line": "WORKOUT LINE",
+    "price": 650.0,
+    "currency": "TWD",
+    "colours": [
+      "black/gold 1020",
+      "black/pink/1023",
+      "black/red 1004",
+      "camo/grey/4919",
+      "camo/red/4904",
+      "camo/sand/4952"
+    ],
+    "sizes": [
+      "S/M, L/XL",
+      "S/M, L/XL",
+      "S/M, L/XL",
+      "S/M, L/XL",
+      "S/M, L/XL",
+      "S/M, L/XL"
+    ],
+    "materials": "Airprene",
+    "description": "採用 Airprene，設有彈性指環。",
+    "images": [
+      "/assets/products/fitness/40186-motivation-grippad/black-gold-1020/fitness__40186__black-gold-1020__09df5bbd3195d7f3__40186-1020-1.jpg",
+      "/assets/products/fitness/40186-motivation-grippad/black-gold-1020/fitness__40186__black-gold-1020__6149383da68c7ef5__40186-1020-2.jpg",
+      "/assets/products/fitness/40186-motivation-grippad/black-pink-1023/fitness__40186__black-pink-1023__4e9c125fa0034627__40186-1023-1.jpg",
+      "/assets/products/fitness/40186-motivation-grippad/black-pink-1023/fitness__40186__black-pink-1023__f18d8473e187c0b0__40186-1023-2.jpg",
+      "/assets/products/fitness/40186-motivation-grippad/black-red-1004/fitness__40186__black-red-1004__a9b98d7e52c55457__40186-1004-1.jpg",
+      "/assets/products/fitness/40186-motivation-grippad/black-red-1004/fitness__40186__black-red-1004__109af650d8691ae6__40186-1004-2.jpg",
+      "/assets/products/fitness/40186-motivation-grippad/camo-grey-4919/fitness__40186__camo-grey-4919__914bd3523b2b6c7b__40186-4919-1.jpg",
+      "/assets/products/fitness/40186-motivation-grippad/camo-grey-4919/fitness__40186__camo-grey-4919__699a9dd492a893d2__40186-4919-2.jpg",
+      "/assets/products/fitness/40186-motivation-grippad/camo-red-4904/fitness__40186__camo-red-4904__63fe5eaf4c63a914__40186-4904-1.jpg",
+      "/assets/products/fitness/40186-motivation-grippad/camo-red-4904/fitness__40186__camo-red-4904__c4a2b7d00b69b69b__40186-4904-2.jpg",
+      "/assets/products/fitness/40186-motivation-grippad/camo-sand-4952/fitness__40186__camo-sand-4952__af8a4be9d2b390c3__40186-4952-1.jpg",
+      "/assets/products/fitness/40186-motivation-grippad/camo-sand-4952/fitness__40186__camo-sand-4952__3d71d7e836dcf482__40186-4952-2.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40186|BLACK/GOLD 1020",
+        "colour": "black/gold 1020",
+        "sizes": "S/M, L/XL",
+        "price": 650.0,
+        "images": [
+          "/assets/products/fitness/40186-motivation-grippad/black-gold-1020/fitness__40186__black-gold-1020__09df5bbd3195d7f3__40186-1020-1.jpg",
+          "/assets/products/fitness/40186-motivation-grippad/black-gold-1020/fitness__40186__black-gold-1020__6149383da68c7ef5__40186-1020-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用 Airprene，設有彈性指環。"
+      },
+      {
+        "key": "Fitness|40186|BLACK/PINK/1023",
+        "colour": "black/pink/1023",
+        "sizes": "S/M, L/XL",
+        "price": 650.0,
+        "images": [
+          "/assets/products/fitness/40186-motivation-grippad/black-pink-1023/fitness__40186__black-pink-1023__4e9c125fa0034627__40186-1023-1.jpg",
+          "/assets/products/fitness/40186-motivation-grippad/black-pink-1023/fitness__40186__black-pink-1023__f18d8473e187c0b0__40186-1023-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用 Airprene，設有彈性指環。"
+      },
+      {
+        "key": "Fitness|40186|BLACK/RED 1004",
+        "colour": "black/red 1004",
+        "sizes": "S/M, L/XL",
+        "price": 650.0,
+        "images": [
+          "/assets/products/fitness/40186-motivation-grippad/black-red-1004/fitness__40186__black-red-1004__a9b98d7e52c55457__40186-1004-1.jpg",
+          "/assets/products/fitness/40186-motivation-grippad/black-red-1004/fitness__40186__black-red-1004__109af650d8691ae6__40186-1004-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用 Airprene，設有彈性指環。"
+      },
+      {
+        "key": "Fitness|40186|CAMO/GREY/4919",
+        "colour": "camo/grey/4919",
+        "sizes": "S/M, L/XL",
+        "price": 650.0,
+        "images": [
+          "/assets/products/fitness/40186-motivation-grippad/camo-grey-4919/fitness__40186__camo-grey-4919__914bd3523b2b6c7b__40186-4919-1.jpg",
+          "/assets/products/fitness/40186-motivation-grippad/camo-grey-4919/fitness__40186__camo-grey-4919__699a9dd492a893d2__40186-4919-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用 Airprene，設有彈性指環。"
+      },
+      {
+        "key": "Fitness|40186|CAMO/RED/4904",
+        "colour": "camo/red/4904",
+        "sizes": "S/M, L/XL",
+        "price": 650.0,
+        "images": [
+          "/assets/products/fitness/40186-motivation-grippad/camo-red-4904/fitness__40186__camo-red-4904__63fe5eaf4c63a914__40186-4904-1.jpg",
+          "/assets/products/fitness/40186-motivation-grippad/camo-red-4904/fitness__40186__camo-red-4904__c4a2b7d00b69b69b__40186-4904-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用 Airprene，設有彈性指環。"
+      },
+      {
+        "key": "Fitness|40186|CAMO/SAND/4952",
+        "colour": "camo/sand/4952",
+        "sizes": "S/M, L/XL",
+        "price": 650.0,
+        "images": [
+          "/assets/products/fitness/40186-motivation-grippad/camo-sand-4952/fitness__40186__camo-sand-4952__af8a4be9d2b390c3__40186-4952-1.jpg",
+          "/assets/products/fitness/40186-motivation-grippad/camo-sand-4952/fitness__40186__camo-sand-4952__3d71d7e836dcf482__40186-4952-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用 Airprene，設有彈性指環。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Motivation Grippad"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40400",
+    "name": "Power",
+    "nameZh": "Power",
+    "slug": "40400-power",
+    "category": "Fitness",
+    "line": "ALLROUND LINE",
+    "price": 650.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "XS-4XL"
+    ],
+    "materials": "Microfibre",
+    "description": "掌面採用超細纖維，設有 Quick-Pull 脫卸輔助設計。",
+    "images": [
+      "/assets/products/fitness/40400-power/black-10/fitness__40400__black-10__00eb7d315dcbfab8__40400-10-1.jpg",
+      "/assets/products/fitness/40400-power/black-10/fitness__40400__black-10__29d26d19093a6dfb__40400-10-2.jpg",
+      "/assets/products/fitness/40400-power/black-10/fitness__40400__black-10__2ab3a3f36604efa5__40400-10-3.jpg",
+      "/assets/products/fitness/40400-power/black-10/fitness__40400__black-10__0bfba6444a6c8ef5__40400-10-4.jpg",
+      "/assets/products/fitness/40400-power/black-10/fitness__40400__black-10__885cc9c6217ed0fa__40400-10-5.jpg",
+      "/assets/products/fitness/40400-power/black-10/fitness__40400__black-10__fd54b77b37886fb1__40400-10-6.jpg",
+      "/assets/products/fitness/40400-power/black-10/fitness__40400__black-10__d006ab52c3f37ba2__40400-10-7.jpg",
+      "/assets/products/fitness/40400-power/black-10/fitness__40400__black-10__494d57923d45e976__40400-10-8.jpg",
+      "/assets/products/fitness/40400-power/black-10/fitness__40400__black-10__3ba52fcd98b83186__40400-10-9.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40400|BLACK/10",
+        "colour": "black/10",
+        "sizes": "XS-4XL",
+        "price": 650.0,
+        "images": [
+          "/assets/products/fitness/40400-power/black-10/fitness__40400__black-10__00eb7d315dcbfab8__40400-10-1.jpg",
+          "/assets/products/fitness/40400-power/black-10/fitness__40400__black-10__29d26d19093a6dfb__40400-10-2.jpg",
+          "/assets/products/fitness/40400-power/black-10/fitness__40400__black-10__2ab3a3f36604efa5__40400-10-3.jpg",
+          "/assets/products/fitness/40400-power/black-10/fitness__40400__black-10__0bfba6444a6c8ef5__40400-10-4.jpg",
+          "/assets/products/fitness/40400-power/black-10/fitness__40400__black-10__885cc9c6217ed0fa__40400-10-5.jpg",
+          "/assets/products/fitness/40400-power/black-10/fitness__40400__black-10__fd54b77b37886fb1__40400-10-6.jpg",
+          "/assets/products/fitness/40400-power/black-10/fitness__40400__black-10__d006ab52c3f37ba2__40400-10-7.jpg",
+          "/assets/products/fitness/40400-power/black-10/fitness__40400__black-10__494d57923d45e976__40400-10-8.jpg",
+          "/assets/products/fitness/40400-power/black-10/fitness__40400__black-10__3ba52fcd98b83186__40400-10-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用超細纖維，設有 Quick-Pull 脫卸輔助設計。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Power"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40415",
+    "name": "Fit",
+    "nameZh": "Fit",
+    "slug": "40415-fit",
+    "category": "Fitness",
+    "line": "ALLROUND LINE",
+    "price": 850.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10",
+      "pink/23",
+      "white/01"
+    ],
+    "sizes": [
+      "XS-4XL",
+      "XS-4XL",
+      "XS-4XL"
+    ],
+    "materials": "Powernet; Microfibre; silicone",
+    "description": "手背採用 Powernet，掌面使用超細纖維與矽膠印花。",
+    "images": [
+      "/assets/products/fitness/40415-fit/black-10/fitness__40415__black-10__45d67f7b653cc4bd__40415-10-1.jpg",
+      "/assets/products/fitness/40415-fit/black-10/fitness__40415__black-10__7e97e3676092fa14__40415-10-2.jpg",
+      "/assets/products/fitness/40415-fit/pink-23/fitness__40415__pink-23__e8832febd4e021a1__40415-23-1.jpg",
+      "/assets/products/fitness/40415-fit/pink-23/fitness__40415__pink-23__ccdf2e644053fec3__40415-23-2.jpg",
+      "/assets/products/fitness/40415-fit/white-01/fitness__40415__white-01__f1cb70e8be6a083d__40415-01-1.jpg",
+      "/assets/products/fitness/40415-fit/white-01/fitness__40415__white-01__9a32fcf7911691d0__40415-01-2.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40415|BLACK/10",
+        "colour": "black/10",
+        "sizes": "XS-4XL",
+        "price": 850.0,
+        "images": [
+          "/assets/products/fitness/40415-fit/black-10/fitness__40415__black-10__45d67f7b653cc4bd__40415-10-1.jpg",
+          "/assets/products/fitness/40415-fit/black-10/fitness__40415__black-10__7e97e3676092fa14__40415-10-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用 Powernet，掌面使用超細纖維與矽膠印花。"
+      },
+      {
+        "key": "Fitness|40415|PINK/23",
+        "colour": "pink/23",
+        "sizes": "XS-4XL",
+        "price": 850.0,
+        "images": [
+          "/assets/products/fitness/40415-fit/pink-23/fitness__40415__pink-23__e8832febd4e021a1__40415-23-1.jpg",
+          "/assets/products/fitness/40415-fit/pink-23/fitness__40415__pink-23__ccdf2e644053fec3__40415-23-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用 Powernet，掌面使用超細纖維與矽膠印花。"
+      },
+      {
+        "key": "Fitness|40415|WHITE/01",
+        "colour": "white/01",
+        "sizes": "XS-4XL",
+        "price": 850.0,
+        "images": [
+          "/assets/products/fitness/40415-fit/white-01/fitness__40415__white-01__f1cb70e8be6a083d__40415-01-1.jpg",
+          "/assets/products/fitness/40415-fit/white-01/fitness__40415__white-01__9a32fcf7911691d0__40415-01-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用 Powernet，掌面使用超細纖維與矽膠印花。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Fit"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40425",
+    "name": "Air Performer",
+    "nameZh": "Air Performer",
+    "slug": "40425-air-performer",
+    "category": "Fitness",
+    "line": "ALLROUND LINE",
+    "price": 800.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10",
+      "darkgrey/19",
+      "pink/23"
+    ],
+    "sizes": [
+      "XS-4XL",
+      "XS-4XL",
+      "XS-4XL"
+    ],
+    "materials": "Italian Micronet; 3D fabric; silicone",
+    "description": "手背採用義大利 Micronet，掌面使用 3D 織物與矽膠印花。",
+    "images": [
+      "/assets/products/fitness/40425-air-performer/black-10/fitness__40425__black-10__8bd0577c788e80c6__40425-10-1.jpg",
+      "/assets/products/fitness/40425-air-performer/black-10/fitness__40425__black-10__3d3dc279cbc22d2a__40425-10-2.jpg",
+      "/assets/products/fitness/40425-air-performer/darkgrey-19/fitness__40425__darkgrey-19__47b8a9a0aecc5c2f__40425-19-2.jpg",
+      "/assets/products/fitness/40425-air-performer/darkgrey-19/fitness__40425__darkgrey-19__fd707c0881e3a416__40425-19-1.jpg",
+      "/assets/products/fitness/40425-air-performer/darkgrey-19/fitness__40425__darkgrey-19__44d9846dfa4f0f37__40425-19-2.jpg",
+      "/assets/products/fitness/40425-air-performer/pink-23/fitness__40425__pink-23__88c17fccab97cf66__40425-23-1.jpg",
+      "/assets/products/fitness/40425-air-performer/pink-23/fitness__40425__pink-23__a545886950f95dd1__40425-23-2.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40425|BLACK/10",
+        "colour": "black/10",
+        "sizes": "XS-4XL",
+        "price": 800.0,
+        "images": [
+          "/assets/products/fitness/40425-air-performer/black-10/fitness__40425__black-10__8bd0577c788e80c6__40425-10-1.jpg",
+          "/assets/products/fitness/40425-air-performer/black-10/fitness__40425__black-10__3d3dc279cbc22d2a__40425-10-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用義大利 Micronet，掌面使用 3D 織物與矽膠印花。"
+      },
+      {
+        "key": "Fitness|40425|DARKGREY/19",
+        "colour": "darkgrey/19",
+        "sizes": "XS-4XL",
+        "price": 800.0,
+        "images": [
+          "/assets/products/fitness/40425-air-performer/darkgrey-19/fitness__40425__darkgrey-19__47b8a9a0aecc5c2f__40425-19-2.jpg",
+          "/assets/products/fitness/40425-air-performer/darkgrey-19/fitness__40425__darkgrey-19__fd707c0881e3a416__40425-19-1.jpg",
+          "/assets/products/fitness/40425-air-performer/darkgrey-19/fitness__40425__darkgrey-19__44d9846dfa4f0f37__40425-19-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用義大利 Micronet，掌面使用 3D 織物與矽膠印花。"
+      },
+      {
+        "key": "Fitness|40425|PINK/23",
+        "colour": "pink/23",
+        "sizes": "XS-4XL",
+        "price": 800.0,
+        "images": [
+          "/assets/products/fitness/40425-air-performer/pink-23/fitness__40425__pink-23__88c17fccab97cf66__40425-23-1.jpg",
+          "/assets/products/fitness/40425-air-performer/pink-23/fitness__40425__pink-23__a545886950f95dd1__40425-23-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用義大利 Micronet，掌面使用 3D 織物與矽膠印花。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Air Performer"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40426",
+    "name": "Wrist Wrap Black Line",
+    "nameZh": "Wrist Wrap Black Line",
+    "slug": "40426-wrist-wrap-black-line",
+    "category": "Fitness",
+    "line": "ACCESSOIRES",
+    "price": 600.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "Onesize"
+    ],
+    "materials": "Soft-Elastic",
+    "description": "採用 Soft-Elastic 彈性材料，長 35 公分、寬 8 公分。",
+    "images": [
+      "/assets/products/fitness/40426-wrist-wrap-black-line/black-10/fitness__40426__black-10__ecb7d5f915728c77__40426-10-1.jpg",
+      "/assets/products/fitness/40426-wrist-wrap-black-line/black-10/fitness__40426__black-10__0fab7a60394b59b6__40426-10-3.jpg",
+      "/assets/products/fitness/40426-wrist-wrap-black-line/black-10/fitness__40426__black-10__b9c35b8a526fe9fb__40426-10-4.jpg",
+      "/assets/products/fitness/40426-wrist-wrap-black-line/black-10/fitness__40426__black-10__6bb6b41d941f6c3c__40426-10-5.jpg",
+      "/assets/products/fitness/40426-wrist-wrap-black-line/black-10/fitness__40426__black-10__0981344db3fed7bc__40426-10-6.jpg",
+      "/assets/products/fitness/40426-wrist-wrap-black-line/black-10/fitness__40426__black-10__7428cab24637e8e6__40426-10-7.jpg",
+      "/assets/products/fitness/40426-wrist-wrap-black-line/black-10/fitness__40426__black-10__2b48c1ab994fad80__40426-10-8.jpg",
+      "/assets/products/fitness/40426-wrist-wrap-black-line/black-10/fitness__40426__black-10__62702ef636404b4f__40426-10-9.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40426|BLACK/10",
+        "colour": "black/10",
+        "sizes": "Onesize",
+        "price": 600.0,
+        "images": [
+          "/assets/products/fitness/40426-wrist-wrap-black-line/black-10/fitness__40426__black-10__ecb7d5f915728c77__40426-10-1.jpg",
+          "/assets/products/fitness/40426-wrist-wrap-black-line/black-10/fitness__40426__black-10__0fab7a60394b59b6__40426-10-3.jpg",
+          "/assets/products/fitness/40426-wrist-wrap-black-line/black-10/fitness__40426__black-10__b9c35b8a526fe9fb__40426-10-4.jpg",
+          "/assets/products/fitness/40426-wrist-wrap-black-line/black-10/fitness__40426__black-10__6bb6b41d941f6c3c__40426-10-5.jpg",
+          "/assets/products/fitness/40426-wrist-wrap-black-line/black-10/fitness__40426__black-10__0981344db3fed7bc__40426-10-6.jpg",
+          "/assets/products/fitness/40426-wrist-wrap-black-line/black-10/fitness__40426__black-10__7428cab24637e8e6__40426-10-7.jpg",
+          "/assets/products/fitness/40426-wrist-wrap-black-line/black-10/fitness__40426__black-10__2b48c1ab994fad80__40426-10-8.jpg",
+          "/assets/products/fitness/40426-wrist-wrap-black-line/black-10/fitness__40426__black-10__62702ef636404b4f__40426-10-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用 Soft-Elastic 彈性材料，長 35 公分、寬 8 公分。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Wrist Wrap Black Line"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40436",
+    "name": "Knee Wrap Black Line",
+    "nameZh": "Knee Wrap Black Line",
+    "slug": "40436-knee-wrap-black-line",
+    "category": "Fitness",
+    "line": "ACCESSOIRES",
+    "price": 950.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "Onesize"
+    ],
+    "materials": "Soft-Elastic",
+    "description": "採用 Soft-Elastic 彈性材料，長 180 公分、寬 8 公分。",
+    "images": [
+      "/assets/products/fitness/40436-knee-wrap-black-line/black-10/fitness__40436__black-10__ef15078a9a8f46cd__40436-10-1.jpg",
+      "/assets/products/fitness/40436-knee-wrap-black-line/black-10/fitness__40436__black-10__33e4e49e34821980__40436-10-2.jpg",
+      "/assets/products/fitness/40436-knee-wrap-black-line/black-10/fitness__40436__black-10__4f82223296e327fb__40436-10-3.jpg",
+      "/assets/products/fitness/40436-knee-wrap-black-line/black-10/fitness__40436__black-10__5b381f728998f318__40436-10-4.jpg",
+      "/assets/products/fitness/40436-knee-wrap-black-line/black-10/fitness__40436__black-10__05fa425f8838334c__40436-10-5.jpg",
+      "/assets/products/fitness/40436-knee-wrap-black-line/black-10/fitness__40436__black-10__7d564a5bdd786481__40436-10-6.jpg",
+      "/assets/products/fitness/40436-knee-wrap-black-line/black-10/fitness__40436__black-10__823a82d0c0d6eddc__40436-10-7.jpg",
+      "/assets/products/fitness/40436-knee-wrap-black-line/black-10/fitness__40436__black-10__bc14b87796b44fd6__40436-10-8.jpg",
+      "/assets/products/fitness/40436-knee-wrap-black-line/black-10/fitness__40436__black-10__261d88cd745b3b20__40436-10-9.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40436|BLACK/10",
+        "colour": "black/10",
+        "sizes": "Onesize",
+        "price": 950.0,
+        "images": [
+          "/assets/products/fitness/40436-knee-wrap-black-line/black-10/fitness__40436__black-10__ef15078a9a8f46cd__40436-10-1.jpg",
+          "/assets/products/fitness/40436-knee-wrap-black-line/black-10/fitness__40436__black-10__33e4e49e34821980__40436-10-2.jpg",
+          "/assets/products/fitness/40436-knee-wrap-black-line/black-10/fitness__40436__black-10__4f82223296e327fb__40436-10-3.jpg",
+          "/assets/products/fitness/40436-knee-wrap-black-line/black-10/fitness__40436__black-10__5b381f728998f318__40436-10-4.jpg",
+          "/assets/products/fitness/40436-knee-wrap-black-line/black-10/fitness__40436__black-10__05fa425f8838334c__40436-10-5.jpg",
+          "/assets/products/fitness/40436-knee-wrap-black-line/black-10/fitness__40436__black-10__7d564a5bdd786481__40436-10-6.jpg",
+          "/assets/products/fitness/40436-knee-wrap-black-line/black-10/fitness__40436__black-10__823a82d0c0d6eddc__40436-10-7.jpg",
+          "/assets/products/fitness/40436-knee-wrap-black-line/black-10/fitness__40436__black-10__bc14b87796b44fd6__40436-10-8.jpg",
+          "/assets/products/fitness/40436-knee-wrap-black-line/black-10/fitness__40436__black-10__261d88cd745b3b20__40436-10-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用 Soft-Elastic 彈性材料，長 180 公分、寬 8 公分。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Knee Wrap Black Line"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40476",
+    "name": "Wrist Wrap Pro",
+    "nameZh": "Wrist Wrap Pro",
+    "slug": "40476-wrist-wrap-pro",
+    "category": "Fitness",
+    "line": "ACCESSOIRES",
+    "price": 750.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "Onesize"
+    ],
+    "materials": "Medium-hard elastic",
+    "description": "採用中等硬度彈性材料，長 35 公分、寬 7.5 公分。",
+    "images": [
+      "/assets/products/fitness/40476-wrist-wrap-pro/black-10/fitness__40476__black-10__f028b7b7636c7867__40476-10-1.jpg",
+      "/assets/products/fitness/40476-wrist-wrap-pro/black-10/fitness__40476__black-10__c438e61f6963effe__40476-10-2.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40476|BLACK/10",
+        "colour": "black/10",
+        "sizes": "Onesize",
+        "price": 750.0,
+        "images": [
+          "/assets/products/fitness/40476-wrist-wrap-pro/black-10/fitness__40476__black-10__f028b7b7636c7867__40476-10-1.jpg",
+          "/assets/products/fitness/40476-wrist-wrap-pro/black-10/fitness__40476__black-10__c438e61f6963effe__40476-10-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用中等硬度彈性材料，長 35 公分、寬 7.5 公分。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Wrist Wrap Pro"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40486",
+    "name": "Knee Wrap Pro",
+    "nameZh": "Knee Wrap Pro",
+    "slug": "40486-knee-wrap-pro",
+    "category": "Fitness",
+    "line": "ACCESSOIRES",
+    "price": 1150.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "Onesize"
+    ],
+    "materials": "Medium-hard elastic",
+    "description": "採用中等硬度彈性材料，長 190 公分、寬 7.5 公分。",
+    "images": [
+      "/assets/products/fitness/40486-knee-wrap-pro/black-10/fitness__40486__black-10__733852bf9d2cfcda__40486-10-1.jpg",
+      "/assets/products/fitness/40486-knee-wrap-pro/black-10/fitness__40486__black-10__8bcc06d230102365__40486-10-3.jpg",
+      "/assets/products/fitness/40486-knee-wrap-pro/black-10/fitness__40486__black-10__ca0e8c1b848e51b5__40486-10-4.jpg",
+      "/assets/products/fitness/40486-knee-wrap-pro/black-10/fitness__40486__black-10__6721c533a1637517__40486-10-5.jpg",
+      "/assets/products/fitness/40486-knee-wrap-pro/black-10/fitness__40486__black-10__1725356eb160ef4c__40486-10-6.jpg",
+      "/assets/products/fitness/40486-knee-wrap-pro/black-10/fitness__40486__black-10__0ee75c31c3a862dd__40486-10-7.jpg",
+      "/assets/products/fitness/40486-knee-wrap-pro/black-10/fitness__40486__black-10__1b585ce0224057de__40486-10-8.jpg",
+      "/assets/products/fitness/40486-knee-wrap-pro/black-10/fitness__40486__black-10__d88ae47e8bd81467__40486-10-9.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40486|BLACK/10",
+        "colour": "black/10",
+        "sizes": "Onesize",
+        "price": 1150.0,
+        "images": [
+          "/assets/products/fitness/40486-knee-wrap-pro/black-10/fitness__40486__black-10__733852bf9d2cfcda__40486-10-1.jpg",
+          "/assets/products/fitness/40486-knee-wrap-pro/black-10/fitness__40486__black-10__8bcc06d230102365__40486-10-3.jpg",
+          "/assets/products/fitness/40486-knee-wrap-pro/black-10/fitness__40486__black-10__ca0e8c1b848e51b5__40486-10-4.jpg",
+          "/assets/products/fitness/40486-knee-wrap-pro/black-10/fitness__40486__black-10__6721c533a1637517__40486-10-5.jpg",
+          "/assets/products/fitness/40486-knee-wrap-pro/black-10/fitness__40486__black-10__1725356eb160ef4c__40486-10-6.jpg",
+          "/assets/products/fitness/40486-knee-wrap-pro/black-10/fitness__40486__black-10__0ee75c31c3a862dd__40486-10-7.jpg",
+          "/assets/products/fitness/40486-knee-wrap-pro/black-10/fitness__40486__black-10__1b585ce0224057de__40486-10-8.jpg",
+          "/assets/products/fitness/40486-knee-wrap-pro/black-10/fitness__40486__black-10__d88ae47e8bd81467__40486-10-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用中等硬度彈性材料，長 190 公分、寬 7.5 公分。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Knee Wrap Pro"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40605",
+    "name": "Lifting Strap",
+    "nameZh": "Lifting Strap",
+    "slug": "40605-lifting-strap",
+    "category": "Fitness",
+    "line": "ACCESSOIRES",
+    "price": 450.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10",
+      "camo/red/4904",
+      "camo/sand/4952",
+      "olive/20-1",
+      "pink/23",
+      "red/04"
+    ],
+    "sizes": [
+      "Onesize",
+      "Onesize",
+      "Onesize",
+      "Onesize",
+      "Onesize",
+      "Onesize"
+    ],
+    "materials": "cotton; Neoprene",
+    "description": "採用棉質織帶與氯丁橡膠腕部襯墊，長 55 公分、寬 4 公分。",
+    "images": [
+      "/assets/products/fitness/40605-lifting-strap/black-10/fitness__40605__black-10__7baa1a9c26e95c3d__40605-10-1.jpg",
+      "/assets/products/fitness/40605-lifting-strap/camo-red-4904/fitness__40605__camo-red-4904__eb1c4d2ccc1f49d1__40605-4904-1.jpg",
+      "/assets/products/fitness/40605-lifting-strap/camo-sand-4952/fitness__40605__camo-sand-4952__24af0fd490b4f34a__40605-4952-1.jpg",
+      "/assets/products/fitness/40605-lifting-strap/olive-20-1/fitness__40605__olive-20-1__9891a339fdcbb2e2__40605-20-1-1.jpg",
+      "/assets/products/fitness/40605-lifting-strap/pink-23/fitness__40605__pink-23__5032ab168c4adc17__40605-23-1.jpg",
+      "/assets/products/fitness/40605-lifting-strap/red-04/fitness__40605__red-04__787d9b1f146e7742__40605-04-1.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40605|BLACK/10",
+        "colour": "black/10",
+        "sizes": "Onesize",
+        "price": 450.0,
+        "images": [
+          "/assets/products/fitness/40605-lifting-strap/black-10/fitness__40605__black-10__7baa1a9c26e95c3d__40605-10-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用棉質織帶與氯丁橡膠腕部襯墊，長 55 公分、寬 4 公分。"
+      },
+      {
+        "key": "Fitness|40605|CAMO/RED/4904",
+        "colour": "camo/red/4904",
+        "sizes": "Onesize",
+        "price": 450.0,
+        "images": [
+          "/assets/products/fitness/40605-lifting-strap/camo-red-4904/fitness__40605__camo-red-4904__eb1c4d2ccc1f49d1__40605-4904-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用棉質織帶與氯丁橡膠腕部襯墊，長 55 公分、寬 4 公分。"
+      },
+      {
+        "key": "Fitness|40605|CAMO/SAND/4952",
+        "colour": "camo/sand/4952",
+        "sizes": "Onesize",
+        "price": 450.0,
+        "images": [
+          "/assets/products/fitness/40605-lifting-strap/camo-sand-4952/fitness__40605__camo-sand-4952__24af0fd490b4f34a__40605-4952-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用棉質織帶與氯丁橡膠腕部襯墊，長 55 公分、寬 4 公分。"
+      },
+      {
+        "key": "Fitness|40605|OLIVE/20-1",
+        "colour": "olive/20-1",
+        "sizes": "Onesize",
+        "price": 450.0,
+        "images": [
+          "/assets/products/fitness/40605-lifting-strap/olive-20-1/fitness__40605__olive-20-1__9891a339fdcbb2e2__40605-20-1-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用棉質織帶與氯丁橡膠腕部襯墊，長 55 公分、寬 4 公分。"
+      },
+      {
+        "key": "Fitness|40605|PINK/23",
+        "colour": "pink/23",
+        "sizes": "Onesize",
+        "price": 450.0,
+        "images": [
+          "/assets/products/fitness/40605-lifting-strap/pink-23/fitness__40605__pink-23__5032ab168c4adc17__40605-23-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用棉質織帶與氯丁橡膠腕部襯墊，長 55 公分、寬 4 公分。"
+      },
+      {
+        "key": "Fitness|40605|RED/04",
+        "colour": "red/04",
+        "sizes": "Onesize",
+        "price": 450.0,
+        "images": [
+          "/assets/products/fitness/40605-lifting-strap/red-04/fitness__40605__red-04__787d9b1f146e7742__40605-04-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用棉質織帶與氯丁橡膠腕部襯墊，長 55 公分、寬 4 公分。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Lifting Strap"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40610",
+    "name": "Powerstrap I",
+    "nameZh": "Powerstrap I",
+    "slug": "40610-powerstrap-i",
+    "category": "Fitness",
+    "line": "ACCESSOIRES",
+    "price": 850.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "Onesize"
+    ],
+    "materials": "cotton",
+    "description": "採用棉質織帶，末端設有塑膠滾軸，長 15 公分、寬 4 公分。",
+    "images": [
+      "/assets/products/fitness/40610-powerstrap-i/black-10/fitness__40610__black-10__998da773c900c866__40610-10-1.jpg",
+      "/assets/products/fitness/40610-powerstrap-i/black-10/fitness__40610__black-10__ccb4dfeeddff7186__40610-10-2.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40610|BLACK/10",
+        "colour": "black/10",
+        "sizes": "Onesize",
+        "price": 850.0,
+        "images": [
+          "/assets/products/fitness/40610-powerstrap-i/black-10/fitness__40610__black-10__998da773c900c866__40610-10-1.jpg",
+          "/assets/products/fitness/40610-powerstrap-i/black-10/fitness__40610__black-10__ccb4dfeeddff7186__40610-10-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用棉質織帶，末端設有塑膠滾軸，長 15 公分、寬 4 公分。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Powerstrap I"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40615",
+    "name": "Lifting Strap Pro",
+    "nameZh": "Lifting Strap Pro",
+    "slug": "40615-lifting-strap-pro",
+    "category": "Fitness",
+    "line": "ACCESSOIRES",
+    "price": 550.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "Onesize"
+    ],
+    "materials": "cotton; Neoprene",
+    "description": "採用棉質織帶與加厚氯丁橡膠腕部襯墊，長 55 公分、寬 4 公分。",
+    "images": [
+      "/assets/products/fitness/40615-lifting-strap-pro/black-10/fitness__40615__black-10__dd997d3cd842f075__40615-10-1.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40615|BLACK/10",
+        "colour": "black/10",
+        "sizes": "Onesize",
+        "price": 550.0,
+        "images": [
+          "/assets/products/fitness/40615-lifting-strap-pro/black-10/fitness__40615__black-10__dd997d3cd842f075__40615-10-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用棉質織帶與加厚氯丁橡膠腕部襯墊，長 55 公分、寬 4 公分。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Lifting Strap Pro"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40627",
+    "name": "Premium Powerstrap",
+    "nameZh": "Premium Powerstrap",
+    "slug": "40627-premium-powerstrap",
+    "category": "Fitness",
+    "line": "ACCESSOIRES",
+    "price": 1050.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "Onesize"
+    ],
+    "materials": "cotton; rubber",
+    "description": "採用內嵌橡膠線的棉質拉帶，長 31 公分、寬 4 公分。",
+    "images": [
+      "/assets/products/fitness/40627-premium-powerstrap/black-10/fitness__40627__black-10__4e3ff5e90ff5939e__40627-10-1.jpg",
+      "/assets/products/fitness/40627-premium-powerstrap/black-10/fitness__40627__black-10__997a66bf02f45f51__40627-10-2.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40627|BLACK/10",
+        "colour": "black/10",
+        "sizes": "Onesize",
+        "price": 1050.0,
+        "images": [
+          "/assets/products/fitness/40627-premium-powerstrap/black-10/fitness__40627__black-10__4e3ff5e90ff5939e__40627-10-1.jpg",
+          "/assets/products/fitness/40627-premium-powerstrap/black-10/fitness__40627__black-10__997a66bf02f45f51__40627-10-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用內嵌橡膠線的棉質拉帶，長 31 公分、寬 4 公分。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Premium Powerstrap"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40630",
+    "name": "Strongman Power Lifter",
+    "nameZh": "Strongman Power Lifter",
+    "slug": "40630-strongman-power-lifter",
+    "category": "Fitness",
+    "line": "STRONGMAN LINE",
+    "price": 1250.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "Onesize"
+    ],
+    "materials": "cotton",
+    "description": "拉帶採用棉質織帶，帶長 30 公分。",
+    "images": [
+      "/assets/products/fitness/40630-strongman-power-lifter/black-10/fitness__40630__black-10__9551fc530b06c3cf__40630-10-1.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40630|BLACK/10",
+        "colour": "black/10",
+        "sizes": "Onesize",
+        "price": 1250.0,
+        "images": [
+          "/assets/products/fitness/40630-strongman-power-lifter/black-10/fitness__40630__black-10__9551fc530b06c3cf__40630-10-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "拉帶採用棉質織帶，帶長 30 公分。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Strongman Power Lifter"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40655",
+    "name": "Powergrips",
+    "nameZh": "Powergrips",
+    "slug": "40655-powergrips",
+    "category": "Fitness",
+    "line": "ACCESSOIRES",
+    "price": 1050.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "Onesize"
+    ],
+    "materials": "para-aramid; neoprene",
+    "description": "拉帶採用對位芳綸，腕部襯墊使用厚度 3 毫米的氯丁橡膠。",
+    "images": [
+      "/assets/products/fitness/40655-powergrips/black-10/fitness__40655__black-10__e514b5ddd105f4c5__40655-10-1.jpg",
+      "/assets/products/fitness/40655-powergrips/black-10/fitness__40655__black-10__253448824bb5e17f__40655-10-2.jpg",
+      "/assets/products/fitness/40655-powergrips/black-10/fitness__40655__black-10__bbadc501959dfa18__40655-10-3.jpg",
+      "/assets/products/fitness/40655-powergrips/black-10/fitness__40655__black-10__7da948504a9fbad0__40655-10-4.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40655|BLACK/10",
+        "colour": "black/10",
+        "sizes": "Onesize",
+        "price": 1050.0,
+        "images": [
+          "/assets/products/fitness/40655-powergrips/black-10/fitness__40655__black-10__e514b5ddd105f4c5__40655-10-1.jpg",
+          "/assets/products/fitness/40655-powergrips/black-10/fitness__40655__black-10__253448824bb5e17f__40655-10-2.jpg",
+          "/assets/products/fitness/40655-powergrips/black-10/fitness__40655__black-10__bbadc501959dfa18__40655-10-3.jpg",
+          "/assets/products/fitness/40655-powergrips/black-10/fitness__40655__black-10__7da948504a9fbad0__40655-10-4.jpg"
+        ],
+        "sharedImages": [],
+        "description": "拉帶採用對位芳綸，腕部襯墊使用厚度 3 毫米的氯丁橡膠。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Powergrips"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40700",
+    "name": "Head Harness",
+    "nameZh": "Head Harness",
+    "slug": "40700-head-harness",
+    "category": "Fitness",
+    "line": "ACCESSOIRES",
+    "price": 1050.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "Onesize"
+    ],
+    "materials": "nylon; stainless steel; Neoprene",
+    "description": "採用尼龍織物、不鏽鋼鏈條及氯丁橡膠襯墊。",
+    "images": [
+      "/assets/products/fitness/40700-head-harness/black-10/fitness__40700__black-10__af8e632c4e0e3c82__40700-10-1.jpg",
+      "/assets/products/fitness/40700-head-harness/black-10/fitness__40700__black-10__ea7bab2b4b492198__40700-10-2.jpg",
+      "/assets/products/fitness/40700-head-harness/black-10/fitness__40700__black-10__179b82f75221541a__40700-10-3.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40700|BLACK/10",
+        "colour": "black/10",
+        "sizes": "Onesize",
+        "price": 1050.0,
+        "images": [
+          "/assets/products/fitness/40700-head-harness/black-10/fitness__40700__black-10__af8e632c4e0e3c82__40700-10-1.jpg",
+          "/assets/products/fitness/40700-head-harness/black-10/fitness__40700__black-10__ea7bab2b4b492198__40700-10-2.jpg",
+          "/assets/products/fitness/40700-head-harness/black-10/fitness__40700__black-10__179b82f75221541a__40700-10-3.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用尼龍織物、不鏽鋼鏈條及氯丁橡膠襯墊。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Head Harness"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40710",
+    "name": "Arm Loops",
+    "nameZh": "Arm Loops",
+    "slug": "40710-arm-loops",
+    "category": "Fitness",
+    "line": "ACCESSOIRES",
+    "price": 1700.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "Onesize"
+    ],
+    "materials": "nylon",
+    "description": "採用尼龍織物，附有掛鉤及襯墊。",
+    "images": [
+      "/assets/products/fitness/40710-arm-loops/black-10/fitness__40710__black-10__57490d4ad3853a6b__40710-10-1.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40710|BLACK/10",
+        "colour": "black/10",
+        "sizes": "Onesize",
+        "price": 1700.0,
+        "images": [
+          "/assets/products/fitness/40710-arm-loops/black-10/fitness__40710__black-10__57490d4ad3853a6b__40710-10-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用尼龍織物，附有掛鉤及襯墊。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Arm Loops"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40717",
+    "name": "Multifunctions Powerstrap",
+    "nameZh": "Multifunctions Powerstrap",
+    "slug": "40717-multifunctions-powerstrap",
+    "category": "Fitness",
+    "line": "ACCESSOIRES",
+    "price": 900.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "Onesize"
+    ],
+    "materials": "Neoprene",
+    "description": "襯墊採用厚度 5 毫米的氯丁橡膠，帶長 55 公分、寬 4 公分。",
+    "images": [
+      "/assets/products/fitness/40717-multifunctions-powerstrap/black-10/fitness__40717__black-10__5865f5ac9966ee54__40717-10-1.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40717|BLACK/10",
+        "colour": "black/10",
+        "sizes": "Onesize",
+        "price": 900.0,
+        "images": [
+          "/assets/products/fitness/40717-multifunctions-powerstrap/black-10/fitness__40717__black-10__5865f5ac9966ee54__40717-10-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "襯墊採用厚度 5 毫米的氯丁橡膠，帶長 55 公分、寬 4 公分。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Multifunctions Powerstrap"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40720",
+    "name": "Leg Loops",
+    "nameZh": "Leg Loops",
+    "slug": "40720-leg-loops",
+    "category": "Fitness",
+    "line": "ACCESSOIRES",
+    "price": 750.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "Onesize"
+    ],
+    "materials": "",
+    "description": "設有可調式魔鬼氈及固定用 D 形環。",
+    "images": [
+      "/assets/products/fitness/40720-leg-loops/black-10/fitness__40720__black-10__194bc59559a40298__40720-10-1.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40720|BLACK/10",
+        "colour": "black/10",
+        "sizes": "Onesize",
+        "price": 750.0,
+        "images": [
+          "/assets/products/fitness/40720-leg-loops/black-10/fitness__40720__black-10__194bc59559a40298__40720-10-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "設有可調式魔鬼氈及固定用 D 形環。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Leg Loops"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40745",
+    "name": "Power Pad",
+    "nameZh": "Power Pad",
+    "slug": "40745-power-pad",
+    "category": "Fitness",
+    "line": "ACCESSOIRES",
+    "price": 200.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "Onesize"
+    ],
+    "materials": "",
+    "description": "掌墊厚度為 3 毫米。",
+    "images": [
+      "/assets/products/fitness/40745-power-pad/black-10/fitness__40745__black-10__5b2471596bb1cf89__40745-10-1.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40745|BLACK/10",
+        "colour": "black/10",
+        "sizes": "Onesize",
+        "price": 200.0,
+        "images": [
+          "/assets/products/fitness/40745-power-pad/black-10/fitness__40745__black-10__5b2471596bb1cf89__40745-10-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌墊厚度為 3 毫米。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Power Pad"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40755",
+    "name": "Fitness Bag",
+    "nameZh": "Fitness Bag",
+    "slug": "40755-fitness-bag",
+    "category": "Fitness",
+    "line": "BAGS",
+    "price": 2300.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "Onesize"
+    ],
+    "materials": "",
+    "description": "設有主收納空間、兩側隔層及鞋物隔層，並配有可調整肩帶。",
+    "images": [
+      "/assets/products/fitness/40755-fitness-bag/black-10/fitness__40755__black-10__6b5f59b4e14426a4__40755-10-1.jpg",
+      "/assets/products/fitness/40755-fitness-bag/black-10/fitness__40755__black-10__c96223a6dfe7e7a1__40755-10-2.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40755|BLACK/10",
+        "colour": "black/10",
+        "sizes": "Onesize",
+        "price": 2300.0,
+        "images": [
+          "/assets/products/fitness/40755-fitness-bag/black-10/fitness__40755__black-10__6b5f59b4e14426a4__40755-10-1.jpg",
+          "/assets/products/fitness/40755-fitness-bag/black-10/fitness__40755__black-10__c96223a6dfe7e7a1__40755-10-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "設有主收納空間、兩側隔層及鞋物隔層，並配有可調整肩帶。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Fitness Bag"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40794",
+    "name": "Neck Roll",
+    "nameZh": "Neck Roll",
+    "slug": "40794-neck-roll",
+    "category": "Fitness",
+    "line": "ACCESSOIRES",
+    "price": 750.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "Onesize"
+    ],
+    "materials": "",
+    "description": "頸墊長度為 40 公分。",
+    "images": [
+      "/assets/products/fitness/40794-neck-roll/black-10/fitness__40794__black-10__60500c0d31047516__40794-10-1.jpg",
+      "/assets/products/fitness/40794-neck-roll/black-10/fitness__40794__black-10__44601095ddf9c273__40794-10-3.jpg",
+      "/assets/products/fitness/40794-neck-roll/black-10/fitness__40794__black-10__e56711be39956e71__40794-10-4.jpg",
+      "/assets/products/fitness/40794-neck-roll/black-10/fitness__40794__black-10__df71c899923e15e8__40794-10-5.jpg",
+      "/assets/products/fitness/40794-neck-roll/black-10/fitness__40794__black-10__59d3055542bf583f__40794-10-6.jpg",
+      "/assets/products/fitness/40794-neck-roll/black-10/fitness__40794__black-10__f824c46307ef0169__40794-10-7.jpg",
+      "/assets/products/fitness/40794-neck-roll/black-10/fitness__40794__black-10__e1646a0cc913bfde__40794-10-8.jpg",
+      "/assets/products/fitness/40794-neck-roll/black-10/fitness__40794__black-10__9800fad792b7b4a0__40794-10-9.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40794|BLACK/10",
+        "colour": "black/10",
+        "sizes": "Onesize",
+        "price": 750.0,
+        "images": [
+          "/assets/products/fitness/40794-neck-roll/black-10/fitness__40794__black-10__60500c0d31047516__40794-10-1.jpg",
+          "/assets/products/fitness/40794-neck-roll/black-10/fitness__40794__black-10__44601095ddf9c273__40794-10-3.jpg",
+          "/assets/products/fitness/40794-neck-roll/black-10/fitness__40794__black-10__e56711be39956e71__40794-10-4.jpg",
+          "/assets/products/fitness/40794-neck-roll/black-10/fitness__40794__black-10__df71c899923e15e8__40794-10-5.jpg",
+          "/assets/products/fitness/40794-neck-roll/black-10/fitness__40794__black-10__59d3055542bf583f__40794-10-6.jpg",
+          "/assets/products/fitness/40794-neck-roll/black-10/fitness__40794__black-10__f824c46307ef0169__40794-10-7.jpg",
+          "/assets/products/fitness/40794-neck-roll/black-10/fitness__40794__black-10__e1646a0cc913bfde__40794-10-8.jpg",
+          "/assets/products/fitness/40794-neck-roll/black-10/fitness__40794__black-10__9800fad792b7b4a0__40794-10-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "頸墊長度為 40 公分。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Neck Roll"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40810",
+    "name": "Leather Belt",
+    "nameZh": "Leather Belt",
+    "slug": "40810-leather-belt",
+    "category": "Fitness",
+    "line": "BELTS",
+    "price": 1400.0,
+    "currency": "TWD",
+    "colours": [
+      "black/black/1010",
+      "black/gold/1020",
+      "black/red/1004",
+      "olive/20-1",
+      "pink/23"
+    ],
+    "sizes": [
+      "XS-4XL",
+      "XS-4XL",
+      "XS-4XL",
+      "XS-4XL",
+      "XS-4XL"
+    ],
+    "materials": "suede leather",
+    "description": "腰帶採用麂皮，寬度為 9.5 公分。",
+    "images": [
+      "/assets/products/fitness/40810-leather-belt/black-black-1010/fitness__40810__black-black-1010__2f5e67987be11a04__40810-1010-1.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-black-1010/fitness__40810__black-black-1010__987d62372208bfae__40810-1010-3.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-black-1010/fitness__40810__black-black-1010__0a5f82161addb239__40810-1010-4.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-black-1010/fitness__40810__black-black-1010__f7a9c46e8c9b9376__40810-1010-5.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-black-1010/fitness__40810__black-black-1010__4a31ea03730650c9__40810-1010-6.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-black-1010/fitness__40810__black-black-1010__a516ace5c3b7eede__40810-1010-7.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-black-1010/fitness__40810__black-black-1010__542a339692404764__40810-1010-8.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-black-1010/fitness__40810__black-black-1010__f99e3cd463ec7e71__40810-1010-9.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-gold-1020/fitness__40810__black-gold-1020__cdc7f7f7c4c937d5__40810-1020-1.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-gold-1020/fitness__40810__black-gold-1020__e75b97a7ddfcaff8__40810-1020-3.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-gold-1020/fitness__40810__black-gold-1020__59d0cbf5600199e6__40810-1020-4.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-gold-1020/fitness__40810__black-gold-1020__f79af0495d3be60b__40810-1020-5.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-gold-1020/fitness__40810__black-gold-1020__24bbcc923b2a4c31__40810-1020-6.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-gold-1020/fitness__40810__black-gold-1020__d5983bffed692b71__40810-1020-7.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-gold-1020/fitness__40810__black-gold-1020__f59c14c6c6187c03__40810-1020-8.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-gold-1020/fitness__40810__black-gold-1020__f7bd8885d95b3d93__40810-1020-9.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-red-1004/fitness__40810__black-red-1004__fd232f9d3a166ca9__40810-1004-1.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-red-1004/fitness__40810__black-red-1004__c450f5778888fee7__40810-1004-3.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-red-1004/fitness__40810__black-red-1004__b0c4043314e1a4a3__40810-1004-4.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-red-1004/fitness__40810__black-red-1004__9b0156d0e65838f5__40810-1004-5.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-red-1004/fitness__40810__black-red-1004__2e8381a4dce2cd9f__40810-1004-6.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-red-1004/fitness__40810__black-red-1004__bcabf650cae7d81f__40810-1004-7.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-red-1004/fitness__40810__black-red-1004__ef31c350675219ed__40810-1004-8.jpg",
+      "/assets/products/fitness/40810-leather-belt/black-red-1004/fitness__40810__black-red-1004__886d0fc0e262a955__40810-1004-9.jpg",
+      "/assets/products/fitness/40810-leather-belt/olive-20-1/fitness__40810__olive-20-1__5650638ed9477d58__40810-20-1-1.jpg",
+      "/assets/products/fitness/40810-leather-belt/pink-23/fitness__40810__pink-23__62c2a6d91bb6d4bf__40810-23-1.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40810|BLACK/BLACK/1010",
+        "colour": "black/black/1010",
+        "sizes": "XS-4XL",
+        "price": 1400.0,
+        "images": [
+          "/assets/products/fitness/40810-leather-belt/black-black-1010/fitness__40810__black-black-1010__2f5e67987be11a04__40810-1010-1.jpg",
+          "/assets/products/fitness/40810-leather-belt/black-black-1010/fitness__40810__black-black-1010__987d62372208bfae__40810-1010-3.jpg",
+          "/assets/products/fitness/40810-leather-belt/black-black-1010/fitness__40810__black-black-1010__0a5f82161addb239__40810-1010-4.jpg",
+          "/assets/products/fitness/40810-leather-belt/black-black-1010/fitness__40810__black-black-1010__f7a9c46e8c9b9376__40810-1010-5.jpg",
+          "/assets/products/fitness/40810-leather-belt/black-black-1010/fitness__40810__black-black-1010__4a31ea03730650c9__40810-1010-6.jpg",
+          "/assets/products/fitness/40810-leather-belt/black-black-1010/fitness__40810__black-black-1010__a516ace5c3b7eede__40810-1010-7.jpg",
+          "/assets/products/fitness/40810-leather-belt/black-black-1010/fitness__40810__black-black-1010__542a339692404764__40810-1010-8.jpg",
+          "/assets/products/fitness/40810-leather-belt/black-black-1010/fitness__40810__black-black-1010__f99e3cd463ec7e71__40810-1010-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "腰帶採用麂皮，寬度為 9.5 公分。"
+      },
+      {
+        "key": "Fitness|40810|BLACK/GOLD/1020",
+        "colour": "black/gold/1020",
+        "sizes": "XS-4XL",
+        "price": 1400.0,
+        "images": [
+          "/assets/products/fitness/40810-leather-belt/black-gold-1020/fitness__40810__black-gold-1020__cdc7f7f7c4c937d5__40810-1020-1.jpg",
+          "/assets/products/fitness/40810-leather-belt/black-gold-1020/fitness__40810__black-gold-1020__e75b97a7ddfcaff8__40810-1020-3.jpg",
+          "/assets/products/fitness/40810-leather-belt/black-gold-1020/fitness__40810__black-gold-1020__59d0cbf5600199e6__40810-1020-4.jpg",
+          "/assets/products/fitness/40810-leather-belt/black-gold-1020/fitness__40810__black-gold-1020__f79af0495d3be60b__40810-1020-5.jpg",
+          "/assets/products/fitness/40810-leather-belt/black-gold-1020/fitness__40810__black-gold-1020__24bbcc923b2a4c31__40810-1020-6.jpg",
+          "/assets/products/fitness/40810-leather-belt/black-gold-1020/fitness__40810__black-gold-1020__d5983bffed692b71__40810-1020-7.jpg",
+          "/assets/products/fitness/40810-leather-belt/black-gold-1020/fitness__40810__black-gold-1020__f59c14c6c6187c03__40810-1020-8.jpg",
+          "/assets/products/fitness/40810-leather-belt/black-gold-1020/fitness__40810__black-gold-1020__f7bd8885d95b3d93__40810-1020-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "腰帶採用麂皮，寬度為 9.5 公分。"
+      },
+      {
+        "key": "Fitness|40810|BLACK/RED/1004",
+        "colour": "black/red/1004",
+        "sizes": "XS-4XL",
+        "price": 1400.0,
+        "images": [
+          "/assets/products/fitness/40810-leather-belt/black-red-1004/fitness__40810__black-red-1004__fd232f9d3a166ca9__40810-1004-1.jpg",
+          "/assets/products/fitness/40810-leather-belt/black-red-1004/fitness__40810__black-red-1004__c450f5778888fee7__40810-1004-3.jpg",
+          "/assets/products/fitness/40810-leather-belt/black-red-1004/fitness__40810__black-red-1004__b0c4043314e1a4a3__40810-1004-4.jpg",
+          "/assets/products/fitness/40810-leather-belt/black-red-1004/fitness__40810__black-red-1004__9b0156d0e65838f5__40810-1004-5.jpg",
+          "/assets/products/fitness/40810-leather-belt/black-red-1004/fitness__40810__black-red-1004__2e8381a4dce2cd9f__40810-1004-6.jpg",
+          "/assets/products/fitness/40810-leather-belt/black-red-1004/fitness__40810__black-red-1004__bcabf650cae7d81f__40810-1004-7.jpg",
+          "/assets/products/fitness/40810-leather-belt/black-red-1004/fitness__40810__black-red-1004__ef31c350675219ed__40810-1004-8.jpg",
+          "/assets/products/fitness/40810-leather-belt/black-red-1004/fitness__40810__black-red-1004__886d0fc0e262a955__40810-1004-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "腰帶採用麂皮，寬度為 9.5 公分。"
+      },
+      {
+        "key": "Fitness|40810|OLIVE/20-1",
+        "colour": "olive/20-1",
+        "sizes": "XS-4XL",
+        "price": 1400.0,
+        "images": [
+          "/assets/products/fitness/40810-leather-belt/olive-20-1/fitness__40810__olive-20-1__5650638ed9477d58__40810-20-1-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "腰帶採用麂皮，寬度為 9.5 公分。"
+      },
+      {
+        "key": "Fitness|40810|PINK/23",
+        "colour": "pink/23",
+        "sizes": "XS-4XL",
+        "price": 1400.0,
+        "images": [
+          "/assets/products/fitness/40810-leather-belt/pink-23/fitness__40810__pink-23__62c2a6d91bb6d4bf__40810-23-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "腰帶採用麂皮，寬度為 9.5 公分。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Leather Belt"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40828",
+    "name": "Power Belt",
+    "nameZh": "Power Belt",
+    "slug": "40828-power-belt",
+    "category": "Fitness",
+    "line": "BELTS",
+    "price": 1150.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10",
+      "camo/grey/4919",
+      "camo/sand/4952",
+      "olive/20-1"
+    ],
+    "sizes": [
+      "XS-4XL",
+      "XS-4XL",
+      "XS-4XL",
+      "XS-4XL"
+    ],
+    "materials": "nylon",
+    "description": "腰帶採用尼龍織物，寬度為 13 公分。",
+    "images": [
+      "/assets/products/fitness/40828-power-belt/black-10/fitness__40828__black-10__b7eadc2c29210895__40828-10-1.jpg",
+      "/assets/products/fitness/40828-power-belt/camo-grey-4919/fitness__40828__camo-grey-4919__1ae771e18fa63c84__40828-4919-1.jpg",
+      "/assets/products/fitness/40828-power-belt/camo-sand-4952/fitness__40828__camo-sand-4952__3c7868b2a32a73af__40828-4952-1.jpg",
+      "/assets/products/fitness/40828-power-belt/olive-20-1/fitness__40828__olive-20-1__415cf0d727b185cf__40828-20-1-1.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40828|BLACK/10",
+        "colour": "black/10",
+        "sizes": "XS-4XL",
+        "price": 1150.0,
+        "images": [
+          "/assets/products/fitness/40828-power-belt/black-10/fitness__40828__black-10__b7eadc2c29210895__40828-10-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "腰帶採用尼龍織物，寬度為 13 公分。"
+      },
+      {
+        "key": "Fitness|40828|CAMO/GREY/4919",
+        "colour": "camo/grey/4919",
+        "sizes": "XS-4XL",
+        "price": 1150.0,
+        "images": [
+          "/assets/products/fitness/40828-power-belt/camo-grey-4919/fitness__40828__camo-grey-4919__1ae771e18fa63c84__40828-4919-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "腰帶採用尼龍織物，寬度為 13 公分。"
+      },
+      {
+        "key": "Fitness|40828|CAMO/SAND/4952",
+        "colour": "camo/sand/4952",
+        "sizes": "XS-4XL",
+        "price": 1150.0,
+        "images": [
+          "/assets/products/fitness/40828-power-belt/camo-sand-4952/fitness__40828__camo-sand-4952__3c7868b2a32a73af__40828-4952-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "腰帶採用尼龍織物，寬度為 13 公分。"
+      },
+      {
+        "key": "Fitness|40828|OLIVE/20-1",
+        "colour": "olive/20-1",
+        "sizes": "XS-4XL",
+        "price": 1150.0,
+        "images": [
+          "/assets/products/fitness/40828-power-belt/olive-20-1/fitness__40828__olive-20-1__415cf0d727b185cf__40828-20-1-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "腰帶採用尼龍織物，寬度為 13 公分。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Power Belt"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40838",
+    "name": "Profi Belt",
+    "nameZh": "Profi Belt",
+    "slug": "40838-profi-belt",
+    "category": "Fitness",
+    "line": "BELTS",
+    "price": 1250.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "XS-4XL"
+    ],
+    "materials": "nylon",
+    "description": "腰帶採用尼龍織物，寬度為 17 公分。",
+    "images": [
+      "/assets/products/fitness/40838-profi-belt/black-10/fitness__40838__black-10__2bde9112abb8afe2__40838-10-1.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40838|BLACK/10",
+        "colour": "black/10",
+        "sizes": "XS-4XL",
+        "price": 1250.0,
+        "images": [
+          "/assets/products/fitness/40838-profi-belt/black-10/fitness__40838__black-10__2bde9112abb8afe2__40838-10-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "腰帶採用尼龍織物，寬度為 17 公分。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Profi Belt"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40840",
+    "name": "Ergo Belt",
+    "nameZh": "Ergo Belt",
+    "slug": "40840-ergo-belt",
+    "category": "Fitness",
+    "line": "BELTS",
+    "price": 1400.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10",
+      "pink/23"
+    ],
+    "sizes": [
+      "XS-4XL",
+      "XS-4XL"
+    ],
+    "materials": "nylon",
+    "description": "腰帶採用尼龍織物，寬度為 17 公分。",
+    "images": [
+      "/assets/products/fitness/40840-ergo-belt/black-10/fitness__40840__black-10__f52238a773ead5ae__40840-10-1.jpg",
+      "/assets/products/fitness/40840-ergo-belt/pink-23/fitness__40840__pink-23__e3f2a05d17744675__40840-23-catalog-p50-im7.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40840|BLACK/10",
+        "colour": "black/10",
+        "sizes": "XS-4XL",
+        "price": 1400.0,
+        "images": [
+          "/assets/products/fitness/40840-ergo-belt/black-10/fitness__40840__black-10__f52238a773ead5ae__40840-10-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "腰帶採用尼龍織物，寬度為 17 公分。"
+      },
+      {
+        "key": "Fitness|40840|PINK/23",
+        "colour": "pink/23",
+        "sizes": "XS-4XL",
+        "price": 1400.0,
+        "images": [
+          "/assets/products/fitness/40840-ergo-belt/pink-23/fitness__40840__pink-23__e3f2a05d17744675__40840-23-catalog-p50-im7.jpg"
+        ],
+        "sharedImages": [],
+        "description": "腰帶採用尼龍織物，寬度為 17 公分。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Ergo Belt"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40860",
+    "name": "Strong Man Belt",
+    "nameZh": "Strong Man Belt",
+    "slug": "40860-strong-man-belt",
+    "category": "Fitness",
+    "line": "STRONGMAN LINE",
+    "price": 2100.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "S-4XL"
+    ],
+    "materials": "Nylon tissue",
+    "description": "腰帶採用尼龍織物，背部設有加寬襯墊。",
+    "images": [
+      "/assets/products/fitness/40860-strong-man-belt/black-10/fitness__40860__black-10__b0530e470a0ab0ed__40860-10-1.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40860|BLACK/10",
+        "colour": "black/10",
+        "sizes": "S-4XL",
+        "price": 2100.0,
+        "images": [
+          "/assets/products/fitness/40860-strong-man-belt/black-10/fitness__40860__black-10__b0530e470a0ab0ed__40860-10-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "腰帶採用尼龍織物，背部設有加寬襯墊。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Strong Man Belt"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40866",
+    "name": "Belt Air",
+    "nameZh": "Belt Air",
+    "slug": "40866-belt-air",
+    "category": "Fitness",
+    "line": "BELTS",
+    "price": 1350.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "XS-4XL"
+    ],
+    "materials": "Aero-Stretch; Gel",
+    "description": "腰帶採用 Aero-Stretch，背部設有凝膠襯墊，寬度為 18 公分。",
+    "images": [
+      "/assets/products/fitness/40866-belt-air/black-10/fitness__40866__black-10__95da40a3f49dca4a__40866-10-1.jpg",
+      "/assets/products/fitness/40866-belt-air/black-10/fitness__40866__black-10__2836c4592c067f56__40866-10-3.jpg",
+      "/assets/products/fitness/40866-belt-air/black-10/fitness__40866__black-10__59440c27e9fd7a55__40866-10-4.jpg",
+      "/assets/products/fitness/40866-belt-air/black-10/fitness__40866__black-10__4ea316ca9eaeead9__40866-10-5.jpg",
+      "/assets/products/fitness/40866-belt-air/black-10/fitness__40866__black-10__2ec32369ca825bfd__40866-10-6.jpg",
+      "/assets/products/fitness/40866-belt-air/black-10/fitness__40866__black-10__eb5e0273f2e932d2__40866-10-7.jpg",
+      "/assets/products/fitness/40866-belt-air/black-10/fitness__40866__black-10__7b53fc344493c10f__40866-10-8.jpg",
+      "/assets/products/fitness/40866-belt-air/black-10/fitness__40866__black-10__a103b7716c2954de__40866-10-9.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40866|BLACK/10",
+        "colour": "black/10",
+        "sizes": "XS-4XL",
+        "price": 1350.0,
+        "images": [
+          "/assets/products/fitness/40866-belt-air/black-10/fitness__40866__black-10__95da40a3f49dca4a__40866-10-1.jpg",
+          "/assets/products/fitness/40866-belt-air/black-10/fitness__40866__black-10__2836c4592c067f56__40866-10-3.jpg",
+          "/assets/products/fitness/40866-belt-air/black-10/fitness__40866__black-10__59440c27e9fd7a55__40866-10-4.jpg",
+          "/assets/products/fitness/40866-belt-air/black-10/fitness__40866__black-10__4ea316ca9eaeead9__40866-10-5.jpg",
+          "/assets/products/fitness/40866-belt-air/black-10/fitness__40866__black-10__2ec32369ca825bfd__40866-10-6.jpg",
+          "/assets/products/fitness/40866-belt-air/black-10/fitness__40866__black-10__eb5e0273f2e932d2__40866-10-7.jpg",
+          "/assets/products/fitness/40866-belt-air/black-10/fitness__40866__black-10__7b53fc344493c10f__40866-10-8.jpg",
+          "/assets/products/fitness/40866-belt-air/black-10/fitness__40866__black-10__a103b7716c2954de__40866-10-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "腰帶採用 Aero-Stretch，背部設有凝膠襯墊，寬度為 18 公分。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Belt Air"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40875",
+    "name": "Training Corsage",
+    "nameZh": "Training Corsage",
+    "slug": "40875-training-corsage",
+    "category": "Fitness",
+    "line": "BELTS",
+    "price": 1550.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "XS-4XL"
+    ],
+    "materials": "",
+    "description": "設有兩排鉤眼扣。",
+    "images": [
+      "/assets/products/fitness/40875-training-corsage/black-10/fitness__40875__black-10__535c2557afb05b74__40875-10-1.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40875|BLACK/10",
+        "colour": "black/10",
+        "sizes": "XS-4XL",
+        "price": 1550.0,
+        "images": [
+          "/assets/products/fitness/40875-training-corsage/black-10/fitness__40875__black-10__535c2557afb05b74__40875-10-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "設有兩排鉤眼扣。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Training Corsage"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40886",
+    "name": "Powerlifting Belt",
+    "nameZh": "Powerlifting Belt",
+    "slug": "40886-powerlifting-belt",
+    "category": "Fitness",
+    "line": "BELTS",
+    "price": 2950.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "XS-4XL"
+    ],
+    "materials": "Leather; stainless steel",
+    "description": "腰帶採用厚度 1 公分的皮革及不鏽鋼扣，寬度為 9.5 公分。",
+    "images": [
+      "/assets/products/fitness/40886-powerlifting-belt/black-10/fitness__40886__black-10__6a9f3fc5f46f88a8__40886-10-1.jpg",
+      "/assets/products/fitness/40886-powerlifting-belt/black-10/fitness__40886__black-10__d528907cf7632cc1__40886-10-10.jpg",
+      "/assets/products/fitness/40886-powerlifting-belt/black-10/fitness__40886__black-10__c9f9dceb96960f6f__40886-10-2.jpg",
+      "/assets/products/fitness/40886-powerlifting-belt/black-10/fitness__40886__black-10__9e381704db75c031__40886-10-3.jpg",
+      "/assets/products/fitness/40886-powerlifting-belt/black-10/fitness__40886__black-10__a012cc86bd0eaea0__40886-10-4.jpg",
+      "/assets/products/fitness/40886-powerlifting-belt/black-10/fitness__40886__black-10__a52f682d2afb8cbf__40886-10-5.jpg",
+      "/assets/products/fitness/40886-powerlifting-belt/black-10/fitness__40886__black-10__74f5764ce969443f__40886-10-6.jpg",
+      "/assets/products/fitness/40886-powerlifting-belt/black-10/fitness__40886__black-10__6cc94371658e50fc__40886-10-7.jpg",
+      "/assets/products/fitness/40886-powerlifting-belt/black-10/fitness__40886__black-10__0fd04af5ef0b280b__40886-10-8.jpg",
+      "/assets/products/fitness/40886-powerlifting-belt/black-10/fitness__40886__black-10__3cb93c35f7c1874d__40886-10-9.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40886|BLACK/10",
+        "colour": "black/10",
+        "sizes": "XS-4XL",
+        "price": 2950.0,
+        "images": [
+          "/assets/products/fitness/40886-powerlifting-belt/black-10/fitness__40886__black-10__6a9f3fc5f46f88a8__40886-10-1.jpg",
+          "/assets/products/fitness/40886-powerlifting-belt/black-10/fitness__40886__black-10__d528907cf7632cc1__40886-10-10.jpg",
+          "/assets/products/fitness/40886-powerlifting-belt/black-10/fitness__40886__black-10__c9f9dceb96960f6f__40886-10-2.jpg",
+          "/assets/products/fitness/40886-powerlifting-belt/black-10/fitness__40886__black-10__9e381704db75c031__40886-10-3.jpg",
+          "/assets/products/fitness/40886-powerlifting-belt/black-10/fitness__40886__black-10__a012cc86bd0eaea0__40886-10-4.jpg",
+          "/assets/products/fitness/40886-powerlifting-belt/black-10/fitness__40886__black-10__a52f682d2afb8cbf__40886-10-5.jpg",
+          "/assets/products/fitness/40886-powerlifting-belt/black-10/fitness__40886__black-10__74f5764ce969443f__40886-10-6.jpg",
+          "/assets/products/fitness/40886-powerlifting-belt/black-10/fitness__40886__black-10__6cc94371658e50fc__40886-10-7.jpg",
+          "/assets/products/fitness/40886-powerlifting-belt/black-10/fitness__40886__black-10__0fd04af5ef0b280b__40886-10-8.jpg",
+          "/assets/products/fitness/40886-powerlifting-belt/black-10/fitness__40886__black-10__3cb93c35f7c1874d__40886-10-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "腰帶採用厚度 1 公分的皮革及不鏽鋼扣，寬度為 9.5 公分。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Powerlifting Belt"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40890",
+    "name": "Dipping Belt",
+    "nameZh": "Dipping Belt",
+    "slug": "40890-dipping-belt",
+    "category": "Fitness",
+    "line": "BELTS",
+    "price": 1200.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "Onesize"
+    ],
+    "materials": "nylon; Stainless steel",
+    "description": "腰帶採用尼龍織物及不鏽鋼鏈條，寬度為 16.5 公分。",
+    "images": [
+      "/assets/products/fitness/40890-dipping-belt/black-10/fitness__40890__black-10__aeece7018de02d37__40890-10-1.jpg",
+      "/assets/products/fitness/40890-dipping-belt/black-10/fitness__40890__black-10__e1ba064807f5d0c3__40890-10-4.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40890|BLACK/10",
+        "colour": "black/10",
+        "sizes": "Onesize",
+        "price": 1200.0,
+        "images": [
+          "/assets/products/fitness/40890-dipping-belt/black-10/fitness__40890__black-10__aeece7018de02d37__40890-10-1.jpg",
+          "/assets/products/fitness/40890-dipping-belt/black-10/fitness__40890__black-10__e1ba064807f5d0c3__40890-10-4.jpg"
+        ],
+        "sharedImages": [],
+        "description": "腰帶採用尼龍織物及不鏽鋼鏈條，寬度為 16.5 公分。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Dipping Belt"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40897",
+    "name": "Premium Dipping & Training Belt",
+    "nameZh": "Premium Dipping & Training Belt",
+    "slug": "40897-premium-dipping-training-belt",
+    "category": "Fitness",
+    "line": "BELTS",
+    "price": 1700.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10",
+      "pink/23"
+    ],
+    "sizes": [
+      "XS-4XL",
+      "XS-4XL"
+    ],
+    "materials": "nylon; Stainless steel",
+    "description": "腰帶採用尼龍織物及不鏽鋼鏈條，寬度為 16.5 公分。",
+    "images": [
+      "/assets/products/fitness/40897-premium-dipping-training-belt/shared/fitness__40897__shared__0151ea0e13e67471__40897.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40897|BLACK/10",
+        "colour": "black/10",
+        "sizes": "XS-4XL",
+        "price": 1700.0,
+        "images": [],
+        "sharedImages": [
+          "/assets/products/fitness/40897-premium-dipping-training-belt/shared/fitness__40897__shared__0151ea0e13e67471__40897.jpg"
+        ],
+        "description": "腰帶採用尼龍織物及不鏽鋼鏈條，寬度為 16.5 公分。"
+      },
+      {
+        "key": "Fitness|40897|PINK/23",
+        "colour": "pink/23",
+        "sizes": "XS-4XL",
+        "price": 1700.0,
+        "images": [],
+        "sharedImages": [
+          "/assets/products/fitness/40897-premium-dipping-training-belt/shared/fitness__40897__shared__0151ea0e13e67471__40897.jpg"
+        ],
+        "description": "腰帶採用尼龍織物及不鏽鋼鏈條，寬度為 16.5 公分。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Premium Dipping & Training Belt"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40911",
+    "name": "Lady Wrist Pro V2",
+    "nameZh": "女款 Wrist Pro V2",
+    "slug": "40911-lady-wrist-pro-v2",
+    "category": "Fitness",
+    "line": "LADY LINE",
+    "price": 1350.0,
+    "currency": "TWD",
+    "colours": [
+      "black/pink/1023-1",
+      "black/silver/1050"
+    ],
+    "sizes": [
+      "XS-4XL",
+      "XS-4XL"
+    ],
+    "materials": "Microfibre; Griptec",
+    "description": "掌面採用超細纖維與 Griptec 貼片，附有護腕。",
+    "images": [
+      "/assets/products/fitness/40911-lady-wrist-pro-v2/black-pink-1023-1/fitness__40911__black-pink-1023-1__294f46dea7bfdf04__40911-1023-1-1.jpg",
+      "/assets/products/fitness/40911-lady-wrist-pro-v2/black-pink-1023-1/fitness__40911__black-pink-1023-1__3b79b2bd09177fe6__40911-1023-1-2.jpg",
+      "/assets/products/fitness/40911-lady-wrist-pro-v2/black-pink-1023-1/fitness__40911__black-pink-1023-1__dc320c6921db50f7__40911-1023-1-3.jpg",
+      "/assets/products/fitness/40911-lady-wrist-pro-v2/black-pink-1023-1/fitness__40911__black-pink-1023-1__11fb428ead4349c3__40911-1023-1-4.jpg",
+      "/assets/products/fitness/40911-lady-wrist-pro-v2/black-silver-1050/fitness__40911__black-silver-1050__ecbbbd3fb3195e31__40911-1050-1.jpg",
+      "/assets/products/fitness/40911-lady-wrist-pro-v2/black-silver-1050/fitness__40911__black-silver-1050__7e261c92bee8b283__40911-1050-2.jpg",
+      "/assets/products/fitness/40911-lady-wrist-pro-v2/black-silver-1050/fitness__40911__black-silver-1050__a4a2ecc948fbb0ee__40911-1050-3.jpg",
+      "/assets/products/fitness/40911-lady-wrist-pro-v2/black-silver-1050/fitness__40911__black-silver-1050__9d2d085977c36ec1__40911-1050-4.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40911|BLACK/PINK/1023-1",
+        "colour": "black/pink/1023-1",
+        "sizes": "XS-4XL",
+        "price": 1350.0,
+        "images": [
+          "/assets/products/fitness/40911-lady-wrist-pro-v2/black-pink-1023-1/fitness__40911__black-pink-1023-1__294f46dea7bfdf04__40911-1023-1-1.jpg",
+          "/assets/products/fitness/40911-lady-wrist-pro-v2/black-pink-1023-1/fitness__40911__black-pink-1023-1__3b79b2bd09177fe6__40911-1023-1-2.jpg",
+          "/assets/products/fitness/40911-lady-wrist-pro-v2/black-pink-1023-1/fitness__40911__black-pink-1023-1__dc320c6921db50f7__40911-1023-1-3.jpg",
+          "/assets/products/fitness/40911-lady-wrist-pro-v2/black-pink-1023-1/fitness__40911__black-pink-1023-1__11fb428ead4349c3__40911-1023-1-4.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用超細纖維與 Griptec 貼片，附有護腕。"
+      },
+      {
+        "key": "Fitness|40911|BLACK/SILVER/1050",
+        "colour": "black/silver/1050",
+        "sizes": "XS-4XL",
+        "price": 1350.0,
+        "images": [
+          "/assets/products/fitness/40911-lady-wrist-pro-v2/black-silver-1050/fitness__40911__black-silver-1050__ecbbbd3fb3195e31__40911-1050-1.jpg",
+          "/assets/products/fitness/40911-lady-wrist-pro-v2/black-silver-1050/fitness__40911__black-silver-1050__7e261c92bee8b283__40911-1050-2.jpg",
+          "/assets/products/fitness/40911-lady-wrist-pro-v2/black-silver-1050/fitness__40911__black-silver-1050__a4a2ecc948fbb0ee__40911-1050-3.jpg",
+          "/assets/products/fitness/40911-lady-wrist-pro-v2/black-silver-1050/fitness__40911__black-silver-1050__9d2d085977c36ec1__40911-1050-4.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用超細纖維與 Griptec 貼片，附有護腕。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "女款 Wrist Pro V2"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40921",
+    "name": "Lady Prime",
+    "nameZh": "女款 Prime",
+    "slug": "40921-lady-prime",
+    "category": "Fitness",
+    "line": "LADY LINE",
+    "price": 1050.0,
+    "currency": "TWD",
+    "colours": [
+      "black/white/1001"
+    ],
+    "sizes": [
+      "XS-4XL"
+    ],
+    "materials": "3D fabric; silicone",
+    "description": "掌面採用具通氣結構的 3D 織物與矽膠印花。",
+    "images": [
+      "/assets/products/fitness/40921-lady-prime/black-white-1001/fitness__40921__black-white-1001__d65ad05e297a9461__40921-1001-1.jpg",
+      "/assets/products/fitness/40921-lady-prime/black-white-1001/fitness__40921__black-white-1001__544d3f86313c14ad__40921-1001-2.jpg",
+      "/assets/products/fitness/40921-lady-prime/black-white-1001/fitness__40921__black-white-1001__208b31484f36da5f__40921-1023-1-1.jpg",
+      "/assets/products/fitness/40921-lady-prime/black-white-1001/fitness__40921__black-white-1001__2b52aeb9ca9be789__40921-1023-1-2.jpg",
+      "/assets/products/fitness/40921-lady-prime/black-white-1001/fitness__40921__black-white-1001__28064f42b7fe174c__40921-1023-1-3.jpg",
+      "/assets/products/fitness/40921-lady-prime/black-white-1001/fitness__40921__black-white-1001__bb18a9518a7e1f36__40921-1023-1-4.jpg",
+      "/assets/products/fitness/40921-lady-prime/black-white-1001/fitness__40921__black-white-1001__6c540bffffa2f607__40921-1023-1-5.jpg",
+      "/assets/products/fitness/40921-lady-prime/black-white-1001/fitness__40921__black-white-1001__19f6a0c2dacf98e7__40921-1023-1-6.jpg",
+      "/assets/products/fitness/40921-lady-prime/black-white-1001/fitness__40921__black-white-1001__9975dc092accef1f__40921-1023-1-7.jpg",
+      "/assets/products/fitness/40921-lady-prime/black-white-1001/fitness__40921__black-white-1001__45edce582a4efc58__40921-1023-1-8.jpg",
+      "/assets/products/fitness/40921-lady-prime/black-white-1001/fitness__40921__black-white-1001__9162d4b6b8049322__40921-1023-1-9.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40921|BLACK/WHITE/1001",
+        "colour": "black/white/1001",
+        "sizes": "XS-4XL",
+        "price": 1050.0,
+        "images": [
+          "/assets/products/fitness/40921-lady-prime/black-white-1001/fitness__40921__black-white-1001__d65ad05e297a9461__40921-1001-1.jpg",
+          "/assets/products/fitness/40921-lady-prime/black-white-1001/fitness__40921__black-white-1001__544d3f86313c14ad__40921-1001-2.jpg",
+          "/assets/products/fitness/40921-lady-prime/black-white-1001/fitness__40921__black-white-1001__208b31484f36da5f__40921-1023-1-1.jpg",
+          "/assets/products/fitness/40921-lady-prime/black-white-1001/fitness__40921__black-white-1001__2b52aeb9ca9be789__40921-1023-1-2.jpg",
+          "/assets/products/fitness/40921-lady-prime/black-white-1001/fitness__40921__black-white-1001__28064f42b7fe174c__40921-1023-1-3.jpg",
+          "/assets/products/fitness/40921-lady-prime/black-white-1001/fitness__40921__black-white-1001__bb18a9518a7e1f36__40921-1023-1-4.jpg",
+          "/assets/products/fitness/40921-lady-prime/black-white-1001/fitness__40921__black-white-1001__6c540bffffa2f607__40921-1023-1-5.jpg",
+          "/assets/products/fitness/40921-lady-prime/black-white-1001/fitness__40921__black-white-1001__19f6a0c2dacf98e7__40921-1023-1-6.jpg",
+          "/assets/products/fitness/40921-lady-prime/black-white-1001/fitness__40921__black-white-1001__9975dc092accef1f__40921-1023-1-7.jpg",
+          "/assets/products/fitness/40921-lady-prime/black-white-1001/fitness__40921__black-white-1001__45edce582a4efc58__40921-1023-1-8.jpg",
+          "/assets/products/fitness/40921-lady-prime/black-white-1001/fitness__40921__black-white-1001__9162d4b6b8049322__40921-1023-1-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用具通氣結構的 3D 織物與矽膠印花。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "女款 Prime"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40945",
+    "name": "Lady Diamond",
+    "nameZh": "女款 Diamond",
+    "slug": "40945-lady-diamond",
+    "category": "Fitness",
+    "line": "LADY LINE",
+    "price": 1150.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10",
+      "pink/23",
+      "turquoise/18",
+      "white/01"
+    ],
+    "sizes": [
+      "XS-4XL",
+      "XS-4XL",
+      "XS-4XL",
+      "XS-4XL"
+    ],
+    "materials": "digital carbon fiber",
+    "description": "掌面採用 Digital Carbon Fibre，手背設有彈性網布拼接。",
+    "images": [
+      "/assets/products/fitness/40945-lady-diamond/black-10/fitness__40945__black-10__0f10ff001f51855c__40945-10-1.jpg",
+      "/assets/products/fitness/40945-lady-diamond/black-10/fitness__40945__black-10__ea3447830969241d__40945-10-2.jpg",
+      "/assets/products/fitness/40945-lady-diamond/pink-23/fitness__40945__pink-23__15c5273cfe279007__40945-23-1.jpg",
+      "/assets/products/fitness/40945-lady-diamond/pink-23/fitness__40945__pink-23__dfef1465dd4f1138__40945-23-2.jpg",
+      "/assets/products/fitness/40945-lady-diamond/turquoise-18/fitness__40945__turquoise-18__1930a3ef7a41d24d__40945-18-1.jpg",
+      "/assets/products/fitness/40945-lady-diamond/turquoise-18/fitness__40945__turquoise-18__da707055a06bc3d1__40945-18-2.jpg",
+      "/assets/products/fitness/40945-lady-diamond/white-01/fitness__40945__white-01__7d83e03acb5cd03b__40945-01-1.jpg",
+      "/assets/products/fitness/40945-lady-diamond/white-01/fitness__40945__white-01__92008d115aefb9c0__40945-01-2.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40945|BLACK/10",
+        "colour": "black/10",
+        "sizes": "XS-4XL",
+        "price": 1150.0,
+        "images": [
+          "/assets/products/fitness/40945-lady-diamond/black-10/fitness__40945__black-10__0f10ff001f51855c__40945-10-1.jpg",
+          "/assets/products/fitness/40945-lady-diamond/black-10/fitness__40945__black-10__ea3447830969241d__40945-10-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用 Digital Carbon Fibre，手背設有彈性網布拼接。"
+      },
+      {
+        "key": "Fitness|40945|PINK/23",
+        "colour": "pink/23",
+        "sizes": "XS-4XL",
+        "price": 1150.0,
+        "images": [
+          "/assets/products/fitness/40945-lady-diamond/pink-23/fitness__40945__pink-23__15c5273cfe279007__40945-23-1.jpg",
+          "/assets/products/fitness/40945-lady-diamond/pink-23/fitness__40945__pink-23__dfef1465dd4f1138__40945-23-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用 Digital Carbon Fibre，手背設有彈性網布拼接。"
+      },
+      {
+        "key": "Fitness|40945|TURQUOISE/18",
+        "colour": "turquoise/18",
+        "sizes": "XS-4XL",
+        "price": 1150.0,
+        "images": [
+          "/assets/products/fitness/40945-lady-diamond/turquoise-18/fitness__40945__turquoise-18__1930a3ef7a41d24d__40945-18-1.jpg",
+          "/assets/products/fitness/40945-lady-diamond/turquoise-18/fitness__40945__turquoise-18__da707055a06bc3d1__40945-18-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用 Digital Carbon Fibre，手背設有彈性網布拼接。"
+      },
+      {
+        "key": "Fitness|40945|WHITE/01",
+        "colour": "white/01",
+        "sizes": "XS-4XL",
+        "price": 1150.0,
+        "images": [
+          "/assets/products/fitness/40945-lady-diamond/white-01/fitness__40945__white-01__7d83e03acb5cd03b__40945-01-1.jpg",
+          "/assets/products/fitness/40945-lady-diamond/white-01/fitness__40945__white-01__92008d115aefb9c0__40945-01-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用 Digital Carbon Fibre，手背設有彈性網布拼接。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "女款 Diamond"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40955",
+    "name": "Lady Ibiza",
+    "nameZh": "女款 Ibiza",
+    "slug": "40955-lady-ibiza",
+    "category": "Fitness",
+    "line": "LADY LINE",
+    "price": 1350.0,
+    "currency": "TWD",
+    "colours": [
+      "black/white/1001",
+      "navy/pink/0723",
+      "turquoise/white/1801",
+      "white/pink/0123"
+    ],
+    "sizes": [
+      "XS-4XL",
+      "XS-4XL",
+      "XS-4XL",
+      "XS-4XL"
+    ],
+    "materials": "Italian elastane; synthetic leather; silicone",
+    "description": "手背採用義大利彈性纖維，掌面使用合成皮革與矽膠印花。",
+    "images": [
+      "/assets/products/fitness/40955-lady-ibiza/black-white-1001/fitness__40955__black-white-1001__a6648bfd41ec7e12__40955-1001-1.jpg",
+      "/assets/products/fitness/40955-lady-ibiza/black-white-1001/fitness__40955__black-white-1001__6ea221625ec4f6d6__40955-1001-2.jpg",
+      "/assets/products/fitness/40955-lady-ibiza/navy-pink-0723/fitness__40955__navy-pink-0723__144df925f3506015__40955-0723-1.jpg",
+      "/assets/products/fitness/40955-lady-ibiza/navy-pink-0723/fitness__40955__navy-pink-0723__dc192f39f30dd96f__40955-0723-2.jpg",
+      "/assets/products/fitness/40955-lady-ibiza/turquoise-white-1801/fitness__40955__turquoise-white-1801__b5a34d27ad18dcd2__40955-1801-1.jpg",
+      "/assets/products/fitness/40955-lady-ibiza/turquoise-white-1801/fitness__40955__turquoise-white-1801__ae656b4b466aa2ad__40955-1801-2.jpg",
+      "/assets/products/fitness/40955-lady-ibiza/white-pink-0123/fitness__40955__white-pink-0123__a5a3d3f30fa59222__40955-0123-1.jpg",
+      "/assets/products/fitness/40955-lady-ibiza/white-pink-0123/fitness__40955__white-pink-0123__a33332413d1a6d72__40955-0123-2.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40955|BLACK/WHITE/1001",
+        "colour": "black/white/1001",
+        "sizes": "XS-4XL",
+        "price": 1350.0,
+        "images": [
+          "/assets/products/fitness/40955-lady-ibiza/black-white-1001/fitness__40955__black-white-1001__a6648bfd41ec7e12__40955-1001-1.jpg",
+          "/assets/products/fitness/40955-lady-ibiza/black-white-1001/fitness__40955__black-white-1001__6ea221625ec4f6d6__40955-1001-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用義大利彈性纖維，掌面使用合成皮革與矽膠印花。"
+      },
+      {
+        "key": "Fitness|40955|NAVY/PINK/0723",
+        "colour": "navy/pink/0723",
+        "sizes": "XS-4XL",
+        "price": 1350.0,
+        "images": [
+          "/assets/products/fitness/40955-lady-ibiza/navy-pink-0723/fitness__40955__navy-pink-0723__144df925f3506015__40955-0723-1.jpg",
+          "/assets/products/fitness/40955-lady-ibiza/navy-pink-0723/fitness__40955__navy-pink-0723__dc192f39f30dd96f__40955-0723-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用義大利彈性纖維，掌面使用合成皮革與矽膠印花。"
+      },
+      {
+        "key": "Fitness|40955|TURQUOISE/WHITE/1801",
+        "colour": "turquoise/white/1801",
+        "sizes": "XS-4XL",
+        "price": 1350.0,
+        "images": [
+          "/assets/products/fitness/40955-lady-ibiza/turquoise-white-1801/fitness__40955__turquoise-white-1801__b5a34d27ad18dcd2__40955-1801-1.jpg",
+          "/assets/products/fitness/40955-lady-ibiza/turquoise-white-1801/fitness__40955__turquoise-white-1801__ae656b4b466aa2ad__40955-1801-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用義大利彈性纖維，掌面使用合成皮革與矽膠印花。"
+      },
+      {
+        "key": "Fitness|40955|WHITE/PINK/0123",
+        "colour": "white/pink/0123",
+        "sizes": "XS-4XL",
+        "price": 1350.0,
+        "images": [
+          "/assets/products/fitness/40955-lady-ibiza/white-pink-0123/fitness__40955__white-pink-0123__a5a3d3f30fa59222__40955-0123-1.jpg",
+          "/assets/products/fitness/40955-lady-ibiza/white-pink-0123/fitness__40955__white-pink-0123__a33332413d1a6d72__40955-0123-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用義大利彈性纖維，掌面使用合成皮革與矽膠印花。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "女款 Ibiza"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40958",
+    "name": "Powerhook",
+    "nameZh": "Powerhook",
+    "slug": "40958-powerhook",
+    "category": "Fitness",
+    "line": "ACCESSOIRES",
+    "price": 850.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "Onesize"
+    ],
+    "materials": "Stainless steel; rubber",
+    "description": "採用不鏽鋼掛鉤與橡膠塗層，設有可調式魔鬼氈。",
+    "images": [
+      "/assets/products/fitness/40958-powerhook/black-10/fitness__40958__black-10__2d5f6d2395d72fe1__40958-10-1.jpg",
+      "/assets/products/fitness/40958-powerhook/black-10/fitness__40958__black-10__d3f3b083e98e7fab__40958-10-2.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40958|BLACK/10",
+        "colour": "black/10",
+        "sizes": "Onesize",
+        "price": 850.0,
+        "images": [
+          "/assets/products/fitness/40958-powerhook/black-10/fitness__40958__black-10__2d5f6d2395d72fe1__40958-10-1.jpg",
+          "/assets/products/fitness/40958-powerhook/black-10/fitness__40958__black-10__d3f3b083e98e7fab__40958-10-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用不鏽鋼掛鉤與橡膠塗層，設有可調式魔鬼氈。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Powerhook"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "40971",
+    "name": "Lady Air II",
+    "nameZh": "女款 Air II",
+    "slug": "40971-lady-air-ii",
+    "category": "Fitness",
+    "line": "LADY LINE",
+    "price": 1150.0,
+    "currency": "TWD",
+    "colours": [
+      "black/black/1010",
+      "black/pink/1023-1",
+      "white/black/0110"
+    ],
+    "sizes": [
+      "XS-4XL",
+      "XS-4XL",
+      "XS-4XL"
+    ],
+    "materials": "air mesh; microfibre; Griptec",
+    "description": "掌面採用網布，搭配超細纖維與 Griptec 貼片。",
+    "images": [
+      "/assets/products/fitness/40971-lady-air-ii/black-black-1010/fitness__40971__black-black-1010__7eed2d1f5bfd04f9__40971-1010-1.jpg",
+      "/assets/products/fitness/40971-lady-air-ii/black-black-1010/fitness__40971__black-black-1010__f7888ca350d09da4__40971-1010-2.jpg",
+      "/assets/products/fitness/40971-lady-air-ii/black-black-1010/fitness__40971__black-black-1010__9bead38d0dfdd29f__40971-1010-3.jpg",
+      "/assets/products/fitness/40971-lady-air-ii/black-black-1010/fitness__40971__black-black-1010__ee24b82a839bf2ab__40971-1010-4.jpg",
+      "/assets/products/fitness/40971-lady-air-ii/black-black-1010/fitness__40971__black-black-1010__ea6644048d57b8e5__40971-1010-5.jpg",
+      "/assets/products/fitness/40971-lady-air-ii/black-black-1010/fitness__40971__black-black-1010__247430605fa4b1e5__40971-1010-6.jpg",
+      "/assets/products/fitness/40971-lady-air-ii/black-black-1010/fitness__40971__black-black-1010__ee03cdc1f8c4daea__40971-1010-7.jpg",
+      "/assets/products/fitness/40971-lady-air-ii/black-black-1010/fitness__40971__black-black-1010__74c2748ebabccf2b__40971-1010-8.jpg",
+      "/assets/products/fitness/40971-lady-air-ii/black-black-1010/fitness__40971__black-black-1010__fe86737848701705__40971-1010-9.jpg",
+      "/assets/products/fitness/40971-lady-air-ii/black-pink-1023-1/fitness__40971__black-pink-1023-1__1acca59e4414bd01__40971-1023-1-1.jpg",
+      "/assets/products/fitness/40971-lady-air-ii/black-pink-1023-1/fitness__40971__black-pink-1023-1__1a3331e60b3a0ace__40971-1023-1-2.jpg",
+      "/assets/products/fitness/40971-lady-air-ii/black-pink-1023-1/fitness__40971__black-pink-1023-1__486542106a178ae8__40971-1023-1-3.jpg",
+      "/assets/products/fitness/40971-lady-air-ii/black-pink-1023-1/fitness__40971__black-pink-1023-1__08ec0618309319b6__40971-1023-1-4.jpg",
+      "/assets/products/fitness/40971-lady-air-ii/black-pink-1023-1/fitness__40971__black-pink-1023-1__c25a87beb778bde6__40971-1023-1-5.jpg",
+      "/assets/products/fitness/40971-lady-air-ii/black-pink-1023-1/fitness__40971__black-pink-1023-1__486cc4b63644e7c8__40971-1023-1-6.jpg",
+      "/assets/products/fitness/40971-lady-air-ii/black-pink-1023-1/fitness__40971__black-pink-1023-1__85cc5e47fb5c7966__40971-1023-1-7.jpg",
+      "/assets/products/fitness/40971-lady-air-ii/black-pink-1023-1/fitness__40971__black-pink-1023-1__c26ee4e0854b539a__40971-1023-1-8.jpg",
+      "/assets/products/fitness/40971-lady-air-ii/black-pink-1023-1/fitness__40971__black-pink-1023-1__e3efd442593e55dd__40971-1023-1-9.jpg",
+      "/assets/products/fitness/40971-lady-air-ii/white-black-0110/fitness__40971__white-black-0110__706f8132f50eafd2__40971-0110-1.jpg",
+      "/assets/products/fitness/40971-lady-air-ii/white-black-0110/fitness__40971__white-black-0110__e17d5ede7ae59211__40971-0110-2.jpg",
+      "/assets/products/fitness/40971-lady-air-ii/white-black-0110/fitness__40971__white-black-0110__f9615ac6501f5466__40971-0110-3.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|40971|BLACK/BLACK/1010",
+        "colour": "black/black/1010",
+        "sizes": "XS-4XL",
+        "price": 1150.0,
+        "images": [
+          "/assets/products/fitness/40971-lady-air-ii/black-black-1010/fitness__40971__black-black-1010__7eed2d1f5bfd04f9__40971-1010-1.jpg",
+          "/assets/products/fitness/40971-lady-air-ii/black-black-1010/fitness__40971__black-black-1010__f7888ca350d09da4__40971-1010-2.jpg",
+          "/assets/products/fitness/40971-lady-air-ii/black-black-1010/fitness__40971__black-black-1010__9bead38d0dfdd29f__40971-1010-3.jpg",
+          "/assets/products/fitness/40971-lady-air-ii/black-black-1010/fitness__40971__black-black-1010__ee24b82a839bf2ab__40971-1010-4.jpg",
+          "/assets/products/fitness/40971-lady-air-ii/black-black-1010/fitness__40971__black-black-1010__ea6644048d57b8e5__40971-1010-5.jpg",
+          "/assets/products/fitness/40971-lady-air-ii/black-black-1010/fitness__40971__black-black-1010__247430605fa4b1e5__40971-1010-6.jpg",
+          "/assets/products/fitness/40971-lady-air-ii/black-black-1010/fitness__40971__black-black-1010__ee03cdc1f8c4daea__40971-1010-7.jpg",
+          "/assets/products/fitness/40971-lady-air-ii/black-black-1010/fitness__40971__black-black-1010__74c2748ebabccf2b__40971-1010-8.jpg",
+          "/assets/products/fitness/40971-lady-air-ii/black-black-1010/fitness__40971__black-black-1010__fe86737848701705__40971-1010-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用網布，搭配超細纖維與 Griptec 貼片。"
+      },
+      {
+        "key": "Fitness|40971|BLACK/PINK/1023-1",
+        "colour": "black/pink/1023-1",
+        "sizes": "XS-4XL",
+        "price": 1150.0,
+        "images": [
+          "/assets/products/fitness/40971-lady-air-ii/black-pink-1023-1/fitness__40971__black-pink-1023-1__1acca59e4414bd01__40971-1023-1-1.jpg",
+          "/assets/products/fitness/40971-lady-air-ii/black-pink-1023-1/fitness__40971__black-pink-1023-1__1a3331e60b3a0ace__40971-1023-1-2.jpg",
+          "/assets/products/fitness/40971-lady-air-ii/black-pink-1023-1/fitness__40971__black-pink-1023-1__486542106a178ae8__40971-1023-1-3.jpg",
+          "/assets/products/fitness/40971-lady-air-ii/black-pink-1023-1/fitness__40971__black-pink-1023-1__08ec0618309319b6__40971-1023-1-4.jpg",
+          "/assets/products/fitness/40971-lady-air-ii/black-pink-1023-1/fitness__40971__black-pink-1023-1__c25a87beb778bde6__40971-1023-1-5.jpg",
+          "/assets/products/fitness/40971-lady-air-ii/black-pink-1023-1/fitness__40971__black-pink-1023-1__486cc4b63644e7c8__40971-1023-1-6.jpg",
+          "/assets/products/fitness/40971-lady-air-ii/black-pink-1023-1/fitness__40971__black-pink-1023-1__85cc5e47fb5c7966__40971-1023-1-7.jpg",
+          "/assets/products/fitness/40971-lady-air-ii/black-pink-1023-1/fitness__40971__black-pink-1023-1__c26ee4e0854b539a__40971-1023-1-8.jpg",
+          "/assets/products/fitness/40971-lady-air-ii/black-pink-1023-1/fitness__40971__black-pink-1023-1__e3efd442593e55dd__40971-1023-1-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用網布，搭配超細纖維與 Griptec 貼片。"
+      },
+      {
+        "key": "Fitness|40971|WHITE/BLACK/0110",
+        "colour": "white/black/0110",
+        "sizes": "XS-4XL",
+        "price": 1150.0,
+        "images": [
+          "/assets/products/fitness/40971-lady-air-ii/white-black-0110/fitness__40971__white-black-0110__706f8132f50eafd2__40971-0110-1.jpg",
+          "/assets/products/fitness/40971-lady-air-ii/white-black-0110/fitness__40971__white-black-0110__e17d5ede7ae59211__40971-0110-2.jpg",
+          "/assets/products/fitness/40971-lady-air-ii/white-black-0110/fitness__40971__white-black-0110__f9615ac6501f5466__40971-0110-3.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用網布，搭配超細纖維與 Griptec 貼片。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "女款 Air II"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "42126",
+    "name": "Premium Wristguard",
+    "nameZh": "Premium Wristguard",
+    "slug": "42126-premium-wristguard",
+    "category": "Fitness",
+    "line": "PREMIUM LINE",
+    "price": 1750.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "XS-4XL"
+    ],
+    "materials": "Microfibre; Griptec",
+    "description": "掌面採用超細纖維，搭配 Griptec 貼片。",
+    "images": [
+      "/assets/products/fitness/42126-premium-wristguard/black-10/fitness__42126__black-10__67c8a590861fa95a__42126-10-1.jpg",
+      "/assets/products/fitness/42126-premium-wristguard/black-10/fitness__42126__black-10__8ae875b1ae5a8597__42126-10-2.jpg",
+      "/assets/products/fitness/42126-premium-wristguard/black-10/fitness__42126__black-10__7783fa0954714d8f__42126-10-3.jpg",
+      "/assets/products/fitness/42126-premium-wristguard/black-10/fitness__42126__black-10__a8449aee7c398d0f__42126-10-4.jpg",
+      "/assets/products/fitness/42126-premium-wristguard/black-10/fitness__42126__black-10__d74bcfcb38b9913e__42126-10-5.jpg",
+      "/assets/products/fitness/42126-premium-wristguard/black-10/fitness__42126__black-10__14fe827e4ace62b2__42126-10-6.jpg",
+      "/assets/products/fitness/42126-premium-wristguard/black-10/fitness__42126__black-10__9c62ee6177561505__42126-10-7.jpg",
+      "/assets/products/fitness/42126-premium-wristguard/black-10/fitness__42126__black-10__54c68aa9e8ff202e__42126-10-8.jpg",
+      "/assets/products/fitness/42126-premium-wristguard/black-10/fitness__42126__black-10__8ea1c0e3b80e824a__42126-10-9.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|42126|BLACK/10",
+        "colour": "black/10",
+        "sizes": "XS-4XL",
+        "price": 1750.0,
+        "images": [
+          "/assets/products/fitness/42126-premium-wristguard/black-10/fitness__42126__black-10__67c8a590861fa95a__42126-10-1.jpg",
+          "/assets/products/fitness/42126-premium-wristguard/black-10/fitness__42126__black-10__8ae875b1ae5a8597__42126-10-2.jpg",
+          "/assets/products/fitness/42126-premium-wristguard/black-10/fitness__42126__black-10__7783fa0954714d8f__42126-10-3.jpg",
+          "/assets/products/fitness/42126-premium-wristguard/black-10/fitness__42126__black-10__a8449aee7c398d0f__42126-10-4.jpg",
+          "/assets/products/fitness/42126-premium-wristguard/black-10/fitness__42126__black-10__d74bcfcb38b9913e__42126-10-5.jpg",
+          "/assets/products/fitness/42126-premium-wristguard/black-10/fitness__42126__black-10__14fe827e4ace62b2__42126-10-6.jpg",
+          "/assets/products/fitness/42126-premium-wristguard/black-10/fitness__42126__black-10__9c62ee6177561505__42126-10-7.jpg",
+          "/assets/products/fitness/42126-premium-wristguard/black-10/fitness__42126__black-10__54c68aa9e8ff202e__42126-10-8.jpg",
+          "/assets/products/fitness/42126-premium-wristguard/black-10/fitness__42126__black-10__8ea1c0e3b80e824a__42126-10-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用超細纖維，搭配 Griptec 貼片。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Premium Wristguard"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "42145",
+    "name": "Iron Premium III",
+    "nameZh": "Iron Premium III",
+    "slug": "42145-iron-premium-iii",
+    "category": "Fitness",
+    "line": "PREMIUM LINE",
+    "price": 1850.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "XS-4XL"
+    ],
+    "materials": "Digital Carbon Fibre; Poron Gel",
+    "description": "掌面採用 Digital Carbon Fibre，搭配 Poron Gel 襯墊。",
+    "images": [
+      "/assets/products/fitness/42145-iron-premium-iii/black-10/fitness__42145__black-10__9e1c92809cfb16aa__42145-10-1.jpg",
+      "/assets/products/fitness/42145-iron-premium-iii/black-10/fitness__42145__black-10__34a70c9436686457__42145-10-2.jpg",
+      "/assets/products/fitness/42145-iron-premium-iii/black-10/fitness__42145__black-10__dee8c9eff37197b6__42145-10-3.jpg",
+      "/assets/products/fitness/42145-iron-premium-iii/black-10/fitness__42145__black-10__f93ff4bb05715368__42145-10-4.jpg",
+      "/assets/products/fitness/42145-iron-premium-iii/black-10/fitness__42145__black-10__5c190be97d5c6cc0__42145-10-5.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|42145|BLACK/10",
+        "colour": "black/10",
+        "sizes": "XS-4XL",
+        "price": 1850.0,
+        "images": [
+          "/assets/products/fitness/42145-iron-premium-iii/black-10/fitness__42145__black-10__9e1c92809cfb16aa__42145-10-1.jpg",
+          "/assets/products/fitness/42145-iron-premium-iii/black-10/fitness__42145__black-10__34a70c9436686457__42145-10-2.jpg",
+          "/assets/products/fitness/42145-iron-premium-iii/black-10/fitness__42145__black-10__dee8c9eff37197b6__42145-10-3.jpg",
+          "/assets/products/fitness/42145-iron-premium-iii/black-10/fitness__42145__black-10__f93ff4bb05715368__42145-10-4.jpg",
+          "/assets/products/fitness/42145-iron-premium-iii/black-10/fitness__42145__black-10__5c190be97d5c6cc0__42145-10-5.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用 Digital Carbon Fibre，搭配 Poron Gel 襯墊。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Iron Premium III"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "42155",
+    "name": "Gel Super Comfort",
+    "nameZh": "Gel Super Comfort",
+    "slug": "42155-gel-super-comfort",
+    "category": "Fitness",
+    "line": "PREMIUM LINE",
+    "price": 2000.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10",
+      "dark grey/19",
+      "olive 20-1",
+      "white/01"
+    ],
+    "sizes": [
+      "XS-4XL",
+      "XS-4XL",
+      "XS-4XL",
+      "XS-4XL"
+    ],
+    "materials": "Italian elastane; synthetic leather; gel",
+    "description": "手背採用義大利彈性纖維，掌面使用合成皮革與凝膠襯墊。",
+    "images": [
+      "/assets/products/fitness/42155-gel-super-comfort/black-10/fitness__42155__black-10__c63c338fa5dbb7aa__42155-10-1.jpg",
+      "/assets/products/fitness/42155-gel-super-comfort/black-10/fitness__42155__black-10__4754cff398f2a548__42155-10-2.jpg",
+      "/assets/products/fitness/42155-gel-super-comfort/dark-grey-19/fitness__42155__dark-grey-19__76605693239fa84c__42155-19-1.jpg",
+      "/assets/products/fitness/42155-gel-super-comfort/dark-grey-19/fitness__42155__dark-grey-19__8bfb7ae3c7cf47d5__42155-19-2.jpg",
+      "/assets/products/fitness/42155-gel-super-comfort/olive-20-1/fitness__42155__olive-20-1__276b3f5ea6042258__42155-20-1-1.jpg",
+      "/assets/products/fitness/42155-gel-super-comfort/olive-20-1/fitness__42155__olive-20-1__3788c0e1b8746061__42155-20-1-2.jpg",
+      "/assets/products/fitness/42155-gel-super-comfort/white-01/fitness__42155__white-01__5995d4a48daf54ce__42155-01-1.jpg",
+      "/assets/products/fitness/42155-gel-super-comfort/white-01/fitness__42155__white-01__ed9ccbee54b09144__42155-01-2.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|42155|BLACK/10",
+        "colour": "black/10",
+        "sizes": "XS-4XL",
+        "price": 2000.0,
+        "images": [
+          "/assets/products/fitness/42155-gel-super-comfort/black-10/fitness__42155__black-10__c63c338fa5dbb7aa__42155-10-1.jpg",
+          "/assets/products/fitness/42155-gel-super-comfort/black-10/fitness__42155__black-10__4754cff398f2a548__42155-10-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用義大利彈性纖維，掌面使用合成皮革與凝膠襯墊。"
+      },
+      {
+        "key": "Fitness|42155|DARK GREY/19",
+        "colour": "dark grey/19",
+        "sizes": "XS-4XL",
+        "price": 2000.0,
+        "images": [
+          "/assets/products/fitness/42155-gel-super-comfort/dark-grey-19/fitness__42155__dark-grey-19__76605693239fa84c__42155-19-1.jpg",
+          "/assets/products/fitness/42155-gel-super-comfort/dark-grey-19/fitness__42155__dark-grey-19__8bfb7ae3c7cf47d5__42155-19-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用義大利彈性纖維，掌面使用合成皮革與凝膠襯墊。"
+      },
+      {
+        "key": "Fitness|42155|OLIVE 20-1",
+        "colour": "olive 20-1",
+        "sizes": "XS-4XL",
+        "price": 2000.0,
+        "images": [
+          "/assets/products/fitness/42155-gel-super-comfort/olive-20-1/fitness__42155__olive-20-1__276b3f5ea6042258__42155-20-1-1.jpg",
+          "/assets/products/fitness/42155-gel-super-comfort/olive-20-1/fitness__42155__olive-20-1__3788c0e1b8746061__42155-20-1-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用義大利彈性纖維，掌面使用合成皮革與凝膠襯墊。"
+      },
+      {
+        "key": "Fitness|42155|WHITE/01",
+        "colour": "white/01",
+        "sizes": "XS-4XL",
+        "price": 2000.0,
+        "images": [
+          "/assets/products/fitness/42155-gel-super-comfort/white-01/fitness__42155__white-01__5995d4a48daf54ce__42155-01-1.jpg",
+          "/assets/products/fitness/42155-gel-super-comfort/white-01/fitness__42155__white-01__ed9ccbee54b09144__42155-01-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用義大利彈性纖維，掌面使用合成皮革與凝膠襯墊。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Gel Super Comfort"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "42166",
+    "name": "Gel Extrem",
+    "nameZh": "Gel Extrem",
+    "slug": "42166-gel-extrem",
+    "category": "Fitness",
+    "line": "PREMIUM LINE",
+    "price": 1600.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "XS-4XL"
+    ],
+    "materials": "Microfibre; Digital Carbon Fibre; Poron Gel",
+    "description": "掌面採用超細纖維及 Digital Carbon Fibre 貼片，搭配 Poron Gel 襯墊。",
+    "images": [
+      "/assets/products/fitness/42166-gel-extrem/black-10/fitness__42166__black-10__b3939ef73609b864__42166-10-1.jpg",
+      "/assets/products/fitness/42166-gel-extrem/black-10/fitness__42166__black-10__e2a3c824b0d3b040__42166-10-2.jpg",
+      "/assets/products/fitness/42166-gel-extrem/black-10/fitness__42166__black-10__a6e27766c400ce72__42166-10-3.jpg",
+      "/assets/products/fitness/42166-gel-extrem/black-10/fitness__42166__black-10__f662a316aec10ee6__42166-10-4.jpg",
+      "/assets/products/fitness/42166-gel-extrem/black-10/fitness__42166__black-10__5bc6dd50d9b48345__42166-10-5.jpg",
+      "/assets/products/fitness/42166-gel-extrem/black-10/fitness__42166__black-10__92e0568315597867__42166-10-6.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|42166|BLACK/10",
+        "colour": "black/10",
+        "sizes": "XS-4XL",
+        "price": 1600.0,
+        "images": [
+          "/assets/products/fitness/42166-gel-extrem/black-10/fitness__42166__black-10__b3939ef73609b864__42166-10-1.jpg",
+          "/assets/products/fitness/42166-gel-extrem/black-10/fitness__42166__black-10__e2a3c824b0d3b040__42166-10-2.jpg",
+          "/assets/products/fitness/42166-gel-extrem/black-10/fitness__42166__black-10__a6e27766c400ce72__42166-10-3.jpg",
+          "/assets/products/fitness/42166-gel-extrem/black-10/fitness__42166__black-10__f662a316aec10ee6__42166-10-4.jpg",
+          "/assets/products/fitness/42166-gel-extrem/black-10/fitness__42166__black-10__5bc6dd50d9b48345__42166-10-5.jpg",
+          "/assets/products/fitness/42166-gel-extrem/black-10/fitness__42166__black-10__92e0568315597867__42166-10-6.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用超細纖維及 Digital Carbon Fibre 貼片，搭配 Poron Gel 襯墊。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Gel Extrem"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "42176",
+    "name": "Classic",
+    "nameZh": "Classic",
+    "slug": "42176-classic",
+    "category": "Fitness",
+    "line": "PREMIUM LINE",
+    "price": 1500.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "XS-4XL"
+    ],
+    "materials": "coated microfibre; Poron Gel",
+    "description": "掌面採用塗層超細纖維，搭配 Poron Gel 襯墊。",
+    "images": [
+      "/assets/products/fitness/42176-classic/black-10/fitness__42176__black-10__ba5e4d5df876e9ca__42176-10-1.jpg",
+      "/assets/products/fitness/42176-classic/black-10/fitness__42176__black-10__abfabd47792522d5__42176-10-2.jpg",
+      "/assets/products/fitness/42176-classic/black-10/fitness__42176__black-10__8dfcd6545e8c9074__42176-10-3.jpg",
+      "/assets/products/fitness/42176-classic/black-10/fitness__42176__black-10__fad60f993e80e825__42176-10-4.jpg",
+      "/assets/products/fitness/42176-classic/black-10/fitness__42176__black-10__b3f398db41eeee70__42176-10-5.jpg",
+      "/assets/products/fitness/42176-classic/black-10/fitness__42176__black-10__9071c48dd241ae70__42176-10-6.jpg",
+      "/assets/products/fitness/42176-classic/black-10/fitness__42176__black-10__fafdc4ce4f24b31a__42176-10-7.jpg",
+      "/assets/products/fitness/42176-classic/black-10/fitness__42176__black-10__9f805ad4ebe53ab3__42176-10-8.jpg",
+      "/assets/products/fitness/42176-classic/black-10/fitness__42176__black-10__cf0087a8b8e3bade__42176-10-9.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|42176|BLACK/10",
+        "colour": "black/10",
+        "sizes": "XS-4XL",
+        "price": 1500.0,
+        "images": [
+          "/assets/products/fitness/42176-classic/black-10/fitness__42176__black-10__ba5e4d5df876e9ca__42176-10-1.jpg",
+          "/assets/products/fitness/42176-classic/black-10/fitness__42176__black-10__abfabd47792522d5__42176-10-2.jpg",
+          "/assets/products/fitness/42176-classic/black-10/fitness__42176__black-10__8dfcd6545e8c9074__42176-10-3.jpg",
+          "/assets/products/fitness/42176-classic/black-10/fitness__42176__black-10__fad60f993e80e825__42176-10-4.jpg",
+          "/assets/products/fitness/42176-classic/black-10/fitness__42176__black-10__b3f398db41eeee70__42176-10-5.jpg",
+          "/assets/products/fitness/42176-classic/black-10/fitness__42176__black-10__9071c48dd241ae70__42176-10-6.jpg",
+          "/assets/products/fitness/42176-classic/black-10/fitness__42176__black-10__fafdc4ce4f24b31a__42176-10-7.jpg",
+          "/assets/products/fitness/42176-classic/black-10/fitness__42176__black-10__9f805ad4ebe53ab3__42176-10-8.jpg",
+          "/assets/products/fitness/42176-classic/black-10/fitness__42176__black-10__cf0087a8b8e3bade__42176-10-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用塗層超細纖維，搭配 Poron Gel 襯墊。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Classic"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "42812",
+    "name": "Premium Belt Classic",
+    "nameZh": "Premium Belt Classic",
+    "slug": "42812-premium-belt-classic",
+    "category": "Fitness",
+    "line": "BELTS",
+    "price": 3550.0,
+    "currency": "TWD",
+    "colours": [
+      "brown/22"
+    ],
+    "sizes": [
+      "XS-4XL"
+    ],
+    "materials": "leather; Stainless steel",
+    "description": "腰帶採用皮革及不鏽鋼扣，寬度為 10 公分。",
+    "images": [
+      "/assets/products/fitness/42812-premium-belt-classic/brown-22/fitness__42812__brown-22__3d2172eeffd63dad__42812-22-1.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|42812|BROWN/22",
+        "colour": "brown/22",
+        "sizes": "XS-4XL",
+        "price": 3550.0,
+        "images": [
+          "/assets/products/fitness/42812-premium-belt-classic/brown-22/fitness__42812__brown-22__3d2172eeffd63dad__42812-22-1.jpg"
+        ],
+        "sharedImages": [],
+        "description": "腰帶採用皮革及不鏽鋼扣，寬度為 10 公分。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Premium Belt Classic"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "44102",
+    "name": "Strongman Gripper",
+    "nameZh": "Strongman Gripper",
+    "slug": "44102-strongman-gripper",
+    "category": "Fitness",
+    "line": "STRONGMAN LINE",
+    "price": 2100.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "S-4XL"
+    ],
+    "materials": "Microfibre; Griptec",
+    "description": "掌面採用超細纖維與 Griptec 貼片，腕帶設有雙魔鬼氈。",
+    "images": [
+      "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__c7cf781beaab25a2__44102-10-1.jpg",
+      "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__402d6c05f13dbbfe__44102-10-10.jpg",
+      "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__7e13490e0f654dcc__44102-10-11.jpg",
+      "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__0908abb7c630ad64__44102-10-12.jpg",
+      "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__a5832f622249bfb5__44102-10-2.jpg",
+      "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__d6cbaee1684088b3__44102-10-3.jpg",
+      "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__02e994eb3213ca14__44102-10-4.jpg",
+      "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__8468fc1fab8f8b71__44102-10-5.jpg",
+      "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__8e549a0712cd9a14__44102-10-6.jpg",
+      "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__7c422a2f203129a1__44102-10-7.jpg",
+      "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__dd00ac05b19e3276__44102-10-8.jpg",
+      "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__7d142e9d90d66bbd__44102-10-9.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|44102|BLACK/10",
+        "colour": "black/10",
+        "sizes": "S-4XL",
+        "price": 2100.0,
+        "images": [
+          "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__c7cf781beaab25a2__44102-10-1.jpg",
+          "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__402d6c05f13dbbfe__44102-10-10.jpg",
+          "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__7e13490e0f654dcc__44102-10-11.jpg",
+          "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__0908abb7c630ad64__44102-10-12.jpg",
+          "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__a5832f622249bfb5__44102-10-2.jpg",
+          "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__d6cbaee1684088b3__44102-10-3.jpg",
+          "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__02e994eb3213ca14__44102-10-4.jpg",
+          "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__8468fc1fab8f8b71__44102-10-5.jpg",
+          "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__8e549a0712cd9a14__44102-10-6.jpg",
+          "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__7c422a2f203129a1__44102-10-7.jpg",
+          "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__dd00ac05b19e3276__44102-10-8.jpg",
+          "/assets/products/fitness/44102-strongman-gripper/black-10/fitness__44102__black-10__7d142e9d90d66bbd__44102-10-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用超細纖維與 Griptec 貼片，腕帶設有雙魔鬼氈。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Strongman Gripper"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "44476",
+    "name": "Strongman Wristwrap",
+    "nameZh": "Strongman Wristwrap",
+    "slug": "44476-strongman-wristwrap",
+    "category": "Fitness",
+    "line": "STRONGMAN LINE",
+    "price": 1000.0,
+    "currency": "TWD",
+    "colours": [
+      "red/04"
+    ],
+    "sizes": [
+      "Onesize"
+    ],
+    "materials": "Elastic",
+    "description": "採用彈性材料，長 35 公分、寬 8 公分，設有拇指環。",
+    "images": [
+      "/assets/products/fitness/44476-strongman-wristwrap/red-04/fitness__44476__red-04__594c8d16af2bb79f__44476-strongman-hanfdgelenksbandage.jpg",
+      "/assets/products/fitness/44476-strongman-wristwrap/red-04/fitness__44476__red-04__cd2919451a81fae6__44476-04-10.jpg",
+      "/assets/products/fitness/44476-strongman-wristwrap/red-04/fitness__44476__red-04__ab2b1663c76a7528__44476-04-11.jpg",
+      "/assets/products/fitness/44476-strongman-wristwrap/red-04/fitness__44476__red-04__747bf13361f81dd9__44476-04-3.jpg",
+      "/assets/products/fitness/44476-strongman-wristwrap/red-04/fitness__44476__red-04__eb1e77755165a8cb__44476-04-4.jpg",
+      "/assets/products/fitness/44476-strongman-wristwrap/red-04/fitness__44476__red-04__7763a92df7b1dd62__44476-04-5.jpg",
+      "/assets/products/fitness/44476-strongman-wristwrap/red-04/fitness__44476__red-04__836ed1e2be999f78__44476-04-6.jpg",
+      "/assets/products/fitness/44476-strongman-wristwrap/red-04/fitness__44476__red-04__d7b1f1155a2c28d8__44476-04-7.jpg",
+      "/assets/products/fitness/44476-strongman-wristwrap/red-04/fitness__44476__red-04__dfd46d09484059cb__44476-04-8.jpg",
+      "/assets/products/fitness/44476-strongman-wristwrap/red-04/fitness__44476__red-04__8e2b471d74b02d61__44476-04-9.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|44476|RED/04",
+        "colour": "red/04",
+        "sizes": "Onesize",
+        "price": 1000.0,
+        "images": [
+          "/assets/products/fitness/44476-strongman-wristwrap/red-04/fitness__44476__red-04__594c8d16af2bb79f__44476-strongman-hanfdgelenksbandage.jpg",
+          "/assets/products/fitness/44476-strongman-wristwrap/red-04/fitness__44476__red-04__cd2919451a81fae6__44476-04-10.jpg",
+          "/assets/products/fitness/44476-strongman-wristwrap/red-04/fitness__44476__red-04__ab2b1663c76a7528__44476-04-11.jpg",
+          "/assets/products/fitness/44476-strongman-wristwrap/red-04/fitness__44476__red-04__747bf13361f81dd9__44476-04-3.jpg",
+          "/assets/products/fitness/44476-strongman-wristwrap/red-04/fitness__44476__red-04__eb1e77755165a8cb__44476-04-4.jpg",
+          "/assets/products/fitness/44476-strongman-wristwrap/red-04/fitness__44476__red-04__7763a92df7b1dd62__44476-04-5.jpg",
+          "/assets/products/fitness/44476-strongman-wristwrap/red-04/fitness__44476__red-04__836ed1e2be999f78__44476-04-6.jpg",
+          "/assets/products/fitness/44476-strongman-wristwrap/red-04/fitness__44476__red-04__d7b1f1155a2c28d8__44476-04-7.jpg",
+          "/assets/products/fitness/44476-strongman-wristwrap/red-04/fitness__44476__red-04__dfd46d09484059cb__44476-04-8.jpg",
+          "/assets/products/fitness/44476-strongman-wristwrap/red-04/fitness__44476__red-04__8e2b471d74b02d61__44476-04-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用彈性材料，長 35 公分、寬 8 公分，設有拇指環。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Strongman Wristwrap"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "44486",
+    "name": "Strongman Kneewrap",
+    "nameZh": "Strongman Kneewrap",
+    "slug": "44486-strongman-kneewrap",
+    "category": "Fitness",
+    "line": "STRONGMAN LINE",
+    "price": 1550.0,
+    "currency": "TWD",
+    "colours": [
+      "red/04"
+    ],
+    "sizes": [
+      "Onesize"
+    ],
+    "materials": "Elastic",
+    "description": "採用彈性材料，長 250 公分、寬 8 公分。",
+    "images": [
+      "/assets/products/fitness/44486-strongman-kneewrap/red-04/fitness__44486__red-04__4134ac0b52ba7183__44486-04-1.jpg",
+      "/assets/products/fitness/44486-strongman-kneewrap/red-04/fitness__44486__red-04__3ed3c200c47d43a2__44486-04-2.jpg",
+      "/assets/products/fitness/44486-strongman-kneewrap/red-04/fitness__44486__red-04__3ec96a2855f09e72__44486-04-3.jpg",
+      "/assets/products/fitness/44486-strongman-kneewrap/red-04/fitness__44486__red-04__df974812ad4c835e__44486-04-4.jpg",
+      "/assets/products/fitness/44486-strongman-kneewrap/red-04/fitness__44486__red-04__b129de802fe7ea61__44486-04-5.jpg",
+      "/assets/products/fitness/44486-strongman-kneewrap/red-04/fitness__44486__red-04__6cb3800feddbbd95__44486-04-6.jpg",
+      "/assets/products/fitness/44486-strongman-kneewrap/red-04/fitness__44486__red-04__9008b50dda60268f__44486-04-7.jpg",
+      "/assets/products/fitness/44486-strongman-kneewrap/red-04/fitness__44486__red-04__beba21e922751d1e__44486-04-8.jpg",
+      "/assets/products/fitness/44486-strongman-kneewrap/red-04/fitness__44486__red-04__1aea01d6b7f235af__44486-04-9.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|44486|RED/04",
+        "colour": "red/04",
+        "sizes": "Onesize",
+        "price": 1550.0,
+        "images": [
+          "/assets/products/fitness/44486-strongman-kneewrap/red-04/fitness__44486__red-04__4134ac0b52ba7183__44486-04-1.jpg",
+          "/assets/products/fitness/44486-strongman-kneewrap/red-04/fitness__44486__red-04__3ed3c200c47d43a2__44486-04-2.jpg",
+          "/assets/products/fitness/44486-strongman-kneewrap/red-04/fitness__44486__red-04__3ec96a2855f09e72__44486-04-3.jpg",
+          "/assets/products/fitness/44486-strongman-kneewrap/red-04/fitness__44486__red-04__df974812ad4c835e__44486-04-4.jpg",
+          "/assets/products/fitness/44486-strongman-kneewrap/red-04/fitness__44486__red-04__b129de802fe7ea61__44486-04-5.jpg",
+          "/assets/products/fitness/44486-strongman-kneewrap/red-04/fitness__44486__red-04__6cb3800feddbbd95__44486-04-6.jpg",
+          "/assets/products/fitness/44486-strongman-kneewrap/red-04/fitness__44486__red-04__9008b50dda60268f__44486-04-7.jpg",
+          "/assets/products/fitness/44486-strongman-kneewrap/red-04/fitness__44486__red-04__beba21e922751d1e__44486-04-8.jpg",
+          "/assets/products/fitness/44486-strongman-kneewrap/red-04/fitness__44486__red-04__1aea01d6b7f235af__44486-04-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用彈性材料，長 250 公分、寬 8 公分。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Strongman Kneewrap"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "44612",
+    "name": "Strongman Powerstrap",
+    "nameZh": "Strongman Powerstrap",
+    "slug": "44612-strongman-powerstrap",
+    "category": "Fitness",
+    "line": "STRONGMAN LINE",
+    "price": 1050.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "Onesize"
+    ],
+    "materials": "leather; Nylon; Kevlar",
+    "description": "拉帶採用雙層皮革、尼龍補強及 Kevlar 縫線，帶長 48 公分。",
+    "images": [
+      "/assets/products/fitness/44612-strongman-powerstrap/black-10/fitness__44612__black-10__226215a03b673894__44612-10-1.jpg",
+      "/assets/products/fitness/44612-strongman-powerstrap/black-10/fitness__44612__black-10__49b2dbb23d2b255e__44612-10-2.jpg",
+      "/assets/products/fitness/44612-strongman-powerstrap/black-10/fitness__44612__black-10__7e0254358ccc3ab2__44612-10-3.jpg",
+      "/assets/products/fitness/44612-strongman-powerstrap/black-10/fitness__44612__black-10__cfa15866af5d1ba4__44612-10-4.jpg",
+      "/assets/products/fitness/44612-strongman-powerstrap/black-10/fitness__44612__black-10__273c6bb4e13b31e8__44612-10-5.jpg",
+      "/assets/products/fitness/44612-strongman-powerstrap/black-10/fitness__44612__black-10__35ef68553f5f11b8__44612-10-6.jpg",
+      "/assets/products/fitness/44612-strongman-powerstrap/black-10/fitness__44612__black-10__98ed345c4df1f8a1__44612-10-7.jpg",
+      "/assets/products/fitness/44612-strongman-powerstrap/black-10/fitness__44612__black-10__f96a78fbf8d63549__44612-10-8.jpg",
+      "/assets/products/fitness/44612-strongman-powerstrap/black-10/fitness__44612__black-10__922752b932909680__44612-10-9.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|44612|BLACK/10",
+        "colour": "black/10",
+        "sizes": "Onesize",
+        "price": 1050.0,
+        "images": [
+          "/assets/products/fitness/44612-strongman-powerstrap/black-10/fitness__44612__black-10__226215a03b673894__44612-10-1.jpg",
+          "/assets/products/fitness/44612-strongman-powerstrap/black-10/fitness__44612__black-10__49b2dbb23d2b255e__44612-10-2.jpg",
+          "/assets/products/fitness/44612-strongman-powerstrap/black-10/fitness__44612__black-10__7e0254358ccc3ab2__44612-10-3.jpg",
+          "/assets/products/fitness/44612-strongman-powerstrap/black-10/fitness__44612__black-10__cfa15866af5d1ba4__44612-10-4.jpg",
+          "/assets/products/fitness/44612-strongman-powerstrap/black-10/fitness__44612__black-10__273c6bb4e13b31e8__44612-10-5.jpg",
+          "/assets/products/fitness/44612-strongman-powerstrap/black-10/fitness__44612__black-10__35ef68553f5f11b8__44612-10-6.jpg",
+          "/assets/products/fitness/44612-strongman-powerstrap/black-10/fitness__44612__black-10__98ed345c4df1f8a1__44612-10-7.jpg",
+          "/assets/products/fitness/44612-strongman-powerstrap/black-10/fitness__44612__black-10__f96a78fbf8d63549__44612-10-8.jpg",
+          "/assets/products/fitness/44612-strongman-powerstrap/black-10/fitness__44612__black-10__922752b932909680__44612-10-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "拉帶採用雙層皮革、尼龍補強及 Kevlar 縫線，帶長 48 公分。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Strongman Powerstrap"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "44756",
+    "name": "Ellbow Bandage Neopren",
+    "nameZh": "Ellbow Bandage Neopren",
+    "slug": "44756-ellbow-bandage-neopren",
+    "category": "Fitness",
+    "line": "STRONGMAN LINE",
+    "price": 2500.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "S-4XL"
+    ],
+    "materials": "Neoprene",
+    "description": "採用厚度 6 毫米的氯丁橡膠。",
+    "images": [
+      "/assets/products/fitness/44756-ellbow-bandage-neopren/black-10/fitness__44756__black-10__8a475cbf85e0b456__44756-10-1.jpg",
+      "/assets/products/fitness/44756-ellbow-bandage-neopren/black-10/fitness__44756__black-10__45dd071b4f0d7728__44756-10-3.jpg",
+      "/assets/products/fitness/44756-ellbow-bandage-neopren/black-10/fitness__44756__black-10__fb7146e91b34ab0b__44756-10-4.jpg",
+      "/assets/products/fitness/44756-ellbow-bandage-neopren/black-10/fitness__44756__black-10__700e2531c14c5199__44756-10-5.jpg",
+      "/assets/products/fitness/44756-ellbow-bandage-neopren/black-10/fitness__44756__black-10__7053b6d8dedf945d__44756-10-6.jpg",
+      "/assets/products/fitness/44756-ellbow-bandage-neopren/black-10/fitness__44756__black-10__0dfeb26295368542__44756-10-7.jpg",
+      "/assets/products/fitness/44756-ellbow-bandage-neopren/black-10/fitness__44756__black-10__fc378f1b06218f5d__44756-10-8.jpg",
+      "/assets/products/fitness/44756-ellbow-bandage-neopren/black-10/fitness__44756__black-10__768361787cc1e771__44756-10-9.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|44756|BLACK/10",
+        "colour": "black/10",
+        "sizes": "S-4XL",
+        "price": 2500.0,
+        "images": [
+          "/assets/products/fitness/44756-ellbow-bandage-neopren/black-10/fitness__44756__black-10__8a475cbf85e0b456__44756-10-1.jpg",
+          "/assets/products/fitness/44756-ellbow-bandage-neopren/black-10/fitness__44756__black-10__45dd071b4f0d7728__44756-10-3.jpg",
+          "/assets/products/fitness/44756-ellbow-bandage-neopren/black-10/fitness__44756__black-10__fb7146e91b34ab0b__44756-10-4.jpg",
+          "/assets/products/fitness/44756-ellbow-bandage-neopren/black-10/fitness__44756__black-10__700e2531c14c5199__44756-10-5.jpg",
+          "/assets/products/fitness/44756-ellbow-bandage-neopren/black-10/fitness__44756__black-10__7053b6d8dedf945d__44756-10-6.jpg",
+          "/assets/products/fitness/44756-ellbow-bandage-neopren/black-10/fitness__44756__black-10__0dfeb26295368542__44756-10-7.jpg",
+          "/assets/products/fitness/44756-ellbow-bandage-neopren/black-10/fitness__44756__black-10__fc378f1b06218f5d__44756-10-8.jpg",
+          "/assets/products/fitness/44756-ellbow-bandage-neopren/black-10/fitness__44756__black-10__768361787cc1e771__44756-10-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用厚度 6 毫米的氯丁橡膠。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Ellbow Bandage Neopren"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "44766",
+    "name": "Neopren Knee Bandage",
+    "nameZh": "Neopren Knee Bandage",
+    "slug": "44766-neopren-knee-bandage",
+    "category": "Fitness",
+    "line": "STRONGMAN LINE",
+    "price": 2950.0,
+    "currency": "TWD",
+    "colours": [
+      "black/10"
+    ],
+    "sizes": [
+      "S-4XL"
+    ],
+    "materials": "Neoprene",
+    "description": "採用厚度 6 毫米的氯丁橡膠。",
+    "images": [
+      "/assets/products/fitness/44766-neopren-knee-bandage/black-10/fitness__44766__black-10__b55474ec05bd0e04__44766-10-1.jpg",
+      "/assets/products/fitness/44766-neopren-knee-bandage/black-10/fitness__44766__black-10__de3e1ce8809afa38__44766-10-3.jpg",
+      "/assets/products/fitness/44766-neopren-knee-bandage/black-10/fitness__44766__black-10__604f0b5a1351f399__44766-10-4.jpg",
+      "/assets/products/fitness/44766-neopren-knee-bandage/black-10/fitness__44766__black-10__61b05ca5fc02eb5b__44766-10-5.jpg",
+      "/assets/products/fitness/44766-neopren-knee-bandage/black-10/fitness__44766__black-10__1a36d21fa79d9b48__44766-10-6.jpg",
+      "/assets/products/fitness/44766-neopren-knee-bandage/black-10/fitness__44766__black-10__5f09436a94bdcfc0__44766-10-7.jpg",
+      "/assets/products/fitness/44766-neopren-knee-bandage/black-10/fitness__44766__black-10__4207fdd73cd3caf8__44766-10-8.jpg",
+      "/assets/products/fitness/44766-neopren-knee-bandage/black-10/fitness__44766__black-10__542e4692b45a1441__44766-10-9.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Fitness|44766|BLACK/10",
+        "colour": "black/10",
+        "sizes": "S-4XL",
+        "price": 2950.0,
+        "images": [
+          "/assets/products/fitness/44766-neopren-knee-bandage/black-10/fitness__44766__black-10__b55474ec05bd0e04__44766-10-1.jpg",
+          "/assets/products/fitness/44766-neopren-knee-bandage/black-10/fitness__44766__black-10__de3e1ce8809afa38__44766-10-3.jpg",
+          "/assets/products/fitness/44766-neopren-knee-bandage/black-10/fitness__44766__black-10__604f0b5a1351f399__44766-10-4.jpg",
+          "/assets/products/fitness/44766-neopren-knee-bandage/black-10/fitness__44766__black-10__61b05ca5fc02eb5b__44766-10-5.jpg",
+          "/assets/products/fitness/44766-neopren-knee-bandage/black-10/fitness__44766__black-10__1a36d21fa79d9b48__44766-10-6.jpg",
+          "/assets/products/fitness/44766-neopren-knee-bandage/black-10/fitness__44766__black-10__5f09436a94bdcfc0__44766-10-7.jpg",
+          "/assets/products/fitness/44766-neopren-knee-bandage/black-10/fitness__44766__black-10__4207fdd73cd3caf8__44766-10-8.jpg",
+          "/assets/products/fitness/44766-neopren-knee-bandage/black-10/fitness__44766__black-10__542e4692b45a1441__44766-10-9.jpg"
+        ],
+        "sharedImages": [],
+        "description": "採用厚度 6 毫米的氯丁橡膠。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Neopren Knee Bandage"
+      },
+      "en": null
+    }
+  }
+]

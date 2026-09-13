@@ -1,0 +1,17 @@
+.pending{display:block;color:#7a5610;font-size:.9rem;font-weight:700}
+.detail dt{color:#5e6872}
+.hero .eyebrow{color:#ff7278}
+.split .eyebrow{color:#b61f29}
+/* Keep the entire source photograph visible in every product image box. */
+.gallery{align-content:start;align-items:start}
+.gallery img,.gallery img:first-child,.card img,.hero-image img{object-fit:contain;object-position:center;background:#fff;display:block}
+.gallery img{height:auto;max-width:100%}
+.product>*{min-width:0}
+.detail h1,.detail dd{overflow-wrap:anywhere}
+a:focus-visible,button:focus-visible{outline:3px solid #b92027;outline-offset:4px}
+.variant-option:focus-visible{outline:3px solid #b92027;outline-offset:3px}
+.colour-list span{font-size:.875rem}
+@media(min-width:801px) and (max-width:1100px){.nav nav{gap:12px}.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.product{gap:24px;padding:48px 4vw}}
+.colour-list{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px!important}.colour-list span{border:1px solid #c8cbca;border-radius:999px;padding:2px 7px;font-size:.72rem;line-height:1.35}.variant-picker{margin:26px 0}.variant-picker h2{font-size:1rem;margin:0 0 10px}.variant-options{display:flex;flex-wrap:wrap;gap:8px}.variant-option{appearance:none;background:#fff;border:1px solid #aeb3b0;padding:8px 11px;color:#101318;font:inherit;font-size:.86rem;cursor:pointer}.variant-option:hover,.variant-option:focus-visible{border-color:#d42b31;outline:2px solid transparent}.variant-option.active{background:#101318;border-color:#101318;color:#fff}.admin-only{margin:25px 7vw 0}.admin-only ul{margin:.5rem 0 0;padding-left:1.2rem}.fitness-card strong{display:block;margin-top:6px}@media(max-width:800px){.variant-option{min-height:42px}.colour-list span{font-size:.7rem}.fitness-product .gallery{order:0}}
+.catalogue-controls{display:flex;gap:1rem;align-items:end;flex-wrap:wrap;margin:1.5rem 0}.catalogue-controls label{display:grid;gap:.4rem}.catalogue-controls input,.catalogue-controls select,footer select{font:inherit;padding:.65rem;border:1px solid #666;background:#fff;color:#202830;max-width:100%}.catalogue-controls [role=status]{flex-basis:100%;color:#505860}.card[hidden]{display:none!important}.order-contact{margin:.5rem 0 .5rem .5rem}footer a{color:inherit;text-decoration:underline}.detail dd{overflow-wrap:anywhere}.contact-links{line-height:2}
+.card img{height:auto;aspect-ratio:1/1}

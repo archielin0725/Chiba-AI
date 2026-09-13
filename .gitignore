@@ -1,0 +1,18 @@
+# Deny by default. Only the audited, standalone release site is versioned.
+/*
+!/.gitignore
+!/release-site/
+!/release-site/**
+/release-site/dist/
+**/.env*
+**/.DS_Store
+**/*.map
+**/*.xlsx
+**/*.xls
+**/*.csv
+**/*.pdf
+**/*.log
+**/node_modules/
+**/credentials*
+**/*secret*
+**/*token*
