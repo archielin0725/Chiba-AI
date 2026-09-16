@@ -49,3 +49,460 @@ a:focus-visible,button:focus-visible{outline:3px solid #b92027;outline-offset:4p
   .size-tab{padding:.6rem .9rem;font-size:.88rem}
   .size-table th,.size-table td{padding:8px 10px;font-size:.88rem}
 }
+
+/* Brand logo in header & footer */
+.brand:has(img),
+.nav .brand:has(img) {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  line-height: 1;
+}
+.brand img {
+  display: block;
+  width: auto;
+  object-fit: contain;
+}
+.brand-icon {
+  height: 24px;
+  width: auto;
+  flex-shrink: 0;
+}
+.brand-wordmark {
+  height: 20px;
+  width: auto;
+  max-width: 110px;
+  flex-shrink: 0;
+}
+@media (max-width: 800px) {
+  .brand:has(img),
+  .nav .brand:has(img) {
+    gap: 6px;
+  }
+  .brand-icon {
+    height: 20px;
+  }
+  .brand-wordmark {
+    height: 17px;
+    max-width: 90px;
+  }
+}
+
+/* Homepage navigation overrides */
+body:has(> .nav + main > .hero) .nav {
+  background: #fff;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 2px 12px rgba(16, 19, 24, 0.06);
+}
+body:has(> .nav + main > .hero) .nav nav a {
+  color: var(--ink);
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+body:has(> .nav + main > .hero) .nav nav a:hover {
+  color: var(--red);
+}
+body:has(> .nav + main > .hero) .menu {
+  color: var(--ink);
+}
+body.open:has(> .nav + main > .hero) .nav nav {
+  background: #fff;
+  border-top: 1px solid var(--line);
+  box-shadow: 0 8px 16px rgba(16, 19, 24, 0.08);
+}
+body.open:has(> .nav + main > .hero) .nav nav a {
+  color: var(--ink);
+}
+
+/* Size Guide header override */
+body:has(.size-hero) .nav {
+  background: #fff;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+body:has(.size-hero) .nav nav a {
+  color: var(--ink);
+}
+body:has(.size-hero) .menu {
+  color: var(--ink);
+}
+body.open:has(.size-hero) .nav nav {
+  background: #fff;
+  color: var(--ink);
+  border-top: 1px solid var(--line);
+  box-shadow: 0 8px 16px rgba(16, 19, 24, 0.08);
+}
+body.open:has(.size-hero) .nav nav a {
+  color: var(--ink);
+}
+
+/* Homepage hero, intro, categories, featured, fitness, footer */
+body:has(> .nav + main > .hero) .hero {
+  background: #fff;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+  position: relative;
+  overflow: hidden;
+}
+body:has(> .nav + main > .hero) .hero > div {
+  position: relative;
+  z-index: 1;
+}
+body:has(> .nav + main > .hero) .hero .eyebrow {
+  color: var(--red);
+}
+body:has(> .nav + main > .hero) .hero h1 {
+  font-size: clamp(2.8rem, 6vw, 6.5rem);
+}
+body:has(> .nav + main > .hero) .hero .hero-description {
+  font-size: clamp(0.95rem, 1.5vw, 1.2rem);
+  line-height: 1.8;
+  color: #505860;
+  max-width: 620px;
+}
+body:has(> .nav + main > .hero) .hero-image {
+  background: #343638;
+  border: 1px solid #252729;
+  box-shadow: 0 10px 30px rgba(16, 19, 24, 0.18);
+}
+body:has(> .nav + main > .hero) .hero-image img {
+  mix-blend-mode: normal;
+}
+body:has(> .nav + main > .hero) .text-link {
+  color: var(--ink);
+}
+body:has(> .nav + main > .hero) .intro {
+  background: #eef1f1;
+  position: relative;
+  overflow: hidden;
+}
+body:has(> .nav + main > .hero) .intro:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.42;
+  filter: blur(1px);
+  background: linear-gradient(90deg, rgba(238, 241, 241, 0.72), rgba(238, 241, 241, 0.32)), url("/assets/products/cycling/3010320-cool-air/cycling__3010320__a7986b17ffa56c67__3010320_01_7.jpg") center/cover no-repeat;
+  pointer-events: none;
+}
+body:has(> .nav + main > .hero) .intro > * {
+  position: relative;
+  z-index: 1;
+}
+body:has(> .nav + main > .hero) .intro .card {
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 12px 28px rgba(16, 19, 24, 0.12);
+}
+body:has(> .nav + main > .hero) .home-fitness-featured {
+  background: #f0edf0;
+}
+body:has(> .nav + main > .hero) .home-fitness-featured:before {
+  opacity: 0.44;
+  filter: blur(1px);
+  background: linear-gradient(90deg, rgba(240, 237, 240, 0.72), rgba(240, 237, 240, 0.3)), url("/assets/products/fitness/40945-lady-diamond/turquoise-18/fitness__40945__turquoise-18__1930a3ef7a41d24d__40945-18-1.jpg") center/cover no-repeat;
+}
+body:has(> .nav + main > .hero) .home-fitness-featured .card {
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 12px 28px rgba(16, 19, 24, 0.12);
+}
+body:has(> .nav + main > .hero) .split {
+  background: #f7f7f5;
+  border-top: 1px solid var(--line);
+}
+body:has(> .nav + main > .hero) footer {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.16)), url("/assets/uploaded/upload_05_Pasted%20Image.jpe") center/cover no-repeat;
+  background-color: #e12020;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 120px rgba(0, 0, 0, 0.14);
+}
+body:has(> .nav + main > .hero) footer:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.08), transparent 30%);
+  pointer-events: none;
+}
+body:has(> .nav + main > .hero) footer > * {
+  position: relative;
+  z-index: 1;
+}
+body:has(> .nav + main > .hero) footer .footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  padding: 7px 14px;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  width: fit-content;
+  margin-top: 48px;
+}
+body:has(> .nav + main > .hero) footer .footer-brand .brand-icon {
+  height: 24px;
+}
+body:has(> .nav + main > .hero) footer .footer-brand .brand-wordmark {
+  height: 20px;
+}
+body:has(> .nav + main > .hero) footer a {
+  color: #fff;
+}
+body:has(> .nav + main > .hero) footer .quiet {
+  color: #f5f5f5;
+}
+body:has(> .nav + main > .hero) footer select {
+  border-color: #fff;
+  background: #fff;
+  color: #101318;
+}
+body:has(> .nav + main > .hero) footer nav {
+  position: relative;
+}
+body:has(> .nav + main > .hero) footer nav a {
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 14px;
+}
+body:has(> .nav + main > .hero) footer nav a:hover,
+body:has(> .nav + main > .hero) footer nav a:focus-visible {
+  text-decoration: underline;
+}
+
+.home-categories {
+  padding: 72px 7vw;
+  background: #f7f7f5;
+  border-bottom: 1px solid var(--line);
+}
+.home-section-heading {
+  max-width: 680px;
+  margin-bottom: 28px;
+}
+.home-section-heading h2 {
+  font-size: clamp(2rem, 4vw, 3.8rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  margin: 0.1em 0 0.35em;
+}
+.home-section-heading p:not(.eyebrow) {
+  color: #505860;
+  margin: 0;
+}
+.home-category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.home-category {
+  position: relative;
+  display: block;
+  min-height: 360px;
+  overflow: hidden;
+  background: #fff;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid var(--line);
+}
+.home-category:after {
+  content: "";
+  position: absolute;
+  inset: 35% 0 0;
+  background: linear-gradient(transparent, rgba(16, 19, 24, 0.82));
+}
+.home-category img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+.home-category span {
+  position: absolute;
+  z-index: 1;
+  left: 26px;
+  right: 26px;
+  bottom: 24px;
+  display: grid;
+  gap: 4px;
+}
+.home-category small {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  font-weight: bold;
+  color: #ffb000;
+}
+.home-category strong {
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  line-height: 1;
+}
+.home-category em {
+  font-style: normal;
+  font-weight: bold;
+}
+.home-category:hover img,
+.home-category:focus-visible img {
+  transform: scale(1.04);
+}
+.home-category:focus-visible {
+  outline: 3px solid var(--red);
+  outline-offset: 4px;
+}
+@media (max-width: 800px) {
+  .home-categories {
+    padding: 42px 5vw;
+  }
+  .home-category-grid {
+    grid-template-columns: 1fr;
+  }
+  .home-category,
+  .home-category img {
+    min-height: 280px;
+  }
+}
+
+.home-featured {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: stretch;
+  gap: 0;
+  margin: 0 7vw 72px;
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 28px rgba(16, 19, 24, 0.06);
+}
+.home-featured-image {
+  background: #f4f4f1;
+  min-height: 420px;
+}
+.home-featured-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.home-featured-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px;
+}
+.home-featured-copy h2 {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 0.92;
+  letter-spacing: -0.07em;
+  margin: 0.1em 0 0.25em;
+}
+.home-featured-copy p:not(.eyebrow) {
+  color: #505860;
+  max-width: 430px;
+}
+.home-featured-price {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--ink) !important;
+}
+.home-featured-price small {
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: #67727d;
+}
+.home-featured-copy .button {
+  align-self: flex-start;
+}
+@media (max-width: 800px) {
+  .home-featured {
+    grid-template-columns: 1fr;
+    margin: 0 5vw 42px;
+  }
+  .home-featured-image {
+    min-height: 280px;
+  }
+  .home-featured-copy {
+    padding: 30px 24px;
+  }
+}
+
+.home-fitness {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  margin: 0 7vw 72px;
+  background: #f7f7f5;
+  border: 1px solid var(--line);
+}
+.home-fitness-image {
+  min-height: 340px;
+  background: #fff;
+}
+.home-fitness-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.home-fitness-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px;
+}
+.home-fitness-copy h2 {
+  font-size: clamp(2rem, 4vw, 3.8rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+  margin: 0.1em 0 0.3em;
+}
+.home-fitness-copy p:not(.eyebrow) {
+  color: #505860;
+  max-width: 420px;
+}
+.home-fitness-copy .button {
+  align-self: flex-start;
+}
+@media (max-width: 800px) {
+  .home-fitness {
+    grid-template-columns: 1fr;
+    margin: 0 5vw 42px;
+  }
+  .home-fitness-image {
+    min-height: 260px;
+  }
+  .home-fitness-copy {
+    padding: 30px 24px;
+  }
+}
+
+.hero-language {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 18px;
+  color: #68727d;
+  font-size: 0.78rem;
+}
+.hero-language select {
+  font: inherit;
+  padding: 4px 7px;
+  border: 1px solid #c8cbca;
+  background: #fff;
+  color: #505860;
+}
+@media (max-width: 800px) {
+  body:has(> .nav + main > .hero) .hero-image {
+    height: 300px;
+    min-height: 0;
+  }
+  body:has(> .nav + main > .hero) .hero-image img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 800px) {
+  .size-tables > * {
+    min-width: 0;
+  }
+}
