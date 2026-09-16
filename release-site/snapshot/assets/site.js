@@ -7,6 +7,25 @@ document.querySelectorAll('[data-catalogue-controls]').forEach(controls=>{
   search.addEventListener('input',filter);line.addEventListener('change',filter);filter();
 });
 
+document.querySelectorAll('[data-size-checker]').forEach(form=>{
+  const input=form.querySelector('input'); const result=form.querySelector('[data-size-result]');
+  const check=()=>{
+    const raw=input.value.trim();
+    if(!raw){
+      result.textContent=''; result.removeAttribute('data-state'); input.removeAttribute('aria-invalid'); return;
+    }
+    const value=Number(raw);
+    if(!Number.isFinite(value)||value<10||value>35){
+      result.textContent='請輸入 10–35 公分之間的掌圍。'; result.dataset.state='error'; input.setAttribute('aria-invalid','true'); return;
+    }
+    const adultSizes=[{size:'XS',circumference:17},{size:'S',circumference:19},{size:'M',circumference:22},{size:'L',circumference:24},{size:'XL',circumference:25},{size:'XXL',circumference:26},{size:'3XL',circumference:27}];
+    const recommendation=adultSizes.reduce((closest,current)=>Math.abs(current.circumference-value)<=Math.abs(closest.circumference-value)?current:closest);
+    result.textContent=`參考尺寸：${recommendation.size}（掌圍 ${recommendation.circumference} 公分）。請到產品頁確認該款式是否提供此尺寸；介於尺寸之間通常建議選擇較大尺寸。`; result.dataset.state='success'; input.removeAttribute('aria-invalid');
+  };
+  form.addEventListener('submit',event=>{event.preventDefault();check()});
+  input.addEventListener('input',check);
+});
+
 document.querySelectorAll('[data-variant-product]').forEach(product=>{
   const payload=product.parentElement.querySelector('[data-variant-data]');
   if(!payload) return;
