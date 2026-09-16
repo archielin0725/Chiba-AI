@@ -593,18 +593,17 @@ body:has(> .nav + main > .hero) .split {
   color: #1a1d20;
 }
 
-.tech-breadcrumb {
-  font-size: 0.84rem;
-  color: #6b7280;
-  margin: 20px 0 12px;
+/* Tech Page Header */
+.tech-page-header {
+  margin: 32px 0 24px;
 }
-.tech-breadcrumb a {
-  color: #4b5563;
-  text-decoration: none;
-}
-.tech-breadcrumb a:hover {
-  color: #b92027;
-  text-decoration: underline;
+.tech-page-title {
+  font-size: clamp(2rem, 3.8vw, 2.85rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: #101318;
+  line-height: 1.15;
+  margin: 0;
 }
 
 /* Tech Hero */
@@ -1118,6 +1117,8 @@ body:has(> .nav + main > .hero) .split {
 
 @media (max-width: 768px) {
   .tech-main { padding: 0 4vw 48px; }
+  .tech-page-header { margin: 20px 0 16px; }
+  .tech-page-title { font-size: 1.75rem; }
   .tech-hero { margin-bottom: 24px; border-radius: 12px; }
   .tech-hero-title { font-size: 1.7rem; }
   .tech-hero-desc { font-size: 0.98rem; }
