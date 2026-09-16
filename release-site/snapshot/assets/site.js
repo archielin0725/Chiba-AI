@@ -7,20 +7,6 @@ document.querySelectorAll('[data-catalogue-controls]').forEach(controls=>{
   search.addEventListener('input',filter);line.addEventListener('change',filter);filter();
 });
 
-document.querySelectorAll('[data-size-checker]').forEach(form=>{
-  const input=form.querySelector('input'); const result=form.querySelector('[data-size-result]');
-  form.addEventListener('submit',event=>{
-    event.preventDefault();
-    const value=Number(input.value);
-    if(!Number.isFinite(value)||value<10||value>35){
-      result.textContent='請輸入 10–35 公分之間的掌圍。'; result.dataset.state='error'; input.setAttribute('aria-invalid','true'); return;
-    }
-    const adultSizes=[{size:'XS',circumference:17},{size:'S',circumference:19},{size:'M',circumference:22},{size:'L',circumference:24},{size:'XL',circumference:25},{size:'XXL',circumference:26},{size:'3XL',circumference:27}];
-    const recommendation=adultSizes.reduce((closest,current)=>Math.abs(current.circumference-value)<=Math.abs(closest.circumference-value)?current:closest);
-    result.textContent=`參考尺寸：${recommendation.size}（掌圍 ${recommendation.circumference} 公分）。請到產品頁確認該款式是否提供此尺寸；介於尺寸之間通常建議選擇較大尺寸。`; result.dataset.state='success'; input.removeAttribute('aria-invalid');
-  });
-});
-
 document.querySelectorAll('[data-variant-product]').forEach(product=>{
   const payload=product.parentElement.querySelector('[data-variant-data]');
   if(!payload) return;
@@ -37,7 +23,7 @@ document.querySelectorAll('[data-variant-product]').forEach(product=>{
     const galleryImages=[...new Set([...(variant.sharedImages||[]),...variant.images])];
     const model=product.querySelector('h1').textContent;
     gallery.innerHTML=galleryImages.length?galleryImages.map((src,index)=>`<img src="${esc(src)}" alt="${esc(model)} ${esc(variant.colour)}" loading="${index===0?'eager':'lazy'}" decoding="async">`).join(''):'<div class="no-image">圖片待確認</div>';
-    colour.textContent=variant.colour; sizes.textContent=variant.sizes; price.textContent=`台灣零售價 ${String(variant.price).replace(/NT\$\s*/, 'NT$')}（含稅）`;
+    colour.textContent=variant.colour; sizes.textContent=variant.sizes; price.textContent=`建議零售價 ${variant.price}`;
     description.textContent=variant.description||'產品資訊依 CHIBA Taiwan 已核對資料建立。';
   };
   product.querySelectorAll('[data-variant-key]').forEach(button=>button.addEventListener('click',()=>select(button.dataset.variantKey)));
@@ -50,3 +36,21 @@ if(menu){
   menu.addEventListener('click',()=>{const open=document.body.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'關閉選單':'開啟選單')});
   document.addEventListener('keydown',event=>{if(event.key==='Escape'){document.body.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','開啟選單')}});
 }
+
+// Size guide tab switching (ARIA tablist pattern with keyboard support)
+document.querySelectorAll('.size-tabs[role="tablist"]').forEach(function(tablist){
+  var tabs=[].slice.call(tablist.querySelectorAll('[role="tab"]'));
+  function activate(tab){
+    tabs.forEach(function(t){t.setAttribute('aria-selected','false');t.classList.remove('size-tab--active');var p=document.getElementById(t.getAttribute('aria-controls'));if(p)p.hidden=true;});
+    tab.setAttribute('aria-selected','true');tab.classList.add('size-tab--active');var panel=document.getElementById(tab.getAttribute('aria-controls'));if(panel)panel.hidden=false;tab.focus();
+  }
+  tabs.forEach(function(tab,idx){
+    tab.addEventListener('click',function(){activate(tab);});
+    tab.addEventListener('keydown',function(e){
+      if(e.key==='ArrowRight'){e.preventDefault();activate(tabs[(idx+1)%tabs.length]);}
+      if(e.key==='ArrowLeft'){e.preventDefault();activate(tabs[(idx-1+tabs.length)%tabs.length]);}
+      if(e.key==='Home'){e.preventDefault();activate(tabs[0]);}
+      if(e.key==='End'){e.preventDefault();activate(tabs[tabs.length-1]);}
+    });
+  });
+});
