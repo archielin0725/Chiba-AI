@@ -177,7 +177,7 @@ function initHeroSlider() {
   const dotsContainer = slider.querySelector('.hero-slider-dots');
   let currentIndex = 0;
   let timer = null;
-  const intervalTime = 5000;
+  const intervalTime = 4000;
 
   if (dotsContainer) {
     dotsContainer.innerHTML = '';
@@ -245,8 +245,6 @@ function initHeroSlider() {
     });
   }
 
-  slider.addEventListener('mouseenter', stopTimer);
-  slider.addEventListener('mouseleave', startTimer);
 
   let touchStartX = 0;
   let touchEndX = 0;
