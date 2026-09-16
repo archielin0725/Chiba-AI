@@ -106,6 +106,64 @@
     }
   },
   {
+    "sku": "30410",
+    "name": "Athletic",
+    "nameZh": "Athletic 鉤織棉透氣款",
+    "slug": "30410-athletic",
+    "category": "Cycling",
+    "line": "ALLROUND LINE",
+    "price": 550.0,
+    "currency": "TWD",
+    "colours": [
+      "black uni/101",
+      "black/white/1001"
+    ],
+    "sizes": [
+      "XS-4XL",
+      "XS-4XL"
+    ],
+    "materials": "cotton; Microfibre",
+    "description": "手背採用鉤織棉，掌面採用超細纖維。",
+    "images": [
+      "/assets/products/cycling/30410-athletic/black-uni-101/fitness__30410__black-uni-101__5e1d85e7e7700a8d__30410-101-1.jpg",
+      "/assets/products/cycling/30410-athletic/black-uni-101/fitness__30410__black-uni-101__f14d6e96108f4275__30410-101-2.jpg",
+      "/assets/products/cycling/30410-athletic/black-white-1001/fitness__30410__black-white-1001__5dea917d1af210f4__30410-1001-1.jpg",
+      "/assets/products/cycling/30410-athletic/black-white-1001/fitness__30410__black-white-1001__5a4acd31b1d12225__30410-1001-2.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Cycling|30410|BLACK UNI/101",
+        "colour": "black uni/101",
+        "sizes": "XS-4XL",
+        "price": 550.0,
+        "images": [
+          "/assets/products/cycling/30410-athletic/black-uni-101/fitness__30410__black-uni-101__5e1d85e7e7700a8d__30410-101-1.jpg",
+          "/assets/products/cycling/30410-athletic/black-uni-101/fitness__30410__black-uni-101__f14d6e96108f4275__30410-101-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用鉤織棉，掌面採用超細纖維。"
+      },
+      {
+        "key": "Cycling|30410|BLACK/WHITE/1001",
+        "colour": "black/white/1001",
+        "sizes": "XS-4XL",
+        "price": 550.0,
+        "images": [
+          "/assets/products/cycling/30410-athletic/black-white-1001/fitness__30410__black-white-1001__5dea917d1af210f4__30410-1001-1.jpg",
+          "/assets/products/cycling/30410-athletic/black-white-1001/fitness__30410__black-white-1001__5a4acd31b1d12225__30410-1001-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "手背採用鉤織棉，掌面採用超細纖維。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Athletic"
+      },
+      "en": null
+    }
+  },
+  {
     "sku": "3010226",
     "name": "Gel Master",
     "nameZh": "Gel Master 凝膠大師款",
@@ -2194,6 +2252,64 @@
     "localizedContent": {
       "zh-TW": {
         "name": "Double Six 雙六款"
+      },
+      "en": null
+    }
+  },
+  {
+    "sku": "3040018",
+    "name": "Retro",
+    "nameZh": "Retro 經典復古款",
+    "slug": "3040018-retro",
+    "category": "Cycling",
+    "line": "ALLROUND LINE",
+    "price": 850.0,
+    "currency": "TWD",
+    "colours": [
+      "beige/brown 0222",
+      "black/brown 1022"
+    ],
+    "sizes": [
+      "XS-4XL",
+      "XS-4XL"
+    ],
+    "materials": "microfibre",
+    "description": "掌面採用帶通氣孔的超細纖維，搭配鉤織手背。",
+    "images": [
+      "/assets/products/cycling/3040018-retro/beige-brown-0222/fitness__3040018__beige-brown-0222__2587e7ec888852f7__3040018-0222-1.jpg",
+      "/assets/products/cycling/3040018-retro/beige-brown-0222/fitness__3040018__beige-brown-0222__73dfe1c926c6bb32__3040018-0222-2.jpg",
+      "/assets/products/cycling/3040018-retro/black-brown-1022/fitness__3040018__black-brown-1022__7effa2cb245ad899__3040018-1022-1.jpg",
+      "/assets/products/cycling/3040018-retro/black-brown-1022/fitness__3040018__black-brown-1022__134d3196f3cffc44__3040018-1022-2.jpg"
+    ],
+    "variants": [
+      {
+        "key": "Cycling|3040018|BEIGE/BROWN 0222",
+        "colour": "beige/brown 0222",
+        "sizes": "XS-4XL",
+        "price": 850.0,
+        "images": [
+          "/assets/products/cycling/3040018-retro/beige-brown-0222/fitness__3040018__beige-brown-0222__2587e7ec888852f7__3040018-0222-1.jpg",
+          "/assets/products/cycling/3040018-retro/beige-brown-0222/fitness__3040018__beige-brown-0222__73dfe1c926c6bb32__3040018-0222-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用帶通氣孔的超細纖維，搭配鉤織手背。"
+      },
+      {
+        "key": "Cycling|3040018|BLACK/BROWN 1022",
+        "colour": "black/brown 1022",
+        "sizes": "XS-4XL",
+        "price": 850.0,
+        "images": [
+          "/assets/products/cycling/3040018-retro/black-brown-1022/fitness__3040018__black-brown-1022__7effa2cb245ad899__3040018-1022-1.jpg",
+          "/assets/products/cycling/3040018-retro/black-brown-1022/fitness__3040018__black-brown-1022__134d3196f3cffc44__3040018-1022-2.jpg"
+        ],
+        "sharedImages": [],
+        "description": "掌面採用帶通氣孔的超細纖維，搭配鉤織手背。"
+      }
+    ],
+    "localizedContent": {
+      "zh-TW": {
+        "name": "Retro"
       },
       "en": null
     }
