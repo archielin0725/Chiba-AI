@@ -2287,7 +2287,7 @@ footer .quiet {
 }
 
 /* ==========================================================================
-   TOP UTILITY BAR (Modeled on chiba.co.id Flag Switcher)
+   TOP UTILITY BAR (Modeled on chiba.co.id Flag Switcher & Social Links)
    ========================================================================== */
 .topbar {
   background: #f8fafc;
@@ -2304,30 +2304,82 @@ footer .quiet {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
 }
 .topbar-info {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.topbar-germany-btn {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+.topbar-germany-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
 }
 .topbar-badge {
   background: #0f172a;
   color: #ffffff;
   font-size: 0.68rem;
   font-weight: 800;
-  padding: 1px 5px;
+  padding: 2px 6px;
   border-radius: 3px;
   letter-spacing: 0.05em;
   flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+.topbar-tagline {
+  color: #64748b;
+  font-size: 0.78rem;
+}
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+.topbar-ig {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #475569;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+.topbar-ig:hover {
+  color: #e1306c;
+  background-color: #f1f5f9;
+}
+.ig-icon {
+  width: 15px;
+  height: 15px;
+  display: block;
+  flex-shrink: 0;
+}
+.topbar-sep {
+  color: #cbd5e1;
+  font-size: 0.75rem;
+  user-select: none;
 }
 .topbar-flags {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 7px;
   flex-shrink: 0;
 }
 .topbar-flag {
@@ -2359,15 +2411,30 @@ footer .quiet {
   border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 600px) {
-  .topbar {
-    padding: 5px 12px;
+@media (max-width: 768px) {
+  .topbar-tagline {
+    display: none;
   }
-  .topbar-info span:not(.topbar-badge) {
-    font-size: 0.72rem;
+}
+
+@media (max-width: 520px) {
+  .topbar {
+    padding: 5px 10px;
+  }
+  .topbar-ig-text {
+    display: none;
+  }
+  .topbar-ig {
+    padding: 2px 4px;
   }
   .flag-img {
     width: 22px;
     height: 14.5px;
+  }
+  .topbar-actions {
+    gap: 7px;
+  }
+  .topbar-flags {
+    gap: 5px;
   }
 }
