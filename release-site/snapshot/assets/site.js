@@ -73,3 +73,30 @@ document.querySelectorAll('.size-tabs[role="tablist"]').forEach(function(tablist
     });
   });
 });
+
+// Language switcher handler & toast notification
+document.querySelectorAll('[data-lang-switch="en"]').forEach(function(btn){
+  btn.addEventListener('click',function(e){
+    e.preventDefault();
+    showLangToast('English version is currently in preparation · 英文版籌備中，敬請期待！');
+  });
+});
+
+function showLangToast(msg){
+  var toast=document.getElementById('lang-toast');
+  if(!toast){
+    toast=document.createElement('div');
+    toast.id='lang-toast';
+    toast.className='lang-toast';
+    toast.setAttribute('role','status');
+    toast.setAttribute('aria-live','polite');
+    document.body.appendChild(toast);
+  }
+  toast.textContent=msg;
+  toast.classList.add('show');
+  clearTimeout(toast._timer);
+  toast._timer=setTimeout(function(){
+    toast.classList.remove('show');
+  },3200);
+}
+

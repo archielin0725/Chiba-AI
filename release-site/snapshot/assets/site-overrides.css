@@ -1042,3 +1042,142 @@ body:has(> .nav + main > .hero) .split {
   .tech-product-thumb { height: 180px; }
 }
 
+/* ==========================================================================
+   Header Language Switcher & Interactive Toast
+   ========================================================================== */
+.nav nav {
+  align-items: center;
+}
+.nav-lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 6px;
+  padding-left: 14px;
+  border-left: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1;
+}
+.nav-lang__btn {
+  background: none;
+  border: none;
+  padding: 4px 6px;
+  font-size: inherit;
+  font-family: inherit;
+  color: rgba(255, 255, 255, 0.65);
+  cursor: pointer;
+  border-radius: 4px;
+  line-height: 1;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+.nav-lang__btn.active {
+  color: #ffffff;
+  font-weight: 700;
+  cursor: default;
+}
+.nav-lang__btn:not(.active):hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.nav-lang__divider {
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 0.75rem;
+  user-select: none;
+}
+
+/* Light Header Adaptation (Homepage & Size Guide) */
+body:has(> .nav + main > .hero) .nav-lang,
+body:has(.size-hero) .nav-lang {
+  border-left-color: rgba(0, 0, 0, 0.15);
+}
+body:has(> .nav + main > .hero) .nav-lang__btn,
+body:has(.size-hero) .nav-lang__btn {
+  color: rgba(16, 19, 24, 0.55);
+}
+body:has(> .nav + main > .hero) .nav-lang__btn.active,
+body:has(.size-hero) .nav-lang__btn.active {
+  color: var(--ink);
+}
+body:has(> .nav + main > .hero) .nav-lang__btn:not(.active):hover,
+body:has(.size-hero) .nav-lang__btn:not(.active):hover {
+  color: var(--ink);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+body:has(> .nav + main > .hero) .nav-lang__divider,
+body:has(.size-hero) .nav-lang__divider {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+/* Mobile Viewport Adaptation */
+@media (max-width: 800px) {
+  .nav-lang {
+    margin-left: 0;
+    margin-top: 16px;
+    padding-left: 0;
+    padding-top: 16px;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+  }
+  .nav-lang__btn {
+    padding: 8px 18px;
+    font-size: 0.92rem;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+  }
+  .nav-lang__btn.active {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+  }
+  .nav-lang__divider {
+    display: none;
+  }
+
+  body.open:has(> .nav + main > .hero) .nav-lang,
+  body.open:has(.size-hero) .nav-lang {
+    border-top-color: rgba(0, 0, 0, 0.1);
+  }
+  body.open:has(> .nav + main > .hero) .nav-lang__btn,
+  body.open:has(.size-hero) .nav-lang__btn {
+    background: rgba(0, 0, 0, 0.04);
+    color: rgba(16, 19, 24, 0.7);
+  }
+  body.open:has(> .nav + main > .hero) .nav-lang__btn.active,
+  body.open:has(.size-hero) .nav-lang__btn.active {
+    background: rgba(0, 0, 0, 0.1);
+    color: var(--ink);
+  }
+}
+
+/* Floating Toast Notification */
+.lang-toast {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%) translateY(80px);
+  background: #101318;
+  color: #ffffff;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  white-space: nowrap;
+  max-width: 90vw;
+  text-align: center;
+}
+.lang-toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+
