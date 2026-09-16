@@ -2,10 +2,91 @@ document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListen
 
 document.querySelectorAll('[data-catalogue-controls]').forEach(controls=>{
   const cards=[...document.querySelectorAll('.products .card')];
-  const search=controls.querySelector('input'); const line=controls.querySelector('select');
+  const search=controls.querySelector('input');
+  const line=controls.querySelector('select');
+  const clearBtn=controls.querySelector('[data-search-clear]');
+  const resetLink=controls.querySelector('[data-search-reset]');
+  const chips=[...controls.querySelectorAll('[data-chip]')];
+  const statusEl=controls.querySelector('[role="status"]');
   const isEn=document.documentElement.lang.startsWith('en');
-  const filter=()=>{let count=0;cards.forEach(card=>{const matches=card.textContent.toLocaleLowerCase().includes(search.value.trim().toLocaleLowerCase())&&(!line.value||card.dataset.line===line.value);card.hidden=!matches;if(matches)count++});controls.querySelector('[role="status"]').textContent=count?(isEn?`${count} product${count>1?'s':''}`:`${count} 項產品`):(isEn?'No matching products found.':'找不到符合條件的產品，請調整搜尋條件。');};
-  search.addEventListener('input',filter);line.addEventListener('change',filter);filter();
+
+  let activeChipValue='';
+
+  const filter=()=>{
+    const q=search ? search.value.trim().toLocaleLowerCase() : '';
+    const selLine=line ? line.value : '';
+    let count=0;
+
+    cards.forEach(card=>{
+      const text=card.textContent.toLocaleLowerCase();
+      const cardLine=card.dataset.line||'';
+      const cardSku=card.dataset.sku||'';
+      
+      let matchesQuery=!q || text.includes(q) || cardSku.includes(q);
+      let matchesLine=!selLine || cardLine===selLine;
+      let matchesChip=!activeChipValue || text.includes(activeChipValue.toLocaleLowerCase()) || cardLine.toLocaleLowerCase().includes(activeChipValue.toLocaleLowerCase());
+
+      const visible=matchesQuery && matchesLine && matchesChip;
+      card.hidden=!visible;
+      if(visible) count++;
+    });
+
+    if(statusEl){
+      if(count>0){
+        statusEl.textContent=isEn?`Showing ${count} product${count>1?'s':''}`:`顯示 ${count} 件產品`;
+      } else {
+        statusEl.textContent=isEn?'No matching products found. Please try a different search.':'找不到符合條件的產品，請調整關鍵字或重設篩選。';
+      }
+    }
+
+    if(clearBtn){
+      clearBtn.style.display=search && search.value?'flex':'none';
+    }
+    if(resetLink){
+      const hasFilter=(search && search.value) || (line && line.value) || activeChipValue;
+      resetLink.style.display=hasFilter?'inline':'none';
+    }
+  };
+
+  if(search){
+    search.addEventListener('input',filter);
+  }
+  if(line){
+    line.addEventListener('change',filter);
+  }
+  if(clearBtn && search){
+    clearBtn.addEventListener('click',()=>{
+      search.value='';
+      search.focus();
+      filter();
+    });
+  }
+  if(resetLink){
+    resetLink.addEventListener('click',()=>{
+      if(search) search.value='';
+      if(line) line.value='';
+      activeChipValue='';
+      chips.forEach(c=>c.classList.remove('active'));
+      filter();
+    });
+  }
+
+  chips.forEach(chip=>{
+    chip.addEventListener('click',()=>{
+      const val=chip.dataset.chip||'';
+      if(activeChipValue===val){
+        activeChipValue='';
+        chip.classList.remove('active');
+      } else {
+        chips.forEach(c=>c.classList.remove('active'));
+        activeChipValue=val;
+        chip.classList.add('active');
+      }
+      filter();
+    });
+  });
+
+  filter();
 });
 
 document.querySelectorAll('[data-size-checker]').forEach(form=>{
