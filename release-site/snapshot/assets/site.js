@@ -164,29 +164,113 @@ document.querySelectorAll('.size-tabs[role="tablist"]').forEach(function(tablist
   });
 });
 
-// Language switcher handler & toast notification
-document.querySelectorAll('[data-lang-switch="en"]').forEach(function(btn){
-  btn.addEventListener('click',function(e){
-    e.preventDefault();
-    showLangToast('English version is currently in preparation · 英文版籌備中，敬請期待！');
-  });
-});
+// Dynamic Hero Showcase Slider Controller (chiba.co.id style)
+function initHeroSlider() {
+  const slider = document.querySelector('.hero-slider');
+  if (!slider) return;
 
-function showLangToast(msg){
-  var toast=document.getElementById('lang-toast');
-  if(!toast){
-    toast=document.createElement('div');
-    toast.id='lang-toast';
-    toast.className='lang-toast';
-    toast.setAttribute('role','status');
-    toast.setAttribute('aria-live','polite');
-    document.body.appendChild(toast);
+  const slides = [...slider.querySelectorAll('.hero-slide')];
+  if (slides.length <= 1) return;
+
+  const prevBtn = slider.querySelector('.hero-slider-arrow--prev');
+  const nextBtn = slider.querySelector('.hero-slider-arrow--next');
+  const dotsContainer = slider.querySelector('.hero-slider-dots');
+  let currentIndex = 0;
+  let timer = null;
+  const intervalTime = 5000;
+
+  if (dotsContainer) {
+    dotsContainer.innerHTML = '';
+    slides.forEach((_, idx) => {
+      const dot = document.createElement('button');
+      dot.className = `hero-slider-dot ${idx === 0 ? 'active' : ''}`;
+      dot.setAttribute('aria-label', `Slide ${idx + 1}`);
+      dot.setAttribute('type', 'button');
+      dot.addEventListener('click', () => {
+        goToSlide(idx);
+        restartTimer();
+      });
+      dotsContainer.appendChild(dot);
+    });
   }
-  toast.textContent=msg;
-  toast.classList.add('show');
-  clearTimeout(toast._timer);
-  toast._timer=setTimeout(function(){
-    toast.classList.remove('show');
-  },3200);
+
+  const dots = dotsContainer ? [...dotsContainer.querySelectorAll('.hero-slider-dot')] : [];
+
+  function goToSlide(idx) {
+    slides[currentIndex].classList.remove('active');
+    if (dots[currentIndex]) dots[currentIndex].classList.remove('active');
+
+    currentIndex = (idx + slides.length) % slides.length;
+
+    slides[currentIndex].classList.add('active');
+    if (dots[currentIndex]) dots[currentIndex].classList.add('active');
+  }
+
+  function nextSlide() {
+    goToSlide(currentIndex + 1);
+  }
+
+  function prevSlide() {
+    goToSlide(currentIndex - 1);
+  }
+
+  function startTimer() {
+    stopTimer();
+    timer = setInterval(nextSlide, intervalTime);
+  }
+
+  function stopTimer() {
+    if (timer) {
+      clearInterval(timer);
+      timer = null;
+    }
+  }
+
+  function restartTimer() {
+    stopTimer();
+    startTimer();
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      restartTimer();
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      restartTimer();
+    });
+  }
+
+  slider.addEventListener('mouseenter', stopTimer);
+  slider.addEventListener('mouseleave', startTimer);
+
+  let touchStartX = 0;
+  let touchEndX = 0;
+  slider.addEventListener('touchstart', (e) => {
+    stopTimer();
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+
+  slider.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    const diff = touchStartX - touchEndX;
+    if (Math.abs(diff) > 40) {
+      if (diff > 0) nextSlide();
+      else prevSlide();
+    }
+    startTimer();
+  }, { passive: true });
+
+  startTimer();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initHeroSlider);
+} else {
+  initHeroSlider();
 }
 
