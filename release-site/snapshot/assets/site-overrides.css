@@ -1179,5 +1179,60 @@ body:has(.size-hero) .nav-lang__divider {
   transform: translateX(-50%) translateY(0);
   opacity: 1;
 }
-
-
+/* Global Footer Theme: Refined White Minimalist */
+footer {
+  background: #ffffff !important;
+  color: #101318 !important;
+  border-top: 1px solid #e2e8f0;
+  padding: 48px 7vw 40px !important;
+}
+footer .brand {
+  color: #101318 !important;
+  margin-bottom: 16px;
+}
+footer .brand span {
+  color: #101318 !important;
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+footer .brand small {
+  color: #64748b !important;
+  letter-spacing: .12em;
+}
+footer p {
+  color: #334155 !important;
+  line-height: 1.7;
+  margin: 10px 0;
+}
+footer a {
+  color: #101318 !important;
+  text-decoration: none !important;
+  transition: color 0.15s ease;
+}
+footer a:hover {
+  color: #d42b31 !important;
+  text-decoration: underline !important;
+}
+footer .quiet {
+  color: #94a3b8 !important;
+  font-size: 0.85rem;
+  margin-top: 18px;
+}
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 24px;
+  padding-top: 22px;
+  border-top: 1px solid #f1f5f9;
+}
+footer nav a {
+  color: #64748b !important;
+  font-size: 0.85rem !important;
+  text-decoration: none !important;
+  transition: color 0.15s ease;
+}
+footer nav a:hover {
+  color: #d42b31 !important;
+  text-decoration: underline !important;
+}
