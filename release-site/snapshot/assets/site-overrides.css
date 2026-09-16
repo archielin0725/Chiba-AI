@@ -50,72 +50,6 @@ a:focus-visible,button:focus-visible{outline:3px solid #b92027;outline-offset:4p
   .size-table th,.size-table td{padding:8px 10px;font-size:.88rem}
 }
 
-/* Brand logo in header & footer */
-.brand:has(img),
-.nav .brand:has(img) {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-  line-height: 1;
-}
-.brand img {
-  display: block;
-  width: auto;
-  object-fit: contain;
-}
-.brand-icon {
-  height: 24px;
-  width: auto;
-  flex-shrink: 0;
-}
-.brand-wordmark {
-  height: 20px;
-  width: auto;
-  max-width: 110px;
-  flex-shrink: 0;
-}
-@media (max-width: 800px) {
-  .brand:has(img),
-  .nav .brand:has(img) {
-    gap: 6px;
-  }
-  .brand-icon {
-    height: 20px;
-  }
-  .brand-wordmark {
-    height: 17px;
-    max-width: 90px;
-  }
-}
-
-/* Homepage navigation overrides */
-body:has(> .nav + main > .hero) .nav {
-  background: #fff;
-  color: var(--ink);
-  border-bottom: 1px solid var(--line);
-  box-shadow: 0 2px 12px rgba(16, 19, 24, 0.06);
-}
-body:has(> .nav + main > .hero) .nav nav a {
-  color: var(--ink);
-  font-weight: 500;
-  transition: color 0.15s ease;
-}
-body:has(> .nav + main > .hero) .nav nav a:hover {
-  color: var(--red);
-}
-body:has(> .nav + main > .hero) .menu {
-  color: var(--ink);
-}
-body.open:has(> .nav + main > .hero) .nav nav {
-  background: #fff;
-  border-top: 1px solid var(--line);
-  box-shadow: 0 8px 16px rgba(16, 19, 24, 0.08);
-}
-body.open:has(> .nav + main > .hero) .nav nav a {
-  color: var(--ink);
-}
-
 /* Size Guide header override */
 body:has(.size-hero) .nav {
   background: #fff;
@@ -211,67 +145,6 @@ body:has(> .nav + main > .hero) .split {
   background: #f7f7f5;
   border-top: 1px solid var(--line);
 }
-body:has(> .nav + main > .hero) footer {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.16)), url("/assets/uploaded/upload_05_Pasted%20Image.jpe") center/cover no-repeat;
-  background-color: #e12020;
-  color: #fff;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  position: relative;
-  overflow: hidden;
-  box-shadow: inset 0 0 120px rgba(0, 0, 0, 0.14);
-}
-body:has(> .nav + main > .hero) footer:before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.08), transparent 30%);
-  pointer-events: none;
-}
-body:has(> .nav + main > .hero) footer > * {
-  position: relative;
-  z-index: 1;
-}
-body:has(> .nav + main > .hero) footer .footer-brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: #fff;
-  padding: 7px 14px;
-  border-radius: 6px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
-  width: fit-content;
-  margin-top: 48px;
-}
-body:has(> .nav + main > .hero) footer .footer-brand .brand-icon {
-  height: 24px;
-}
-body:has(> .nav + main > .hero) footer .footer-brand .brand-wordmark {
-  height: 20px;
-}
-body:has(> .nav + main > .hero) footer a {
-  color: #fff;
-}
-body:has(> .nav + main > .hero) footer .quiet {
-  color: #f5f5f5;
-}
-body:has(> .nav + main > .hero) footer select {
-  border-color: #fff;
-  background: #fff;
-  color: #101318;
-}
-body:has(> .nav + main > .hero) footer nav {
-  position: relative;
-}
-body:has(> .nav + main > .hero) footer nav a {
-  font-weight: bold;
-  text-decoration: none;
-  margin-right: 14px;
-}
-body:has(> .nav + main > .hero) footer nav a:hover,
-body:has(> .nav + main > .hero) footer nav a:focus-visible {
-  text-decoration: underline;
-}
-
 .home-categories {
   padding: 72px 7vw;
   background: #f7f7f5;
@@ -476,21 +349,6 @@ body:has(> .nav + main > .hero) footer nav a:focus-visible {
   }
 }
 
-.hero-language {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 18px;
-  color: #68727d;
-  font-size: 0.78rem;
-}
-.hero-language select {
-  font: inherit;
-  padding: 4px 7px;
-  border: 1px solid #c8cbca;
-  background: #fff;
-  color: #505860;
-}
 @media (max-width: 800px) {
   body:has(> .nav + main > .hero) .hero-image {
     height: 300px;
