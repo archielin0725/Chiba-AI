@@ -2285,3 +2285,89 @@ footer .quiet {
     font-size: 0.78rem;
   }
 }
+
+/* ==========================================================================
+   TOP UTILITY BAR (Modeled on chiba.co.id Flag Switcher)
+   ========================================================================== */
+.topbar {
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 6px 16px;
+  font-size: 0.8rem;
+  color: #64748b;
+  position: relative;
+  z-index: 101;
+}
+.topbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topbar-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.topbar-badge {
+  background: #0f172a;
+  color: #ffffff;
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 1px 5px;
+  border-radius: 3px;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+}
+.topbar-flags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.topbar-flag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+  cursor: pointer;
+  opacity: 0.65;
+}
+.topbar-flag:hover {
+  transform: translateY(-1px);
+  opacity: 1;
+}
+.topbar-flag.active {
+  opacity: 1;
+  box-shadow: 0 0 0 2px var(--red, #dc2626);
+  cursor: default;
+}
+.flag-img {
+  width: 24px;
+  height: 16px;
+  border-radius: 2px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 600px) {
+  .topbar {
+    padding: 5px 12px;
+  }
+  .topbar-info span:not(.topbar-badge) {
+    font-size: 0.72rem;
+  }
+  .flag-img {
+    width: 22px;
+    height: 14.5px;
+  }
+}
