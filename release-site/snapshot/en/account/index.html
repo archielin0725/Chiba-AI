@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Portal & Benefits Center | CHIBA Taiwan Official Website</title>
+  <meta name="description" content="CHIBA Taiwan Official Member Portal. Manage personal profile, access exclusive NT$ 100 welcome coupon and 10% OFF German pre-orders, and track orders.">
+  <link rel="canonical" href="https://www.chibataiwan.com/en/account/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
+  <link rel="stylesheet" href="/assets/site.css">
+  <link rel="stylesheet" href="/assets/site-overrides.css">
+  <link rel="stylesheet" href="/assets/chiba-ecommerce.css">
+  <style>
+    .account-wrap {
+      max-width: 960px;
+      margin: 40px auto 80px;
+      padding: 0 20px;
+    }
+    .account-header {
+      background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+      color: #ffffff;
+      border-radius: 12px;
+      padding: 32px 28px;
+      margin-bottom: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    }
+    .account-profile {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .account-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #d42b31;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      font-weight: 800;
+      box-shadow: 0 2px 8px rgba(212, 43, 49, 0.4);
+    }
+    .account-info h1 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin: 0 0 4px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .member-badge-vip {
+      font-size: 0.75rem;
+      font-weight: 700;
+      background: #d42b31;
+      color: #ffffff;
+      padding: 3px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .account-meta {
+      font-size: 0.88rem;
+      color: #9ca3af;
+      margin: 0;
+    }
+    .account-actions {
+      display: flex;
+      gap: 10px;
+    }
+    .btn-logout {
+      background: rgba(255, 255, 255, 0.1);
+      color: #e5e7eb;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 0.86rem;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .btn-logout:hover {
+      background: rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+    }
+
+    .account-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 24px;
+    }
+    @media (max-width: 820px) {
+      .account-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card-section {
+      background: #ffffff;
+      border: 1px solid var(--border, #e5e7eb);
+      border-radius: 12px;
+      padding: 24px 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #111827;
+      margin: 0 0 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #f3f4f6;
+    }
+
+    .coupon-card {
+      border: 1px dashed #d1d5db;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      background: #fafafa;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    .coupon-card.is-active {
+      border-color: #d42b31;
+      background: #fdf2f2;
+    }
+    .coupon-card.is-used {
+      opacity: 0.65;
+      background: #f3f4f6;
+      border-style: solid;
+    }
+    .coupon-info h4 {
+      margin: 0 0 4px;
+      font-size: 0.96rem;
+      font-weight: 800;
+      color: #111827;
+    }
+    .coupon-info p {
+      margin: 0;
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+    .coupon-badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    .coupon-badge.available {
+      background: #059669;
+      color: #ffffff;
+    }
+    .coupon-badge.used {
+      background: #9ca3af;
+      color: #ffffff;
+    }
+    .btn-apply-coupon {
+      background: #d42b31;
+      color: #ffffff;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 6px;
+      display: inline-block;
+    }
+    .btn-apply-coupon:hover {
+      background: #b92027;
+    }
+
+    .order-item-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 14px;
+      background: #ffffff;
+    }
+    .order-item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    .order-id-tag {
+      font-weight: 800;
+      color: #111827;
+      font-size: 0.95rem;
+    }
+    .order-date-tag {
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+    .order-status-badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+    .status-preorder { background: #dbeafe; color: #1e40af; }
+    .status-shipped { background: #fef3c7; color: #92400e; }
+    .status-completed { background: #ecfdf5; color: #065f46; }
+
+    .order-prod-line {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.88rem;
+      margin-bottom: 6px;
+      color: #374151;
+    }
+    .order-total-bar {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px dashed #e5e7eb;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 800;
+      font-size: 0.96rem;
+      color: #111827;
+    }
+    .order-track-link {
+      color: #d42b31;
+      font-size: 0.82rem;
+      text-decoration: underline;
+      font-weight: 700;
+    }
+
+    .guest-gate-card {
+      text-align: center;
+      padding: 48px 20px;
+      background: #ffffff;
+      border-radius: 12px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    .guest-gate-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+      color: #111827;
+    }
+    .btn-login-gate {
+      background: #d42b31;
+      color: #ffffff;
+      font-weight: 700;
+      padding: 12px 28px;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Utility Bar -->
+  <div class="topbar">
+    <div class="topbar-container">
+      <div class="topbar-info"><span class="topbar-tagline">170 Years of German Glovemaking Heritage · Taiwan Official Site</span></div>
+      <div class="topbar-actions">
+        <a href="https://www.instagram.com/chibataiwan/" target="_blank" rel="noopener noreferrer" class="topbar-ig" title="Follow CHIBA Taiwan on Instagram (@chibataiwan)" aria-label="CHIBA Taiwan Instagram">
+          <svg class="ig-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <span class="topbar-ig-text">@chibataiwan</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="nav">
+    <a class="brand" href="/en/">
+      <img class="brand-icon" src="/assets/logo/chiba-icon-redless.jpe" alt="CHIBA">
+      <img class="brand-wordmark" src="/assets/logo/chiba-wordmark.jpe" alt="CHIBA GLOVES GERMANY">
+    </a>
+    <nav id="primary-navigation">
+      <a href="/en/products/">Products</a>
+      <a href="/en/cycling/">Cycling</a>
+      <a href="/en/fitness/">Fitness</a>
+      <a href="/en/technology/">Technology</a>
+      <a href="/en/size-guide/">Size Guide</a>
+      <a href="/en/about/">About Us</a>
+      <a href="/en/contact/">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="nav-lang-bar" role="group" aria-label="Language Selector">
+        <a href="/zh-tw/account/" class="nav-lang-flag" title="切換至繁體中文" aria-label="切換至繁體中文"><img src="/assets/flags/tw.svg" class="flag-img" alt="繁體中文"></a>
+        <span class="nav-lang-flag active" title="Current Language: English (UK)" aria-current="true"><img src="/assets/flags/en.svg" class="flag-img" alt="English"></span>
+      </div>
+      <button class="menu" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="account-wrap">
+    <!-- Unauthenticated State -->
+    <div id="account-guest-view" class="guest-gate-card" style="display: none;">
+      <h2>👤 Welcome to CHIBA Member Center</h2>
+      <p style="color: #4b5563; max-width: 540px; margin: 0 auto 16px;">
+        Register as a verified member to receive an instant <strong>NT$ 100 welcome coupon</strong>, enjoy profile auto-fill at checkout, and track your orders.
+      </p>
+      <button type="button" class="btn-login-gate" onclick="window.ChibaEcommerce && window.ChibaEcommerce.openMemberModal('register')">
+        🎁 Sign Up / Sign In
+      </button>
+    </div>
+
+    <!-- Authenticated State -->
+    <div id="account-auth-view" style="display: none;">
+      <!-- Profile Header -->
+      <div class="account-header">
+        <div class="account-profile">
+          <div class="account-avatar" id="user-avatar">C</div>
+          <div class="account-info">
+            <h1>
+              <span id="user-display-name">Member Name</span>
+              <span class="member-badge-vip">CHIBA VIP</span>
+            </h1>
+            <p class="account-meta">
+              📱 Phone: <span id="user-phone">09xxxxxxxx</span> · 
+              ✉️ Email: <span id="user-email">email@example.com</span>
+            </p>
+          </div>
+        </div>
+        <div class="account-actions">
+          <button type="button" class="btn-logout" id="btn-account-logout">Sign Out</button>
+        </div>
+      </div>
+
+      <!-- Main Columns -->
+      <div class="account-grid">
+        <!-- Left: My Exclusive Coupons -->
+        <div>
+          <div class="card-section">
+            <h3 class="section-title">
+              <span>🏷️</span> My Coupons & Vouchers
+            </h3>
+            
+            <!-- CHIBA100 Coupon -->
+            <div id="coupon-chiba100-card" class="coupon-card is-active">
+              <div class="coupon-info">
+                <h4>CHIBA100 Welcome NT$ 100 OFF</h4>
+                <p id="coupon-chiba100-status-text">First purchase welcome voucher, NT$ 100 off</p>
+                <button type="button" class="btn-apply-coupon" id="btn-apply-chiba100" onclick="applyMemberCoupon('CHIBA100')">⚡ Apply to Cart</button>
+              </div>
+              <span id="coupon-chiba100-badge" class="coupon-badge available">Available</span>
+            </div>
+
+            <!-- PREORDER90 Coupon -->
+            <div class="coupon-card is-active">
+              <div class="coupon-info">
+                <h4>PREORDER90 Pre-Order 10% OFF</h4>
+                <p>Authentic German pre-order, 10% OFF all items</p>
+                <button type="button" class="btn-apply-coupon" onclick="applyMemberCoupon('PREORDER90')">⚡ Apply to Cart</button>
+              </div>
+              <span class="coupon-badge available">Always Active</span>
+            </div>
+
+            <div style="background:#f8fafc; border-radius:6px; padding:12px; font-size:0.82rem; color:#475569; margin-top:14px; line-height:1.5;">
+              💡 <strong>Stacking Tip:</strong> PREORDER90 and CHIBA100 can be stacked together! For a pair of gloves priced at NT$ 1,860, enjoy 10% off (NT$ 186) plus NT$ 100 off, saving NT$ 286 in total!
+            </div>
+          </div>
+
+          <!-- Quick Navigation -->
+          <div class="card-section">
+            <h3 class="section-title"><span>⚙️</span> Quick Links</h3>
+            <ul style="list-style:none; padding:0; margin:0; font-size:0.9rem; line-height:2.2;">
+              <li><a href="/en/order-tracking/" style="color:#111827; text-decoration:none;">🔍 Order Tracking Portal →</a></li>
+              <li><a href="/en/size-guide/" style="color:#111827; text-decoration:none;">📏 German Glove Sizing Guide →</a></li>
+              <li><a href="/en/cycling/" style="color:#111827; text-decoration:none;">🚴 Cycling Gloves Collection →</a></li>
+              <li><a href="/en/fitness/" style="color:#111827; text-decoration:none;">🏋️ Fitness & Lifting Gloves Collection →</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right: My Orders -->
+        <div>
+          <div class="card-section">
+            <h3 class="section-title">
+              <span>📦</span> Order History & Delivery Status
+            </h3>
+            <div id="member-orders-container">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="brand">
+      <a href="/en/">
+        <img class="brand-icon" src="/assets/logo/chiba-icon-redless.jpe" alt="CHIBA">
+        <img class="brand-wordmark" src="/assets/logo/chiba-wordmark.jpe" alt="CHIBA GLOVES GERMANY">
+      </a>
+      <small>GLOVES GERMANY · TAIWAN</small>
+    </div>
+    <p>Chiba Taiwan Co., Ltd.</p>
+    <p>
+      E: <a href="mailto:info@chibataiwan.com">info@chibataiwan.com</a><br>
+      IG: <a href="https://www.instagram.com/chibataiwan/" rel="noopener noreferrer" target="_blank">@chibataiwan</a><br>
+      German Official: <a href="https://chiba.de/" rel="noopener noreferrer" target="_blank">www.chiba.de</a>
+    </p>
+    <p>
+      <a href="/en/account/">Member Portal</a> · 
+      <a href="/en/order-tracking/">Order Tracking</a> · 
+      <a href="/en/privacy/">Privacy Policy</a> · 
+      <a href="/en/terms/">Terms of Service</a>
+    </p>
+  </footer>
+
+  <script src="/assets/site.js"></script>
+  <script src="/assets/chiba-ecommerce.js"></script>
+  <script>
+    function renderMemberDashboard() {
+      var member = window.ChibaEcommerce ? window.ChibaEcommerce.getMember() : null;
+      var guestView = document.getElementById('account-guest-view');
+      var authView = document.getElementById('account-auth-view');
+
+      if (!member) {
+        guestView.style.display = 'block';
+        authView.style.display = 'none';
+        return;
+      }
+
+      guestView.style.display = 'none';
+      authView.style.display = 'block';
+
+      // Fill user profile
+      document.getElementById('user-avatar').textContent = (member.name || 'C').charAt(0).toUpperCase();
+      document.getElementById('user-display-name').textContent = member.name || 'CHIBA Member';
+      document.getElementById('user-phone').textContent = member.phone || 'N/A';
+      document.getElementById('user-email').textContent = member.email || 'N/A';
+
+      // Check CHIBA100 status
+      var check = window.ChibaEcommerce.checkFirstTime(member.phone);
+      var c100Card = document.getElementById('coupon-chiba100-card');
+      var c100Badge = document.getElementById('coupon-chiba100-badge');
+      var c100Text = document.getElementById('coupon-chiba100-status-text');
+      var c100Btn = document.getElementById('btn-apply-chiba100');
+
+      if (!check.eligible) {
+        c100Card.className = 'coupon-card is-used';
+        c100Badge.className = 'coupon-badge used';
+        c100Badge.textContent = 'Redeemed';
+        c100Text.textContent = 'Welcome discount redeemed on order ' + (check.pastOrderId || '');
+        c100Btn.style.display = 'none';
+      } else {
+        c100Card.className = 'coupon-card is-active';
+        c100Badge.className = 'coupon-badge available';
+        c100Badge.textContent = 'Available';
+        c100Text.textContent = 'First purchase welcome voucher, NT$ 100 off';
+        c100Btn.style.display = 'inline-block';
+      }
+
+      // Render Orders
+      var ordersContainer = document.getElementById('member-orders-container');
+      var cleanPhone = String(member.phone || '').replace(/[^0-9]/g, '');
+      var rawOrders = localStorage.getItem('chiba_order_history_v1');
+      var allOrders = rawOrders ? JSON.parse(rawOrders) : [];
+      var memberOrders = allOrders.filter(function(o) {
+        var p = String((o.recipient && o.recipient.phone) || o.phone || '').replace(/[^0-9]/g, '');
+        return p && p === cleanPhone;
+      });
+
+      if (memberOrders.length === 0) {
+        ordersContainer.innerHTML =
+          '<div style="text-align:center; padding:32px 10px; color:#6b7280;">' +
+            '<p style="font-size:1.1rem; margin-bottom:8px;">📦 No order history found</p>' +
+            '<p style="font-size:0.86rem; margin-bottom:16px;">Discover our handcrafted German gloves and enjoy authentic pre-order perks!</p>' +
+            '<a href="/en/products/" style="display:inline-block; background:#d42b31; color:#fff; padding:8px 18px; border-radius:6px; font-weight:700; text-decoration:none; font-size:0.88rem;">Explore Products →</a>' +
+          '</div>';
+        return;
+      }
+
+      ordersContainer.innerHTML = memberOrders.map(function(order) {
+        var statusLabel = '🇩🇪 In German Production';
+        var statusClass = 'status-preorder';
+        if (order.status === 'SHIPPED') {
+          statusLabel = '🏪 Shipped to CVS';
+          statusClass = 'status-shipped';
+        } else if (order.status === 'COMPLETED') {
+          statusLabel = '✅ Picked Up / Completed';
+          statusClass = 'status-completed';
+        }
+
+        var itemsHtml = (order.items || []).map(function(it) {
+          return '<div class="order-prod-line">' +
+            '<span>' + (it.title || 'Gloves') + ' (' + (it.size || 'M') + ') × ' + (it.qty || 1) + '</span>' +
+            '<span>NT$ ' + ((it.price || 0) * (it.qty || 1)).toLocaleString() + '</span>' +
+          '</div>';
+        }).join('');
+
+        return '<div class="order-item-card">' +
+          '<div class="order-item-header">' +
+            '<div>' +
+              '<span class="order-id-tag">' + order.orderId + '</span><br>' +
+              '<span class="order-date-tag">' + (order.createdAt ? order.createdAt.slice(0, 10) : '') + '</span>' +
+            '</div>' +
+            '<span class="order-status-badge ' + statusClass + '">' + statusLabel + '</span>' +
+          '</div>' +
+          '<div>' + itemsHtml + '</div>' +
+          '<div class="order-total-bar">' +
+            '<span>Total Paid: NT$ ' + (order.total || 0).toLocaleString() + '</span>' +
+            '<a href="/en/order-tracking/?orderId=' + encodeURIComponent(order.orderId) + '&phone=' + encodeURIComponent(cleanPhone.slice(-3)) + '" class="order-track-link">🔍 Track Shipment →</a>' +
+          '</div>' +
+        '</div>';
+      }).join('');
+    }
+
+    function applyMemberCoupon(code) {
+      if (window.ChibaEcommerce) {
+        window.ChibaEcommerce.openCart();
+        try {
+          var raw = localStorage.getItem('chiba_promo_v1');
+          var obj = raw ? JSON.parse(raw) : { codes: [] };
+          var codes = Array.isArray(obj.codes) ? obj.codes : [];
+          if (codes.indexOf(code) === -1) {
+            codes.push(code);
+            localStorage.setItem('chiba_promo_v1', JSON.stringify({ codes: codes }));
+          }
+          window.location.reload();
+        } catch (_) {}
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      renderMemberDashboard();
+      var logoutBtn = document.getElementById('btn-account-logout');
+      if (logoutBtn) {
+        logoutBtn.addEventListener('click', function() {
+          if (window.ChibaEcommerce) {
+            window.ChibaEcommerce.logout();
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

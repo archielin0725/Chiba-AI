@@ -119,8 +119,8 @@
       "black/white/1001"
     ],
     "sizes": [
-      "XS-4XL",
-      "XS-4XL"
+      "XS-XXL",
+      "XS-XXL"
     ],
     "materials": "cotton; Microfibre",
     "description": "手背採用鉤織棉，掌面採用超細纖維。",
@@ -134,7 +134,7 @@
       {
         "key": "Cycling|30410|BLACK UNI/101",
         "colour": "black uni/101",
-        "sizes": "XS-4XL",
+        "sizes": "XS-XXL",
         "price": 550.0,
         "images": [
           "/assets/products/cycling/30410-athletic/black-uni-101/fitness__30410__black-uni-101__5e1d85e7e7700a8d__30410-101-1.jpg",
@@ -146,7 +146,7 @@
       {
         "key": "Cycling|30410|BLACK/WHITE/1001",
         "colour": "black/white/1001",
-        "sizes": "XS-4XL",
+        "sizes": "XS-XXL",
         "price": 550.0,
         "images": [
           "/assets/products/cycling/30410-athletic/black-white-1001/fitness__30410__black-white-1001__5dea917d1af210f4__30410-1001-1.jpg",
@@ -2270,8 +2270,8 @@
       "black/brown 1022"
     ],
     "sizes": [
-      "XS-4XL",
-      "XS-4XL"
+      "XS-XXL",
+      "XS-XXL"
     ],
     "materials": "microfibre",
     "description": "掌面採用帶通氣孔的超細纖維，搭配鉤織手背。",
@@ -2285,7 +2285,7 @@
       {
         "key": "Cycling|3040018|BEIGE/BROWN 0222",
         "colour": "beige/brown 0222",
-        "sizes": "XS-4XL",
+        "sizes": "XS-XXL",
         "price": 850.0,
         "images": [
           "/assets/products/cycling/3040018-retro/beige-brown-0222/fitness__3040018__beige-brown-0222__2587e7ec888852f7__3040018-0222-1.jpg",
@@ -2297,7 +2297,7 @@
       {
         "key": "Cycling|3040018|BLACK/BROWN 1022",
         "colour": "black/brown 1022",
-        "sizes": "XS-4XL",
+        "sizes": "XS-XXL",
         "price": 850.0,
         "images": [
           "/assets/products/cycling/3040018-retro/black-brown-1022/fitness__3040018__black-brown-1022__7effa2cb245ad899__3040018-1022-1.jpg",

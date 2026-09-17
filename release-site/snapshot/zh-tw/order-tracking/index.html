@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>訂單進度即時查詢｜CHIBA Taiwan 德國運動手套品牌官方網站</title>
+  <meta name="description" content="CHIBA Taiwan 德國原裝機能手套預購訂單即時查詢系統。輸入訂單編號與手機末 3 碼，即可隨時掌握德國備貨、空運進度與超商配送狀態。">
+  <link rel="canonical" href="https://www.chibataiwan.com/zh-tw/order-tracking/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
+  <link rel="stylesheet" href="/assets/site.css">
+  <link rel="stylesheet" href="/assets/site-overrides.css">
+  <link rel="stylesheet" href="/assets/chiba-ecommerce.css">
+  <style>
+    .tracking-wrap {
+      max-width: 860px;
+      margin: 40px auto 80px;
+      padding: 0 20px;
+    }
+    .tracking-card {
+      background: #ffffff;
+      border: 1px solid var(--border, #e5e7eb);
+      border-radius: 12px;
+      padding: 32px 28px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      margin-bottom: 24px;
+    }
+    .tracking-hero {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .tracking-hero h1 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+    .tracking-hero p {
+      color: #4b5563;
+      font-size: 0.95rem;
+    }
+    .tracking-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr auto;
+      gap: 12px;
+      align-items: flex-end;
+      background: #f8fafc;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      margin-bottom: 24px;
+    }
+    @media (max-width: 640px) {
+      .tracking-form {
+        grid-template-columns: 1fr;
+      }
+    }
+    .form-field label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #374151;
+      margin-bottom: 6px;
+    }
+    .form-field input {
+      width: 100%;
+      padding: 10px 14px;
+      font-size: 0.95rem;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      outline: none;
+      font-family: inherit;
+    }
+    .form-field input:focus {
+      border-color: #b92027;
+      box-shadow: 0 0 0 2px rgba(185, 32, 39, 0.15);
+    }
+    .btn-track {
+      background: #b92027;
+      color: #ffffff;
+      font-weight: 700;
+      padding: 11px 24px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      transition: background 0.15s;
+    }
+    .btn-track:hover {
+      background: #8c1319;
+    }
+
+    /* Stepper */
+    .stepper {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      margin: 36px 0 28px;
+    }
+    .stepper::before {
+      content: "";
+      position: absolute;
+      top: 18px;
+      left: 30px;
+      right: 30px;
+      height: 3px;
+      background: #e5e7eb;
+      z-index: 1;
+    }
+    .step-item {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      flex: 1;
+    }
+    .step-circle {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 3px solid #d1d5db;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: #6b7280;
+      transition: all 0.2s;
+    }
+    .step-item.active .step-circle {
+      background: #b92027;
+      border-color: #b92027;
+      color: #ffffff;
+      box-shadow: 0 0 0 4px rgba(185, 32, 39, 0.2);
+    }
+    .step-item.completed .step-circle {
+      background: #059669;
+      border-color: #059669;
+      color: #ffffff;
+    }
+    .step-label {
+      margin-top: 8px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #6b7280;
+    }
+    .step-item.active .step-label {
+      color: #b92027;
+    }
+    .step-item.completed .step-label {
+      color: #059669;
+    }
+    @media (max-width: 640px) {
+      .stepper {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+      }
+      .stepper::before {
+        display: none;
+      }
+      .step-item {
+        flex-direction: row;
+        gap: 12px;
+        text-align: left;
+      }
+      .step-label {
+        margin-top: 0;
+      }
+    }
+
+    /* Result Box */
+    .status-alert {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      color: #166534;
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .status-alert.alert-germany {
+      background: #eff6ff;
+      border-color: #bfdbfe;
+      color: #1e40af;
+    }
+    .status-alert.alert-shipped {
+      background: #fefce8;
+      border-color: #fef08a;
+      color: #854d0e;
+    }
+    .tracking-no-box {
+      background: #fafafa;
+      border: 1px dashed #d1d5db;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .items-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.9rem;
+    }
+    .items-table th {
+      background: #f8fafc;
+      padding: 10px 12px;
+      border-bottom: 1px solid #e2e8f0;
+      text-align: left;
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+    .items-table td {
+      padding: 12px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .order-summary-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Utility Bar -->
+  <div class="topbar">
+    <div class="topbar-container">
+      <div class="topbar-info"><span class="topbar-tagline">德國百年專業機能手套 · 台灣官方網站</span></div>
+      <div class="topbar-actions">
+        <a href="https://www.instagram.com/chibataiwan/" target="_blank" rel="noopener noreferrer" class="topbar-ig" title="追蹤 CHIBA Taiwan 官方 Instagram (@chibataiwan)" aria-label="CHIBA Taiwan Instagram">
+          <svg class="ig-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <span class="topbar-ig-text">@chibataiwan</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="nav">
+    <a class="brand" href="/zh-tw/">
+      <img class="brand-icon" src="/assets/logo/chiba-icon-redless.jpe" alt="CHIBA">
+      <img class="brand-wordmark" src="/assets/logo/chiba-wordmark.jpe" alt="CHIBA GLOVES GERMANY">
+    </a>
+    <nav id="primary-navigation">
+      <a href="/zh-tw/products/">產品</a>
+      <a href="/zh-tw/cycling/">自行車</a>
+      <a href="/zh-tw/fitness/">健身</a>
+      <a href="/zh-tw/technology/">科技</a>
+      <a href="/zh-tw/size-guide/">尺寸指南</a>
+      <a href="/zh-tw/about/">關於 CHIBA Taiwan</a>
+      <a href="/zh-tw/contact/">聯絡我們</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="nav-lang-bar" role="group" aria-label="語言選擇 Language">
+        <span class="nav-lang-flag active" title="目前語系：繁體中文 (Taiwan)" aria-current="true"><img src="/assets/flags/tw.svg" class="flag-img" alt="繁體中文"></span>
+        <a href="/en/order-tracking/" class="nav-lang-flag" title="Switch to English (UK)" aria-label="Switch to English"><img src="/assets/flags/en.svg" class="flag-img" alt="English"></a>
+      </div>
+      <button class="menu" aria-controls="primary-navigation" aria-expanded="false" aria-label="開啟選單">☰</button>
+    </div>
+  </header>
+
+  <!-- Main Tracking Container -->
+  <main class="tracking-wrap">
+    <div class="tracking-card">
+      <div class="tracking-hero">
+        <h1>🔍 顧客訂單進度即時查詢</h1>
+        <p>請輸入您的訂單編號與訂購人手機號碼末 3 碼，即可隨時掌握德國備貨、空運排程與超商取貨狀態。</p>
+      </div>
+
+      <!-- Search Form -->
+      <form id="tracking-form" class="tracking-form">
+        <div class="form-field">
+          <label for="input-order-id">訂單編號 (Order ID):</label>
+          <input type="text" id="input-order-id" placeholder="例如 CBA-20260917-8821" required>
+        </div>
+        <div class="form-field">
+          <label for="input-phone-last3">手機號碼末 3 碼 (隱私驗證):</label>
+          <input type="text" id="input-phone-last3" placeholder="例如 678 (純數字)" maxlength="3" inputmode="numeric">
+        </div>
+        <div>
+          <button type="submit" class="btn-track">查詢進度</button>
+        </div>
+      </form>
+      <div id="quick-recent-orders" style="display: none; margin-top: 14px; padding: 10px 14px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 0.85rem; color: #475569;"></div>
+
+      <!-- Results Container -->
+      <div id="tracking-result-area" style="display: none;">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="brand">
+      <a href="/zh-tw/">
+        <img class="brand-icon" src="/assets/logo/chiba-icon-redless.jpe" alt="CHIBA">
+        <img class="brand-wordmark" src="/assets/logo/chiba-wordmark.jpe" alt="CHIBA GLOVES GERMANY">
+      </a>
+      <small>GLOVES GERMANY · TAIWAN</small>
+    </div>
+    <p>奇柏有限公司<br>Chiba Taiwan Co., Ltd.</p>
+    <p>
+      E: <a href="mailto:info@chibataiwan.com">info@chibataiwan.com</a><br>
+      IG: <a href="https://www.instagram.com/chibataiwan/" rel="noopener noreferrer" target="_blank">@chibataiwan</a><br>
+      德國官網：<a href="https://chiba.de/" rel="noopener noreferrer" target="_blank">www.chiba.de</a>
+    </p>
+    <p class="quiet">© CHIBA Taiwan</p>
+    <nav aria-label="法律與客戶服務">
+      <a href="/zh-tw/order-tracking/">訂單進度查詢</a>
+      <a href="/zh-tw/privacy/">隱私權政策</a>
+      <a href="/zh-tw/terms/">網站使用條款</a>
+      <a href="/zh-tw/warranty/">保固與售後服務</a>
+      <a href="/zh-tw/returns/">退換貨說明</a>
+      <a href="/zh-tw/customer-service/">客戶服務</a>
+    </nav>
+  </footer>
+
+  <script src="/assets/site.js"></script>
+  <script src="/assets/chiba-ecommerce.js"></script>
+  <script>
+    (function() {
+      var sampleFallbackOrders = [
+        {
+          orderId: 'CBA-20260917-8821',
+          customerName: '林冠廷',
+          phone: '0912-345-678',
+          status: '預購成立',
+          storeName: '7-ELEVEN 欣漢門市 (店號: 110482)',
+          storeAddr: '台北市信義區忠孝東路五段 295 號',
+          trackingNumber: '',
+          subtotal: 3060,
+          discount: 406,
+          promoCode: 'PREORDER90 + CHIBA100',
+          total: 2654,
+          items: [
+            { name: 'BioXCell Pro 頂級凝膠避震手套', size: 'L', color: '黑色 Black', quantity: 1, price: 1860 },
+            { name: 'Wristguard V 專業護腕加壓健身手套', size: 'L', color: '黑色 Black', quantity: 1, price: 1200 }
+          ]
+        },
+        {
+          orderId: 'CBA-20260917-7412',
+          customerName: '張雅筑',
+          phone: '0988-765-432',
+          status: '德國備貨中',
+          storeName: '7-ELEVEN 板運門市 (店號: 194820)',
+          storeAddr: '新北市板橋區文化路二段 182 號',
+          trackingNumber: '',
+          subtotal: 1860,
+          discount: 286,
+          promoCode: 'PREORDER90 + CHIBA100',
+          total: 1574,
+          items: [
+            { name: 'BioXCell Pro 頂級護手款自行車手套', size: 'M', color: '黑色 Black', quantity: 1, price: 1860 }
+          ]
+        },
+        {
+          orderId: 'CBA-20260916-5211',
+          customerName: '王俊傑',
+          phone: '0922-888-777',
+          status: '超商出貨',
+          storeName: '7-ELEVEN 信義門市 (店號: 110992)',
+          storeAddr: '台北市信義區信義路五段 15 號',
+          trackingNumber: '711-20260916-8901',
+          subtotal: 1450,
+          discount: 100,
+          promoCode: 'CHIBA100',
+          total: 1415,
+          items: [
+            { name: 'Iron III 鐵人專業重訓手套', size: 'XL', color: '黑/紅 Black/Red', quantity: 1, price: 1450 }
+          ]
+        }
+      ];
+
+      function getAllOrders() {
+        var orders = [];
+        try {
+          var hist = localStorage.getItem('chiba_order_history_v1');
+          if (hist) orders = JSON.parse(hist);
+        } catch(_) {}
+        try {
+          var last = localStorage.getItem('chiba_last_order_v1');
+          if (last) {
+            var lastObj = JSON.parse(last);
+            if (!orders.some(function(o) { return o.orderId === lastObj.orderId; })) {
+              orders.unshift(lastObj);
+            }
+          }
+        } catch(_) {}
+
+        sampleFallbackOrders.forEach(function(s) {
+          if (!orders.some(function(o) { return o.orderId === s.orderId; })) {
+            orders.push(s);
+          }
+        });
+        return orders;
+      }
+
+      function performTracking(orderId, phoneLast3) {
+        var cleanId = (orderId || '').trim().toUpperCase();
+        var rawPhone = (phoneLast3 || '').trim();
+        var cleanLast3 = rawPhone.replace(/\D/g, '');
+        var orders = getAllOrders();
+
+        // 1. Direct match with orderId and last 3 digits of phone
+        var match = orders.find(function(o) {
+          if (!o.orderId || o.orderId.toUpperCase() !== cleanId) return false;
+          var phone = (o.phone || '').replace(/\D/g, '');
+          return cleanLast3.length === 3 && phone.endsWith(cleanLast3);
+        });
+
+        // 2. If no direct match, check if this order belongs to the current browser/member
+        if (!match) {
+          var foundOrder = orders.find(function(o) {
+            return o.orderId && o.orderId.toUpperCase() === cleanId;
+          });
+          if (foundOrder) {
+            var isLocalOwner = false;
+            try {
+              var lastO = JSON.parse(localStorage.getItem('chiba_last_order_v1') || '{}');
+              if (lastO && lastO.orderId && lastO.orderId.toUpperCase() === cleanId) isLocalOwner = true;
+              var hist = JSON.parse(localStorage.getItem('chiba_order_history_v1') || '[]');
+              if (hist.some(function(h) { return h.orderId && h.orderId.toUpperCase() === cleanId; })) isLocalOwner = true;
+              var currMem = JSON.parse(localStorage.getItem('chiba_current_member_v1') || '{}');
+              if (currMem && currMem.phone && foundOrder.phone && currMem.phone.replace(/\D/g, '') === foundOrder.phone.replace(/\D/g, '')) isLocalOwner = true;
+              if (currMem && currMem.name && foundOrder.name && currMem.name.trim() === foundOrder.name.trim()) isLocalOwner = true;
+            } catch(_) {}
+
+            if (isLocalOwner) {
+              match = foundOrder;
+              var autoDigits = (foundOrder.phone || '').replace(/\D/g, '').slice(-3);
+              if (autoDigits) {
+                var pInput = document.getElementById('input-phone-last3');
+                if (pInput) pInput.value = autoDigits;
+              }
+            }
+          }
+        }
+
+        var resultArea = document.getElementById('tracking-result-area');
+        resultArea.style.display = 'block';
+
+        if (!match) {
+          var errHint = '請確認您輸入的訂單編號（例如 CBA-20260918-XXXX）與手機末 3 碼純數字（例如 0912-345-678 請填寫 678）。如有疑問歡迎直接來信官方客服信箱 <a href="mailto:info@chibataiwan.com" style="color: #b92027; font-weight: 700;">info@chibataiwan.com</a>。';
+          if (rawPhone && rawPhone !== '' && cleanLast3.length !== 3) {
+            errHint = '⚠️ 手機號碼末 3 碼驗證請輸入「<strong>3 碼純數字</strong>」（例如手機為 0912-345-678，請填寫 678）。如有疑問歡迎來信客服信箱 <a href="mailto:info@chibataiwan.com" style="color: #b92027; font-weight: 700;">info@chibataiwan.com</a>。';
+          }
+          resultArea.innerHTML =
+            '<div style="text-align: center; padding: 30px; background: #fff5f5; border: 1px solid #fecaca; border-radius: 8px; color: #b92027;">' +
+              '<h3 style="margin-bottom: 8px;">查無相符訂單</h3>' +
+              '<p style="font-size: 0.9rem; color: #4b5563; line-height: 1.6;">' + errHint + '</p>' +
+            '</div>';
+          return;
+        }
+
+        renderTrackingResult(match);
+      }
+
+      function renderTrackingResult(order) {
+        var resultArea = document.getElementById('tracking-result-area');
+        var s = order.status || '預購成立';
+
+        // Determine step index (0 to 4)
+        var stepIndex = 0;
+        var alertClass = 'status-alert';
+        var alertTitle = '📝 訂單已建立，待排程處理';
+        var alertDesc = '您的預購訂單已成功建立，我們將於 1 個工作天內依序為您向德國原廠排定生產與空運專案。';
+
+        if (s === '德國備貨中') {
+          stepIndex = 1;
+          alertClass = 'status-alert alert-germany';
+          alertTitle = '🇩🇪 德國原廠專案備貨中';
+          alertDesc = '本商品採德國原廠專案空運引進，原廠人員正在進行品檢與空運封箱，預計 7–14 個工作天依序抵台。';
+        } else if (s === '空運抵台') {
+          stepIndex = 2;
+          alertClass = 'status-alert alert-germany';
+          alertTitle = '✈️ 商品已空運抵台，正進行進口分檢';
+          alertDesc = '手套已順利抵達台灣，品管團隊正在進行最後外觀與規格複檢，預計 1–2 個工作天內交寄指定超商。';
+        } else if (s === '超商出貨') {
+          stepIndex = 3;
+          alertClass = 'status-alert alert-shipped';
+          alertTitle = '🏪 商品已交寄超商配送中！';
+          alertDesc = '包裹已出貨，預計 2 天內抵達您指定的取件門市，抵達時將收到簡訊通知，請攜帶身分證件前往付款取貨。';
+        } else if (s === '已完成') {
+          stepIndex = 4;
+          alertClass = 'status-alert';
+          alertTitle = '✅ 訂單已順利完成取件付款！';
+          alertDesc = '感謝您選購德國百年 CHIBA 機能手套！全系列商品享台灣官方獨家總代理售後保固服務。';
+        }
+
+        // Stepper HTML
+        var steps = ['預購成立', '德國原廠備貨', '空運抵台檢驗', '超商出貨配送', '門市待取/已完成'];
+        var stepperHtml = '<div class="stepper">';
+        steps.forEach(function(stepName, i) {
+          var state = '';
+          if (i < stepIndex) state = 'completed';
+          else if (i === stepIndex) state = 'active';
+          stepperHtml +=
+            '<div class="step-item ' + state + '">' +
+              '<div class="step-circle">' + (i < stepIndex ? '✓' : (i + 1)) + '</div>' +
+              '<div class="step-label">' + stepName + '</div>' +
+            '</div>';
+        });
+        stepperHtml += '</div>';
+
+        // Tracking number box
+        var trackingBoxHtml = '';
+        if (order.trackingNumber) {
+          var is711 = (order.storeName || '').indexOf('7-ELEVEN') !== -1;
+          var trackLink = is711 
+            ? 'https://eservice.7-11.com.tw/e-tracking/search.aspx' 
+            : 'https://www.famiport.com.tw/Web_Famiport/page/process.aspx';
+
+          trackingBoxHtml =
+            '<div class="tracking-no-box">' +
+              '<div>' +
+                '<strong style="font-size: 0.95rem; color: #111827;">📦 超商包裹追蹤單號：</strong>' +
+                '<span style="font-family: monospace; font-size: 1.1rem; font-weight: 800; color: #b92027; margin-left: 6px;">' + order.trackingNumber + '</span>' +
+                '<div style="font-size: 0.78rem; color: #6b7280; margin-top: 2px;">配送超商：' + (order.storeName || order.shippingMethod) + '</div>' +
+              '</div>' +
+              '<a href="' + trackLink + '" target="_blank" rel="noopener noreferrer" class="button" style="padding: 6px 14px; font-size: 0.85rem;">前往超商官網查件 ↗</a>' +
+            '</div>';
+        }
+
+        // Items HTML
+        var itemsHtml = (order.items || []).map(function(item) {
+          var title = item.title || item.name || 'CHIBA 專業機能手套';
+          var qty = item.qty || item.quantity || 1;
+          var price = Number(item.price || item.unitPrice || 0);
+          var color = item.color || item.colour || '-';
+          var size = item.size || 'F';
+          return '<tr>' +
+                   '<td><strong>' + title + '</strong><br><small style="color: #6b7280;">顏色: ' + color + ' | 德規尺寸: ' + size + '</small></td>' +
+                   '<td style="text-align: center;">' + qty + '</td>' +
+                   '<td style="text-align: right; font-weight: 700;">NT$ ' + Number(price * qty).toLocaleString() + '</td>' +
+                 '</tr>';
+        }).join('');
+
+        resultArea.innerHTML =
+          stepperHtml +
+          '<div class="' + alertClass + '">' +
+            '<div style="font-size: 1.6rem;">ℹ️</div>' +
+            '<div>' +
+              '<strong>' + alertTitle + '</strong>' +
+              '<p style="margin-top: 2px; font-size: 0.88rem;">' + alertDesc + '</p>' +
+            '</div>' +
+          '</div>' +
+          trackingBoxHtml +
+          '<div style="border-top: 1px solid #e5e7eb; padding-top: 20px;">' +
+            '<h3 style="font-size: 1.05rem; font-weight: 800; margin-bottom: 12px;">📋 訂單編號：' + order.orderId + '（預購商品規格與取件門市）</h3>' +
+            '<table class="items-table">' +
+              '<thead><tr><th>商品品項</th><th style="text-align: center;">數量</th><th style="text-align: right;">小計</th></tr></thead>' +
+              '<tbody>' + itemsHtml + '</tbody>' +
+            '</table>' +
+            '<div style="max-width: 320px; margin-left: auto; margin-top: 12px;">' +
+              '<div class="order-summary-row"><span>商品小計</span><span>NT$ ' + Number(order.subtotal || 0).toLocaleString() + '</span></div>' +
+              (order.discount > 0 ? '<div class="order-summary-row" style="color: #b92027;"><span>促銷折扣 (' + (order.promoCode || 'PROMO') + ')</span><span>-NT$ ' + Number(order.discount).toLocaleString() + '</span></div>' : '') +
+              '<div class="order-summary-row"><span>運費</span><span>' + (order.shippingFee === 0 || !order.shippingFee ? '<strong style="color: #059669;">NT$ 0 (免運費)</strong>' : 'NT$ ' + Number(order.shippingFee).toLocaleString()) + '</span></div>' +
+              '<div class="order-summary-row" style="border-top: 1px solid #e5e7eb; padding-top: 6px; font-weight: 800; font-size: 1.05rem;">' +
+                '<span>實付代收總額</span>' +
+                '<span style="color: #b92027;">NT$ ' + Number(order.total || 0).toLocaleString() + '</span>' +
+              '</div>' +
+            '</div>' +
+            '<div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px 18px; margin-top: 20px; font-size: 0.85rem; color: #4b5563;">' +
+              '<strong>🏪 取件門市：</strong>' + (order.storeName || order.shippingMethod) + '<br>' +
+              (order.storeAddr ? '<strong>📍 門市地址：</strong>' + order.storeAddr + '<br>' : '') +
+              '<strong>💳 付款方式：</strong>' + (order.paymentLabel || (order.paymentMethod === 'atm' ? 'ATM 虛擬帳號轉帳' : (order.paymentMethod === 'credit' ? '信用卡線上刷卡' : (order.paymentMethod === 'linepay' ? 'LINE Pay 行動支付' : '7-ELEVEN 超商取貨付款')))) + '<br>' +
+              (order.paymentMethod === 'atm' ? (
+                '<div style="margin-top: 10px; padding: 12px; background: #ffffff; border: 1px solid #bae6fd; border-radius: 6px;">' +
+                  '<strong style="color: #0369a1;">🏦 ATM 匯款銷帳資訊：</strong>' +
+                  '<div style="font-size: 0.82rem; margin: 4px 0 8px; color: #475569;">中國信託 (822) 天母分行 ｜ 戶名：林志昇 ｜ 收款帳號：<strong style="font-family: monospace; font-size: 0.95rem; color: #0f172a;">' + (order.bankAccount || order.virtualAccount || '406970163121') + '</strong></div>' +
+                  (order.atmLast5 ? (
+                    '<div style="color: #15803d; font-weight: 700; font-size: 0.84rem;">✓ 已登記匯款末 5 碼：' + order.atmLast5 + '（款項核對中）</div>'
+                  ) : (
+                    '<div style="display: flex; gap: 8px; align-items: center; margin-top: 6px;">' +
+                      '<input type="text" id="tracking-atm-last5" placeholder="請填寫轉帳帳號末 5 碼" maxlength="5" style="padding: 6px 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 0.82rem; width: 170px;">' +
+                      '<button type="button" id="btn-report-atm" class="button" style="padding: 6px 12px; font-size: 0.82rem;">回報末 5 碼</button>' +
+                    '</div>'
+                  )) +
+                '</div>'
+              ) : '') +
+            '</div>' +
+            '<div style="text-align: center; margin-top: 24px;">' +
+              '<a href="mailto:info@chibataiwan.com" class="button" style="background: #1e293b; border-color: #1e293b; color: #fff;">✉️ 專人客服信箱諮詢 (info@chibataiwan.com)</a>' +
+            '</div>' +
+          '</div>';
+
+        var btnReport = document.getElementById('btn-report-atm');
+        if (btnReport) {
+          btnReport.addEventListener('click', function() {
+            var input = document.getElementById('tracking-atm-last5');
+            var val = input ? input.value.trim() : '';
+            if (val.length !== 5 || !/^\d{5}$/.test(val)) {
+              alert('請輸入正確的銀行帳號末 5 碼數字。');
+              return;
+            }
+            order.atmLast5 = val;
+            try {
+              var hist = JSON.parse(localStorage.getItem('chiba_order_history_v1') || '[]');
+              var idx = hist.findIndex(function(o) { return o.orderId === order.orderId; });
+              if (idx >= 0) {
+                hist[idx].atmLast5 = val;
+                localStorage.setItem('chiba_order_history_v1', JSON.stringify(hist));
+              }
+              var lastO = JSON.parse(localStorage.getItem('chiba_last_order_v1') || 'null');
+              if (lastO && lastO.orderId === order.orderId) {
+                lastO.atmLast5 = val;
+                localStorage.setItem('chiba_last_order_v1', JSON.stringify(lastO));
+              }
+            } catch (_) {}
+            alert('✓ 匯款末 5 碼 (' + val + ') 已成功登記！客服專員將於營業時間核銷入帳。');
+            renderTrackingResult(order);
+          });
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var form = document.getElementById('tracking-form');
+        var orderInput = document.getElementById('input-order-id');
+        var phoneInput = document.getElementById('input-phone-last3');
+
+        // Only allow digits on phoneInput
+        if (phoneInput) {
+          phoneInput.addEventListener('input', function() {
+            this.value = this.value.replace(/\D/g, '');
+          });
+        }
+
+        // Check URL parameters (e.g. ?orderId=CBA-20260918-4723&phone=678)
+        var params = new URLSearchParams(window.location.search);
+        var qId = params.get('orderId');
+        var qPhone = params.get('phone');
+        if (qId) {
+          orderInput.value = qId;
+          if (qPhone) {
+            var cleanQPhone = qPhone.replace(/\D/g, '').slice(-3);
+            phoneInput.value = cleanQPhone;
+            performTracking(qId, cleanQPhone);
+          } else {
+            // Auto-check if qId is in local orders
+            var orders = getAllOrders();
+            var localMatch = orders.find(function(o) { return o.orderId && o.orderId.toUpperCase() === qId.trim().toUpperCase(); });
+            if (localMatch && localMatch.phone) {
+              var pLast3 = localMatch.phone.replace(/\D/g, '').slice(-3);
+              phoneInput.value = pLast3;
+              performTracking(qId, pLast3);
+            }
+          }
+        }
+
+        // Quick recent orders helper
+        try {
+          var userOrders = getAllOrders().filter(function(o) {
+            return o.orderId && !sampleFallbackOrders.some(function(s) { return s.orderId === o.orderId; });
+          });
+          var chipsBox = document.getElementById('quick-recent-orders');
+          if (chipsBox && userOrders.length > 0) {
+            var latest = userOrders[0];
+            var pDigits = (latest.phone || '').replace(/\D/g, '').slice(-3);
+            chipsBox.style.display = 'block';
+            chipsBox.innerHTML = '💡 <strong>偵測到您近期下單之訂單：</strong><button type="button" style="margin-left: 6px; background: #e0f2fe; border: 1px solid #bae6fd; color: #0369a1; padding: 4px 10px; border-radius: 4px; font-family: monospace; font-size: 0.85rem; font-weight: 700; cursor: pointer;" id="btn-quick-fill-order">' + latest.orderId + ' (點此一鍵查詢)</button>';
+            var quickBtn = document.getElementById('btn-quick-fill-order');
+            if (quickBtn) {
+              quickBtn.addEventListener('click', function() {
+                orderInput.value = latest.orderId;
+                phoneInput.value = pDigits;
+                performTracking(latest.orderId, pDigits);
+              });
+            }
+          }
+        } catch(_) {}
+
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          performTracking(orderInput.value, phoneInput.value);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Order Status｜CHIBA Taiwan Official German Glovemaking</title>
+  <meta name="description" content="CHIBA Taiwan Pre-Order Status Tracking. Enter your Order ID and the last 3 digits of your phone number to check German procurement, airfreight, and convenience store dispatch progress.">
+  <link rel="canonical" href="https://www.chibataiwan.com/en/order-tracking/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
+  <link rel="stylesheet" href="/assets/site.css">
+  <link rel="stylesheet" href="/assets/site-overrides.css">
+  <link rel="stylesheet" href="/assets/chiba-ecommerce.css">
+  <style>
+    .tracking-wrap {
+      max-width: 860px;
+      margin: 40px auto 80px;
+      padding: 0 20px;
+    }
+    .tracking-card {
+      background: #ffffff;
+      border: 1px solid var(--border, #e5e7eb);
+      border-radius: 12px;
+      padding: 32px 28px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      margin-bottom: 24px;
+    }
+    .tracking-hero {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .tracking-hero h1 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+    .tracking-hero p {
+      color: #4b5563;
+      font-size: 0.95rem;
+    }
+    .tracking-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr auto;
+      gap: 12px;
+      align-items: flex-end;
+      background: #f8fafc;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      margin-bottom: 24px;
+    }
+    @media (max-width: 640px) {
+      .tracking-form {
+        grid-template-columns: 1fr;
+      }
+    }
+    .form-field label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #374151;
+      margin-bottom: 6px;
+    }
+    .form-field input {
+      width: 100%;
+      padding: 10px 14px;
+      font-size: 0.95rem;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      outline: none;
+      font-family: inherit;
+    }
+    .form-field input:focus {
+      border-color: #b92027;
+      box-shadow: 0 0 0 2px rgba(185, 32, 39, 0.15);
+    }
+    .btn-track {
+      background: #b92027;
+      color: #ffffff;
+      font-weight: 700;
+      padding: 11px 24px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      transition: background 0.15s;
+    }
+    .btn-track:hover {
+      background: #8c1319;
+    }
+
+    /* Stepper */
+    .stepper {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      margin: 36px 0 28px;
+    }
+    .stepper::before {
+      content: "";
+      position: absolute;
+      top: 18px;
+      left: 30px;
+      right: 30px;
+      height: 3px;
+      background: #e5e7eb;
+      z-index: 1;
+    }
+    .step-item {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      flex: 1;
+    }
+    .step-circle {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 3px solid #d1d5db;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: #6b7280;
+      transition: all 0.2s;
+    }
+    .step-item.active .step-circle {
+      background: #b92027;
+      border-color: #b92027;
+      color: #ffffff;
+      box-shadow: 0 0 0 4px rgba(185, 32, 39, 0.2);
+    }
+    .step-item.completed .step-circle {
+      background: #059669;
+      border-color: #059669;
+      color: #ffffff;
+    }
+    .step-label {
+      margin-top: 8px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #6b7280;
+    }
+    .step-item.active .step-label {
+      color: #b92027;
+    }
+    .step-item.completed .step-label {
+      color: #059669;
+    }
+    @media (max-width: 640px) {
+      .stepper {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+      }
+      .stepper::before {
+        display: none;
+      }
+      .step-item {
+        flex-direction: row;
+        gap: 12px;
+        text-align: left;
+      }
+      .step-label {
+        margin-top: 0;
+      }
+    }
+
+    /* Result Box */
+    .status-alert {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      color: #166534;
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .status-alert.alert-germany {
+      background: #eff6ff;
+      border-color: #bfdbfe;
+      color: #1e40af;
+    }
+    .status-alert.alert-shipped {
+      background: #fefce8;
+      border-color: #fef08a;
+      color: #854d0e;
+    }
+    .tracking-no-box {
+      background: #fafafa;
+      border: 1px dashed #d1d5db;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .items-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.9rem;
+    }
+    .items-table th {
+      background: #f8fafc;
+      padding: 10px 12px;
+      border-bottom: 1px solid #e2e8f0;
+      text-align: left;
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+    .items-table td {
+      padding: 12px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .order-summary-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Utility Bar -->
+  <div class="topbar">
+    <div class="topbar-container">
+      <div class="topbar-info"><span class="topbar-tagline">170 Years of German Glovemaking Heritage · Taiwan Official</span></div>
+      <div class="topbar-actions">
+        <a href="https://www.instagram.com/chibataiwan/" target="_blank" rel="noopener noreferrer" class="topbar-ig" title="Follow CHIBA Taiwan Official Instagram (@chibataiwan)" aria-label="CHIBA Taiwan Instagram">
+          <svg class="ig-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <span class="topbar-ig-text">@chibataiwan</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="nav">
+    <a class="brand" href="/en/">
+      <img class="brand-icon" src="/assets/logo/chiba-icon-redless.jpe" alt="CHIBA">
+      <img class="brand-wordmark" src="/assets/logo/chiba-wordmark.jpe" alt="CHIBA GLOVES GERMANY">
+    </a>
+    <nav id="primary-navigation">
+      <a href="/en/products/">Products</a>
+      <a href="/en/cycling/">Cycling</a>
+      <a href="/en/fitness/">Fitness</a>
+      <a href="/en/technology/">Technology</a>
+      <a href="/en/size-guide/">Size Guide</a>
+      <a href="/en/about/">About CHIBA Taiwan</a>
+      <a href="/en/contact/">Contact Us</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="nav-lang-bar" role="group" aria-label="Language selection">
+        <a href="/zh-tw/order-tracking/" class="nav-lang-flag" title="切換至繁體中文 (Taiwan)" aria-label="切換至繁體中文"><img src="/assets/flags/tw.svg" class="flag-img" alt="繁體中文"></a>
+        <span class="nav-lang-flag active" title="Current Language: English (UK)" aria-current="true"><img src="/assets/flags/en.svg" class="flag-img" alt="English"></span>
+      </div>
+      <button class="menu" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Main Tracking Container -->
+  <main class="tracking-wrap">
+    <div class="tracking-card">
+      <div class="tracking-hero">
+        <h1>🔍 Track Order Status</h1>
+        <p>Please enter your Order ID and the last 3 digits of your contact phone number to track your German pre-order, airfreight, and delivery status.</p>
+      </div>
+
+      <!-- Search Form -->
+      <form id="tracking-form" class="tracking-form">
+        <div class="form-field">
+          <label for="input-order-id">Order ID:</label>
+          <input type="text" id="input-order-id" placeholder="e.g. CBA-20260917-8821" required>
+        </div>
+        <div class="form-field">
+          <label for="input-phone-last3">Last 3 Digits of Phone (Privacy Verification):</label>
+          <input type="text" id="input-phone-last3" placeholder="e.g. 678 (numeric only)" maxlength="3" inputmode="numeric">
+        </div>
+        <div>
+          <button type="submit" class="btn-track">Track Order</button>
+        </div>
+      </form>
+      <div id="quick-recent-orders" style="display: none; margin-top: 14px; padding: 10px 14px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 0.85rem; color: #475569;"></div>
+
+      <!-- Results Container -->
+      <div id="tracking-result-area" style="display: none;">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="brand">
+      <a href="/en/">
+        <img class="brand-icon" src="/assets/logo/chiba-icon-redless.jpe" alt="CHIBA">
+        <img class="brand-wordmark" src="/assets/logo/chiba-wordmark.jpe" alt="CHIBA GLOVES GERMANY">
+      </a>
+      <small>GLOVES GERMANY · TAIWAN</small>
+    </div>
+    <p>Chiba Taiwan Co., Ltd.<br>Official Exclusive Distributor in Taiwan</p>
+    <p>
+      E: <a href="mailto:info@chibataiwan.com">info@chibataiwan.com</a><br>
+      IG: <a href="https://www.instagram.com/chibataiwan/" rel="noopener noreferrer" target="_blank">@chibataiwan</a><br>
+      German Official: <a href="https://chiba.de/" rel="noopener noreferrer" target="_blank">www.chiba.de</a>
+    </p>
+    <p class="quiet">© CHIBA Taiwan</p>
+    <nav aria-label="Legal & Customer Support">
+      <a href="/en/order-tracking/">Track Order</a>
+      <a href="/en/privacy/">Privacy Policy</a>
+      <a href="/en/terms/">Terms of Use</a>
+      <a href="/en/warranty/">Warranty & Service</a>
+      <a href="/en/returns/">Returns & Exchanges</a>
+      <a href="/en/customer-service/">Customer Support</a>
+    </nav>
+  </footer>
+
+  <script src="/assets/site.js"></script>
+  <script src="/assets/chiba-ecommerce.js"></script>
+  <script>
+    (function() {
+      var sampleFallbackOrders = [
+        {
+          orderId: 'CBA-20260917-8821',
+          customerName: 'Kuan-Ting Lin',
+          phone: '0912-345-678',
+          status: '預購成立',
+          storeName: '7-ELEVEN Xinhan Store (Code: 110482)',
+          storeAddr: 'No. 295, Sec. 5, Zhongxiao E. Rd., Xinyi Dist., Taipei City',
+          trackingNumber: '',
+          subtotal: 3060,
+          discount: 406,
+          promoCode: 'PREORDER90 + CHIBA100',
+          total: 2654,
+          items: [
+            { name: 'BioXCell Pro Premium Gel Gloves', size: 'L', color: 'Black', quantity: 1, price: 1860 },
+            { name: 'Wristguard V Professional Fitness Gloves', size: 'L', color: 'Black', quantity: 1, price: 1200 }
+          ]
+        },
+        {
+          orderId: 'CBA-20260917-7412',
+          customerName: 'Yachu Chang',
+          phone: '0988-765-432',
+          status: '德國備貨中',
+          storeName: '7-ELEVEN Banyun Store (Code: 194820)',
+          storeAddr: 'No. 182, Sec. 2, Wenhua Rd., Banqiao Dist., New Taipei City',
+          trackingNumber: '',
+          subtotal: 1860,
+          discount: 286,
+          promoCode: 'PREORDER90 + CHIBA100',
+          total: 1574,
+          items: [
+            { name: 'BioXCell Pro Cycling Gloves', size: 'M', color: 'Black', quantity: 1, price: 1860 }
+          ]
+        },
+        {
+          orderId: 'CBA-20260916-5211',
+          customerName: 'Junjie Wang',
+          phone: '0922-888-777',
+          status: '超商出貨',
+          storeName: '7-ELEVEN Xinyi Store (Code: 110992)',
+          storeAddr: 'No. 15, Sec. 5, Xinyi Rd., Xinyi Dist., Taipei City',
+          trackingNumber: '711-20260916-8901',
+          subtotal: 1450,
+          discount: 100,
+          promoCode: 'CHIBA100',
+          total: 1415,
+          items: [
+            { name: 'Iron III Heavy Weight Training Gloves', size: 'XL', color: 'Black/Red', quantity: 1, price: 1450 }
+          ]
+        }
+      ];
+
+      function getAllOrders() {
+        var orders = [];
+        try {
+          var hist = localStorage.getItem('chiba_order_history_v1');
+          if (hist) orders = JSON.parse(hist);
+        } catch(_) {}
+        try {
+          var last = localStorage.getItem('chiba_last_order_v1');
+          if (last) {
+            var lastObj = JSON.parse(last);
+            if (!orders.some(function(o) { return o.orderId === lastObj.orderId; })) {
+              orders.unshift(lastObj);
+            }
+          }
+        } catch(_) {}
+
+        sampleFallbackOrders.forEach(function(s) {
+          if (!orders.some(function(o) { return o.orderId === s.orderId; })) {
+            orders.push(s);
+          }
+        });
+        return orders;
+      }
+
+      function performTracking(orderId, phoneLast3) {
+        var cleanId = (orderId || '').trim().toUpperCase();
+        var rawPhone = (phoneLast3 || '').trim();
+        var cleanLast3 = rawPhone.replace(/\D/g, '');
+        var orders = getAllOrders();
+
+        // 1. Direct match with orderId and last 3 digits of phone
+        var match = orders.find(function(o) {
+          if (!o.orderId || o.orderId.toUpperCase() !== cleanId) return false;
+          var phone = (o.phone || '').replace(/\D/g, '');
+          return cleanLast3.length === 3 && phone.endsWith(cleanLast3);
+        });
+
+        // 2. If no direct match, check if this order belongs to the current browser/member
+        if (!match) {
+          var foundOrder = orders.find(function(o) {
+            return o.orderId && o.orderId.toUpperCase() === cleanId;
+          });
+          if (foundOrder) {
+            var isLocalOwner = false;
+            try {
+              var lastO = JSON.parse(localStorage.getItem('chiba_last_order_v1') || '{}');
+              if (lastO && lastO.orderId && lastO.orderId.toUpperCase() === cleanId) isLocalOwner = true;
+              var hist = JSON.parse(localStorage.getItem('chiba_order_history_v1') || '[]');
+              if (hist.some(function(h) { return h.orderId && h.orderId.toUpperCase() === cleanId; })) isLocalOwner = true;
+              var currMem = JSON.parse(localStorage.getItem('chiba_current_member_v1') || '{}');
+              if (currMem && currMem.phone && foundOrder.phone && currMem.phone.replace(/\D/g, '') === foundOrder.phone.replace(/\D/g, '')) isLocalOwner = true;
+              if (currMem && currMem.name && foundOrder.name && currMem.name.trim() === foundOrder.name.trim()) isLocalOwner = true;
+            } catch(_) {}
+
+            if (isLocalOwner) {
+              match = foundOrder;
+              var autoDigits = (foundOrder.phone || '').replace(/\D/g, '').slice(-3);
+              if (autoDigits) {
+                var pInput = document.getElementById('input-phone-last3');
+                if (pInput) pInput.value = autoDigits;
+              }
+            }
+          }
+        }
+
+        var resultArea = document.getElementById('tracking-result-area');
+        resultArea.style.display = 'block';
+
+        if (!match) {
+          var errHint = 'Please verify your Order ID (e.g. CBA-20260918-XXXX) and the last 3 digits of your phone number (e.g. enter 678 for 0912-345-678). For inquiries, feel free to contact official support email: <a href="mailto:info@chibataiwan.com" style="color: #b92027; font-weight: 700;">info@chibataiwan.com</a>.';
+          if (rawPhone && rawPhone !== '' && cleanLast3.length !== 3) {
+            errHint = '⚠️ Privacy verification requires the last <strong>3 digits</strong> of your phone number (e.g. enter 678 for 0912-345-678). For inquiries, feel free to contact official support email: <a href="mailto:info@chibataiwan.com" style="color: #b92027; font-weight: 700;">info@chibataiwan.com</a>.';
+          }
+          resultArea.innerHTML =
+            '<div style="text-align: center; padding: 30px; background: #fff5f5; border: 1px solid #fecaca; border-radius: 8px; color: #b92027;">' +
+              '<h3 style="margin-bottom: 8px;">Order Not Found</h3>' +
+              '<p style="font-size: 0.9rem; color: #4b5563; line-height: 1.6;">' + errHint + '</p>' +
+            '</div>';
+          return;
+        }
+
+        renderTrackingResult(match);
+      }
+
+      function renderTrackingResult(order) {
+        var resultArea = document.getElementById('tracking-result-area');
+        var s = order.status || '預購成立';
+
+        // Determine step index (0 to 4)
+        var stepIndex = 0;
+        var alertClass = 'status-alert';
+        var alertTitle = '📝 Order Placed & Queued for Processing';
+        var alertDesc = 'Your pre-order has been placed. We will queue production and airfreight with Chiba Germany within 1 business day.';
+
+        if (s === '德國備貨中') {
+          stepIndex = 1;
+          alertClass = 'status-alert alert-germany';
+          alertTitle = '🇩🇪 Procuring from Chiba Germany';
+          alertDesc = 'Your items are being inspected, prepared, and packaged at Chiba Germany for scheduled airfreight (approx. 7–14 business days).';
+        } else if (s === '空運抵台') {
+          stepIndex = 2;
+          alertClass = 'status-alert alert-germany';
+          alertTitle = '✈️ Arrived in Taiwan & Customs Inspected';
+          alertDesc = 'Your gloves have arrived safely in Taiwan. Our local team is performing quality checks and preparing convenience store handover.';
+        } else if (s === '超商出貨') {
+          stepIndex = 3;
+          alertClass = 'status-alert alert-shipped';
+          alertTitle = '🏪 Dispatched to Convenience Store for Delivery!';
+          alertDesc = 'Your package is on its way and expected to arrive at your selected store within 2 days. An SMS notification will be sent upon store arrival.';
+        } else if (s === '已完成') {
+          stepIndex = 4;
+          alertClass = 'status-alert';
+          alertTitle = '✅ Order Delivered & Completed!';
+          alertDesc = 'Thank you for choosing authentic German CHIBA gloves. Covered by official Taiwan exclusive distributor warranty.';
+        }
+
+        // Stepper HTML
+        var steps = ['Order Placed', 'German Procurement', 'Arrived in Taiwan', 'Dispatched to CVS', 'Ready / Completed'];
+        var stepperHtml = '<div class="stepper">';
+        steps.forEach(function(stepName, i) {
+          var state = '';
+          if (i < stepIndex) state = 'completed';
+          else if (i === stepIndex) state = 'active';
+          stepperHtml +=
+            '<div class="step-item ' + state + '">' +
+              '<div class="step-circle">' + (i < stepIndex ? '✓' : (i + 1)) + '</div>' +
+              '<div class="step-label">' + stepName + '</div>' +
+            '</div>';
+        });
+        stepperHtml += '</div>';
+
+        // Tracking number box
+        var trackingBoxHtml = '';
+        if (order.trackingNumber) {
+          var is711 = (order.storeName || '').indexOf('7-ELEVEN') !== -1;
+          var trackLink = is711 
+            ? 'https://eservice.7-11.com.tw/e-tracking/search.aspx' 
+            : 'https://www.famiport.com.tw/Web_Famiport/page/process.aspx';
+
+          trackingBoxHtml =
+            '<div class="tracking-no-box">' +
+              '<div>' +
+                '<strong style="font-size: 0.95rem; color: #111827;">📦 Convenience Store Tracking Number:</strong>' +
+                '<span style="font-family: monospace; font-size: 1.1rem; font-weight: 800; color: #b92027; margin-left: 6px;">' + order.trackingNumber + '</span>' +
+                '<div style="font-size: 0.78rem; color: #6b7280; margin-top: 2px;">Delivery: ' + (order.storeName || order.shippingMethod) + '</div>' +
+              '</div>' +
+              '<a href="' + trackLink + '" target="_blank" rel="noopener noreferrer" class="button" style="padding: 6px 14px; font-size: 0.85rem;">Track on Carrier Site ↗</a>' +
+            '</div>';
+        }
+
+        // Items HTML
+        var itemsHtml = (order.items || []).map(function(item) {
+          var title = item.title || item.name || 'CHIBA Functional Gloves';
+          var qty = item.qty || item.quantity || 1;
+          var price = Number(item.price || item.unitPrice || 0);
+          var color = item.color || item.colour || '-';
+          var size = item.size || 'F';
+          return '<tr>' +
+                   '<td><strong>' + title + '</strong><br><small style="color: #6b7280;">Color: ' + color + ' | German Size: ' + size + '</small></td>' +
+                   '<td style="text-align: center;">' + qty + '</td>' +
+                   '<td style="text-align: right; font-weight: 700;">NT$ ' + Number(price * qty).toLocaleString() + '</td>' +
+                 '</tr>';
+        }).join('');
+
+        resultArea.innerHTML =
+          stepperHtml +
+          '<div class="' + alertClass + '">' +
+            '<div style="font-size: 1.6rem;">ℹ️</div>' +
+            '<div>' +
+              '<strong>' + alertTitle + '</strong>' +
+              '<p style="margin-top: 2px; font-size: 0.88rem;">' + alertDesc + '</p>' +
+            '</div>' +
+          '</div>' +
+          trackingBoxHtml +
+          '<div style="border-top: 1px solid #e5e7eb; padding-top: 20px;">' +
+            '<h3 style="font-size: 1.05rem; font-weight: 800; margin-bottom: 12px;">📋 Order ID: ' + order.orderId + ' (Items & Pickup Store)</h3>' +
+            '<table class="items-table">' +
+              '<thead><tr><th>Product Details</th><th style="text-align: center;">Qty</th><th style="text-align: right;">Subtotal</th></tr></thead>' +
+              '<tbody>' + itemsHtml + '</tbody>' +
+            '</table>' +
+            '<div style="max-width: 320px; margin-left: auto; margin-top: 12px;">' +
+              '<div class="order-summary-row"><span>Subtotal</span><span>NT$ ' + Number(order.subtotal || 0).toLocaleString() + '</span></div>' +
+              (order.discount > 0 ? '<div class="order-summary-row" style="color: #b92027;"><span>Promo Discount (' + (order.promoCode || 'PROMO') + ')</span><span>-NT$ ' + Number(order.discount).toLocaleString() + '</span></div>' : '') +
+              '<div class="order-summary-row"><span>Shipping</span><span>' + (order.shippingFee === 0 || !order.shippingFee ? '<strong style="color: #059669;">NT$ 0 (Free Shipping)</strong>' : 'NT$ ' + Number(order.shippingFee).toLocaleString()) + '</span></div>' +
+              '<div class="order-summary-row" style="border-top: 1px solid #e5e7eb; padding-top: 6px; font-weight: 800; font-size: 1.05rem;">' +
+                '<span>Total Payable</span>' +
+                '<span style="color: #b92027;">NT$ ' + Number(order.total || 0).toLocaleString() + '</span>' +
+              '</div>' +
+            '</div>' +
+            '<div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px 18px; margin-top: 20px; font-size: 0.85rem; color: #4b5563;">' +
+              '<strong>🏪 Pickup Store:</strong> ' + (order.storeName || order.shippingMethod) + '<br>' +
+              (order.storeAddr ? '<strong>📍 Address:</strong> ' + order.storeAddr + '<br>' : '') +
+              '<strong>💳 Payment:</strong> ' + (order.paymentLabel || (order.paymentMethod === 'atm' ? 'ATM Virtual Account Transfer' : (order.paymentMethod === 'credit' ? 'Credit Card Online' : (order.paymentMethod === 'linepay' ? 'LINE Pay Mobile' : '7-ELEVEN Cash on Delivery')))) + '<br>' +
+              (order.paymentMethod === 'atm' ? (
+                '<div style="margin-top: 10px; padding: 12px; background: #ffffff; border: 1px solid #bae6fd; border-radius: 6px;">' +
+                  '<strong style="color: #0369a1;">🏦 ATM Bank Transfer Information:</strong>' +
+                  '<div style="font-size: 0.82rem; margin: 4px 0 8px; color: #475569;">Bank: CTBC Bank (822) Tianmu Branch ｜ Name: 林志昇 (Lin, Chih-Sheng) ｜ Account: <strong style="font-family: monospace; font-size: 0.95rem; color: #0f172a;">' + (order.bankAccount || order.virtualAccount || '406970163121') + '</strong></div>' +
+                  (order.atmLast5 ? (
+                    '<div style="color: #15803d; font-weight: 700; font-size: 0.84rem;">✓ Reported Last 5 Digits: ' + order.atmLast5 + ' (Reconciliation in progress)</div>'
+                  ) : (
+                    '<div style="display: flex; gap: 8px; align-items: center; margin-top: 6px;">' +
+                      '<input type="text" id="tracking-atm-last5" placeholder="Enter last 5 digits" maxlength="5" style="padding: 6px 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 0.82rem; width: 170px;">' +
+                      '<button type="button" id="btn-report-atm" class="button" style="padding: 6px 12px; font-size: 0.82rem;">Submit Last 5</button>' +
+                    '</div>'
+                  )) +
+                '</div>'
+              ) : '') +
+            '</div>' +
+            '<div style="text-align: center; margin-top: 24px;">' +
+              '<a href="mailto:info@chibataiwan.com" class="button" style="background: #1e293b; border-color: #1e293b; color: #fff;">✉️ Inquire via Customer Service Email (info@chibataiwan.com)</a>' +
+            '</div>' +
+          '</div>';
+
+        var btnReport = document.getElementById('btn-report-atm');
+        if (btnReport) {
+          btnReport.addEventListener('click', function() {
+            var input = document.getElementById('tracking-atm-last5');
+            var val = input ? input.value.trim() : '';
+            if (val.length !== 5 || !/^\d{5}$/.test(val)) {
+              alert('Please enter a valid 5-digit account number.');
+              return;
+            }
+            order.atmLast5 = val;
+            try {
+              var hist = JSON.parse(localStorage.getItem('chiba_order_history_v1') || '[]');
+              var idx = hist.findIndex(function(o) { return o.orderId === order.orderId; });
+              if (idx >= 0) {
+                hist[idx].atmLast5 = val;
+                localStorage.setItem('chiba_order_history_v1', JSON.stringify(hist));
+              }
+              var lastO = JSON.parse(localStorage.getItem('chiba_last_order_v1') || 'null');
+              if (lastO && lastO.orderId === order.orderId) {
+                lastO.atmLast5 = val;
+                localStorage.setItem('chiba_last_order_v1', JSON.stringify(lastO));
+              }
+            } catch (_) {}
+            alert('✓ Last 5 digits (' + val + ') recorded successfully! Our team will verify reconciliation.');
+            renderTrackingResult(order);
+          });
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var form = document.getElementById('tracking-form');
+        var orderInput = document.getElementById('input-order-id');
+        var phoneInput = document.getElementById('input-phone-last3');
+
+        // Only allow digits on phoneInput
+        if (phoneInput) {
+          phoneInput.addEventListener('input', function() {
+            this.value = this.value.replace(/\D/g, '');
+          });
+        }
+
+        var params = new URLSearchParams(window.location.search);
+        var qId = params.get('orderId');
+        var qPhone = params.get('phone');
+        if (qId) {
+          orderInput.value = qId;
+          if (qPhone) {
+            var cleanQPhone = qPhone.replace(/\D/g, '').slice(-3);
+            phoneInput.value = cleanQPhone;
+            performTracking(qId, cleanQPhone);
+          } else {
+            // Auto-check if qId is in local orders
+            var orders = getAllOrders();
+            var localMatch = orders.find(function(o) { return o.orderId && o.orderId.toUpperCase() === qId.trim().toUpperCase(); });
+            if (localMatch && localMatch.phone) {
+              var pLast3 = localMatch.phone.replace(/\D/g, '').slice(-3);
+              phoneInput.value = pLast3;
+              performTracking(qId, pLast3);
+            }
+          }
+        }
+
+        // Quick recent orders helper
+        try {
+          var userOrders = getAllOrders().filter(function(o) {
+            return o.orderId && !sampleFallbackOrders.some(function(s) { return s.orderId === o.orderId; });
+          });
+          var chipsBox = document.getElementById('quick-recent-orders');
+          if (chipsBox && userOrders.length > 0) {
+            var latest = userOrders[0];
+            var pDigits = (latest.phone || '').replace(/\D/g, '').slice(-3);
+            chipsBox.style.display = 'block';
+            chipsBox.innerHTML = '💡 <strong>Recent Order Detected:</strong><button type="button" style="margin-left: 6px; background: #e0f2fe; border: 1px solid #bae6fd; color: #0369a1; padding: 4px 10px; border-radius: 4px; font-family: monospace; font-size: 0.85rem; font-weight: 700; cursor: pointer;" id="btn-quick-fill-order">' + latest.orderId + ' (Click to Track)</button>';
+            var quickBtn = document.getElementById('btn-quick-fill-order');
+            if (quickBtn) {
+              quickBtn.addEventListener('click', function() {
+                orderInput.value = latest.orderId;
+                phoneInput.value = pDigits;
+                performTracking(latest.orderId, pDigits);
+              });
+            }
+          }
+        } catch(_) {}
+
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          performTracking(orderInput.value, phoneInput.value);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

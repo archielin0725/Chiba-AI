@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
   <title>線上結帳 ｜ CHIBA GLOVES GERMANY 台灣官方網站</title>
-  <meta name="description" content="CHIBA Taiwan 官方線上結帳。支援信用卡、LINE Pay、7-11 與全家超商取貨付款，並自動開立財政部電子發票。">
+  <meta name="description" content="CHIBA Taiwan 官方線上結帳。支援 7-ELEVEN 超商取貨付款、黑貓宅急便，並自動開立財政部電子發票。">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
@@ -77,18 +77,31 @@
           <h2 style="font-size: 1.1rem; font-weight: 800; margin: 0 0 16px; color: #111827; border-bottom: 1px solid #f3f4f6; padding-bottom: 10px;">
             1. 訂購人與收件資訊
           </h2>
+          <div id="checkout-member-banner" style="display:none; margin-bottom: 14px; padding: 10px 14px; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; font-size: 0.86rem; color: #15803d;">
+            👤 <strong>CHIBA 會員快速結帳</strong>：<span id="member-welcome-text">已自動帶入收件人與常用門市資料</span>
+          </div>
           <div style="display: grid; gap: 14px;">
             <div>
               <label for="cust-name" style="display: block; font-size: 0.88rem; font-weight: 700; margin-bottom: 6px; color: #374151;">收件人真實姓名 *</label>
               <input type="text" id="cust-name" required placeholder="請填寫超商取件證件相符姓名" style="width: 100%; padding: 10px 12px; border: 1px solid #d1d5db; border-radius: 4px; box-sizing: border-box; font: inherit;">
+              <div style="font-size: 0.78rem; color: #b45309; background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px; padding: 6px 10px; margin-top: 6px; line-height: 1.45;">
+                ⚠️ <strong>取件提醒</strong>：請填寫與身分證相符之中文姓名。此為台灣 7-ELEVEN 門市<strong>「取件核對身分證件」之必備項目</strong>，姓名不符將無法領貨。
+              </div>
             </div>
             <div>
               <label for="cust-phone" style="display: block; font-size: 0.88rem; font-weight: 700; margin-bottom: 6px; color: #374151;">手機號碼 *</label>
               <input type="tel" id="cust-phone" required pattern="09[0-9]{8}" placeholder="09xxxxxxxx（接收取貨簡訊通知）" style="width: 100%; padding: 10px 12px; border: 1px solid #d1d5db; border-radius: 4px; box-sizing: border-box; font: inherit;">
+              <div id="checkout-first-purchase-badge" class="checkout-auth-badge" style="display: none;"></div>
             </div>
             <div>
               <label for="cust-email" style="display: block; font-size: 0.88rem; font-weight: 700; margin-bottom: 6px; color: #374151;">電子郵件信箱 *</label>
               <input type="email" id="cust-email" required placeholder="接收訂單確認信與電子發票" style="width: 100%; padding: 10px 12px; border: 1px solid #d1d5db; border-radius: 4px; box-sizing: border-box; font: inherit;">
+            </div>
+            <div id="checkout-auto-register-wrap" style="display: flex; align-items: center; gap: 8px; font-size: 0.84rem; color: #374151; padding-top: 4px;">
+              <input type="checkbox" id="auto-register-member" checked style="accent-color: #d42b31;">
+              <label for="auto-register-member" style="margin: 0; cursor: pointer;">
+                <strong>同步建立 CHIBA 官方會員</strong>（享下次自動帶入門市與 VIP 專屬預購通知）
+              </label>
             </div>
           </div>
         </section>
@@ -103,13 +116,6 @@
               <span style="display: flex; align-items: center; gap: 10px;">
                 <input type="radio" name="shipping-method" value="711" checked>
                 <strong>7-ELEVEN 超商取貨</strong>
-              </span>
-              <span style="font-weight: 700; color: #d42b31;" class="shipping-fee-label">免運費</span>
-            </label>
-            <label style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; border: 1px solid #d1d5db; border-radius: 6px; cursor: pointer;">
-              <span style="display: flex; align-items: center; gap: 10px;">
-                <input type="radio" name="shipping-method" value="familymart">
-                <strong>全家 FamilyMart 超商取貨</strong>
               </span>
               <span style="font-weight: 700; color: #d42b31;" class="shipping-fee-label">免運費</span>
             </label>
@@ -133,6 +139,61 @@
               地址：<span id="store-addr">台北市信義區信義路五段 7 號</span>
             </div>
           </div>
+
+          <!-- Home Delivery Address Box (黑貓宅急便) -->
+          <div id="home-delivery-box" style="display: none; margin-top: 16px; padding: 16px; background: #f9fafb; border: 1px solid #e2e8f0; border-radius: 6px;">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+              <strong style="font-size: 0.95rem; color: #111827;">🚚 黑貓宅急便 · 宅配收件地址</strong>
+              <span style="font-size: 0.78rem; color: #15803d; background: #dcfce7; padding: 2px 8px; border-radius: 4px; font-weight: 700;">專人親送到府</span>
+            </div>
+            <div style="display: grid; gap: 10px;">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <div>
+                  <label for="home-city" style="display: block; font-size: 0.82rem; font-weight: 700; color: #475569; margin-bottom: 4px;">配送縣市 *</label>
+                  <select id="home-city" style="width: 100%; padding: 8px 10px; border: 1px solid #d1d5db; border-radius: 4px; font: inherit; background: #fff;">
+                    <option value="台北市">台北市</option>
+                    <option value="新北市">新北市</option>
+                    <option value="桃園市">桃園市</option>
+                    <option value="台中市">台中市</option>
+                    <option value="台南市">台南市</option>
+                    <option value="高雄市">高雄市</option>
+                    <option value="新竹市">新竹市</option>
+                    <option value="新竹縣">新竹縣</option>
+                    <option value="基隆市">基隆市</option>
+                    <option value="嘉義市">嘉義市</option>
+                    <option value="嘉義縣">嘉義縣</option>
+                    <option value="苗栗縣">苗栗縣</option>
+                    <option value="彰化縣">彰化縣</option>
+                    <option value="南投縣">南投縣</option>
+                    <option value="雲林縣">雲林縣</option>
+                    <option value="屏東縣">屏東縣</option>
+                    <option value="宜蘭縣">宜蘭縣</option>
+                    <option value="花蓮縣">花蓮縣</option>
+                    <option value="台東縣">台東縣</option>
+                    <option value="澎湖縣">澎湖縣</option>
+                    <option value="金門縣">金門縣</option>
+                    <option value="連江縣">連江縣</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="home-district" style="display: block; font-size: 0.82rem; font-weight: 700; color: #475569; margin-bottom: 4px;">鄉鎮市區 / 郵遞區號 *</label>
+                  <input type="text" id="home-district" placeholder="例如: 信義區 110" style="width: 100%; padding: 8px 10px; border: 1px solid #d1d5db; border-radius: 4px; box-sizing: border-box; font: inherit;">
+                </div>
+              </div>
+              <div>
+                <label for="home-address" style="display: block; font-size: 0.82rem; font-weight: 700; color: #475569; margin-bottom: 4px;">詳細路名、門牌號碼、樓層 *</label>
+                <input type="text" id="home-address" placeholder="例如: 信義路五段 7 號 85 樓（若有大樓管理室可註明代收）" style="width: 100%; padding: 8px 10px; border: 1px solid #d1d5db; border-radius: 4px; box-sizing: border-box; font: inherit;">
+              </div>
+              <div>
+                <label for="home-delivery-time" style="display: block; font-size: 0.82rem; font-weight: 700; color: #475569; margin-bottom: 4px;">希望配送時段</label>
+                <select id="home-delivery-time" style="width: 100%; padding: 8px 10px; border: 1px solid #d1d5db; border-radius: 4px; font: inherit; background: #fff;">
+                  <option value="不指定">不指定時段（最快送達）</option>
+                  <option value="13時前">13:00 前送達</option>
+                  <option value="14-18時">14:00 - 18:00 送達</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </section>
 
         <!-- Section 3: Payment Method -->
@@ -141,22 +202,36 @@
             3. 付款方式
           </h2>
           <div style="display: flex; flex-direction: column; gap: 10px;">
-            <label style="display: flex; align-items: center; gap: 10px; padding: 12px 14px; border: 2px solid #111827; border-radius: 6px; cursor: pointer; background: #f8fafc;">
-              <input type="radio" name="payment-method" value="credit" checked>
-              <strong>信用卡線上刷卡 (Visa / MasterCard / JCB / 3D 驗證)</strong>
+            <label class="payment-method-row" style="display: flex; align-items: center; gap: 12px; padding: 14px; border: 2px solid #111827; border-radius: 6px; cursor: pointer; background: #f8fafc;">
+              <input type="radio" name="payment-method" value="cvs-cod" checked style="width: 18px; height: 18px; accent-color: #d42b31;">
+              <div>
+                <strong style="font-size: 1rem; color: #111827;">🏪 7-ELEVEN 超商取貨付款</strong>
+                <div style="font-size: 0.82rem; color: #15803d; font-weight: 700; margin-top: 3px;">
+                  ✓ 現正開放 · 免先付款，商品抵達 7-ELEVEN 門市驗收後付款，最安心便利！
+                </div>
+              </div>
             </label>
-            <label style="display: flex; align-items: center; gap: 10px; padding: 12px 14px; border: 1px solid #d1d5db; border-radius: 6px; cursor: pointer;">
-              <input type="radio" name="payment-method" value="linepay">
-              <strong>LINE Pay 行動支付</strong>
-            </label>
-            <label style="display: flex; align-items: center; gap: 10px; padding: 12px 14px; border: 1px solid #d1d5db; border-radius: 6px; cursor: pointer;">
-              <input type="radio" name="payment-method" value="cvs-cod">
-              <strong>超商取貨付款 (7-11 / 全家 門市付款)</strong>
-            </label>
-            <label style="display: flex; align-items: center; gap: 10px; padding: 12px 14px; border: 1px solid #d1d5db; border-radius: 6px; cursor: pointer;">
-              <input type="radio" name="payment-method" value="atm">
-              <strong>ATM 虛擬帳號轉帳 (自動對帳)</strong>
-            </label>
+            <div id="cod-limit-notice" class="payment-limit-notice" style="display: none;"></div>
+
+            <!-- Other payment methods temporarily disabled during gateway onboarding to avoid confusing customers -->
+            <div style="background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 6px; padding: 14px; margin-top: 4px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px;">
+                <span style="font-size: 0.88rem; font-weight: 700; color: #64748b;">
+                  💳 信用卡線上刷卡 / Apple Pay / ATM 轉帳
+                </span>
+                <span style="font-size: 0.75rem; background: #e2e8f0; color: #475569; padding: 2px 8px; border-radius: 12px; font-weight: 600;">
+                  金流審核中 · 即將開放
+                </span>
+              </div>
+              <div style="font-size: 0.8rem; color: #94a3b8; line-height: 1.5;">
+                為提供最嚴謹之交易安全防護，線上刷卡閘道正進行特店資格驗證。現階段請多加利用「超商取貨付款」，同享 100% 德國原裝正品保證與 7 天鑑賞期。
+              </div>
+            </div>
+
+            <!-- Hidden dormant radios for DOM compatibility -->
+            <input type="radio" name="payment-method" value="credit" style="display: none;" disabled>
+            <input type="radio" name="payment-method" value="atm" style="display: none;" disabled>
+            <input type="radio" name="payment-method" value="linepay" style="display: none;" disabled>
           </div>
         </section>
 
@@ -205,12 +280,30 @@
           <!-- Dynamically populated from localStorage -->
         </div>
 
+        <!-- Promo Code Input in Checkout -->
+        <div style="border-top: 1px solid #f3f4f6; padding-top: 14px; margin-bottom: 14px;">
+          <div id="co-promo-applied" style="display: none; flex-direction: column; gap: 6px; margin-bottom: 8px;">
+            <div id="co-promo-tags" style="display: flex; flex-direction: column; gap: 6px;"></div>
+          </div>
+          <div id="co-promo-form" style="display: flex; gap: 6px;">
+            <input type="text" id="co-promo-input" placeholder="輸入折扣碼 (例: PREORDER90)" style="flex: 1; padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 0.82rem; text-transform: uppercase; font-family: monospace;">
+            <button type="button" id="co-promo-btn" style="padding: 8px 14px; background: #111827; color: #fff; border: none; border-radius: 4px; font-size: 0.82rem; font-weight: 700; cursor: pointer;">套用</button>
+          </div>
+          <div id="co-promo-stack-box" class="cart-promo-stack-box" style="display: none;"></div>
+          <div id="co-promo-msg" style="font-size: 0.75rem; margin-top: 4px;"></div>
+        </div>
+
         <!-- Summary Totals -->
         <div style="border-top: 1px solid #e5e7eb; padding-top: 14px; display: flex; flex-direction: column; gap: 8px; font-size: 0.92rem; color: #4b5563;">
           <div style="display: flex; justify-content: space-between;">
             <span>商品小計</span>
             <strong id="co-subtotal" style="color: #111827;">NT$ 0</strong>
           </div>
+          <div id="co-discount-row" style="display: none; justify-content: space-between; color: #15803d; font-weight: 700;">
+            <span id="co-discount-label">促銷折扣</span>
+            <strong id="co-discount-val">-NT$ 0</strong>
+          </div>
+          <div id="co-discount-breakdown" style="display: none;"></div>
           <div style="display: flex; justify-content: space-between;">
             <span>預估運費</span>
             <span id="co-shipping" style="font-weight: 700; color: #d42b31;">免運費</span>
@@ -226,15 +319,15 @@
           確認訂單並前往安全支付 🔒
         </button>
 
-        <!-- Secondary LINE Order -->
-        <a href="https://line.me/R/ti/p/@chibataiwan" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; margin-top: 10px; padding: 12px; background: #06c755; color: #fff; text-decoration: none; border-radius: 4px; font-size: 0.88rem; font-weight: 700; box-sizing: border-box;">
+        <!-- Secondary LINE Order (Hidden per owner request; ready to re-enable anytime) -->
+        <a href="https://line.me/R/ti/p/@chibataiwan" target="_blank" rel="noopener noreferrer" style="display: none; align-items: center; justify-content: center; gap: 8px; width: 100%; margin-top: 10px; padding: 12px; background: #06c755; color: #fff; text-decoration: none; border-radius: 4px; font-size: 0.88rem; font-weight: 700; box-sizing: border-box;">
           🟢 或透過 LINE 專人快速結帳
         </a>
 
         <!-- Trust Features -->
         <div style="margin-top: 18px; padding-top: 14px; border-top: 1px solid #f3f4f6; font-size: 0.76rem; color: #6b7280; display: flex; flex-direction: column; gap: 6px;">
           <div>🔒 256-bit SSL 銀行級加密連線</div>
-          <div>🛡️ 綠界科技 / 藍新金流 PCI-DSS Level 1 最高認證</div>
+          <div>🛡️ 綠界科技 ECPay PCI-DSS Level 1 銀行級最高安全認證</div>
           <div>🇹🇼 台灣消保法 7 天鑑賞期無條件退換保障</div>
           <div>🇩🇪 100% 德國原裝正品 · 官方代理安心售後</div>
         </div>
@@ -242,6 +335,55 @@
 
     </div>
   </main>
+
+  <!-- CVS Store Picker Modal (7-ELEVEN) -->
+  <div id="chiba-cvs-modal" class="cvs-modal-backdrop" aria-hidden="true">
+    <div class="cvs-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="cvs-modal-title">
+      <div class="cvs-modal-header">
+        <h3 id="cvs-modal-title">🏪 選擇 7-ELEVEN 取貨門市</h3>
+        <button type="button" class="cvs-modal-close" id="cvs-modal-close-btn" aria-label="關閉視窗">✕</button>
+      </div>
+      <div class="cvs-modal-body">
+        <!-- E-Map Official API Notice & Preview Canvas -->
+        <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 12px 14px; font-size: 0.82rem; color: #166534; line-height: 1.45;">
+          <strong>🗺️ 7-ELEVEN 官方電子地圖 (E-Map) 連線說明</strong>：<br>
+          正式上線時點擊將直接喚起 <strong>7-ELEVEN 官方全螢幕電子地圖 (E-Map API)</strong>，消費者在電子地圖點選門市後由官方伺服器自動帶回。在本地 Staging 測試站特別建構<strong>即時視覺化電子地圖定位預覽</strong>供您完整體驗：
+        </div>
+
+        <!-- Simulated Interactive Map Preview -->
+        <div id="cvs-map-canvas" style="position: relative; height: 160px; background: #e8ecf2; border: 1px solid #cbd5e1; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; padding: 10px; box-sizing: border-box; background-image: radial-gradient(#cbd5e1 1.2px, transparent 1.2px); background-size: 16px 16px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.95); backdrop-filter: blur(4px); padding: 4px 10px; border-radius: 20px; font-size: 0.78rem; font-weight: 700; color: #334155; width: fit-content; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">
+            <span>📍 電子地圖定位中心：台北市信義／大安核心門市區</span>
+          </div>
+
+          <!-- Interactive Pins on Simulated Map -->
+          <div style="position: absolute; top: 48%; left: 30%; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; cursor: pointer;" onclick="document.getElementById('cvs-search-box').value='欣漢'; document.getElementById('cvs-search-box').dispatchEvent(new Event('input'));">
+            <span style="background: #c2410c; color: #fff; font-size: 0.72rem; font-weight: 800; padding: 2px 6px; border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.18); white-space: nowrap;">🏪 7-11 欣漢門市</span>
+            <div style="width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 6px solid #c2410c;"></div>
+          </div>
+
+          <div style="position: absolute; top: 36%; left: 68%; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; cursor: pointer;" onclick="document.getElementById('cvs-search-box').value='敦南'; document.getElementById('cvs-search-box').dispatchEvent(new Event('input'));">
+            <span style="background: #c2410c; color: #fff; font-size: 0.72rem; font-weight: 800; padding: 2px 6px; border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.18); white-space: nowrap;">🏪 7-11 敦南門市</span>
+            <div style="width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 6px solid #c2410c;"></div>
+          </div>
+
+          <div style="position: absolute; top: 72%; left: 52%; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; cursor: pointer;" onclick="document.getElementById('cvs-search-box').value='忠孝'; document.getElementById('cvs-search-box').dispatchEvent(new Event('input'));">
+            <span style="background: #c2410c; color: #fff; font-size: 0.72rem; font-weight: 800; padding: 2px 6px; border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.18); white-space: nowrap;">🏪 7-11 忠孝東門市</span>
+            <div style="width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 6px solid #c2410c;"></div>
+          </div>
+
+          <div style="background: rgba(255,255,255,0.92); backdrop-filter: blur(4px); padding: 4px 10px; border-radius: 4px; font-size: 0.74rem; color: #64748b; width: fit-content;">
+            💡 點擊地圖地標或於下方輸入關鍵字快速定位門市
+          </div>
+        </div>
+
+        <input type="search" id="cvs-search-box" class="cvs-search-input" placeholder="搜尋門市名稱、店號或所在街道（例: 敦南、信義路、181958）...">
+        <div class="cvs-stores-list" id="cvs-stores-container">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <div class="brand">
@@ -269,56 +411,416 @@
 
   <script src="/assets/site.js"></script>
   <script>
-    // Checkout specific interactive population
     (function() {
       var cartKey = 'chiba_cart_v1';
+      var promoKey = 'chiba_promo_v1';
+      var lastOrderKey = 'chiba_last_order_v1';
       var freeThreshold = 1500;
       var cvsFee = 65;
       var homeFee = 100;
 
+      var currentCart = [];
+      var currentSubtotal = 0;
+      var currentDiscount = 0;
+      var currentShippingFee = 0;
+
+      var validPromos = {
+        'PREORDER90': { code: 'PREORDER90', type: 'percent', rate: 0.10, label: '德國原裝預購 9 折優惠' },
+        'CHIBA100': { code: 'CHIBA100', type: 'fixed', amount: 100, label: '首購現折 NT$ 100' }
+      };
+
+      function getAppliedPromos() {
+        try {
+          var raw = localStorage.getItem(promoKey);
+          if (!raw) return [];
+          var obj = JSON.parse(raw);
+          var codeList = [];
+          if (Array.isArray(obj.codes)) {
+            codeList = obj.codes;
+          } else if (obj && obj.code) {
+            codeList = [obj.code];
+          }
+          var validList = [];
+          var seen = {};
+          for (var i = 0; i < codeList.length; i++) {
+            var c = String(codeList[i]).trim().toUpperCase();
+            if (validPromos[c] && !seen[c]) {
+              seen[c] = true;
+              validList.push(validPromos[c]);
+            }
+          }
+          return validList;
+        } catch (_) {
+          return [];
+        }
+      }
+
+      function addAppliedPromo(code) {
+        try {
+          if (!code) return { success: false, reason: 'empty' };
+          var inputCodes = code.split(/[,+\s]+/).map(function(s) { return s.trim().toUpperCase(); }).filter(Boolean);
+          if (inputCodes.length === 0) return { success: false, reason: 'empty' };
+
+          var current = getAppliedPromos().map(function(p) { return p.code; });
+          var addedCount = 0;
+          var invalidCount = 0;
+
+          for (var i = 0; i < inputCodes.length; i++) {
+            var c = inputCodes[i];
+            if (validPromos[c]) {
+              if (current.indexOf(c) === -1) {
+                current.push(c);
+                addedCount++;
+              }
+            } else {
+              invalidCount++;
+            }
+          }
+
+          if (addedCount > 0 || (invalidCount === 0 && current.length > 0)) {
+            localStorage.setItem(promoKey, JSON.stringify({ codes: current }));
+            return { success: true, added: addedCount, current: getAppliedPromos() };
+          }
+          return { success: false, reason: 'invalid' };
+        } catch (_) {
+          return { success: false, reason: 'error' };
+        }
+      }
+
+      function removeAppliedPromo(code) {
+        try {
+          var current = getAppliedPromos().map(function(p) { return p.code; });
+          if (code) {
+            var upper = code.trim().toUpperCase();
+            current = current.filter(function(c) { return c !== upper; });
+          } else {
+            current = [];
+          }
+          if (current.length > 0) {
+            localStorage.setItem(promoKey, JSON.stringify({ codes: current }));
+          } else {
+            localStorage.removeItem(promoKey);
+          }
+          return getAppliedPromos();
+        } catch (_) {
+          return [];
+        }
+      }
+
+      function calculatePromoDiscounts(subtotal, promos) {
+        if (!promos || !promos.length || !subtotal) {
+          return { totalDiscount: 0, details: [], payable: subtotal };
+        }
+        var totalDiscount = 0;
+        var details = [];
+        for (var i = 0; i < promos.length; i++) {
+          var p = promos[i];
+          var d = 0;
+          if (p.type === 'percent') {
+            d = Math.round(subtotal * p.rate);
+          } else if (p.type === 'fixed') {
+            d = Math.min(subtotal, p.amount);
+          }
+          details.push({
+            code: p.code,
+            label: p.label,
+            type: p.type,
+            discount: d
+          });
+          totalDiscount += d;
+        }
+        totalDiscount = Math.min(subtotal, totalDiscount);
+        return {
+          totalDiscount: totalDiscount,
+          details: details,
+          payable: Math.max(0, subtotal - totalDiscount)
+        };
+      }
+
+      function getAppliedPromo() {
+        var list = getAppliedPromos();
+        return list.length > 0 ? list[0] : null;
+      }
+      function setAppliedPromo(code) {
+        if (!code) {
+          removeAppliedPromo();
+          return null;
+        }
+        var res = addAppliedPromo(code);
+        return res.success ? (res.current[0] || null) : false;
+      }
+      function calculateDiscount(subtotal, promo) {
+        if (!promo) return 0;
+        var res = calculatePromoDiscounts(subtotal, [promo]);
+        return res.totalDiscount;
+      }
+
+      // Curated store presets (7-ELEVEN)
+      var storeDatabase = [
+        { type: '711', name: '7-ELEVEN 欣漢門市 (店號: 181958)', addr: '台北市信義區信義路五段 7 號' },
+        { type: '711', name: '7-ELEVEN 敦南門市 (店號: 139281)', addr: '台北市大安區敦化南路二段 216 號' },
+        { type: '711', name: '7-ELEVEN 市府門市 (店號: 128472)', addr: '台北市信義區忠孝東路五段 6 號' },
+        { type: '711', name: '7-ELEVEN 忠孝東門市 (店號: 118291)', addr: '台北市大安區忠孝東路四段 181 巷 7 號' },
+        { type: '711', name: '7-ELEVEN 逢甲門市 (店號: 928102)', addr: '台中市西屯區逢甲路 19 號' },
+        { type: '711', name: '7-ELEVEN 台中市政門市 (店號: 229182)', addr: '台中市西屯區市政北二路 238 號' },
+        { type: '711', name: '7-ELEVEN 三多門市 (店號: 819201)', addr: '高雄市苓雅區三多三路 213 號' },
+        { type: '711', name: '7-ELEVEN 高雄新堀江門市 (店號: 338192)', addr: '高雄市新興區五福二路 191 號' }
+      ];
+
       function loadCheckoutData() {
         var raw = localStorage.getItem(cartKey);
-        var cart = raw ? JSON.parse(raw) : [];
+        currentCart = raw ? JSON.parse(raw) : [];
         var container = document.getElementById('checkout-items-list');
         var subtotalEl = document.getElementById('co-subtotal');
         var shippingEl = document.getElementById('co-shipping');
         var totalEl = document.getElementById('co-total');
 
-        if (!cart.length) {
+        if (!currentCart.length) {
           container.innerHTML = '<p style="color: #6b7280; text-align: center; padding: 20px;">購物車尚無商品。<a href="/zh-tw/products/" style="color: #d42b31;">前往選購</a></p>';
           subtotalEl.textContent = 'NT$ 0';
           totalEl.textContent = 'NT$ 0';
+          currentSubtotal = 0;
+          currentDiscount = 0;
+          currentShippingFee = 0;
           return;
         }
 
-        var subtotal = 0;
-        container.innerHTML = cart.map(function(item) {
+        currentSubtotal = 0;
+        container.innerHTML = currentCart.map(function(item) {
           var itemTotal = (item.price || 0) * (item.qty || 1);
-          subtotal += itemTotal;
+          currentSubtotal += itemTotal;
           return (
             '<div style="display: flex; gap: 10px; align-items: center; padding: 8px 0; border-bottom: 1px solid #f3f4f6;">' +
               '<img src="' + (item.image || '/assets/logo/chiba-icon-redless.jpe') + '" style="width: 48px; height: 48px; object-fit: contain; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 4px;">' +
               '<div style="flex: 1; min-width: 0;">' +
                 '<h4 style="margin: 0; font-size: 0.88rem; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">' + item.title + '</h4>' +
-                '<div style="font-size: 0.76rem; color: #6b7280;">' + item.color + ' / ' + item.size + ' x' + item.qty + '</div>' +
+                '<div style="font-size: 0.76rem; color: #6b7280;">' +
+                  '<span style="background: #fef3c7; color: #92400e; padding: 1px 5px; border-radius: 4px; font-weight: 700; margin-right: 4px;">預購</span>' +
+                  item.color + ' / ' + item.size + ' x' + item.qty +
+                '</div>' +
               '</div>' +
               '<strong style="font-size: 0.9rem; color: #111827;">NT$ ' + itemTotal.toLocaleString() + '</strong>' +
             '</div>'
           );
         }).join('');
 
-        subtotalEl.textContent = 'NT$ ' + subtotal.toLocaleString();
+        // Promo Discount Handling
+        var promos = getAppliedPromos();
+        var promoRes = calculatePromoDiscounts(currentSubtotal, promos);
+        currentDiscount = promoRes.totalDiscount;
 
-        var selectedShipping = document.querySelector('input[name="shipping-method"]:checked').value;
-        var shippingFee = 0;
-        if (selectedShipping === 'home') {
-          shippingFee = homeFee;
+        var promoForm = document.getElementById('co-promo-form');
+        var promoApplied = document.getElementById('co-promo-applied');
+        var promoTags = document.getElementById('co-promo-tags');
+        var promoStackBox = document.getElementById('co-promo-stack-box');
+        var discountRow = document.getElementById('co-discount-row');
+        var discountLabel = document.getElementById('co-discount-label');
+        var discountVal = document.getElementById('co-discount-val');
+        var discountBreakdown = document.getElementById('co-discount-breakdown');
+
+        var hasP90 = promos.some(function(p) { return p.code === 'PREORDER90'; });
+        var hasC100 = promos.some(function(p) { return p.code === 'CHIBA100'; });
+
+        if (promos.length > 0 && currentDiscount > 0) {
+          if (promoApplied) promoApplied.style.display = 'flex';
+          if (promoTags) {
+            promoTags.innerHTML = promoRes.details.map(function(item) {
+              return (
+                '<div style="display: flex; justify-content: space-between; align-items: center; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 4px; padding: 6px 10px; font-size: 0.82rem; color: #166534;">' +
+                  '<span>🏷️ <strong>' + item.code + '</strong> <span style="font-size:0.75rem;">(' + item.label + ' -NT$ ' + item.discount.toLocaleString() + ')</span></span>' +
+                  '<button type="button" class="co-tag-del" data-del-promo="' + item.code + '" style="background: none; border: none; color: #dc2626; font-size: 0.78rem; font-weight: 700; cursor: pointer;">移除</button>' +
+                '</div>'
+              );
+            }).join('');
+
+            promoTags.querySelectorAll('[data-del-promo]').forEach(function(btn) {
+              btn.addEventListener('click', function() {
+                removeAppliedPromo(btn.dataset.delPromo);
+                var promoMsg = document.getElementById('co-promo-msg');
+                if (promoMsg) promoMsg.textContent = '';
+                loadCheckoutData();
+              });
+            });
+          }
+
+          if (promoForm) {
+            promoForm.style.display = (hasP90 && hasC100) ? 'none' : 'flex';
+          }
+
+          if (discountRow) {
+            discountRow.style.display = 'flex';
+            if (discountLabel) {
+              discountLabel.textContent = '促銷折扣 (' + promos.map(function(p) { return p.code; }).join(' + ') + ')';
+            }
+            if (discountVal) {
+              discountVal.textContent = '-NT$ ' + currentDiscount.toLocaleString();
+            }
+          }
+
+          if (discountBreakdown) {
+            if (promoRes.details.length > 1) {
+              discountBreakdown.innerHTML = promoRes.details.map(function(item) {
+                return (
+                  '<div class="cart-discount-detail">' +
+                    '<span>• ' + item.label + '</span>' +
+                    '<span>-NT$ ' + item.discount.toLocaleString() + '</span>' +
+                  '</div>'
+                );
+              }).join('');
+              discountBreakdown.style.display = 'block';
+            } else {
+              discountBreakdown.innerHTML = '';
+              discountBreakdown.style.display = 'none';
+            }
+          }
         } else {
-          shippingFee = subtotal >= freeThreshold ? 0 : cvsFee;
+          if (promoApplied) promoApplied.style.display = 'none';
+          if (promoTags) promoTags.innerHTML = '';
+          if (promoForm) promoForm.style.display = 'flex';
+          if (discountRow) discountRow.style.display = 'none';
+          if (discountBreakdown) discountBreakdown.style.display = 'none';
         }
 
-        shippingEl.textContent = shippingFee === 0 ? '免運費' : 'NT$ ' + shippingFee;
-        totalEl.textContent = 'NT$ ' + (subtotal + shippingFee).toLocaleString();
+        // Quick Stacking Recommendation Box in Checkout
+        if (promoStackBox) {
+          if (hasP90 && hasC100) {
+            promoStackBox.style.display = 'flex';
+            promoStackBox.innerHTML = '<span>✨ <strong>已享預購 9 折 + 首購折 100 雙重最高優惠！</strong></span>';
+          } else if (hasP90 && !hasC100) {
+            promoStackBox.style.display = 'flex';
+            promoStackBox.innerHTML =
+              '<span>🎁 首次在官網購買？</span>' +
+              '<button type="button" class="cart-promo-stack-btn" id="co-stack-c100">+ 疊加首購現折 NT$ 100</button>';
+            var btnC = promoStackBox.querySelector('#co-stack-c100');
+            if (btnC) {
+              btnC.addEventListener('click', function() {
+                addAppliedPromo('CHIBA100');
+                loadCheckoutData();
+              });
+            }
+          } else if (!hasP90 && hasC100) {
+            promoStackBox.style.display = 'flex';
+            promoStackBox.innerHTML =
+              '<span>🇩🇪 德國原裝預購享 9 折？</span>' +
+              '<button type="button" class="cart-promo-stack-btn" id="co-stack-p90">+ 疊加預購 9 折優惠</button>';
+            var btnP = promoStackBox.querySelector('#co-stack-p90');
+            if (btnP) {
+              btnP.addEventListener('click', function() {
+                addAppliedPromo('PREORDER90');
+                loadCheckoutData();
+              });
+            }
+          } else {
+            promoStackBox.style.display = 'flex';
+            promoStackBox.innerHTML =
+              '<span>🇩🇪 預購 + 首購雙重最高優惠：</span>' +
+              '<button type="button" class="cart-promo-stack-btn" id="co-stack-both">⚡ 預購 9 折 + 首購折 100 雙重套用</button>';
+            var btnB = promoStackBox.querySelector('#co-stack-both');
+            if (btnB) {
+              btnB.addEventListener('click', function() {
+                addAppliedPromo('PREORDER90');
+                addAppliedPromo('CHIBA100');
+                loadCheckoutData();
+              });
+            }
+          }
+        }
+
+        subtotalEl.textContent = 'NT$ ' + currentSubtotal.toLocaleString();
+
+        var selectedShipping = document.querySelector('input[name="shipping-method"]:checked').value;
+        if (selectedShipping === 'home') {
+          currentShippingFee = homeFee;
+        } else {
+          currentShippingFee = currentSubtotal >= freeThreshold ? 0 : cvsFee;
+        }
+
+        shippingEl.textContent = currentShippingFee === 0 ? '免運費' : 'NT$ ' + currentShippingFee;
+        var finalPayable = Math.max(0, currentSubtotal - currentDiscount) + currentShippingFee;
+        totalEl.textContent = 'NT$ ' + finalPayable.toLocaleString();
+
+        // CVS COD Limit of NT$ 8,000 enforcement
+        var codRadio = document.querySelector('input[name="payment-method"][value="cvs-cod"]');
+        var codLabel = codRadio ? codRadio.closest('label') : null;
+        var codNotice = document.getElementById('cod-limit-notice');
+        if (codRadio && codLabel) {
+          if (finalPayable > 8000) {
+            codRadio.disabled = true;
+            codLabel.classList.add('is-disabled');
+            if (codNotice) {
+              codNotice.style.display = 'block';
+              codNotice.innerHTML = '⚠️ 依超商金流代收規範，取貨付款僅限 NT$ 8,000 以下訂單（本訂單應付 NT$ ' + finalPayable.toLocaleString() + '）。請改選「信用卡線上刷卡」或「ATM 虛擬帳號/銀行轉帳」；或來信 <a href="mailto:info@chibataiwan.com" style="color:#b91c1c; text-decoration:underline;">info@chibataiwan.com</a> 洽詢大宗採購。';
+            }
+            if (codRadio.checked) {
+              var credRadio = document.querySelector('input[name="payment-method"][value="credit"]');
+              if (credRadio) {
+                credRadio.checked = true;
+                credRadio.dispatchEvent(new Event('change'));
+              }
+            }
+          } else {
+            codRadio.disabled = false;
+            codLabel.classList.remove('is-disabled');
+            if (codNotice) codNotice.style.display = 'none';
+          }
+        }
+      }
+
+      // Payment method toggles (ATM Instruction Box & border highlighting)
+      var paymentRadios = document.querySelectorAll('input[name="payment-method"]');
+      var atmBox = document.getElementById('atm-instruction-box');
+      paymentRadios.forEach(function(radio) {
+        radio.addEventListener('change', function() {
+          paymentRadios.forEach(function(r) {
+            var lbl = r.closest('label');
+            if (lbl) {
+              if (r.checked) {
+                lbl.style.borderColor = '#111827';
+                lbl.style.background = '#f8fafc';
+                lbl.style.borderWidth = '2px';
+              } else {
+                lbl.style.borderColor = '#d1d5db';
+                lbl.style.background = '#fff';
+                lbl.style.borderWidth = '1px';
+              }
+            }
+          });
+          if (atmBox) {
+            atmBox.style.display = (radio.value === 'atm' && radio.checked) ? 'block' : 'none';
+          }
+        });
+      });
+
+      // Promo Code Button Listeners in Checkout
+      var promoBtn = document.getElementById('co-promo-btn');
+      var promoInput = document.getElementById('co-promo-input');
+      var promoMsg = document.getElementById('co-promo-msg');
+
+      if (promoBtn && promoInput) {
+        promoBtn.addEventListener('click', function() {
+          var val = promoInput.value.trim().toUpperCase();
+          if (!val) return;
+          var res = addAppliedPromo(val);
+          if (res.success) {
+            if (promoMsg) {
+              promoMsg.style.color = '#15803d';
+              promoMsg.textContent = '✓ 已成功套用折扣碼！';
+            }
+            promoInput.value = '';
+            loadCheckoutData();
+          } else {
+            if (promoMsg) {
+              promoMsg.style.color = '#dc2626';
+              promoMsg.textContent = '折扣碼無效或已過期，請輸入 PREORDER90 或 CHIBA100';
+            }
+          }
+        });
+        promoInput.addEventListener('keypress', function(e) {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            promoBtn.click();
+          }
+        });
       }
 
       // Invoice toggles
@@ -335,28 +837,382 @@
       // Shipping changes
       document.querySelectorAll('input[name="shipping-method"]').forEach(function(radio) {
         radio.addEventListener('change', function() {
+          var isCvs = this.value !== 'home';
+          document.getElementById('cvs-store-box').style.display = isCvs ? 'block' : 'none';
+          document.getElementById('home-delivery-box').style.display = isCvs ? 'none' : 'block';
           loadCheckoutData();
         });
       });
 
-      // Simulated CVS Map Store Selection
+      // CVS Store Selection Modal Logic
+      var cvsModal = document.getElementById('chiba-cvs-modal');
       var storeBtn = document.getElementById('btn-select-store');
+      var modalCloseBtn = document.getElementById('cvs-modal-close-btn');
+      var searchBox = document.getElementById('cvs-search-box');
+      var storeListContainer = document.getElementById('cvs-stores-container');
+
+      function renderStores(filter) {
+        var q = (filter || '').toLowerCase().trim();
+        var filterType = '711';
+
+        var matches = storeDatabase.filter(function(st) {
+          if (st.type !== filterType && !q) return false;
+          if (!q) return true;
+          return st.name.toLowerCase().indexOf(q) > -1 || st.addr.toLowerCase().indexOf(q) > -1;
+        });
+
+        if (!matches.length) {
+          storeListContainer.innerHTML = '<div style="padding: 20px; text-align: center; color: #64748b;">查無符合門市，請調整搜尋關鍵字。</div>';
+          return;
+        }
+
+        storeListContainer.innerHTML = matches.map(function(st) {
+          var is711 = st.type === '711';
+          return (
+            '<div class="cvs-store-card" data-name="' + st.name + '" data-addr="' + st.addr + '">' +
+              '<div>' +
+                '<span class="cvs-store-badge cvs-badge-711">7-ELEVEN</span>' +
+                '<div style="font-weight: 700; font-size: 0.92rem; color: #0f172a;">' + st.name + '</div>' +
+                '<div style="font-size: 0.8rem; color: #64748b; margin-top: 2px;">' + st.addr + '</div>' +
+              '</div>' +
+              '<button type="button" class="cvs-store-select-btn">選擇此門市</button>' +
+            '</div>'
+          );
+        }).join('');
+
+        storeListContainer.querySelectorAll('.cvs-store-card').forEach(function(card) {
+          card.addEventListener('click', function() {
+            var name = this.getAttribute('data-name');
+            var addr = this.getAttribute('data-addr');
+            document.getElementById('store-name').textContent = name;
+            document.getElementById('store-addr').textContent = addr;
+            cvsModal.classList.remove('is-open');
+          });
+        });
+      }
+
       storeBtn.addEventListener('click', function() {
-        var stores = [
-          { name: '7-ELEVEN 欣漢門市 (店號: 181958)', addr: '台北市信義區信義路五段 7 號' },
-          { name: '7-ELEVEN 敦南門市 (店號: 139281)', addr: '台北市大安區敦化南路二段 216 號' },
-          { name: '全家 FamilyMart 忠孝東門市 (店號: 018291)', addr: '台北市大安區忠孝東路四段 181 巷' }
-        ];
-        var pick = stores[Math.floor(Math.random() * stores.length)];
-        document.getElementById('store-name').textContent = pick.name;
-        document.getElementById('store-addr').textContent = pick.addr;
-        alert('已成功選取超商取件門市：\n' + pick.name + '\n' + pick.addr);
+        renderStores('');
+        cvsModal.classList.add('is-open');
+        searchBox.value = '';
+        searchBox.focus();
       });
 
-      // Form submission simulation
+      modalCloseBtn.addEventListener('click', function() {
+        cvsModal.classList.remove('is-open');
+      });
+
+      cvsModal.addEventListener('click', function(e) {
+        if (e.target === cvsModal) {
+          cvsModal.classList.remove('is-open');
+        }
+      });
+
+      searchBox.addEventListener('input', function() {
+        renderStores(this.value);
+      });
+
+      // Member Auto-fill & First-Purchase Anti-Abuse Verification
+      var phoneInput = document.getElementById('cust-phone');
+      var nameInput = document.getElementById('cust-name');
+      var emailInput = document.getElementById('cust-email');
+      var authBadge = document.getElementById('checkout-first-purchase-badge');
+      var memberBanner = document.getElementById('checkout-member-banner');
+      var memberWelcomeText = document.getElementById('member-welcome-text');
+
+      function checkFirstTimePurchaseEligibility(phone) {
+        if (!phone) return { eligible: true };
+        var cleanPhone = String(phone).replace(/[^0-9]/g, '');
+        if (cleanPhone.length < 9) return { eligible: true };
+
+        try {
+          var raw = localStorage.getItem('chiba_order_history_v1');
+          var orders = raw ? JSON.parse(raw) : [];
+          var prior = orders.find(function(order) {
+            var oPhone = String((order.recipient && order.recipient.phone) || order.phone || '').replace(/[^0-9]/g, '');
+            if (!oPhone || oPhone !== cleanPhone) return false;
+            var codes = Array.isArray(order.promoCodes) ? order.promoCodes : (order.promoCode ? [order.promoCode] : []);
+            return codes.some(function(c) {
+              return String(c).toUpperCase().indexOf('CHIBA100') !== -1;
+            });
+          });
+
+          if (prior) {
+            return {
+              eligible: false,
+              reason: 'ALREADY_USED',
+              pastOrderId: prior.orderId
+            };
+          }
+        } catch (e) {
+          console.error('Error checking first time purchase', e);
+        }
+        return { eligible: true };
+      }
+
+      function verifyPhoneForFirstPurchase() {
+        if (!phoneInput) return;
+        var phoneVal = phoneInput.value.trim();
+        var promos = getAppliedPromos();
+        var hasC100 = promos.some(function(p) { return p.code === 'CHIBA100'; });
+
+        if (phoneVal.length >= 9) {
+          var check = checkFirstTimePurchaseEligibility(phoneVal);
+          if (!check.eligible) {
+            if (hasC100) {
+              removeAppliedPromo('CHIBA100');
+              loadCheckoutData();
+            }
+            if (authBadge) {
+              authBadge.className = 'checkout-auth-badge is-used';
+              authBadge.innerHTML = '⚠️ <strong>首購身分核銷</strong>：手機門號 ' + phoneVal + ' 曾於過往訂單完成首購，已自動核銷首購折抵 (CHIBA100)。為您保留德國原裝預購 9 折優惠 (PREORDER90)！';
+              authBadge.style.display = 'flex';
+            }
+            return;
+          }
+        }
+
+        if (!hasC100) {
+          if (authBadge) authBadge.style.display = 'none';
+          return;
+        }
+
+        if (phoneVal.length >= 9) {
+          if (authBadge) {
+            authBadge.className = 'checkout-auth-badge is-verified';
+            authBadge.innerHTML = '✨ <strong>首次購買查驗通過</strong>！已享預購 9 折 + 首購現折 100 雙重最高優惠！';
+            authBadge.style.display = 'flex';
+          }
+        } else {
+          if (authBadge) authBadge.style.display = 'none';
+        }
+      }
+
+      if (phoneInput) {
+        phoneInput.addEventListener('input', verifyPhoneForFirstPurchase);
+        phoneInput.addEventListener('blur', verifyPhoneForFirstPurchase);
+      }
+
+      // Check for logged-in member & auto-fill
+      try {
+        var currentMember = JSON.parse(localStorage.getItem('chiba_current_member_v1') || 'null');
+        if (currentMember) {
+          if (nameInput && !nameInput.value && currentMember.name) nameInput.value = currentMember.name;
+          if (phoneInput && !phoneInput.value && currentMember.phone) phoneInput.value = currentMember.phone;
+          if (emailInput && !emailInput.value && currentMember.email) emailInput.value = currentMember.email;
+          if (currentMember.savedStore && currentMember.savedStore.name) {
+            var stNameEl = document.getElementById('store-name');
+            var stAddrEl = document.getElementById('store-addr');
+            if (stNameEl) stNameEl.textContent = currentMember.savedStore.name;
+            if (stAddrEl && currentMember.savedStore.addr) stAddrEl.textContent = currentMember.savedStore.addr;
+          }
+          if (memberBanner && memberWelcomeText) {
+            memberWelcomeText.textContent = '歡迎，' + (currentMember.name || '會員') + '！已自動為您帶入收件人與常用門市。';
+            memberBanner.style.display = 'block';
+          }
+          verifyPhoneForFirstPurchase();
+        }
+      } catch (_) {}
+
+      // Form submission & order generation
       document.getElementById('chiba-checkout-form').addEventListener('submit', function(e) {
         e.preventDefault();
-        alert('【測試環境模擬】訂單已成功建立！\n在正式金流上線後，將安全跳轉至綠界/藍新信用卡 3D 驗證頁面或 LINE Pay。');
+
+        if (!currentCart.length) {
+          alert('購物車目前為空，請先加入商品。');
+          return;
+        }
+
+        var totalItemCount = currentCart.reduce(function(sum, it) { return sum + (it.qty || 1); }, 0);
+        if (totalItemCount > 10) {
+          if (window.showChibaOrderLimitModal) {
+            window.showChibaOrderLimitModal('total_items', {});
+          } else {
+            alert('單筆訂單上限 10 件，大宗採購請洽 info@chibataiwan.com');
+          }
+          return;
+        }
+
+        var hasExceededItem = currentCart.some(function(it) { return (it.qty || 1) > 5; });
+        if (hasExceededItem) {
+          if (window.showChibaOrderLimitModal) {
+            window.showChibaOrderLimitModal('per_item', {});
+          } else {
+            alert('單一規格限購 5 件，大宗採購請洽 info@chibataiwan.com');
+          }
+          return;
+        }
+
+        var selectedPayment = document.querySelector('input[name="payment-method"]:checked').value;
+        var paymentLabel = selectedPayment === 'credit'
+          ? '信用卡線上刷卡'
+          : (selectedPayment === 'linepay' ? 'LINE Pay 行動支付' : (selectedPayment === 'cvs-cod' ? '超商取貨付款' : 'ATM 虛擬帳號轉帳'));
+
+        if (selectedPayment === 'cvs-cod' && finalPayable > 8000) {
+          if (window.showChibaOrderLimitModal) {
+            window.showChibaOrderLimitModal('cod_limit', {});
+          } else {
+            alert('超商取貨付款僅限 NT$ 8,000 以下訂單，請改選信用卡或 ATM 轉帳。');
+          }
+          return;
+        }
+
+        var custName = document.getElementById('cust-name').value.trim();
+        var custPhone = document.getElementById('cust-phone').value.trim();
+        var custEmail = document.getElementById('cust-email').value.trim();
+
+        var selectedShipping = document.querySelector('input[name="shipping-method"]:checked').value;
+        var shippingName = selectedShipping === '711' ? '7-ELEVEN 超商取貨' : '黑貓宅急便 宅配到府';
+
+        if (selectedShipping === 'home') {
+          var homeDistrict = document.getElementById('home-district').value.trim();
+          var homeAddress = document.getElementById('home-address').value.trim();
+          if (!homeDistrict || !homeAddress) {
+            alert('選用黑貓宅急便宅配到府，必須提供完整的收件地址（鄉鎮市區及詳細路名門牌地址）！');
+            if (!homeDistrict) document.getElementById('home-district').focus();
+            else document.getElementById('home-address').focus();
+            return;
+          }
+        }
+
+        var storeName = selectedShipping !== 'home' ? document.getElementById('store-name').textContent : '黑貓宅急便 (宅配到府)';
+        var storeAddr = selectedShipping !== 'home' 
+          ? document.getElementById('store-addr').textContent 
+          : (document.getElementById('home-city').value + ' ' + document.getElementById('home-district').value + ' ' + document.getElementById('home-address').value + ' (時段: ' + document.getElementById('home-delivery-time').value + ')');
+
+        var invType = invoiceSelect.value;
+        var invCarrier = '會員載具';
+        if (invType === 'barcode') {
+          var bc = document.getElementById('mobile-barcode').value.trim();
+          if (!/^\/[0-9A-Z.+\-_]{7}$/.test(bc)) {
+            alert('手機條碼載具格式錯誤，必須為「/」開頭加 7 碼英數字元（例如: /+ABC123）。');
+            return;
+          }
+          invCarrier = bc;
+        } else if (invType === 'company') {
+          var taxId = document.getElementById('tax-id').value.trim();
+          var compName = document.getElementById('company-name').value.trim();
+          if (!/^\d{8}$/.test(taxId)) {
+            alert('公司統一編號格式錯誤，必須為 8 碼數字。');
+            return;
+          }
+          invCarrier = taxId + ' (' + compName + ')';
+        } else if (invType === 'donate') {
+          invCarrier = '創世基金會 (愛心碼: 919)';
+        }
+
+        var now = new Date();
+        var dateStr = now.getFullYear() + '/' + String(now.getMonth() + 1).padStart(2, '0') + '/' + String(now.getDate()).padStart(2, '0') + ' ' + String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0');
+        var rand = Math.floor(1000 + Math.random() * 9000);
+        var orderId = 'CBA-' + now.getFullYear() + String(now.getMonth() + 1).padStart(2, '0') + String(now.getDate()).padStart(2, '0') + '-' + rand;
+        var virtualAccountNo = selectedPayment === 'atm' ? ('99888' + rand + '01') : '';
+
+        var promos = getAppliedPromos();
+        var promoRes = calculatePromoDiscounts(currentSubtotal, promos);
+        var discount = promoRes.totalDiscount;
+        var finalPayable = Math.max(0, currentSubtotal - discount) + currentShippingFee;
+
+        var orderData = {
+          orderId: orderId,
+          date: dateStr,
+          name: custName,
+          phone: custPhone,
+          email: custEmail,
+          paymentMethod: selectedPayment,
+          paymentLabel: paymentLabel,
+          virtualAccount: selectedPayment === 'atm' ? '406970163121' : '',
+          bankCode: '822',
+          bankName: '中國信託商業銀行 天母分行 (CTBC Bank Tianmu Branch)',
+          bankBranch: '天母分行',
+          bankAccount: '406970163121',
+          accountName: '林志昇',
+          recipient: {
+            name: custName,
+            phone: custPhone,
+            email: custEmail
+          },
+          shippingMethod: shippingName,
+          storeName: storeName,
+          storeAddr: storeAddr,
+          invoiceType: invoiceSelect.options[invoiceSelect.selectedIndex].text,
+          invoiceCarrier: invCarrier,
+          subtotal: currentSubtotal,
+          promoCodes: promos.map(function(p) { return p.code; }),
+          promoCode: promos.map(function(p) { return p.code; }).join(' + '),
+          discount: discount,
+          shippingFee: currentShippingFee,
+          total: finalPayable,
+          isPreorder: true,
+          status: '預購成立',
+          items: currentCart
+        };
+
+        localStorage.setItem(lastOrderKey, JSON.stringify(orderData));
+
+        // Append to merchant order history
+        try {
+          var histKey = 'chiba_order_history_v1';
+          var rawHist = localStorage.getItem(histKey);
+          var histArr = rawHist ? JSON.parse(rawHist) : [];
+          if (!Array.isArray(histArr)) histArr = [];
+          histArr.unshift(orderData);
+          localStorage.setItem(histKey, JSON.stringify(histArr));
+        } catch (_) {}
+
+        // Option 2: Dispatch to Cloud Google Sheets Webhook if configured
+        try {
+          var webhookUrl = localStorage.getItem('chiba_webhook_url_v1');
+          if (webhookUrl && webhookUrl.indexOf('http') === 0) {
+            fetch(webhookUrl, {
+              method: 'POST',
+              mode: 'no-cors',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(orderData)
+            }).catch(function() {});
+          }
+        } catch (_) {}
+
+        // Auto-enroll member or update profile with preferred store
+        try {
+          var autoReg = document.getElementById('auto-register-member');
+          if ((autoReg && autoReg.checked) || localStorage.getItem('chiba_current_member_v1')) {
+            var memberRec = {
+              name: custName,
+              phone: custPhone,
+              email: custEmail,
+              savedStore: {
+                name: storeName,
+                addr: storeAddr
+              },
+              registeredAt: new Date().toISOString(),
+              hasUsedFirstPurchase: true
+            };
+            localStorage.setItem('chiba_current_member_v1', JSON.stringify(memberRec));
+            var membersRaw = localStorage.getItem('chiba_members_v1');
+            var membersList = membersRaw ? JSON.parse(membersRaw) : [];
+            var cleanPhone = custPhone.replace(/[^0-9]/g, '');
+            var mIdx = membersList.findIndex(function(m) {
+              return String(m.phone || '').replace(/[^0-9]/g, '') === cleanPhone;
+            });
+            if (mIdx >= 0) {
+              membersList[mIdx] = Object.assign({}, membersList[mIdx], memberRec);
+            } else {
+              membersList.push(memberRec);
+            }
+            localStorage.setItem('chiba_members_v1', JSON.stringify(membersList));
+          }
+        } catch (_) {}
+
+        localStorage.removeItem(cartKey);
+        localStorage.removeItem(promoKey);
+
+        var submitBtn = document.getElementById('btn-submit-order');
+        submitBtn.disabled = true;
+        submitBtn.textContent = '訂單建立成功，正在跳轉... 🔒';
+
+        setTimeout(function() {
+          window.location.href = '/zh-tw/order-confirmed/?orderId=' + encodeURIComponent(orderId);
+        }, 500);
       });
 
       loadCheckoutData();
