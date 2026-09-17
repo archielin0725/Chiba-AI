@@ -105,7 +105,9 @@
   "files": {
     "404.html": "02dfead971c6c20dd0c5c944ac1f2d85474d238d49f9f8ee45820bbf6a7eec6f",
     "_headers": "459dd9e54a0b801b6ed7ecbe2249970a24e32096b08513ec97a1a9242eed165e",
-    "admin/orders/index.html": "3b5be0ac5ea0f76aeb610bac9a712730bfd35d39f9736cd253a25a785fc2be84",
+    "admin/index.html": "2599f1eef42b66c87eb21a2071e3c6d38e3eba2e4ad94d11f9745cdd675bc97f",
+    "admin/manifest.json": "f8bf49a9c23e264561b3183ac3467e7c7b3c63a71235fc2f70594c277e6a96ca",
+    "admin/orders/index.html": "5de7826e8411e66de5646054f8c23fae35c07d7f937aeb506a280ed9f0853a36",
     "apple-touch-icon.png": "87272b3aaa9e94a7d5b2600dd038eefb27c5e0295139578381b9325a5cebe5b4",
     "assets/categories/cycling.jpg": "513aa74604a5a0bd7030cb3c836b0a01c4a2eb352097ac347d13682a02b7136c",
     "assets/categories/firefighter.jpg": "c7cf781beaab25a2352c413749f14ccca091c59bb2168476ad99b88fdc555c18",

@@ -1,0 +1,22 @@
+{
+  "name": "CHIBA Taiwan 遠端後台管理系統",
+  "short_name": "Chiba 後台",
+  "description": "CHIBA Taiwan 官方網站雲端遠端後台管理門戶，隨時隨地管理訂單、改價與主開關。",
+  "start_url": "/admin/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#b92027",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
