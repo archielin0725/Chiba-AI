@@ -272,3 +272,29 @@ if (document.readyState === 'loading') {
   initHeroSlider();
 }
 
+// ==========================================================================
+// Pluggable E-Commerce Module Loader (Option B Decoupled Architecture)
+// Master Kill-Switch: window.CHIBA_CONFIG.enableEcommerce (true/false)
+// ==========================================================================
+(function() {
+  window.CHIBA_CONFIG = window.CHIBA_CONFIG || { enableEcommerce: true };
+  if (!window.CHIBA_CONFIG.enableEcommerce) return;
+
+  // Load CSS dynamically
+  if (!document.querySelector('link[href*="chiba-ecommerce.css"]')) {
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = '/assets/chiba-ecommerce.css';
+    document.head.appendChild(link);
+  }
+
+  // Load JS dynamically
+  if (!document.querySelector('script[src*="chiba-ecommerce.js"]')) {
+    var script = document.createElement('script');
+    script.src = '/assets/chiba-ecommerce.js';
+    script.defer = true;
+    document.body.appendChild(script);
+  }
+})();
+
+
