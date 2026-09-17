@@ -295,10 +295,21 @@ if (document.readyState === 'loading') {
     }
   } catch (e) {}
 
-  // 2. Check Local Preference
+  // 2. Check Local Preference & Site Config
   var isEnabled = true;
   try {
     var localPref = localStorage.getItem('chiba_ecommerce_active');
+    if (localPref === null) {
+      var rawCfg = localStorage.getItem('chiba_site_config_v1');
+      if (rawCfg) {
+        try {
+          var parsedCfg = JSON.parse(rawCfg);
+          if (typeof parsedCfg.enableEcommerce !== 'undefined') {
+            localPref = parsedCfg.enableEcommerce ? 'true' : 'false';
+          }
+        } catch(e) {}
+      }
+    }
     if (localPref !== null) {
       isEnabled = (localPref === 'true');
     } else if (typeof window.CHIBA_CONFIG.enableEcommerce !== 'undefined') {

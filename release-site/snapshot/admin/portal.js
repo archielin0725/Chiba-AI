@@ -187,21 +187,39 @@
   // MASTER QUICK SWITCH (E-COMMERCE TOGGLE)
   // -------------------------------------------------------------
   function getSiteConfig() {
-    try {
-      var local = localStorage.getItem(STORAGE_KEY_CONFIG);
-      if (local) return JSON.parse(local);
-    } catch(e) {}
-    return {
+    var cfg = {
       enableEcommerce: true,
       priceOverrides: {},
       wordingOverrides: { "zh-tw": {}, "en": {} },
       googleSheetsWebhookUrl: ""
     };
+    try {
+      var local = localStorage.getItem(STORAGE_KEY_CONFIG);
+      if (local) {
+        Object.assign(cfg, JSON.parse(local));
+      }
+    } catch(e) {}
+    var activeFlag = localStorage.getItem('chiba_ecommerce_active');
+    if (activeFlag !== null) {
+      cfg.enableEcommerce = (activeFlag === 'true');
+    }
+    return cfg;
   }
 
   function saveSiteConfig(cfg) {
     cfg.updatedAt = new Date().toISOString();
+    var isShop = cfg.enableEcommerce !== false;
     localStorage.setItem(STORAGE_KEY_CONFIG, JSON.stringify(cfg));
+    localStorage.setItem('chiba_ecommerce_active', isShop ? 'true' : 'false');
+    if (cfg.priceOverrides || cfg.wordingOverrides) {
+      localStorage.setItem('chiba_params_v1', JSON.stringify({
+        priceOverrides: cfg.priceOverrides || {},
+        wordingOverrides: cfg.wordingOverrides || { 'zh-tw': {}, 'en': {} }
+      }));
+    }
+    if (cfg.googleSheetsWebhookUrl) {
+      localStorage.setItem('chiba_sheets_webhook_url', cfg.googleSheetsWebhookUrl);
+    }
     renderMasterSwitch();
   }
 
@@ -210,18 +228,31 @@
     var pill = document.getElementById('btn-header-master-switch');
     var dot = document.getElementById('master-switch-dot');
     var label = document.getElementById('master-switch-label');
+    var isShop = cfg.enableEcommerce !== false;
 
-    if (!pill || !dot || !label) return;
-
-    if (cfg.enableEcommerce !== false) {
-      pill.className = 'master-switch-card active';
-      dot.textContent = '🟢';
-      label.textContent = '購物功能開啟中';
-    } else {
-      pill.className = 'master-switch-card disabled';
-      dot.textContent = '🔴';
-      label.textContent = '純型錄展示模式';
+    if (pill && dot && label) {
+      if (isShop) {
+        pill.className = 'master-switch-card active';
+        dot.textContent = '🟢';
+        label.textContent = '購物功能開啟中';
+      } else {
+        pill.className = 'master-switch-card disabled';
+        dot.textContent = '🔴';
+        label.textContent = '純型錄展示模式';
+      }
     }
+
+    // Dynamic front-end link buttons to ensure opened tab has target mode
+    var frontLinks = document.querySelectorAll('.link-front-site');
+    frontLinks.forEach(function(link) {
+      if (isShop) {
+        link.href = '/zh-tw/products/?shop=1';
+        link.textContent = '🛒 前往線上購物官網 ↗';
+      } else {
+        link.href = '/zh-tw/products/?shop=0';
+        link.textContent = '👁️ 前往純型錄官網 ↗';
+      }
+    });
   }
 
   function toggleMasterSwitch() {
@@ -231,10 +262,11 @@
     cfg.enableEcommerce = next;
     saveSiteConfig(cfg);
 
+    var targetUrl = window.location.origin + '/zh-tw/products/?shop=' + (next ? '1' : '0');
     if (next) {
-      alert('✓ 已成功【開啟】全站線上購物功能！\n全站 220 頁即刻啟用購物車、規格選擇器與預購結帳。');
+      alert('✓ 已成功【開啟】全站線上購物功能！\n全站 220 頁即刻啟用購物車、規格選擇器與預購結帳。\n\n▶ 前往購物官網：\n' + targetUrl);
     } else {
-      alert('✓ 已成功【切換為純型錄展示模式】！\n全站 220 頁即刻隱藏所有購物車，100% 零影響回復純靜態展示型錄。');
+      alert('✓ 已成功【切換為純型錄展示模式】！\n線上購物功能已關閉，全站 220 頁即刻回復純靜態型錄，0 殘留購物車或訂購按鈕。\n\n▶ 前往純型錄官網驗證：\n' + targetUrl);
     }
   }
 
@@ -243,6 +275,30 @@
 
   var btnQkSwitch = document.getElementById('btn-quick-toggle-shop');
   if (btnQkSwitch) btnQkSwitch.addEventListener('click', toggleMasterSwitch);
+
+  var btnSettingsSwitch = document.getElementById('btn-settings-toggle-shop');
+  if (btnSettingsSwitch) btnSettingsSwitch.addEventListener('click', toggleMasterSwitch);
+
+  var btnCopyLinks = document.getElementById('btn-copy-switch-links');
+  if (btnCopyLinks) {
+    btnCopyLinks.addEventListener('click', function() {
+      var origin = window.location.origin;
+      var catalogUrl = origin + '/zh-tw/products/?shop=0';
+      var shopUrl = origin + '/zh-tw/products/?shop=1';
+      var text = '【CHIBA 官網展示模式快速連結】\n\n' +
+        '▶ 純型錄展示模式（購物關閉，100% 零影響純靜態型錄）：\n' + catalogUrl + '\n\n' +
+        '▶ 線上購物模式（購物開啟，完整購物車與結帳）：\n' + shopUrl;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function() {
+          alert('✓ 快速切換連結已複製至剪貼簿！\n\n' + text);
+        }).catch(function() {
+          prompt('請複製以下切換連結：', text);
+        });
+      } else {
+        prompt('請複製以下切換連結：', text);
+      }
+    });
+  }
 
   // -------------------------------------------------------------
   // ORDERS MANAGEMENT

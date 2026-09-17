@@ -9,6 +9,17 @@
   window.CHIBA_CONFIG = window.CHIBA_CONFIG || {};
   try {
     var localPref = localStorage.getItem('chiba_ecommerce_active');
+    if (localPref === null) {
+      var rawCfg = localStorage.getItem('chiba_site_config_v1');
+      if (rawCfg) {
+        try {
+          var parsedCfg = JSON.parse(rawCfg);
+          if (typeof parsedCfg.enableEcommerce !== 'undefined') {
+            localPref = parsedCfg.enableEcommerce ? 'true' : 'false';
+          }
+        } catch(e) {}
+      }
+    }
     if (localPref !== null) {
       window.CHIBA_CONFIG.enableEcommerce = (localPref === 'true');
     }

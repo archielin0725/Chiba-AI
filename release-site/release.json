@@ -1,5 +1,5 @@
 {
-  "release_id": "chiba-ecommerce-phase4-staging-70492707c37e0fa8",
+  "release_id": "chiba-ecommerce-phase4-staging-b73f40dc864504d0",
   "parent_archive_sha256": "08370fcf4109eb268d250b5eed3855e044ee660183cabd253e93a9a30da90476",
   "catalogue_sha256": "cd0716b7aa1cf6d941d5c395bc5d9178f9dcd06e24cc29abcc6fcb29280ff831",
   "sku_sets": {
@@ -105,11 +105,11 @@
   "files": {
     "404.html": "02dfead971c6c20dd0c5c944ac1f2d85474d238d49f9f8ee45820bbf6a7eec6f",
     "_headers": "490a679c801a828201985b7a932dd6c06b349b5b06585aa44848fe2ea0552517",
-    "admin/index.html": "4f92cbb9a0139b0e16f1b1177054cd9b391bd9233836184ef707df433ab87162",
+    "admin/index.html": "4e035d2c7660891f08cdaa03752b9fc2795b0b0ba333bb9d0f11b71c5d13dcfc",
     "admin/manifest.json": "f8bf49a9c23e264561b3183ac3467e7c7b3c63a71235fc2f70594c277e6a96ca",
     "admin/orders/index.html": "5de7826e8411e66de5646054f8c23fae35c07d7f937aeb506a280ed9f0853a36",
     "admin/portal.css": "eb01c3df7ebcde0e151e872e46ef271add9da4d1bb7cb4132dd07093e4f71fa0",
-    "admin/portal.js": "b3e872f3c5022012e9a3e4f517f4afa0b8dd9d30b687618be6b117c94ba4b176",
+    "admin/portal.js": "493b9079d61d7ac36e712ea4e9421a4acd5415bbfd38482718ccd9a4f0828693",
     "apple-touch-icon.png": "87272b3aaa9e94a7d5b2600dd038eefb27c5e0295139578381b9325a5cebe5b4",
     "assets/categories/cycling.jpg": "513aa74604a5a0bd7030cb3c836b0a01c4a2eb352097ac347d13682a02b7136c",
     "assets/categories/firefighter.jpg": "c7cf781beaab25a2352c413749f14ccca091c59bb2168476ad99b88fdc555c18",
@@ -119,7 +119,7 @@
     "assets/categories/wheelchair.jpg": "c63c338fa5dbb7aa40c4cb3e161cb9bcfdfca7d3e1488845437d80b39b651b23",
     "assets/chiba-config.json": "9764818e8fea01eb56567e69cef98cf73ffa50b00d742f9b961202cd0b3390d1",
     "assets/chiba-ecommerce.css": "21e340c032d51b6cca79a30196a8663e6c1eb5982cb9161b313436de190fc685",
-    "assets/chiba-ecommerce.js": "70492707c37e0fa8f311117e4b5c879bf928260325ba3d0659173f42962fd5d7",
+    "assets/chiba-ecommerce.js": "b73f40dc864504d0e585e20688c5605b404755ea64e10c9eba8409cbf3596db3",
     "assets/flags/de.svg": "f28871e5d52de9fa81db3e71a33b91a39c4c2144257fc6927a30e4b1f57f37a9",
     "assets/flags/en.svg": "91e2b3302b948aa0b5a3b48a12a8aa9e041f82884f47146b6059844d903cd3d1",
     "assets/flags/tw.svg": "4fcab90ebd333f6074098bc4f586bf8284baea64385f97cf6c003a81d56989e8",
@@ -992,7 +992,7 @@
     "assets/products/fitness/44766-neopren-knee-bandage/black-10/fitness__44766__black-10__de3e1ce8809afa38__44766-10-3.jpg": "de3e1ce8809afa381885085ca47944de116c2c3b9a3c4ae8609638383f12a119",
     "assets/site-overrides.css": "ec18102b514cf90b3d150128410b0746918a6e72334bf244966f27dd4f829a4c",
     "assets/site.css": "734b595e6c8293b297027ff2ae8c6675c5e94762b78269ff7c268d680f6afc8d",
-    "assets/site.js": "c0a7dc042e9d96725a704b42271461de1a98bd2d14ff876c1f8f88aad22a91d2",
+    "assets/site.js": "b4f527772a754a1188cae6c1f00bd6f39441d7f46669e74c2c9b55fd93b1694a",
     "assets/size-guide/hand-circumference.png": "fce6152e0b31dc51372c625e56954681b6fcbbbd72bb951291a117acfb353e41",
     "assets/technology/bioxcell-banner.jpg": "ac8487d55e0c2097df16f622bdc06f834b7d9d520dfb5e88627220ad47adbd4d",
     "assets/technology/bioxcell-glove-palm.jpg": "5e09b5d1c93b4565ce878b8cabe80743b3ffec207c1425a637c42c9236174755",
