@@ -116,6 +116,27 @@ document.querySelectorAll('[data-variant-product]').forEach(product=>{
   if(!payload) return;
   let variants=[]; try{variants=JSON.parse(payload.textContent)}catch(_){return}
   const esc=value=>String(value).replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
+  const colourLabel=value=>{
+    if(document.documentElement.lang.startsWith('en')) return value;
+    const labels={
+      beige:'米色', black:'黑色', blue:'藍色', brown:'棕色',
+      burgundy:'酒紅色', cream:'奶油色', dkgrey:'深灰色',
+      gold:'金色', gray:'灰色', grey:'灰色', green:'綠色',
+      khaki:'卡其色', ltblue:'淺藍色', navy:'深藍色',
+      neonorange:'螢光橘', neongreen:'螢光綠', neonyellow:'螢光黃',
+      olive:'橄欖綠', orange:'橘色', petrol:'石油藍',
+      pink:'粉紅色', purple:'紫色', red:'紅色', rosa:'粉紅色',
+      royalblue:'皇家藍', silver:'銀色', turquoise:'土耳其藍',
+      tourquise:'土耳其藍', uni:'單色', violett:'紫色',
+      white:'白色', yellow:'黃色'
+    };
+    return String(value).trim().split('/').map(part=>{
+      const normalized=part.trim().toLowerCase().replace(/[.\s]+/g,'');
+      const translated=labels[normalized];
+      if(translated) return translated;
+      return part.trim().replace(/\b(black|beige|blue|brown|gray|grey|green|navy|orange|petrol|pink|purple|red|uni|white|yellow)\b/gi, token=>labels[token.toLowerCase()]||token);
+    }).join('／');
+  };
   const gallery=product.querySelector('[data-gallery]');
   const colour=product.querySelector('[data-variant-colour]');
   const sizes=product.querySelector('[data-variant-sizes]');
@@ -127,12 +148,19 @@ document.querySelectorAll('[data-variant-product]').forEach(product=>{
     product.querySelectorAll('[data-variant-key]').forEach(button=>{const active=button.dataset.variantKey===key;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active))});
     const galleryImages=[...new Set([...(variant.sharedImages||[]),...variant.images])];
     const model=product.querySelector('h1').textContent;
-    gallery.innerHTML=galleryImages.length?galleryImages.map((src,index)=>`<img src="${esc(src)}" alt="${esc(model)} ${esc(variant.colour)}" loading="${index===0?'eager':'lazy'}" decoding="async">`).join(''):'<div class="no-image">'+(isEn?'Image pending':'圖片待確認')+'</div>';
-    colour.textContent=variant.colour; sizes.textContent=variant.sizes;
+    const displayColour=colourLabel(variant.colour);
+    gallery.innerHTML=galleryImages.length?galleryImages.map((src,index)=>`<img src="${esc(src)}" alt="${esc(model)} ${esc(displayColour)}" loading="${index===0?'eager':'lazy'}" decoding="async">`).join(''):'<div class="no-image">'+(isEn?'Image pending':'圖片待確認')+'</div>';
+    colour.textContent=displayColour; sizes.textContent=variant.sizes;
+    product.querySelectorAll('[data-variant-key]').forEach(button=>{
+      const selected=variants.find(item=>item.key===button.dataset.variantKey);
+      if(selected) button.textContent=colourLabel(selected.colour);
+    });
     price.textContent=isEn?`Suggested Retail Price ${variant.price}`:`建議零售價 ${variant.price}`;
     description.textContent=variant.description||(isEn?'Product information verified by CHIBA Taiwan.':'產品資訊依 CHIBA Taiwan 已核對資料建立。');
   };
   product.querySelectorAll('[data-variant-key]').forEach(button=>button.addEventListener('click',()=>select(button.dataset.variantKey)));
+  const activeButton=product.querySelector('[data-variant-key].active');
+  if(activeButton) select(activeButton.dataset.variantKey);
 });
 
 const menu=document.querySelector('.menu');
@@ -539,7 +567,3 @@ if (document.readyState === 'loading') {
     applyParams();
   }
 })();
-
-
-
-
