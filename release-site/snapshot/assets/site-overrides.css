@@ -2038,6 +2038,92 @@ footer .quiet {
   color: #94a3b8 !important;
 }
 
+.site-footer {
+  padding: 32px 7vw 20px !important;
+}
+.site-footer-grid {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) minmax(260px, 1.4fr) minmax(220px, 1fr);
+  gap: 28px;
+  align-items: start;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.site-footer-brand .brand {
+  display: inline-grid !important;
+  gap: 4px;
+  margin-bottom: 0 !important;
+}
+.site-footer-brand small {
+  display: block !important;
+  margin-top: 10px !important;
+  color: #64748b !important;
+  font-size: .68rem;
+  letter-spacing: .12em;
+}
+.site-footer-contact {
+  display: grid;
+  gap: 4px;
+  color: #475569;
+  font-size: .82rem;
+  line-height: 1.45;
+}
+.site-footer-contact strong {
+  color: #101318;
+  font-size: .95rem;
+}
+.site-footer-contact b {
+  color: #101318;
+  font-size: .72rem;
+  letter-spacing: .06em;
+}
+.site-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+  gap: 6px 16px;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-top: 0 !important;
+  font-size: .8rem;
+}
+.site-footer-links a {
+  color: #475569 !important;
+  text-decoration: none !important;
+}
+.site-footer-links a:hover {
+  color: #d42b31 !important;
+}
+.site-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 1240px;
+  margin: 24px auto 0;
+  padding-top: 12px;
+  border-top: 1px solid #f1f5f9;
+  color: #94a3b8;
+  font-size: .72rem;
+}
+@media (max-width: 800px) {
+  .site-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .site-footer-links {
+    max-width: 360px;
+  }
+  .site-footer-bottom {
+    display: block;
+  }
+  .site-footer-bottom span {
+    display: block;
+  }
+  .site-footer-bottom span + span {
+    margin-top: 4px;
+  }
+}
+
 /* Contact 3-in-1 Page Layout */
 .contact-hero {
   max-width: 960px;

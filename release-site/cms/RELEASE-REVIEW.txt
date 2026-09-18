@@ -1,0 +1,19 @@
+CHIBA CMS RELEASE REVIEW
+========================
+Generated: 2026-09-18T17:25:44+08:00
+Input: /Users/archie/Chiba-AI.worktrees/code-review-status-update/release-site/cms/sheets
+Output: /Users/archie/Chiba-AI.worktrees/code-review-status-update/release-site/snapshot/data/cms
+
+Approval status: PENDING
+
+Change summary:
+- No catalog changes detected
+
+Manual checklist:
+- [ ] Product names, prices, and descriptions reviewed
+- [ ] Chinese and English content reviewed
+- [ ] Footer and announcement content reviewed
+- [ ] Generated staging site tested on desktop and mobile
+- [ ] Checkout remains disabled
+- [ ] Release diff and rollback version understood
+- [ ] Production deployment approved separately
