@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>CHIBA Taiwan 雲端遠端後台管理門戶 · Cloud Webportal</title>
+  <link rel="manifest" href="/admin/manifest.json">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#b92027">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="/admin/portal.css">
+</head>
+<body>
+
+  <!-- ============================================================= -->
+  <!-- 1. SECURITY PIN GATE                                          -->
+  <!-- ============================================================= -->
+  <div id="auth-screen">
+    <div class="auth-card">
+      <img src="/favicon.svg" alt="CHIBA Taiwan" class="auth-logo">
+      <h2 class="auth-title">CHIBA Taiwan</h2>
+      <p class="auth-subtitle">業主專屬雲端遠端後台 · 隨時隨地管理系統</p>
+
+      <div class="pin-dots-wrap" id="pin-dots">
+        <div class="pin-dot"></div>
+        <div class="pin-dot"></div>
+        <div class="pin-dot"></div>
+        <div class="pin-dot"></div>
+        <div class="pin-dot"></div>
+        <div class="pin-dot"></div>
+      </div>
+
+      <div class="auth-keypad">
+        <button type="button" class="key-btn" data-key="1">1</button>
+        <button type="button" class="key-btn" data-key="2">2</button>
+        <button type="button" class="key-btn" data-key="3">3</button>
+        <button type="button" class="key-btn" data-key="4">4</button>
+        <button type="button" class="key-btn" data-key="5">5</button>
+        <button type="button" class="key-btn" data-key="6">6</button>
+        <button type="button" class="key-btn" data-key="7">7</button>
+        <button type="button" class="key-btn" data-key="8">8</button>
+        <button type="button" class="key-btn" data-key="9">9</button>
+        <button type="button" class="key-btn action" id="btn-biometric-unlock">🔒</button>
+        <button type="button" class="key-btn" data-key="0">0</button>
+        <button type="button" class="key-btn action" id="btn-pin-backspace">⌫</button>
+      </div>
+
+      <div class="auth-msg" id="auth-error-msg"></div>
+
+      <div style="margin-top: 12px; display: flex; align-items: center; justify-content: center; gap: 6px;">
+        <input type="checkbox" id="auth-remember-device" checked>
+        <label for="auth-remember-device" style="font-size: 0.78rem; color: #64748b; cursor: pointer;">
+          記住此裝置 (7 天內免重複輸入)
+        </label>
+      </div>
+
+      <p class="auth-hint">
+        💡 預設安全 PIN 碼：<b>888888</b>（登入後可隨時於設定修改）
+      </p>
+    </div>
+  </div>
+
+  <!-- ============================================================= -->
+  <!-- 2. PORTAL TOPBAR                                              -->
+  <!-- ============================================================= -->
+  <header class="portal-header">
+    <div class="header-inner">
+      <a href="/admin/" class="header-brand">
+        <img src="/favicon.svg" alt="CHIBA Logo" class="header-logo">
+        <div class="header-title-wrap">
+          <div class="header-title">
+            CHIBA Taiwan <span class="header-badge">雲端管理中心</span>
+          </div>
+          <div class="header-sub">Official Remote Merchant Webportal</div>
+        </div>
+      </a>
+
+      <!-- Desktop Tabs -->
+      <nav class="desktop-nav">
+        <button type="button" class="nav-tab-btn active" data-tab="tab-dashboard">📊 營運總覽</button>
+        <button type="button" class="nav-tab-btn" data-tab="tab-orders">📦 訂單物流</button>
+        <button type="button" class="nav-tab-btn" data-tab="tab-pricing">🏷️ 商品改價</button>
+        <button type="button" class="nav-tab-btn" data-tab="tab-settings">⚙️ 系統設定</button>
+      </nav>
+
+      <!-- Top Right Actions -->
+      <div class="header-actions">
+        <!-- Master Quick Switch Pill -->
+        <div class="master-switch-card active" id="btn-header-master-switch" title="點擊切換全站線上購物 / 純型錄模式">
+          <span id="master-switch-dot">🟢</span>
+          <span id="master-switch-label">購物功能開啟中</span>
+        </div>
+
+        <!-- Lock Button -->
+        <button type="button" class="btn-lock" id="btn-lock-session" title="登出並鎖定後台">
+          🔒 鎖定
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================= -->
+  <!-- 3. MAIN PORTAL VIEWS (4 TABS)                                 -->
+  <!-- ============================================================= -->
+  <main class="portal-main">
+
+    <!-- =========================================================== -->
+    <!-- TAB 1: 📊 營運總覽 (DASHBOARD)                              -->
+    <!-- =========================================================== -->
+    <section id="tab-dashboard" class="tab-pane active">
+      
+      <!-- Top Overview Banner -->
+      <div style="background: linear-gradient(135deg, #0f172a, #1e293b); color: #ffffff; border-radius: var(--radius-lg); padding: 20px 24px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;">
+        <div>
+          <div style="font-size: 0.78rem; font-weight: 800; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">雲端即時連線監控</div>
+          <h2 style="font-size: 1.35rem; font-weight: 900; margin-top: 2px;">奇柏官方網站 · 全遠端營運大盤</h2>
+          <p style="font-size: 0.82rem; color: #cbd5e1; margin-top: 4px;">隨時隨地掌管台灣官網訂單、超商寄件、商品售價與購物功能開關。</p>
+        </div>
+        <div style="display: flex; gap: 8px;">
+          <a href="/zh-tw/?shop=1" target="_blank" class="btn btn-sm btn-outline link-front-site" style="background: rgba(255,255,255,0.1); color: #ffffff; border-color: rgba(255,255,255,0.2);">
+            🌐 開啟前台官網
+          </a>
+          <button type="button" class="btn btn-sm btn-primary" data-switch-tab="tab-pricing">
+            🏷️ 快速商品改價
+          </button>
+        </div>
+      </div>
+
+      <!-- 4 Financial & Operational KPIs -->
+      <div class="kpi-grid">
+        <div class="kpi-box primary">
+          <div class="kpi-label">全站累積訂單</div>
+          <div class="kpi-val" id="kpi-total-orders">0 筆</div>
+          <div class="kpi-desc">全台顧客成立之預購訂單</div>
+        </div>
+        <div class="kpi-box green">
+          <div class="kpi-label">預購總營業額</div>
+          <div class="kpi-val" id="kpi-total-revenue">NT$ 0</div>
+          <div class="kpi-desc">含 7-11 取貨與轉帳總額</div>
+        </div>
+        <div class="kpi-box amber">
+          <div class="kpi-label">7-11 COD 代收現金額</div>
+          <div class="kpi-val" id="kpi-cod-total">NT$ 0</div>
+          <div class="kpi-desc">超商門市代收現金撥款</div>
+        </div>
+        <div class="kpi-box blue">
+          <div class="kpi-label">中信 ATM 待確認</div>
+          <div class="kpi-val" id="kpi-atm-pending">0 筆</div>
+          <div class="kpi-desc">天母分行 406970163121</div>
+        </div>
+      </div>
+
+      <!-- Quick Action Toolbox -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">⚡ 隨身快捷營運工具箱</div>
+        </div>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <button type="button" class="btn btn-outline" id="btn-quick-toggle-shop">
+            🔄 一鍵切換購物 / 純型錄
+          </button>
+          <a href="/zh-tw/?shop=0" target="_blank" class="btn btn-outline link-front-site" id="btn-open-front-site">
+            👁️ 前往前台官網 ↗
+          </a>
+          <button type="button" class="btn btn-outline" id="btn-copy-switch-links">
+            📋 複製切換連結 (?shop=0/1)
+          </button>
+          <button type="button" class="btn btn-outline" data-switch-tab="tab-pricing">
+            🏷️ 調整全館商品價格
+          </button>
+          <button type="button" class="btn btn-outline" data-switch-tab="tab-settings">
+            ✍️ 發布跑馬燈促銷公告
+          </button>
+          <button type="button" class="btn btn-navy" id="btn-quick-german-po">
+            🇩🇪 產出德國原廠 PO 採購單
+          </button>
+          <button type="button" class="btn btn-success" id="btn-quick-export-711">
+            📊 匯出 7-11 寄件報表
+          </button>
+        </div>
+      </div>
+
+      <!-- Latest 5 Orders -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">📦 最新進單即時動態</div>
+          <button type="button" class="btn btn-sm btn-outline" data-switch-tab="tab-orders">查看全部訂單 →</button>
+        </div>
+        <div id="dashboard-recent-orders-list">
+          <p style="color: #64748b; font-size: 0.85rem;">正在載入最新訂單動態...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================== -->
+    <!-- TAB 2: 📦 訂單與物流中心 (ORDERS)                           -->
+    <!-- =========================================================== -->
+    <section id="tab-orders" class="tab-pane">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">📦 顧客預購訂單與 7-11 物流出貨處理</div>
+          <div style="display: flex; gap: 8px;">
+            <button type="button" class="btn btn-sm btn-navy" id="btn-orders-german-po">🇩🇪 德國採購彙總</button>
+            <button type="button" class="btn btn-sm btn-success" id="btn-orders-export-csv">📊 匯出 7-11 CSV</button>
+          </div>
+        </div>
+
+        <!-- Filter Bar -->
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px;">
+          <input type="text" id="order-search-input" class="form-input" placeholder="🔍 搜尋訂單編號 / 顧客姓名 / 手機 / 7-11 門市..." style="max-width: 320px;">
+          <select id="order-status-filter" class="form-input" style="max-width: 180px;">
+            <option value="ALL">全部訂單狀態</option>
+            <option value="NEW">⚡ 待處理新單</option>
+            <option value="PROCURING">🇩🇪 德國備貨中</option>
+            <option value="SHIPPED">🏪 7-11 配送中</option>
+            <option value="COMPLETED">✅ 已完成取件</option>
+            <option value="ATM_UNVERIFIED">💳 中信 ATM 待確認</option>
+          </select>
+        </div>
+
+        <!-- Order Items Container -->
+        <div id="orders-stream-container">
+          <p style="color: #64748b; font-size: 0.85rem;">正在載入訂單列表...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================== -->
+    <!-- TAB 3: 🏷️ 商品價格與規格管理 (PRICING CMS)                  -->
+    <!-- =========================================================== -->
+    <section id="tab-pricing" class="tab-pane">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">🏷️ 免改代碼 · 全站 92 款商品即時改價中心</div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <button type="button" class="btn btn-sm btn-outline" id="btn-batch-90">全館 9 折</button>
+            <button type="button" class="btn btn-sm btn-outline" id="btn-batch-95">預購 95 折</button>
+            <button type="button" class="btn btn-sm btn-outline" id="btn-reset-pricing" style="color: #ef4444;">重設原價</button>
+            <button type="button" class="btn btn-sm btn-success" id="btn-save-pricing">💾 儲存並即時套用</button>
+          </div>
+        </div>
+
+        <p style="font-size: 0.82rem; color: #64748b; margin-bottom: 14px;">
+          在下方「自訂售價」輸入新金額（留空表示原廠定價），點擊【儲存並即時套用】，前台所有產品頁、集合頁與結帳金額立即生效！
+        </p>
+
+        <!-- Search & Filter Category -->
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px;">
+          <input type="text" id="pricing-search-input" class="form-input" placeholder="🔍 搜尋商品名稱或 SKU (例如 3010626, Retro, Iron)..." style="max-width: 320px;">
+          <select id="pricing-cat-filter" class="form-input" style="max-width: 200px;">
+            <option value="ALL">全品項 (92 款)</option>
+            <option value="CYCLING">🚴 自行車手套 (37 款)</option>
+            <option value="FITNESS">🏋️ 健身手套與腰帶 (55 款)</option>
+          </select>
+        </div>
+
+        <!-- Product Price Grid -->
+        <div class="price-grid" id="pricing-product-grid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================== -->
+    <!-- TAB 4: ⚙️ 網站文案與雲端設定 (SETTINGS)                     -->
+    <!-- =========================================================== -->
+    <section id="tab-settings" class="tab-pane">
+      
+      <!-- Master E-Commerce Switch & Display Mode -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">🌐 全站展示模式管理 (Master Display Mode)</div>
+        </div>
+        <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 14px;">
+          掌控全站 220 頁面是開放「線上預購購物」或回復「純靜態商品型錄展示」。切換為純型錄時 100% 零影響，全站完全不載入購物車模組。
+        </p>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px;">
+          <button type="button" class="btn btn-outline" id="btn-settings-toggle-shop" style="font-weight: 800;">
+            🔄 點擊切換模式
+          </button>
+          <a href="/zh-tw/?shop=0" target="_blank" class="btn btn-outline" style="color: #991b1b; border-color: #fecaca; background: #fef2f2;">
+            🔴 預覽純型錄模式 (?shop=0) ↗
+          </a>
+          <a href="/zh-tw/?shop=1" target="_blank" class="btn btn-outline" style="color: #065f46; border-color: #a7f3d0; background: #ecfdf5;">
+            🟢 預覽線上購物模式 (?shop=1) ↗
+          </a>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; font-size: 0.82rem; color: #475569; line-height: 1.6;">
+          <strong>💡 快速分享連結說明：</strong>
+          <br>• 若要讓顧客或在其他裝置直接看純型錄：分享 <code>https://www.chibataiwan.com/?shop=0</code>
+          <br>• 若要回復開啟購物功能：分享 <code>https://www.chibataiwan.com/?shop=1</code>
+        </div>
+      </div>
+
+      <!-- Wordings CMS -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">✍️ 網站文案即時廣播推播</div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">1. 頂端跑馬燈公告列 (Top Announcement Bar)</label>
+          <input type="text" id="setting-wording-banner" class="form-input" placeholder="例如：⚡ 賀！台灣官方新站上線，全館 7-11 取貨付款免運費！">
+          <small style="color: #64748b; font-size: 0.76rem;">清空此欄位將自動收合前台頂端公告條。</small>
+        </div>
+        <div class="form-group">
+          <label class="form-label">2. 純型錄模式訂購按鈕文字 (Catalog Contact Button)</label>
+          <input type="text" id="setting-wording-order-btn" class="form-input" placeholder="例如：聯絡我們訂購 / 預約實體試戴 / 洽詢授權經銷據點">
+          <small style="color: #64748b; font-size: 0.76rem;">當購物功能關閉時，產品頁主按鈕文字。</small>
+        </div>
+        <div class="form-group">
+          <label class="form-label">3. 德國原裝預購說明文案 (Pre-Order Notice)</label>
+          <input type="text" id="setting-wording-preorder-notice" class="form-input" placeholder="例如：全品項採德國原廠專案空運引進，下單後約 7–14 個工作天依序出貨">
+        </div>
+        <button type="button" class="btn btn-primary" id="btn-save-settings-wordings">💾 儲存並推播文案</button>
+      </div>
+
+      <!-- Cloud Sync & Google Sheets -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">☁️ Google 試算表雙向雲端連動 (Option 3)</div>
+        </div>
+        <p style="font-size: 0.82rem; color: #166534; background: #f0fdf4; padding: 12px; border-radius: 8px; border: 1px solid #bbf7d0; margin-bottom: 12px;">
+          您可在手機安裝 Google 試算表 App，將發布之 Webhook 網址填於下方。您在試算表修改金額，全站即時拉取同步！
+        </p>
+        <div class="form-group">
+          <label class="form-label">Google Apps Script Webhook 網址</label>
+          <input type="url" id="setting-webhook-url" class="form-input" placeholder="https://script.google.com/macros/s/.../exec">
+        </div>
+        <div style="display: flex; gap: 8px;">
+          <button type="button" class="btn btn-success" id="btn-save-webhook-url">💾 儲存 Webhook 網址</button>
+          <button type="button" class="btn btn-outline" id="btn-test-webhook-ping">📡 測試連線</button>
+        </div>
+      </div>
+
+      <!-- Security PIN Configuration -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">🔒 後台安全 PIN 碼設定</div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">自訂業主專屬 6 碼管理 PIN 碼</label>
+          <input type="password" id="setting-new-pin" class="form-input" placeholder="請輸入 6 碼數字 (預設 888888)" maxlength="6" style="max-width: 240px;">
+        </div>
+        <button type="button" class="btn btn-navy" id="btn-save-new-pin">更新管理 PIN 碼</button>
+      </div>
+
+      <!-- Backup & Config File -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">💾 系統設定檔匯出與備份</div>
+        </div>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <button type="button" class="btn btn-outline" id="btn-download-config-file">📥 下載最新 chiba-config.json</button>
+          <button type="button" class="btn btn-outline" id="btn-copy-config-json">📋 複製 JSON 代碼</button>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ============================================================= -->
+  <!-- 4. MOBILE BOTTOM BAR                                          -->
+  <!-- ============================================================= -->
+  <nav class="mobile-bottom-nav">
+    <button type="button" class="mobile-tab-btn active" data-tab="tab-dashboard">
+      <span class="tab-icon">📊</span>
+      <span>總覽</span>
+    </button>
+    <button type="button" class="mobile-tab-btn" data-tab="tab-orders">
+      <span class="tab-icon">📦</span>
+      <span>訂單物流</span>
+    </button>
+    <button type="button" class="mobile-tab-btn" data-tab="tab-pricing">
+      <span class="tab-icon">🏷️</span>
+      <span>商品改價</span>
+    </button>
+    <button type="button" class="mobile-tab-btn" data-tab="tab-settings">
+      <span class="tab-icon">⚙️</span>
+      <span>設定</span>
+    </button>
+  </nav>
+
+  <!-- ============================================================= -->
+  <!-- 5. GERMAN PO MODAL                                            -->
+  <!-- ============================================================= -->
+  <dialog id="modal-german-po">
+    <div class="dialog-header">
+      <h3 style="font-size: 1.05rem; font-weight: 800; color: #0f172a;">🇩🇪 德國原廠專案採購彙整表 (German Pre-Order PO)</h3>
+      <button type="button" class="btn btn-sm btn-outline" data-close-dialog="modal-german-po">✕</button>
+    </div>
+    <div class="dialog-body">
+      <p style="font-size: 0.82rem; color: #64748b; margin-bottom: 12px;">
+        系統已自動依 SKU、顏色、德規尺寸加總全台訂單雙數，點擊下方按鈕即可 1 鍵複製原廠英文格式！
+      </p>
+      <pre id="german-po-text" style="background: #1e293b; color: #f8fafc; padding: 14px; border-radius: 8px; font-size: 0.8rem; max-height: 280px; overflow-y: auto; font-family: monospace;"></pre>
+    </div>
+    <div class="dialog-footer">
+      <button type="button" class="btn btn-outline" data-close-dialog="modal-german-po">關閉</button>
+      <button type="button" class="btn btn-primary" id="btn-copy-german-po">📋 一鍵複製原廠英文 PO</button>
+    </div>
+  </dialog>
+
+  <!-- ============================================================= -->
+  <!-- 6. ORDER DETAIL & SHIP MODAL                                  -->
+  <!-- ============================================================= -->
+  <dialog id="modal-order-detail">
+    <div class="dialog-header">
+      <h3 id="modal-order-title" style="font-size: 1.05rem; font-weight: 800; color: #0f172a;">訂單詳情</h3>
+      <button type="button" class="btn btn-sm btn-outline" data-close-dialog="modal-order-detail">✕</button>
+    </div>
+    <div class="dialog-body" id="modal-order-body">
+      <!-- Injected by JS -->
+    </div>
+    <div class="dialog-footer" id="modal-order-footer">
+      <!-- Injected by JS -->
+    </div>
+  </dialog>
+
+  <!-- ============================================================= -->
+  <!-- 7. APPLICATION LOGIC                                          -->
+  <!-- ============================================================= -->
+  <script src="/admin/portal.js" defer></script>
+</body>
+</html>

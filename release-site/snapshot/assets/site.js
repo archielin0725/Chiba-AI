@@ -274,13 +274,89 @@ if (document.readyState === 'loading') {
 
 // ==========================================================================
 // Pluggable E-Commerce Module Loader (Option B Decoupled Architecture)
-// Master Kill-Switch: window.CHIBA_CONFIG.enableEcommerce (disabled by default)
+// Master Kill-Switch: URL query (?shop=0/1) -> localStorage -> chiba-config.json
 // ==========================================================================
 (function() {
-  window.CHIBA_CONFIG = window.CHIBA_CONFIG || { enableEcommerce: false };
-  if (!window.CHIBA_CONFIG.enableEcommerce) return;
+  window.CHIBA_CONFIG = window.CHIBA_CONFIG || {};
 
-  // Load CSS dynamically
+  // 1. Resolve URL Query Overrides (?shop=0/1, ?shop=off/on, ?ecommerce=0/1)
+  try {
+    var searchParams = new URLSearchParams(window.location.search);
+    var shopParam = searchParams.get('shop') || searchParams.get('ecommerce');
+    if (shopParam !== null) {
+      shopParam = shopParam.toLowerCase().trim();
+      if (shopParam === '0' || shopParam === 'off' || shopParam === 'false' || shopParam === 'disable') {
+        localStorage.setItem('chiba_ecommerce_active', 'false');
+      } else if (shopParam === '1' || shopParam === 'on' || shopParam === 'true' || shopParam === 'enable') {
+        localStorage.setItem('chiba_ecommerce_active', 'true');
+      } else if (shopParam === 'reset') {
+        localStorage.removeItem('chiba_ecommerce_active');
+      }
+    }
+  } catch (e) {}
+
+  // 2. Check Local Preference & Site Config
+  var isEnabled = false;
+  try {
+    var localPref = localStorage.getItem('chiba_ecommerce_active');
+    if (localPref === null) {
+      var rawCfg = localStorage.getItem('chiba_site_config_v1');
+      if (rawCfg) {
+        try {
+          var parsedCfg = JSON.parse(rawCfg);
+          if (typeof parsedCfg.enableEcommerce !== 'undefined') {
+            localPref = parsedCfg.enableEcommerce ? 'true' : 'false';
+          }
+        } catch(e) {}
+      }
+    }
+    if (localPref !== null) {
+      isEnabled = (localPref === 'true');
+    } else if (typeof window.CHIBA_CONFIG.enableEcommerce !== 'undefined') {
+      isEnabled = !!window.CHIBA_CONFIG.enableEcommerce;
+    }
+  } catch (e) {}
+
+  window.CHIBA_CONFIG.enableEcommerce = isEnabled;
+
+  // Expose convenient global helper for console & admin scripts
+  window.CHIBA_SWITCH = {
+    isEnabled: function() { return !!window.CHIBA_CONFIG.enableEcommerce; },
+    set: function(active) {
+      localStorage.setItem('chiba_ecommerce_active', active ? 'true' : 'false');
+      window.CHIBA_CONFIG.enableEcommerce = !!active;
+      window.location.reload();
+    },
+    toggle: function() {
+      var next = !window.CHIBA_SWITCH.isEnabled();
+      window.CHIBA_SWITCH.set(next);
+    }
+  };
+
+  // 3. If E-Commerce is Disabled:
+  // ZERO impact mode — DO NOT inject chiba-ecommerce.css or chiba-ecommerce.js!
+  // All 220 product routes and static pages remain 100% pure static catalog.
+  if (!isEnabled) {
+    // Graceful fallback if user explicitly visits /checkout/
+    if (window.location.pathname.indexOf('/checkout') !== -1) {
+      document.addEventListener('DOMContentLoaded', function() {
+        var isEn = document.documentElement.lang && document.documentElement.lang.indexOf('en') === 0;
+        var main = document.querySelector('main') || document.body;
+        main.innerHTML = '<div style="max-width: 640px; margin: 80px auto; padding: 48px 32px; background: #ffffff; border-radius: 16px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.06); font-family: -apple-system, BlinkMacSystemFont, sans-serif;">' +
+          '<div style="font-size: 3.5rem; margin-bottom: 20px;">📦</div>' +
+          '<h1 style="font-size: 1.6rem; font-weight: 800; color: #0f172a; margin-bottom: 14px;">' + (isEn ? 'Online Shopping Currently Suspended' : '線上購物功能目前暫停開放') + '</h1>' +
+          '<p style="font-size: 1rem; color: #64748b; line-height: 1.65; margin-bottom: 28px;">' + (isEn ? 'The website is currently operating in catalog-only mode. For orders, authorized dealerships, or inquiries, please contact our team.' : '目前官方網站以純型錄展示模式運作。如需訂購德國百年機能手套、洽詢實體經銷門市或大宗採購，歡迎與我們聯繫。') + '</p>' +
+          '<div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">' +
+            '<a href="' + (isEn ? '/en/products/' : '/zh-tw/products/') + '" style="display: inline-block; padding: 12px 28px; background: #b92027; color: #fff; font-weight: 700; border-radius: 8px; text-decoration: none; box-shadow: 0 4px 12px rgba(185,32,39,0.25);">' + (isEn ? 'Browse Product Catalog' : '瀏覽產品型錄') + '</a>' +
+            '<a href="' + (isEn ? '/en/contact/' : '/zh-tw/contact/') + '" style="display: inline-block; padding: 12px 24px; background: #f1f5f9; color: #334155; font-weight: 600; border-radius: 8px; text-decoration: none;">' + (isEn ? 'Contact Us' : '聯絡我們') + '</a>' +
+          '</div>' +
+        '</div>';
+      });
+    }
+    return;
+  }
+
+  // 4. If E-Commerce is Enabled: Dynamically inject decoupled assets
   if (!document.querySelector('link[href*="chiba-ecommerce.css"]')) {
     var link = document.createElement('link');
     link.rel = 'stylesheet';
@@ -288,7 +364,6 @@ if (document.readyState === 'loading') {
     document.head.appendChild(link);
   }
 
-  // Load JS dynamically
   if (!document.querySelector('script[src*="chiba-ecommerce.js"]')) {
     var script = document.createElement('script');
     script.src = '/assets/chiba-ecommerce.js';
@@ -296,3 +371,175 @@ if (document.readyState === 'loading') {
     document.body.appendChild(script);
   }
 })();
+
+// ==========================================================================
+// Central Parameter Management Engine (No-Code Price & Wording Overrides)
+// ==========================================================================
+(function() {
+  function getParams() {
+    var params = { priceOverrides: {}, wordingOverrides: { 'zh-tw': {}, 'en': {} } };
+    try {
+      var local = localStorage.getItem('chiba_params_v1');
+      if (local) {
+        var parsed = JSON.parse(local);
+        if (parsed.priceOverrides) params.priceOverrides = parsed.priceOverrides;
+        if (parsed.wordingOverrides) params.wordingOverrides = parsed.wordingOverrides;
+      }
+    } catch (e) {}
+    return params;
+  }
+
+  window.CHIBA_PARAMS = {
+    get: getParams,
+    set: function(newParams) {
+      try {
+        localStorage.setItem('chiba_params_v1', JSON.stringify(newParams));
+        applyParams();
+      } catch (e) {}
+    },
+    reset: function() {
+      try {
+        localStorage.removeItem('chiba_params_v1');
+        window.location.reload();
+      } catch (e) {}
+    }
+  };
+
+  function applyParams() {
+    var params = getParams();
+    var isEn = document.documentElement.lang && document.documentElement.lang.indexOf('en') === 0;
+    var langKey = isEn ? 'en' : 'zh-tw';
+    var words = (params.wordingOverrides && params.wordingOverrides[langKey]) || {};
+
+    // 1. Apply Price Overrides on Product Detail Page
+    var skuEl = document.querySelector('.sku');
+    if (skuEl) {
+      var skuMatch = skuEl.textContent.match(/\b\d{5,7}\b/);
+      if (skuMatch) {
+        var sku = skuMatch[0];
+        if (params.priceOverrides && typeof params.priceOverrides[sku] !== 'undefined') {
+          var customPrice = Number(params.priceOverrides[sku]);
+          var priceEl = document.querySelector('[data-variant-price]');
+          if (priceEl && !isNaN(customPrice)) {
+            priceEl.textContent = (isEn ? 'RRP NT$ ' : '建議零售價 NT$ ') + customPrice.toLocaleString();
+          }
+          // Update variant JSON data
+          var vScript = document.querySelector('script[data-variant-data]');
+          if (vScript) {
+            try {
+              var vData = JSON.parse(vScript.textContent);
+              vData.forEach(function(v) {
+                v.price = 'NT$ ' + customPrice.toLocaleString();
+              });
+              vScript.textContent = JSON.stringify(vData);
+            } catch (e) {}
+          }
+        }
+      }
+    }
+
+    // 2. Apply Price Overrides on Collection / Category Cards
+    if (params.priceOverrides && Object.keys(params.priceOverrides).length > 0) {
+      document.querySelectorAll('.products .card, .product-card').forEach(function(card) {
+        var link = card.querySelector('a[href]');
+        var href = link ? link.getAttribute('href') : '';
+        for (var pSku in params.priceOverrides) {
+          if (href.indexOf(pSku) !== -1 || (card.dataset && card.dataset.sku === pSku)) {
+            var cardPrice = card.querySelector('.price') || card.querySelector('p:last-of-type');
+            if (cardPrice) {
+              var num = Number(params.priceOverrides[pSku]);
+              if (!isNaN(num)) {
+                cardPrice.textContent = 'NT$ ' + num.toLocaleString();
+              }
+            }
+            break;
+          }
+        }
+      });
+    }
+
+    // 3. Apply Wording Overrides
+    // Topbar Tagline / Announcement
+    if (typeof words.announcementBanner !== 'undefined') {
+      var topbarEl = document.querySelector('.topbar-tagline');
+      if (topbarEl) {
+        if (words.announcementBanner === '') {
+          topbarEl.style.display = 'none';
+        } else {
+          topbarEl.textContent = words.announcementBanner;
+          topbarEl.style.display = '';
+        }
+      }
+    }
+
+    // Order Contact Button ("聯絡我們訂購")
+    if (typeof words.orderContactButton !== 'undefined' && words.orderContactButton !== '') {
+      var orderBtn = document.querySelector('.button.order-contact');
+      if (orderBtn) {
+        orderBtn.textContent = words.orderContactButton;
+      }
+    }
+
+    // Preorder Notice Box
+    if (typeof words.preorderNotice !== 'undefined') {
+      var noticeBox = document.querySelector('.preorder-notice-box');
+      if (noticeBox) {
+        if (words.preorderNotice === '') {
+          noticeBox.style.display = 'none';
+        } else {
+          var span = noticeBox.querySelector('span:last-child');
+          if (span) span.textContent = words.preorderNotice;
+          noticeBox.style.display = '';
+        }
+      }
+    }
+  }
+
+  // Load remote parameters from Google Sheets Webhook (Option 3) or chiba-config.json (Option 1)
+  try {
+    var sheetsUrl = localStorage.getItem('chiba_sheets_webhook_url') || (window.CHIBA_CONFIG && window.CHIBA_CONFIG.googleSheetsWebhookUrl);
+    if (sheetsUrl) {
+      fetch(sheetsUrl)
+        .then(function(res) { return res.json(); })
+        .then(function(data) {
+          if (data && (data.priceOverrides || data.wordingOverrides)) {
+            var curr = getParams();
+            if (data.priceOverrides) Object.assign(curr.priceOverrides, data.priceOverrides);
+            if (data.wordingOverrides) {
+              if (data.wordingOverrides['zh-tw']) Object.assign(curr.wordingOverrides['zh-tw'], data.wordingOverrides['zh-tw']);
+              if (data.wordingOverrides['en']) Object.assign(curr.wordingOverrides['en'], data.wordingOverrides['en']);
+            }
+            localStorage.setItem('chiba_params_v1', JSON.stringify(curr));
+            applyParams();
+          }
+        })
+        .catch(function() {});
+    } else if (!localStorage.getItem('chiba_params_v1')) {
+      fetch('/assets/chiba-config.json')
+        .then(function(res) { return res.json(); })
+        .then(function(cfg) {
+          if (cfg) {
+            window.CHIBA_CONFIG = Object.assign(window.CHIBA_CONFIG || {}, cfg);
+            if (cfg.priceOverrides || cfg.wordingOverrides) {
+              localStorage.setItem('chiba_params_v1', JSON.stringify({
+                priceOverrides: cfg.priceOverrides || {},
+                wordingOverrides: cfg.wordingOverrides || { 'zh-tw': {}, 'en': {} }
+              }));
+              applyParams();
+            }
+          }
+        })
+        .catch(function() {});
+    }
+  } catch (e) {}
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', applyParams);
+  } else {
+    applyParams();
+  }
+})();
+
+
+
+

@@ -1,0 +1,15 @@
+{
+  "enableEcommerce": true,
+  "system": {
+    "currency": "NT$",
+    "freeShippingThreshold": 1500,
+    "shippingFee": 65
+  },
+  "googleSheetsWebhookUrl": "",
+  "priceOverrides": {},
+  "wordingOverrides": {
+    "zh-tw": {},
+    "en": {}
+  },
+  "updatedAt": "2026-09-18T02:45:00+08:00"
+}
