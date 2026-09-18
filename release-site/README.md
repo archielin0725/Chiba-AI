@@ -18,9 +18,9 @@ controls the deployed behavior:
 - `SITE_ENV=production python3 build.py` creates an indexable deployment with
   `index,follow`, crawlable `robots.txt`, and no `X-Robots-Tag: noindex`.
 
-Cloudflare Pages production must use `SITE_ENV=production` as an environment
-variable or in its build command. Preview/staging deployments must use
-`SITE_ENV=staging`.
+Cloudflare Pages production uses the default `python3 build.py` command and
+therefore produces the production profile. Preview/staging deployments must
+set `SITE_ENV=staging`.
 Do not change DNS or enable automatic Web Analytics.
 
 The snapshot is the editable source for this exact static release; release.json

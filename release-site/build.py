@@ -17,14 +17,7 @@ def build_environment():
         if configured not in {"staging", "production"}:
             raise SystemExit("SITE_ENV must be staging or production")
         return configured
-    return (
-        "production"
-        if (
-            os.environ.get("GITHUB_REF") == "refs/heads/main"
-            or os.environ.get("CF_PAGES_BRANCH") == "main"
-        )
-        else "staging"
-    )
+    return "production"
 
 
 def apply_environment(out, environment):
