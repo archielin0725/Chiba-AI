@@ -61,18 +61,41 @@
   };
 
   // 4. Cart Engine (LocalStorage CRUD)
+  function sanitizeCartValue(value) {
+    if (value === null || value === undefined) return '';
+    return String(value).trim();
+  }
+
+  function safeCartUrl(value, fallback) {
+    var url = sanitizeCartValue(value);
+    if (!url) return fallback;
+    if (/^(\/|https?:\/\/)/.test(url)) return url;
+    return fallback;
+  }
+
   function getCart() {
     try {
-      var data = localStorage.getItem(CART_STORAGE_KEY);
-      return data ? JSON.parse(data) : [];
+      var raw = localStorage.getItem(CART_STORAGE_KEY);
+      if (!raw) return [];
+      var parsed = JSON.parse(raw);
+      if (!Array.isArray(parsed)) {
+        localStorage.removeItem(CART_STORAGE_KEY);
+        return [];
+      }
+      return parsed.filter(function(item) {
+        return item && typeof item === 'object';
+      });
     } catch (_) {
+      try {
+        localStorage.removeItem(CART_STORAGE_KEY);
+      } catch (__) {}
       return [];
     }
   }
 
   function saveCart(cart) {
     try {
-      localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
+      localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(Array.isArray(cart) ? cart : []));
       updateCartUI();
     } catch (_) {}
   }
@@ -426,31 +449,99 @@
       cartFooter.style.display = 'flex';
       if (shippingBar) shippingBar.style.display = 'block';
 
-      cartBody.innerHTML = cart.map(function(item) {
-        return (
-          '<div class="cart-item" data-cart-item-id="' + item.id + '">' +
-            '<img src="' + (item.image || '/assets/logo/chiba-icon-redless.jpe') + '" class="cart-item-img" alt="' + item.title + '" loading="lazy">' +
-            '<div class="cart-item-info">' +
-              '<div class="cart-item-top">' +
-                '<h4 class="cart-item-title"><a href="' + item.url + '">' + item.title + '</a></h4>' +
-                '<button type="button" class="cart-item-del" data-del-id="' + item.id + '" aria-label="' + i18n.remove + '">✕</button>' +
-              '</div>' +
-              '<div class="cart-item-meta">' +
-                '<span class="cart-meta-pill">' + item.color + '</span>' +
-                '<span class="cart-meta-pill cart-meta-size">' + item.size + '</span>' +
-              '</div>' +
-              '<div class="cart-item-bottom">' +
-                '<div class="cart-qty-stepper">' +
-                  '<button type="button" class="cart-qty-btn" data-qty-change="-1" data-id="' + item.id + '">−</button>' +
-                  '<span class="cart-qty-val">' + item.qty + '</span>' +
-                  '<button type="button" class="cart-qty-btn" data-qty-change="1" data-id="' + item.id + '">+</button>' +
-                '</div>' +
-                '<strong class="cart-item-price">NT$ ' + (item.price * item.qty).toLocaleString() + '</strong>' +
-              '</div>' +
-            '</div>' +
-          '</div>'
-        );
-      }).join('');
+      cartBody.innerHTML = '';
+      cart.forEach(function(item) {
+        var safeItem = item || {};
+        var itemNode = document.createElement('div');
+        itemNode.className = 'cart-item';
+        itemNode.dataset.cartItemId = sanitizeCartValue(safeItem.id);
+
+        var image = document.createElement('img');
+        image.className = 'cart-item-img';
+        image.loading = 'lazy';
+        image.alt = sanitizeCartValue(safeItem.title) || 'Product';
+        image.src = safeCartUrl(safeItem.image, '/assets/logo/chiba-icon-redless.jpe');
+
+        var info = document.createElement('div');
+        info.className = 'cart-item-info';
+
+        var top = document.createElement('div');
+        top.className = 'cart-item-top';
+
+        var titleWrap = document.createElement('h4');
+        titleWrap.className = 'cart-item-title';
+        var titleLink = document.createElement('a');
+        titleLink.href = safeCartUrl(safeItem.url, isEn ? '/en/products/' : '/zh-tw/products/');
+        titleLink.textContent = sanitizeCartValue(safeItem.title) || (isEn ? 'Product' : '商品');
+        titleWrap.appendChild(titleLink);
+
+        var removeBtn = document.createElement('button');
+        removeBtn.type = 'button';
+        removeBtn.className = 'cart-item-del';
+        removeBtn.dataset.delId = sanitizeCartValue(safeItem.id);
+        removeBtn.setAttribute('aria-label', i18n.remove);
+        removeBtn.textContent = '✕';
+
+        top.appendChild(titleWrap);
+        top.appendChild(removeBtn);
+
+        var meta = document.createElement('div');
+        meta.className = 'cart-item-meta';
+
+        var colorPill = document.createElement('span');
+        colorPill.className = 'cart-meta-pill';
+        colorPill.textContent = sanitizeCartValue(safeItem.color) || '-';
+        var sizePill = document.createElement('span');
+        sizePill.className = 'cart-meta-pill cart-meta-size';
+        sizePill.textContent = sanitizeCartValue(safeItem.size) || '-';
+        meta.appendChild(colorPill);
+        meta.appendChild(sizePill);
+
+        var bottom = document.createElement('div');
+        bottom.className = 'cart-item-bottom';
+
+        var qtyWrap = document.createElement('div');
+        qtyWrap.className = 'cart-qty-stepper';
+
+        var minusBtn = document.createElement('button');
+        minusBtn.type = 'button';
+        minusBtn.className = 'cart-qty-btn';
+        minusBtn.dataset.qtyChange = '-1';
+        minusBtn.dataset.id = sanitizeCartValue(safeItem.id);
+        minusBtn.textContent = '−';
+
+        var qtyVal = document.createElement('span');
+        qtyVal.className = 'cart-qty-val';
+        qtyVal.textContent = String((safeItem.qty && Number(safeItem.qty)) || 1);
+
+        var plusBtn = document.createElement('button');
+        plusBtn.type = 'button';
+        plusBtn.className = 'cart-qty-btn';
+        plusBtn.dataset.qtyChange = '1';
+        plusBtn.dataset.id = sanitizeCartValue(safeItem.id);
+        plusBtn.textContent = '+';
+
+        qtyWrap.appendChild(minusBtn);
+        qtyWrap.appendChild(qtyVal);
+        qtyWrap.appendChild(plusBtn);
+
+        var price = document.createElement('strong');
+        price.className = 'cart-item-price';
+        var unitPrice = Number(safeItem.price) || 0;
+        var itemQty = Number(safeItem.qty) || 1;
+        price.textContent = 'NT$ ' + (unitPrice * itemQty).toLocaleString();
+
+        bottom.appendChild(qtyWrap);
+        bottom.appendChild(price);
+
+        info.appendChild(top);
+        info.appendChild(meta);
+        info.appendChild(bottom);
+
+        itemNode.appendChild(image);
+        itemNode.appendChild(info);
+        cartBody.appendChild(itemNode);
+      });
 
       // Add click listeners inside body
       cartBody.querySelectorAll('[data-qty-change]').forEach(function(btn) {

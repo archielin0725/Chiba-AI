@@ -274,10 +274,10 @@ if (document.readyState === 'loading') {
 
 // ==========================================================================
 // Pluggable E-Commerce Module Loader (Option B Decoupled Architecture)
-// Master Kill-Switch: window.CHIBA_CONFIG.enableEcommerce (true/false)
+// Master Kill-Switch: window.CHIBA_CONFIG.enableEcommerce (disabled by default)
 // ==========================================================================
 (function() {
-  window.CHIBA_CONFIG = window.CHIBA_CONFIG || { enableEcommerce: true };
+  window.CHIBA_CONFIG = window.CHIBA_CONFIG || { enableEcommerce: false };
   if (!window.CHIBA_CONFIG.enableEcommerce) return;
 
   // Load CSS dynamically
@@ -296,5 +296,3 @@ if (document.readyState === 'loading') {
     document.body.appendChild(script);
   }
 })();
-
-
