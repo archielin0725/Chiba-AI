@@ -1,5 +1,5 @@
 {
-  "release_id": "chiba-ecommerce-phase4-staging-d1d4d1827c95f582",
+  "release_id": "chiba-ecommerce-phase4-staging-84112662ef13ca83",
   "parent_archive_sha256": "08370fcf4109eb268d250b5eed3855e044ee660183cabd253e93a9a30da90476",
   "catalogue_sha256": "cd0716b7aa1cf6d941d5c395bc5d9178f9dcd06e24cc29abcc6fcb29280ff831",
   "sku_sets": {
@@ -119,7 +119,7 @@
     "assets/categories/wheelchair.jpg": "c63c338fa5dbb7aa40c4cb3e161cb9bcfdfca7d3e1488845437d80b39b651b23",
     "assets/chiba-config.json": "9764818e8fea01eb56567e69cef98cf73ffa50b00d742f9b961202cd0b3390d1",
     "assets/chiba-ecommerce.css": "67023d0ea25701aa569a707dff0c06b81e658ec911b3232c0584bcf5e1942c59",
-    "assets/chiba-ecommerce.js": "d1d4d1827c95f582879ac1fd143e4cf8cef9eec1f432acead40275abc8abb2e0",
+    "assets/chiba-ecommerce.js": "84112662ef13ca83fed4c1feda17387418211fc507d56272871418737ca74c61",
     "assets/flags/de.svg": "f28871e5d52de9fa81db3e71a33b91a39c4c2144257fc6927a30e4b1f57f37a9",
     "assets/flags/en.svg": "91e2b3302b948aa0b5a3b48a12a8aa9e041f82884f47146b6059844d903cd3d1",
     "assets/flags/tw.svg": "4fcab90ebd333f6074098bc4f586bf8284baea64385f97cf6c003a81d56989e8",
@@ -1397,7 +1397,7 @@
     "data/fitness-products.json": "f85706d7558ab17b829443ad9164badf9b5a57e189d4028c27e0102a65e6f40d",
     "en/about/index.html": "df7732c62a029d66142dfc0c4d405e1cabfc0c0a6d33135164514c0b71da2519",
     "en/account/index.html": "197be7fc0755d58014798e23b3d3967b4736d7eed80b294a68c5bcf87f68ac97",
-    "en/checkout/index.html": "e178dd91dfd6851fe0e97339384ea4e80a032a7f1489ffb3adef515b49a5e57b",
+    "en/checkout/index.html": "cd1eab6cdf574a82b08919c9d74302b2b4264582147b778a9003c8c0f0d67406",
     "en/contact/index.html": "871f89a024f5f45a0ef12fa4fa6d4fb0433db16a3776a58c75075a39d501d662",
     "en/customer-service/index.html": "e0851c12fe223528ba2d594f1bdad924ae19f922f2407ae42cedb26cae82ac5a",
     "en/cycling/index.html": "7393660db1903cd41583f4f0852c1583a824e4ab5d3b850ccd8d742346b4aec9",
@@ -1518,7 +1518,7 @@
     "sitemap.xml": "c05a66258953a67f3e985d2b6a217ae01dab7fbcd5b3bd86a9f6dad091fb58f0",
     "zh-tw/about/index.html": "137c017a578945c4eec24ec5f9be1da646bbce34ce64a073ade47e787b951c82",
     "zh-tw/account/index.html": "3ecbbe3f147463e1b27bf7f493c96654f29f1a3654220efb4443434929597f2e",
-    "zh-tw/checkout/index.html": "23ff1a06dfa0262c2867770d0687a880bd477b70bd4eddfe7b2302d349576dfe",
+    "zh-tw/checkout/index.html": "706edc1f6c1247b5867eba62da743f6d2e086ae0152ba9b1a5e591a912cf765a",
     "zh-tw/contact/index.html": "491600cd4e2dc6581e15e488a54a5d6765946bd07d8e6de78570ef80457c62b1",
     "zh-tw/customer-service/index.html": "80c56be428c023d33d7b87a5c05ff10dc9b0d05fa32de09ac5f43c9838ff853f",
     "zh-tw/cycling/index.html": "679755a32702c5bfd978615686b21a960d2b414cf194731b6c7153bc2a1e103e",
