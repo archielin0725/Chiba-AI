@@ -189,6 +189,8 @@
   function getSiteConfig() {
     var cfg = {
       enableEcommerce: true,
+      shopifyDomain: "shop.chibataiwan.com",
+      checkoutGateway: "shopify",
       priceOverrides: {},
       wordingOverrides: { "zh-tw": {}, "en": {} },
       googleSheetsWebhookUrl: ""
@@ -881,6 +883,36 @@
     if (elOrderBtn) elOrderBtn.value = zh.catalogOrderButton || '';
     if (elNotice) elNotice.value = zh.preorderNotice || '';
     if (elWebhook) elWebhook.value = cfg.googleSheetsWebhookUrl || '';
+
+    var elShopifyDomain = document.getElementById('setting-shopify-domain');
+    var elShopifyPreview = document.getElementById('btn-preview-shopify-shop');
+    var currentDomain = cfg.shopifyDomain || 'shop.chibataiwan.com';
+    if (elShopifyDomain) elShopifyDomain.value = currentDomain;
+    if (elShopifyPreview) elShopifyPreview.href = 'https://' + currentDomain;
+
+    var mode = cfg.checkoutGateway || 'shopify';
+    var radioMode = document.querySelector('input[name="checkout-gateway-mode"][value="' + mode + '"]');
+    if (radioMode) radioMode.checked = true;
+  }
+
+  var btnSaveShopify = document.getElementById('btn-save-shopify-settings');
+  if (btnSaveShopify) {
+    btnSaveShopify.addEventListener('click', function() {
+      var domain = (document.getElementById('setting-shopify-domain').value || '').trim().replace(/^https?:\/\//, '').replace(/\/+$/, '');
+      if (!domain) domain = 'shop.chibataiwan.com';
+      var modeRadio = document.querySelector('input[name="checkout-gateway-mode"]:checked');
+      var mode = modeRadio ? modeRadio.value : 'shopify';
+
+      var cfg = getSiteConfig();
+      cfg.shopifyDomain = domain;
+      cfg.checkoutGateway = mode;
+      saveSiteConfig(cfg);
+
+      var elShopifyPreview = document.getElementById('btn-preview-shopify-shop');
+      if (elShopifyPreview) elShopifyPreview.href = 'https://' + domain;
+
+      alert('✓ Shopify 官方銷售通道設定已儲存！當前商店網址：https://' + domain + '，模式：' + (mode === 'shopify' ? 'Shopify 官方結帳 (Mode A)' : '自建備援結帳'));
+    });
   }
 
   var btnSaveWords = document.getElementById('btn-save-settings-wordings');

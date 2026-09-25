@@ -297,6 +297,40 @@
         </div>
       </div>
 
+      <!-- Shopify Headless E-Commerce Integration (Mode A) -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">🛍️ Shopify 官方銷售通道 (Mode A: 雙網融合架構)</div>
+        </div>
+        <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 14px;">
+          啟用後，顧客在官網點擊「立即購買」或在購物車點擊「前往結帳」時，將直接無縫導向您的 Shopify 官方旗艦店完成安全結帳與金物流處理。
+        </p>
+        <div class="form-group">
+          <label class="form-label">Shopify 旗艦店網域 (Shopify Domain)</label>
+          <input type="text" id="setting-shopify-domain" class="form-input" placeholder="例如：shop.chibataiwan.com" value="shop.chibataiwan.com">
+          <small style="color: #64748b; font-size: 0.76rem;">可輸入已綁定的專屬子網域（如 <code>shop.chibataiwan.com</code>）或 myshopify 網址。</small>
+        </div>
+        <div class="form-group">
+          <label class="form-label">結帳路由通道 (Checkout Gateway Routing)</label>
+          <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 6px;">
+            <label style="display: flex; align-items: center; gap: 6px; font-size: 0.88rem; cursor: pointer;">
+              <input type="radio" name="checkout-gateway-mode" value="shopify" checked>
+              <strong>🟢 啟用 Shopify 官方結帳 (Mode A 首選)</strong>
+            </label>
+            <label style="display: flex; align-items: center; gap: 6px; font-size: 0.88rem; cursor: pointer;">
+              <input type="radio" name="checkout-gateway-mode" value="native">
+              <span>🔵 自建備援結帳模式</span>
+            </label>
+          </div>
+        </div>
+        <div style="display: flex; gap: 8px;">
+          <button type="button" class="btn btn-primary" id="btn-save-shopify-settings">💾 儲存 Shopify 通道設定</button>
+          <a href="https://shop.chibataiwan.com" target="_blank" class="btn btn-outline" id="btn-preview-shopify-shop">
+            🛍️ 開啟 Shopify 旗艦店 ↗
+          </a>
+        </div>
+      </div>
+
       <!-- Wordings CMS -->
       <div class="card">
         <div class="card-header">

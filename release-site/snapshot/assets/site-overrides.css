@@ -1143,6 +1143,11 @@ body:has(> .nav + main > .hero) .split {
    ========================================================================== */
 .nav nav {
   align-items: center;
+  gap: 16px;
+  flex-wrap: nowrap;
+}
+.nav nav a {
+  white-space: nowrap !important;
 }
 .nav-lang {
   display: inline-flex;

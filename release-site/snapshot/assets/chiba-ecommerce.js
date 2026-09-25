@@ -53,6 +53,27 @@
     }
   };
 
+  // 2.1. Shopify Headless Integration Configuration (Mode A)
+  var SHOPIFY_DEFAULT_DOMAIN = 'shop.chibataiwan.com';
+
+  function getShopifyConfig() {
+    var domain = SHOPIFY_DEFAULT_DOMAIN;
+    var mode = 'shopify'; // 'shopify' (Mode A) or 'native'
+    try {
+      var rawCfg = localStorage.getItem('chiba_site_config_v1');
+      if (rawCfg) {
+        var parsed = JSON.parse(rawCfg);
+        if (parsed.shopifyDomain) domain = parsed.shopifyDomain.replace(/^https?:\/\//, '').replace(/\/+$/, '');
+        if (parsed.checkoutGateway) mode = parsed.checkoutGateway;
+      }
+    } catch(e) {}
+    return {
+      domain: domain,
+      mode: mode,
+      baseUrl: 'https://' + domain
+    };
+  }
+
   var LINE_BASE_URL = window.CHIBA_CONFIG.lineUrl || 'https://line.me/R/ti/p/@chibataiwan';
 
   // Order Quantity Limits & Bulk Inquiry Thresholds
@@ -159,33 +180,19 @@
     freeShipping: isEn ? 'FREE' : '免運費',
     total: isEn ? 'Total' : '含稅總計',
     checkout: isEn ? 'Proceed to Checkout →' : '前往結帳 →',
+    shopifyCheckout: isEn ? 'Proceed to Shopify Checkout →' : '前往 Shopify 安全結帳 →',
     lineCheckout: isEn ? 'Quick Order via LINE' : '🟢 LINE 專人快速諮詢 / 訂購',
-    addToCart: isEn ? 'Pre-Order Now' : '🛒 預購加入購物車',
-    buyNow: isEn ? '⚡ Pre-Order Express' : '⚡ 立即預購',
-    preorderBadge: isEn ? '🇩🇪 Pre-Order' : '🇩🇪 預購',
-    preorderNoticeTitle: isEn ? '🇩🇪 German Authentic Pre-Order' : '🇩🇪 德國原廠正品預購專案',
-    preorderNoticeText: isEn
-      ? 'All gloves are imported directly from Germany. Estimated dispatch in 7–14 business days after order confirmation.'
-      : '全品項採德國原廠專案空運引進，下單後約 7–14 個工作天依序出貨，感謝您的耐心等待。',
-    promoPlaceholder: isEn ? 'PROMO CODE (e.g. PREORDER90)' : '輸入折扣碼 (例: PREORDER90)',
-    applyPromo: isEn ? 'Apply' : '套用',
-    promoAppliedSuccess: isEn ? '✓ Promo code applied successfully!' : '✓ 已成功套用折扣碼！',
-    promoInvalid: isEn ? 'Invalid promo code. Try PREORDER90 or CHIBA100' : '折扣碼無效或已過期，請輸入 PREORDER90 或 CHIBA100',
-    removePromo: isEn ? 'Remove' : '移除',
-    promoStackApplied: isEn ? '✨ Both Pre-Order 10% & Welcome NT$ 100 OFF Applied!' : '✨ 已享預購 9 折 + 首購折 100 雙重最高優惠！',
-    promoStackPromptP90: isEn ? '🇩🇪 German Pre-Order? Stack 10% OFF:' : '🇩🇪 預購享原裝 9 折優惠？',
-    promoStackBtnP90: isEn ? '+ Pre-Order 10% OFF' : '+ 疊加預購 9 折優惠',
-    promoStackPromptC100: isEn ? '🎁 First time ordering? Stack welcome bonus:' : '🎁 首次在官網購買？',
-    promoStackBtnC100: isEn ? '+ Welcome NT$ 100 OFF' : '+ 疊加首購現折 NT$ 100',
-    promoStackPromptBoth: isEn ? '🇩🇪 Pre-Order + Welcome Double Bonus:' : '🇩🇪 預購 + 首購雙重最高優惠：',
-    promoStackBtnBoth: isEn ? '⚡ Apply Both Discounts' : '⚡ 預購 9 折 + 首購折 100 雙重套用',
-    selectSize: isEn ? 'Select Size' : '選擇尺寸',
-    sizeGuideTitle: isEn ? 'German Sizing & Measurement Guide' : '📏 尺寸對照與德國吋測量指南',
-    modalTitle: isEn ? 'German Glove Sizing Guide (Altdeutsche Zoll)' : '德國百年手套吋（Altdeutsche Zoll）尺寸指南',
-    modalFormula: isEn ? '1 German Inch = 2.7 cm Hand Circumference' : '傳統德國手套吋標準：1 德國吋 = 2.7 公分 掌圍',
+    addToCart: isEn ? 'Add to Cart' : '🛒 加入購物車',
+    buyNow: isEn ? '⚡ Buy Now' : '⚡ 立即購買',
+    shopifyBuyNow: isEn ? '⚡ 前往官方旗艦店購買' : '⚡ 前往官方旗艦店購買',
+    preorderBadge: isEn ? '🇩🇪 Official' : '🇩🇪 官方正品',
+    selectSize: isEn ? 'Available Sizes' : '可用尺寸',
+    sizeGuideTitle: isEn ? '📏 Size Chart & Guide' : '📏 尺寸對照表',
+    modalTitle: isEn ? 'CHIBA Glove Size Guide' : 'CHIBA 德國手套標準尺寸對照表',
+    modalFormula: isEn ? 'Measurement Standard: Palm Circumference (cm)' : '測量標準：手掌圍（公分 cm）',
     modalDesc: isEn
-      ? 'European sports gloves measure palm circumference in traditional German inches (Altdeutsche Zoll). Use a flexible measuring tape around the widest part of your hand (excluding thumb) to determine your ideal size.'
-      : '歐洲專業機能手套採用傳統「德國手套吋」計算。請使用布尺環繞手掌最寬處（虎口上方、不含大拇指）測量掌圍公分，即可精確換算合適尺寸：',
+      ? 'German professional sports gloves are tailored based on palm circumference. Use a soft tape to measure around the widest part of your hand (above thumb joint, excluding thumb) to find your ideal fit:'
+      : '德國原廠專業運動手套依掌圍公分標準剪裁。請使用軟尺環繞手掌最寬處（虎口上方、不含大拇指）測量掌圍，即可對照最適合您的手套尺寸：',
     calcPrompt: isEn ? 'Enter your palm circumference (cm):' : '輸入您的手掌圍（公分）：',
     calcBtn: isEn ? 'Find My Size' : '試算我的尺寸',
     recommendedSize: function(sz, cm) {
@@ -624,6 +631,23 @@
     }
   }
 
+  // Mount Header Online Store Pill Link (Mode A Dual-Store Integration)
+  function mountHeaderStoreButton() {
+    var primaryNav = document.getElementById('primary-navigation');
+    if (!primaryNav || primaryNav.querySelector('.nav-store-link')) return;
+
+    var shopifyCfg = getShopifyConfig();
+    var storeLink = document.createElement('a');
+    storeLink.className = 'nav-store-link';
+    storeLink.href = shopifyCfg.baseUrl;
+    storeLink.target = '_blank';
+    storeLink.rel = 'noopener noreferrer';
+    storeLink.innerHTML = isEn ? '🛍️ Shop Online' : '🛍️ 線上旗艦店';
+    storeLink.setAttribute('title', isEn ? 'CHIBA Taiwan Official Online Store (Shopify)' : 'CHIBA 台灣官方線上旗艦店 (Shopify)');
+
+    primaryNav.appendChild(storeLink);
+  }
+
   function mountHeaderMemberButton() {
     var navActions = document.querySelector('.nav-actions');
     if (!navActions || navActions.querySelector('.nav-member-btn')) return;
@@ -955,7 +979,7 @@
             '<span>' + i18n.total + '</span>' +
             '<strong class="cart-total-price" data-cart-total>NT$ 0</strong>' +
           '</div>' +
-          '<a href="' + (isEn ? '/en/checkout/' : '/zh-tw/checkout/') + '" class="cart-checkout-btn">' + i18n.checkout + '</a>' +
+          '<a href="' + (isEn ? '/en/checkout/' : '/zh-tw/checkout/') + '" class="cart-checkout-btn" id="chiba-cart-checkout-btn">' + (getShopifyConfig().mode !== 'native' ? i18n.shopifyCheckout : i18n.checkout) + '</a>' +
           '<a href="#" target="_blank" rel="noopener noreferrer" class="cart-line-consult-btn" data-cart-line-btn>' +
             '<svg class="cart-line-icon" viewBox="0 0 24 24"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>' +
             i18n.lineCheckout +
@@ -976,6 +1000,23 @@
         closeCartDrawer();
       }
     });
+
+    var cartCheckoutBtn = document.getElementById('chiba-cart-checkout-btn');
+    if (cartCheckoutBtn) {
+      cartCheckoutBtn.addEventListener('click', function(e) {
+        var shopifyCfg = getShopifyConfig();
+        if (shopifyCfg.mode !== 'native') {
+          e.preventDefault();
+          var cartItems = getCart();
+          if (cartItems.length === 1 && cartItems[0].sku) {
+            var cat = (cartItems[0].url && cartItems[0].url.indexOf('cycling') !== -1) ? 'cycling' : 'fitness';
+            window.location.href = shopifyCfg.baseUrl + '/products/chiba-' + encodeURIComponent(cartItems[0].sku) + '-' + cat;
+          } else {
+            window.location.href = shopifyCfg.baseUrl + '/cart';
+          }
+        }
+      });
+    }
 
     // Promo Code Listeners in Drawer
     var applyBtn = document.getElementById('cart-promo-apply-btn');
@@ -1035,7 +1076,7 @@
           '</div>' +
           '<table class="size-modal-table">' +
             '<thead>' +
-              '<tr><th>' + (isEn ? 'Size' : '尺寸') + '</th><th>' + (isEn ? 'German Inch' : '德國手套吋') + '</th><th>' + (isEn ? 'Palm Circumference' : '參考手掌圍') + '</th></tr>' +
+              '<tr><th>' + (isEn ? 'Size' : '手套尺寸') + '</th><th>' + (isEn ? 'German Size (Inch)' : '德國原廠規格 (吋)') + '</th><th>' + (isEn ? 'Palm Circumference' : '參考手掌圍 (公分)') + '</th></tr>' +
             '</thead>' +
             '<tbody>' +
               '<tr data-table-size="XS"><td><strong>XS</strong></td><td>6.0 - 6.5</td><td>16.2 – 17.5 cm</td></tr>' +
@@ -1380,6 +1421,12 @@
       totalEl.textContent = 'NT$ ' + finalPayable.toLocaleString();
     }
 
+    var cartCheckoutBtn = document.getElementById('chiba-cart-checkout-btn');
+    if (cartCheckoutBtn) {
+      var shopifyCfg = getShopifyConfig();
+      cartCheckoutBtn.textContent = (shopifyCfg.mode !== 'native') ? i18n.shopifyCheckout : i18n.checkout;
+    }
+
     // 6. Pre-fill LINE consultation button in cart
     var lineBtn = document.querySelector('[data-cart-line-btn]');
     if (lineBtn) {
@@ -1414,13 +1461,6 @@
     var titleEl = detailEl.querySelector('h1');
     var title = titleEl ? titleEl.textContent.trim() : '';
 
-    if (titleEl && !detailEl.querySelector('.preorder-badge')) {
-      var pb = document.createElement('div');
-      pb.className = 'preorder-badge';
-      pb.innerHTML = '<span>🇩🇪</span> ' + (isEn ? 'Official German Pre-Order' : '德國原裝正品 · 全面專案預購');
-      titleEl.parentNode.insertBefore(pb, titleEl);
-    }
-
     var priceEl = detailEl.querySelector('[data-variant-price]');
 
     var getPrice = function() {
@@ -1439,17 +1479,10 @@
     var selectedSize = parsedSizes[0] || 'M';
     var selectedQty = 1;
 
-    // 1. Create Size Picker Section
+    // 1. Create Size Picker Section (Clean Sizing List + Modal Guide Trigger)
     var sizePickerSection = document.createElement('section');
     sizePickerSection.className = 'size-picker-section';
     sizePickerSection.innerHTML =
-      '<div class="preorder-notice-box">' +
-        '<span class="notice-icon">📦</span>' +
-        '<div>' +
-          '<strong>' + i18n.preorderNoticeTitle + '</strong><br>' +
-          '<span>' + i18n.preorderNoticeText + '</span>' +
-        '</div>' +
-      '</div>' +
       '<div class="size-picker-header">' +
         '<h2>' + i18n.selectSize + '</h2>' +
         '<button type="button" class="btn-size-modal-trigger" id="chiba-open-size-modal">' +
@@ -1464,90 +1497,12 @@
             '</button>'
           );
         }).join('') +
-      '</div>' +
-      '<div class="quick-sizing-helper" id="chiba-quick-sizing">' +
-        '<button type="button" class="quick-sizing-toggle" id="chiba-quick-sizing-toggle">' +
-          '📏 ' + (isZh ? '不確定尺寸？輸入掌圍 3 秒智能推薦 →' : 'Unsure of size? 3-sec Palm Fit Assistant →') +
-        '</button>' +
-        '<div class="quick-sizing-pane" id="chiba-quick-sizing-pane" style="display: none;">' +
-          '<div class="quick-sizing-input-wrap">' +
-            '<label for="quick-palm-cm">' + (isZh ? '測量掌圍（不含大拇指，單位：公分）：' : 'Palm Circumference (excl. thumb, cm):') + '</label>' +
-            '<div class="quick-sizing-control">' +
-              '<input type="number" id="quick-palm-cm" min="14" max="30" step="0.5" placeholder="例如 21.0" class="quick-palm-input">' +
-              '<span class="quick-palm-unit">cm</span>' +
-              '<button type="button" class="quick-palm-btn" id="chiba-apply-palm-size">' + (isZh ? '智能推薦' : 'Recommend') + '</button>' +
-            '</div>' +
-          '</div>' +
-          '<div class="quick-sizing-feedback" id="quick-sizing-feedback" style="display: none;"></div>' +
-        '</div>' +
       '</div>';
 
     // Hook up size modal trigger
     var modalTrigger = sizePickerSection.querySelector('#chiba-open-size-modal');
     if (modalTrigger) {
       modalTrigger.addEventListener('click', openSizeModal);
-    }
-
-    // Quick Sizing Helper Handler
-    var quickToggle = sizePickerSection.querySelector('#chiba-quick-sizing-toggle');
-    var quickPane = sizePickerSection.querySelector('#chiba-quick-sizing-pane');
-    var quickApplyBtn = sizePickerSection.querySelector('#chiba-apply-palm-size');
-    var quickInput = sizePickerSection.querySelector('#quick-palm-cm');
-    var quickFeedback = sizePickerSection.querySelector('#quick-sizing-feedback');
-
-    if (quickToggle && quickPane) {
-      quickToggle.addEventListener('click', function() {
-        var isHidden = quickPane.style.display === 'none';
-        quickPane.style.display = isHidden ? 'block' : 'none';
-        if (isHidden && quickInput) quickInput.focus();
-      });
-    }
-
-    if (quickApplyBtn && quickInput && quickFeedback) {
-      var calculateAndSelectPalmSize = function() {
-        var cm = parseFloat(quickInput.value);
-        if (isNaN(cm) || cm < 12 || cm > 32) {
-          quickFeedback.style.display = 'block';
-          quickFeedback.style.background = '#fff5f5';
-          quickFeedback.style.borderColor = '#fecaca';
-          quickFeedback.style.color = '#b92027';
-          quickFeedback.textContent = isZh ? '請輸入有效掌圍公分數（14 ~ 30 cm）' : 'Please enter a valid palm measurement (14-30 cm)';
-          return;
-        }
-
-        var matchedSize = 'M';
-        if (cm < 17.6) matchedSize = 'XS';
-        else if (cm <= 19.5) matchedSize = 'S';
-        else if (cm <= 22.0) matchedSize = 'M';
-        else if (cm <= 24.3) matchedSize = 'L';
-        else if (cm <= 25.5) matchedSize = 'XL';
-        else if (cm <= 27.0) matchedSize = 'XXL';
-        else matchedSize = '3XL';
-
-        var targetBtn = sizePickerSection.querySelector('[data-size-val="' + matchedSize + '"]');
-        if (targetBtn) {
-          targetBtn.click();
-          quickFeedback.style.display = 'block';
-          quickFeedback.style.background = '#ecfdf5';
-          quickFeedback.style.borderColor = '#a7f3d0';
-          quickFeedback.style.color = '#065f46';
-          quickFeedback.innerHTML = '✨ ' + (isZh ? '掌圍 ' + cm + ' cm：精準推薦 <strong>' + matchedSize + ' 號</strong>（已自動選取！）' : 'Palm ' + cm + ' cm: Recommended <strong>Size ' + matchedSize + '</strong> (Auto-selected!)');
-        } else {
-          quickFeedback.style.display = 'block';
-          quickFeedback.style.background = '#fffbeb';
-          quickFeedback.style.borderColor = '#fde68a';
-          quickFeedback.style.color = '#92400e';
-          quickFeedback.innerHTML = 'ℹ️ ' + (isZh ? '掌圍 ' + cm + ' cm 建議 ' + matchedSize + ' 號，本款式可選尺寸為：' + parsedSizes.join(', ') : 'Palm ' + cm + ' cm fits ' + matchedSize + '. Available sizes: ' + parsedSizes.join(', '));
-        }
-      };
-
-      quickApplyBtn.addEventListener('click', calculateAndSelectPalmSize);
-      quickInput.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter') {
-          e.preventDefault();
-          calculateAndSelectPalmSize();
-        }
-      });
     }
 
     // Size Selection Handler
@@ -1560,7 +1515,6 @@
         btn.classList.add('active');
         btn.setAttribute('aria-pressed', 'true');
         selectedSize = btn.dataset.sizeVal;
-        updateLineOrderLink();
       });
     });
 
@@ -1572,102 +1526,22 @@
       detailEl.appendChild(sizePickerSection);
     }
 
-    // 2. Build Product Dual-Action Container
+    // 2. Build Single Official Buy Now Action Container
     var actionWrap = document.createElement('div');
     actionWrap.className = 'product-ecommerce-actions';
     actionWrap.innerHTML =
-      '<div class="product-buy-row">' +
-        '<div class="product-qty-stepper">' +
-          '<button type="button" class="product-qty-btn" id="prod-qty-minus">−</button>' +
-          '<span class="product-qty-val" id="prod-qty-val">1</span>' +
-          '<button type="button" class="product-qty-btn" id="prod-qty-plus">+</button>' +
-        '</div>' +
-        '<button type="button" class="btn-add-cart" id="prod-add-cart">' +
-          '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">' +
-            '<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>' +
-            '<line x1="3" y1="6" x2="21" y2="6"></line>' +
-            '<path d="M16 10a4 4 0 0 1-8 0"></path>' +
-          '</svg>' +
-          i18n.addToCart +
+      '<div class="product-buy-row product-buy-row--single">' +
+        '<button type="button" class="btn-buy-now btn-buy-now--primary" id="prod-buy-now">' +
+          i18n.shopifyBuyNow +
         '</button>' +
-        '<button type="button" class="btn-buy-now" id="prod-buy-now">' +
-          i18n.buyNow +
-        '</button>' +
-      '</div>' +
-      '<a href="#" target="_blank" rel="noopener noreferrer" class="btn-line-direct" id="prod-line-order">' +
-        '<svg class="cart-line-icon" viewBox="0 0 24 24"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>' +
-        i18n.lineCheckout +
-      '</a>';
+      '</div>';
 
-    // Quantity Stepper Handlers
-    var qtyValEl = actionWrap.querySelector('#prod-qty-val');
-    actionWrap.querySelector('#prod-qty-minus').addEventListener('click', function() {
-      if (selectedQty > 1) {
-        selectedQty--;
-        qtyValEl.textContent = selectedQty;
-      }
-    });
-    actionWrap.querySelector('#prod-qty-plus').addEventListener('click', function() {
-      if (selectedQty < ORDER_LIMITS.MAX_PER_ITEM) {
-        selectedQty++;
-        qtyValEl.textContent = selectedQty;
-      } else {
-        showOrderLimitModal('per_item', { itemTitle: title });
-      }
-    });
-
-    // Helper: Build Cart Item Object
-    function createCartItem() {
-      var activeColor = variantColourEl ? variantColourEl.textContent.trim() : 'Standard';
-      var activePrice = getPrice();
-      var activeImg = galleryImgEl ? galleryImgEl.src : '';
-      return {
-        id: (sku + '-' + activeColor + '-' + selectedSize).replace(/\s+/g, '-').toLowerCase(),
-        sku: sku,
-        title: title,
-        color: activeColor,
-        size: selectedSize,
-        price: activePrice,
-        image: activeImg,
-        qty: selectedQty,
-        isPreorder: true,
-        url: window.location.pathname
-      };
-    }
-
-    // Helper: Update LINE Direct Order link
-    function updateLineOrderLink() {
-      var lineBtn = actionWrap.querySelector('#prod-line-order');
-      if (!lineBtn) return;
-      var activeColor = variantColourEl ? variantColourEl.textContent.trim() : 'Standard';
-      var activePrice = getPrice();
-      var msg = isEn
-        ? 'Hello! I would like to inquire/pre-order CHIBA gloves:\n• Product: ' + title + ' (SKU ' + sku + ')\n• Status: German Pre-Order\n• Color: ' + activeColor + '\n• Size: ' + selectedSize + '\n• Pre-Order Price: NT$ ' + activePrice + '\n• URL: ' + window.location.href
-        : '您好！我想諮詢/預購 CHIBA 德國機能手套：\n• 商品：' + title + ' (型號 ' + sku + ')\n• 狀態：德國原裝預購\n• 顏色：' + activeColor + '\n• 尺寸：' + selectedSize + '\n• 預購售價：NT$ ' + activePrice + '\n• 商品網址：' + window.location.href;
-      lineBtn.href = LINE_BASE_URL + '?text=' + encodeURIComponent(msg);
-    }
-
-    // Listen for variant color changes to update line link
-    detailEl.querySelectorAll('[data-variant-key]').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        setTimeout(updateLineOrderLink, 50);
-      });
-    });
-    updateLineOrderLink();
-
-    // Add to Cart Handler
-    actionWrap.querySelector('#prod-add-cart').addEventListener('click', function() {
-      var item = createCartItem();
-      addToCart(item);
-    });
-
-    // Buy Now Handler
+    // Buy Now Handler (Direct handover to Shopify Product Page)
     actionWrap.querySelector('#prod-buy-now').addEventListener('click', function() {
-      var item = createCartItem();
-      var ok = addToCart(item);
-      if (ok) {
-        window.location.href = isEn ? '/en/checkout/' : '/zh-tw/checkout/';
-      }
+      var shopifyCfg = getShopifyConfig();
+      var category = (window.location.pathname.indexOf('cycling') !== -1) ? 'cycling' : 'fitness';
+      var handle = 'chiba-' + sku + '-' + category;
+      window.location.href = shopifyCfg.baseUrl + '/products/' + encodeURIComponent(handle);
     });
 
     // Replace order-contact button with ecommerce actions + B2B inquiry link
@@ -1681,26 +1555,11 @@
     }
   }
 
-  // 7. Inject Pre-Order Badges on Catalog Grid Cards
-  function initCollectionPreorderBadges() {
-    document.querySelectorAll('.card[data-sku]').forEach(function(card) {
-      if (card.querySelector('.card-preorder-badge')) return;
-      var badge = document.createElement('span');
-      badge.className = 'card-preorder-badge';
-      badge.textContent = isEn ? '🇩🇪 Pre-Order' : '🇩🇪 預購';
-      card.appendChild(badge);
-    });
-  }
-
   // 8. Initialize Everything when DOM is Ready
   function init() {
-    mountHeaderCartButton();
-    mountHeaderMemberButton();
-    mountCartDrawer();
-    mountMemberModal();
+    mountHeaderStoreButton();
     mountSizeModal();
     initProductPageEcommerce();
-    initCollectionPreorderBadges();
   }
 
   window.ChibaEcommerce = {
