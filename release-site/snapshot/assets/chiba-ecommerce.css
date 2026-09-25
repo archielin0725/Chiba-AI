@@ -15,8 +15,8 @@ a.nav-store-link,
   gap: 5px !important;
   background: #b92027 !important;
   color: #ffffff !important;
-  padding: 4px 12px !important;
-  border-radius: 4px !important;
+  padding: 6px 14px !important;
+  border-radius: 999px !important;
   font-weight: 700 !important;
   font-size: 0.88rem !important;
   text-decoration: none !important;
@@ -48,6 +48,72 @@ a.nav-store-link:hover,
     padding: 10px 16px !important;
     width: 100% !important;
     box-sizing: border-box !important;
+  }
+}
+
+/* Mobile Navigation Panel Fixed Store Icon Button */
+.nav-store-mobile-btn {
+  display: none !important;
+}
+
+@media (max-width: 1024px) {
+  .nav-store-mobile-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    background: #b92027 !important;
+    color: #ffffff !important;
+    padding: 6px 14px !important;
+    border-radius: 999px !important;
+    font-size: 0.82rem !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    letter-spacing: 0.02em !important;
+    box-shadow: 0 2px 6px rgba(185, 32, 39, 0.35) !important;
+    white-space: nowrap !important;
+    line-height: 1 !important;
+    transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease !important;
+    -webkit-tap-highlight-color: transparent !important;
+    flex-shrink: 0 !important;
+  }
+  .nav-store-mobile-btn *,
+  .nav-store-mobile-btn span {
+    color: #ffffff !important;
+  }
+  .nav-store-mobile-btn:hover,
+  .nav-store-mobile-btn:active {
+    background: #96191f !important;
+    color: #ffffff !important;
+    transform: scale(0.97) !important;
+    box-shadow: 0 1px 4px rgba(185, 32, 39, 0.45) !important;
+  }
+  .nav-store-cart-icon {
+    display: inline-block !important;
+    vertical-align: middle !important;
+    flex-shrink: 0 !important;
+  }
+  .nav-store-mobile-text {
+    font-size: 0.82rem !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    line-height: 1 !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav-store-mobile-btn {
+    padding: 0 !important;
+    width: 34px !important;
+    height: 34px !important;
+    border-radius: 50% !important;
+  }
+  .nav-store-mobile-text {
+    display: none !important;
+  }
+  .nav-store-cart-icon {
+    width: 17px !important;
+    height: 17px !important;
   }
 }
 

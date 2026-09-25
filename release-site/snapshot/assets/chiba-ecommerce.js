@@ -190,7 +190,7 @@
     lineCheckout: isEn ? 'Quick Order via LINE' : '🟢 LINE 專人快速諮詢 / 訂購',
     addToCart: isEn ? 'Add to Cart' : '🛒 加入購物車',
     buyNow: isEn ? '⚡ Buy Now' : '⚡ 立即購買',
-    shopifyBuyNow: isEn ? '⚡ 前往官方旗艦店購買' : '⚡ 前往官方旗艦店購買',
+    shopifyBuyNow: isEn ? '⚡ Buy from Official Online Store' : '⚡ 前往官方線上商店購買',
     preorderBadge: isEn ? '🇩🇪 Official' : '🇩🇪 官方正品',
     selectSize: isEn ? 'Available Sizes' : '可用尺寸',
     sizeGuideTitle: isEn ? '📏 Size Chart & Guide' : '📏 尺寸對照指南',
@@ -209,6 +209,19 @@
     },
     remove: isEn ? 'Remove' : '移除',
     inquireB2B: isEn ? 'Authorized Dealer & Wholesale Inquiry' : '經銷商合作與通路洽詢',
+    specPreselectedHint: function(color, size) {
+      if (isEn) {
+        var spec = [];
+        if (color) spec.push(color);
+        if (size) spec.push('Size ' + size);
+        return '✓ Selected: ' + spec.join(' / ') + ' (Pre-selected on Online Store)';
+      } else {
+        var spec = [];
+        if (color) spec.push(color);
+        if (size) spec.push('尺寸 ' + size);
+        return '✓ 已預選規格：' + spec.join(' / ') + '（前往線上商店自動帶入，避免選錯）';
+      }
+    },
     guarantee: isEn ? '100% German Quality · 7-Day Inspection · Official Taiwan Warranty' : '100% 德國原裝正品 · 台灣消保法 7 天猶豫期 · 官方代理售後保固'
   };
 
@@ -637,22 +650,65 @@
     }
   }
 
-  // Mount Header Online Store Pill Link (Mode A Dual-Store Integration)
+  // Mount Header Online Store Pill Link (Mode A Dual-Store Integration: Desktop Pill + Mobile Fixed Icon Button)
   function mountHeaderStoreButton() {
-    var primaryNav = document.getElementById('primary-navigation');
-    if (!primaryNav || primaryNav.querySelector('.nav-store-link')) return;
-
     var shopifyCfg = getShopifyConfig();
-    var storeLink = document.createElement('a');
-    storeLink.className = 'nav-store-link';
-    storeLink.href = shopifyCfg.baseUrl;
-    storeLink.target = '_blank';
-    storeLink.rel = 'noopener noreferrer';
-    storeLink.style.setProperty('color', '#ffffff', 'important');
-    storeLink.innerHTML = '🛍️ <span style="color:#ffffff !important;">' + (isEn ? 'Shop Online' : '線上旗艦店') + '</span>';
-    storeLink.setAttribute('title', isEn ? 'CHIBA Taiwan Official Online Store (Shopify)' : 'CHIBA 台灣官方線上旗艦店 (Shopify)');
 
-    primaryNav.appendChild(storeLink);
+    var svgCart = '<svg class="nav-store-cart-icon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block; vertical-align:middle; flex-shrink:0;">' +
+      '<circle cx="8" cy="21" r="1.5" fill="#ffffff" stroke="none"></circle>' +
+      '<circle cx="19" cy="21" r="1.5" fill="#ffffff" stroke="none"></circle>' +
+      '<path d="M2.2 2.5h3.2l2.6 12.3a1.8 1.8 0 0 0 1.8 1.4h9.6a1.8 1.8 0 0 0 1.8-1.4L23 6.5H6.4"></path>' +
+      '</svg>';
+
+    // 1. Desktop primary nav link
+    var primaryNav = document.getElementById('primary-navigation');
+    if (primaryNav && !primaryNav.querySelector('.nav-store-link')) {
+      var storeLink = document.createElement('a');
+      storeLink.className = 'nav-store-link';
+      storeLink.href = shopifyCfg.baseUrl;
+      storeLink.target = '_blank';
+      storeLink.rel = 'noopener noreferrer';
+      storeLink.style.setProperty('color', '#ffffff', 'important');
+      storeLink.innerHTML = svgCart + '<span style="color:#ffffff !important; margin-left:6px;">' + (isEn ? 'Shop Online' : '線上商店') + '</span>';
+      storeLink.setAttribute('title', isEn ? 'CHIBA Taiwan Official Online Store (Shopify)' : 'CHIBA 台灣官方線上商店 (Shopify)');
+      primaryNav.appendChild(storeLink);
+    }
+
+    // 2. Mobile fixed icon button on navigation panel (.nav-actions)
+    var navActions = document.querySelector('.nav-actions');
+    if (navActions && !navActions.querySelector('.nav-store-mobile-btn')) {
+      var mobileBtn = document.createElement('a');
+      mobileBtn.className = 'nav-store-mobile-btn';
+      mobileBtn.href = shopifyCfg.baseUrl;
+      mobileBtn.target = '_blank';
+      mobileBtn.rel = 'noopener noreferrer';
+      mobileBtn.setAttribute('title', isEn ? 'CHIBA Taiwan Official Online Store (Shopify)' : 'CHIBA 台灣官方線上商店 (Shopify)');
+      mobileBtn.setAttribute('aria-label', isEn ? 'Online Store' : '線上商店');
+      mobileBtn.innerHTML = svgCart + '<span class="nav-store-mobile-text" style="color:#ffffff !important; margin-left:6px;">' + (isEn ? 'Shop' : '線上商店') + '</span>';
+
+      var menuBtn = navActions.querySelector('.menu');
+      if (menuBtn) {
+        navActions.insertBefore(mobileBtn, menuBtn);
+      } else {
+        navActions.appendChild(mobileBtn);
+      }
+    }
+
+    // 3. Mount language switcher in mobile drawer menu (#primary-navigation)
+    if (primaryNav && !primaryNav.querySelector('.drawer-lang-bar')) {
+      var currentPath = window.location.pathname;
+      var twHref = currentPath.replace(/^\/en\//, '/zh-tw/');
+      var enHref = currentPath.replace(/^\/zh-tw\//, '/en/');
+      if (twHref === currentPath && currentPath.indexOf('/zh-tw/') === -1) twHref = '/zh-tw' + currentPath;
+      if (enHref === currentPath && currentPath.indexOf('/en/') === -1) enHref = '/en' + currentPath;
+
+      var drawerLang = document.createElement('div');
+      drawerLang.className = 'drawer-lang-bar';
+      drawerLang.innerHTML =
+        '<a href="' + twHref + '" class="drawer-lang-link' + (!isEn ? ' active' : '') + '"><img src="/assets/flags/tw.svg" class="flag-img" alt="繁體中文"> 繁體中文</a>' +
+        '<a href="' + enHref + '" class="drawer-lang-link' + (isEn ? ' active' : '') + '"><img src="/assets/flags/en.svg" class="flag-img" alt="English"> English</a>';
+      primaryNav.appendChild(drawerLang);
+    }
   }
 
   function mountHeaderMemberButton() {
@@ -1453,7 +1509,117 @@
     }
   }
 
-  // 6. Product Page E-Commerce Section (Size Selector + Dual Conversion Actions)
+  // Variant ID resolver for exact Shopify handover
+  var shopifyVariantMap = null;
+  var isFetchingVariantMap = false;
+
+  function loadShopifyVariantMap(onReady) {
+    if (shopifyVariantMap) {
+      if (onReady) onReady(shopifyVariantMap);
+      return;
+    }
+    if (isFetchingVariantMap) {
+      if (onReady) {
+        window.addEventListener('chiba_variant_map_ready', function() { onReady(shopifyVariantMap); }, { once: true });
+      }
+      return;
+    }
+    isFetchingVariantMap = true;
+    fetch('/assets/shopify-variant-map.json?v=20260926i')
+      .then(function(res) {
+        if (!res.ok) throw new Error('Status ' + res.status);
+        return res.json();
+      })
+      .then(function(data) {
+        shopifyVariantMap = data;
+        window.dispatchEvent(new CustomEvent('chiba_variant_map_ready'));
+        if (onReady) onReady(data);
+      })
+      .catch(function(err) {
+        console.warn('Shopify variant map fetch error, will use on-demand fallback:', err);
+      });
+  }
+
+  function resolveShopifyVariantId(handle, colorKey, colorText, size, callback) {
+    var sizeUpper = (size || '').trim().toUpperCase();
+
+    if (shopifyVariantMap && shopifyVariantMap[handle]) {
+      var prod = shopifyVariantMap[handle];
+      
+      // 1. Check byKey
+      if (colorKey && prod.byKey && prod.byKey[colorKey]) {
+        var byKeySizes = prod.byKey[colorKey];
+        if (byKeySizes[size]) return callback(byKeySizes[size]);
+        if (byKeySizes[sizeUpper]) return callback(byKeySizes[sizeUpper]);
+        for (var sz in byKeySizes) {
+          if (sz.toUpperCase().trim() === sizeUpper) return callback(byKeySizes[sz]);
+        }
+      }
+
+      // 2. Check byColor
+      if (colorText && prod.byColor) {
+        var cleanColor = colorText.replace(/\s+/g, '').replace(/[\/／]/g, '');
+        for (var c in prod.byColor) {
+          var cleanC = c.replace(/\s+/g, '').replace(/[\/／]/g, '');
+          if (cleanC === cleanColor || cleanC.indexOf(cleanColor) !== -1 || cleanColor.indexOf(cleanC) !== -1) {
+            var byColorSizes = prod.byColor[c];
+            if (byColorSizes[size]) return callback(byColorSizes[size]);
+            if (byColorSizes[sizeUpper]) return callback(byColorSizes[sizeUpper]);
+            for (var s2 in byColorSizes) {
+              if (s2.toUpperCase().trim() === sizeUpper) return callback(byColorSizes[s2]);
+            }
+          }
+        }
+      }
+
+      // 3. Fallback: single variant group
+      if (prod.byKey && Object.keys(prod.byKey).length === 1) {
+        var firstKey = Object.keys(prod.byKey)[0];
+        var singleSizes = prod.byKey[firstKey];
+        if (singleSizes[size]) return callback(singleSizes[size]);
+        if (singleSizes[sizeUpper]) return callback(singleSizes[sizeUpper]);
+        for (var s3 in singleSizes) {
+          if (s3.toUpperCase().trim() === sizeUpper) return callback(singleSizes[s3]);
+        }
+      }
+    }
+
+    // Fallback: Fetch single product JSON directly from Shopify
+    fetch('https://shop.chibataiwan.com/products/' + encodeURIComponent(handle) + '.json')
+      .then(function(res) { return res.json(); })
+      .then(function(data) {
+        if (!data || !data.product || !data.product.variants) return callback(null);
+        var variants = data.product.variants;
+        var colorClean = (colorText || '').replace(/\s+/g, '').replace(/[\/／]/g, '');
+        
+        // Match option1 and option2
+        for (var i = 0; i < variants.length; i++) {
+          var v = variants[i];
+          var vColor = (v.option1 || '').replace(/\s+/g, '').replace(/[\/／]/g, '');
+          var vSize = (v.option2 || '').trim().toUpperCase();
+          if ((!colorClean || vColor === colorClean || colorClean.indexOf(vColor) !== -1 || vColor.indexOf(colorClean) !== -1) &&
+              (vSize === sizeUpper || (sizeUpper === 'ONE SIZE' && vSize === 'ONESIZE'))) {
+            return callback(v.id);
+          }
+        }
+        // Match size only if single color
+        var uniqueColors = {};
+        variants.forEach(function(v) { if (v.option1) uniqueColors[v.option1] = true; });
+        if (Object.keys(uniqueColors).length <= 1) {
+          for (var j = 0; j < variants.length; j++) {
+            if ((variants[j].option2 || '').trim().toUpperCase() === sizeUpper) {
+              return callback(variants[j].id);
+            }
+          }
+        }
+        callback(null);
+      })
+      .catch(function() {
+        callback(null);
+      });
+  }
+
+  // 6. Product Page E-Commerce Section (Size Selector + Pre-selected Handover Actions)
   function initProductPageEcommerce() {
     var productSection = document.querySelector('[data-variant-product]');
     if (!productSection) return;
@@ -1484,7 +1650,6 @@
     var rawSizeStr = variantSizesEl ? variantSizesEl.textContent : 'M';
     var parsedSizes = parseSizes(rawSizeStr, sku);
     var selectedSize = parsedSizes[0] || 'M';
-    var selectedQty = 1;
 
     // 1. Create Size Picker Section (Clean Sizing List + Modal Guide Trigger)
     var sizePickerSection = document.createElement('section');
@@ -1512,6 +1677,83 @@
       modalTrigger.addEventListener('click', openSizeModal);
     }
 
+    // Insert size picker before or after variant-picker
+    var variantPicker = detailEl.querySelector('.variant-picker');
+    if (variantPicker) {
+      variantPicker.parentNode.insertBefore(sizePickerSection, variantPicker.nextSibling);
+    } else {
+      detailEl.appendChild(sizePickerSection);
+    }
+
+    // 2. Build Single Official Buy Now Action Container with Specification Hint
+    var actionWrap = document.createElement('div');
+    actionWrap.className = 'product-ecommerce-actions';
+    actionWrap.innerHTML =
+      '<div class="product-buy-row product-buy-row--single">' +
+        '<button type="button" class="btn-buy-now btn-buy-now--primary" id="prod-buy-now">' +
+          i18n.shopifyBuyNow +
+        '</button>' +
+      '</div>' +
+      '<div class="chiba-handover-spec-hint" id="prod-spec-hint" style="margin-top: 10px; font-size: 0.88rem; color: #475569; display: flex; align-items: center; justify-content: center; gap: 6px; font-weight: 500; text-align: center; line-height: 1.4;">' +
+        '<span style="display:inline-block; width: 7px; height: 7px; border-radius: 50%; background: #10b981; flex-shrink: 0;"></span>' +
+        '<span class="spec-hint-text"></span>' +
+      '</div>';
+
+    var shopifyCfg = getShopifyConfig();
+    var category = (window.location.pathname.indexOf('cycling') !== -1) ? 'cycling' : 'fitness';
+    var handle = 'chiba-' + sku + '-' + category;
+
+    function getSelectedColorInfo() {
+      var activeBtn = detailEl.querySelector('.variant-picker [data-variant-key].active') || detailEl.querySelector('.variant-picker [data-variant-key]');
+      var activeKey = activeBtn ? (activeBtn.dataset.variantKey || '') : '';
+      var colText = '';
+      if (variantColourEl && variantColourEl.textContent.trim()) {
+        colText = variantColourEl.textContent.trim();
+      } else if (activeBtn) {
+        colText = activeBtn.textContent.trim();
+      }
+      return {
+        key: activeKey,
+        name: colText
+      };
+    }
+
+    function updateHandover() {
+      var colInfo = getSelectedColorInfo();
+      var activeColorKey = colInfo.key;
+      var activeColorName = colInfo.name;
+      var activeSize = selectedSize;
+
+      // Update Spec Hint Text
+      var hintEl = actionWrap.querySelector('#prod-spec-hint');
+      if (hintEl) {
+        var textEl = hintEl.querySelector('.spec-hint-text');
+        if (textEl) {
+          textEl.textContent = i18n.specPreselectedHint(activeColorName, activeSize);
+        }
+      }
+
+      // Resolve Shopify Variant ID
+      resolveShopifyVariantId(handle, activeColorKey, activeColorName, activeSize, function(variantId) {
+        var baseUrl = shopifyCfg.baseUrl + '/products/' + encodeURIComponent(handle);
+        var params = [];
+        if (variantId) {
+          params.push('variant=' + encodeURIComponent(variantId));
+        }
+        if (activeColorName) {
+          params.push('color=' + encodeURIComponent(activeColorName));
+        }
+        if (activeSize) {
+          params.push('size=' + encodeURIComponent(activeSize));
+        }
+        var targetUrl = baseUrl + (params.length ? '?' + params.join('&') : '');
+        var buyBtn = actionWrap.querySelector('#prod-buy-now');
+        if (buyBtn) {
+          buyBtn.dataset.targetUrl = targetUrl;
+        }
+      });
+    }
+
     // Size Selection Handler
     sizePickerSection.querySelectorAll('[data-size-val]').forEach(function(btn) {
       btn.addEventListener('click', function() {
@@ -1522,33 +1764,31 @@
         btn.classList.add('active');
         btn.setAttribute('aria-pressed', 'true');
         selectedSize = btn.dataset.sizeVal;
+        updateHandover();
       });
     });
 
-    // Insert size picker before or after variant-picker
-    var variantPicker = detailEl.querySelector('.variant-picker');
-    if (variantPicker) {
-      variantPicker.parentNode.insertBefore(sizePickerSection, variantPicker.nextSibling);
-    } else {
-      detailEl.appendChild(sizePickerSection);
-    }
+    // Color/Variant Selection Handler
+    detailEl.querySelectorAll('.variant-picker [data-variant-key]').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        setTimeout(updateHandover, 20);
+      });
+    });
 
-    // 2. Build Single Official Buy Now Action Container
-    var actionWrap = document.createElement('div');
-    actionWrap.className = 'product-ecommerce-actions';
-    actionWrap.innerHTML =
-      '<div class="product-buy-row product-buy-row--single">' +
-        '<button type="button" class="btn-buy-now btn-buy-now--primary" id="prod-buy-now">' +
-          i18n.shopifyBuyNow +
-        '</button>' +
-      '</div>';
-
-    // Buy Now Handler (Direct handover to Shopify Product Page)
+    // Buy Now Handler (Direct handover to Shopify Product Page with Variant ID)
     actionWrap.querySelector('#prod-buy-now').addEventListener('click', function() {
-      var shopifyCfg = getShopifyConfig();
-      var category = (window.location.pathname.indexOf('cycling') !== -1) ? 'cycling' : 'fitness';
-      var handle = 'chiba-' + sku + '-' + category;
-      window.location.href = shopifyCfg.baseUrl + '/products/' + encodeURIComponent(handle);
+      var target = this.dataset.targetUrl;
+      if (!target) {
+        var colInfo = getSelectedColorInfo();
+        target = shopifyCfg.baseUrl + '/products/' + encodeURIComponent(handle) + '?size=' + encodeURIComponent(selectedSize) + '&color=' + encodeURIComponent(colInfo.name);
+      }
+      window.location.href = target;
+    });
+
+    // Initial handover configuration
+    updateHandover();
+    loadShopifyVariantMap(function() {
+      updateHandover();
     });
 
     // Replace order-contact button with ecommerce actions + B2B inquiry link

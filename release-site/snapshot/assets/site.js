@@ -384,13 +384,13 @@ if (document.readyState === 'loading') {
   if (!document.querySelector('link[href*="chiba-ecommerce.css"]')) {
     var link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = '/assets/chiba-ecommerce.css?v=20260926d';
+    link.href = '/assets/chiba-ecommerce.css?v=20260926j';
     document.head.appendChild(link);
   }
 
   if (!document.querySelector('script[src*="chiba-ecommerce.js"]')) {
     var script = document.createElement('script');
-    script.src = '/assets/chiba-ecommerce.js?v=20260926d';
+    script.src = '/assets/chiba-ecommerce.js?v=20260926j';
     script.defer = true;
     document.body.appendChild(script);
   }
