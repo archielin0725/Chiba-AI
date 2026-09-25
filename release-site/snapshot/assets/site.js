@@ -155,7 +155,8 @@ document.querySelectorAll('[data-variant-product]').forEach(product=>{
       const selected=variants.find(item=>item.key===button.dataset.variantKey);
       if(selected) button.textContent=colourLabel(selected.colour);
     });
-    price.textContent=isEn?`Suggested Retail Price ${variant.price}`:`建議零售價 ${variant.price}`;
+    const isFitness = product.classList.contains('fitness-product') || window.location.pathname.indexOf('/fitness/') !== -1;
+    price.textContent=isEn?`Suggested Retail Price ${variant.price}`:(isFitness?`台灣零售價 ${variant.price}`:`建議零售價 ${variant.price}`);
     description.textContent=variant.description||(isEn?'Product information verified by CHIBA Taiwan.':'產品資訊依 CHIBA Taiwan 已核對資料建立。');
   };
   product.querySelectorAll('[data-variant-key]').forEach(button=>button.addEventListener('click',()=>select(button.dataset.variantKey)));
@@ -449,7 +450,8 @@ if (document.readyState === 'loading') {
           var customPrice = Number(params.priceOverrides[sku]);
           var priceEl = document.querySelector('[data-variant-price]');
           if (priceEl && !isNaN(customPrice)) {
-            priceEl.textContent = (isEn ? 'RRP NT$ ' : '建議零售價 NT$ ') + customPrice.toLocaleString();
+            var isFitnessProduct = window.location.pathname.indexOf('/fitness/') !== -1 || (sku && sku.startsWith('4'));
+            priceEl.textContent = (isEn ? 'RRP NT$ ' : (isFitnessProduct ? '台灣零售價 NT$ ' : '建議零售價 NT$ ')) + customPrice.toLocaleString();
           }
           // Update variant JSON data
           var vScript = document.querySelector('script[data-variant-data]');
