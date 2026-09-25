@@ -1880,11 +1880,15 @@ header.nav a.brand img.brand-wordmark {
   width: auto !important;
   display: block !important;
 }
-header.nav nav a {
+header.nav nav a:not(.nav-store-link) {
   color: var(--ink) !important;
 }
-header.nav nav a:hover {
+header.nav nav a:not(.nav-store-link):hover {
   color: var(--red) !important;
+}
+header.nav nav a.nav-store-link,
+header.nav nav a.nav-store-link:hover {
+  color: #ffffff !important;
 }
 header.nav .menu {
   color: var(--ink) !important;

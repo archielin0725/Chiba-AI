@@ -6,6 +6,9 @@
 /* --------------------------------------------------------------------------
    0. Navigation Store Link (Mode A Dual-Store Header Pill)
    -------------------------------------------------------------------------- */
+header.nav nav a.nav-store-link,
+.nav nav a.nav-store-link,
+a.nav-store-link,
 .nav-store-link {
   display: inline-flex !important;
   align-items: center !important;
@@ -23,6 +26,14 @@
   margin-left: 8px !important;
   white-space: nowrap !important;
 }
+header.nav nav a.nav-store-link *,
+.nav nav a.nav-store-link *,
+.nav-store-link * {
+  color: #ffffff !important;
+}
+header.nav nav a.nav-store-link:hover,
+.nav nav a.nav-store-link:hover,
+a.nav-store-link:hover,
 .nav-store-link:hover {
   background: #96191f !important;
   color: #ffffff !important;

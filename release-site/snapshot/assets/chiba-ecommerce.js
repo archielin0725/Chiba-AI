@@ -648,7 +648,8 @@
     storeLink.href = shopifyCfg.baseUrl;
     storeLink.target = '_blank';
     storeLink.rel = 'noopener noreferrer';
-    storeLink.innerHTML = isEn ? '🛍️ Shop Online' : '🛍️ 線上旗艦店';
+    storeLink.style.setProperty('color', '#ffffff', 'important');
+    storeLink.innerHTML = '🛍️ <span style="color:#ffffff !important;">' + (isEn ? 'Shop Online' : '線上旗艦店') + '</span>';
     storeLink.setAttribute('title', isEn ? 'CHIBA Taiwan Official Online Store (Shopify)' : 'CHIBA 台灣官方線上旗艦店 (Shopify)');
 
     primaryNav.appendChild(storeLink);
