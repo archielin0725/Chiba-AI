@@ -1,5 +1,5 @@
 {
-  "release_id": "chiba-ecommerce-phase4-staging-8ac794c781d403c5",
+  "release_id": "chiba-ecommerce-phase4-staging-baab5152ce22a9c4",
   "parent_archive_sha256": "08370fcf4109eb268d250b5eed3855e044ee660183cabd253e93a9a30da90476",
   "catalogue_sha256": "cd0716b7aa1cf6d941d5c395bc5d9178f9dcd06e24cc29abcc6fcb29280ff831",
   "sku_sets": {
@@ -119,7 +119,7 @@
     "assets/categories/wheelchair.jpg": "c63c338fa5dbb7aa40c4cb3e161cb9bcfdfca7d3e1488845437d80b39b651b23",
     "assets/chiba-config.json": "9764818e8fea01eb56567e69cef98cf73ffa50b00d742f9b961202cd0b3390d1",
     "assets/chiba-ecommerce.css": "8e35c37a9b89800278604366478b3c8836ae291a6c28062bd74449c0153bc097",
-    "assets/chiba-ecommerce.js": "8ac794c781d403c59652dbf641ba996442b68a8f4c072e8a6d96b7a27e4ec65b",
+    "assets/chiba-ecommerce.js": "baab5152ce22a9c4d4fa6261b086ddb83b1390cff651ed2cb083b22ca56ce531",
     "assets/flags/de.svg": "f28871e5d52de9fa81db3e71a33b91a39c4c2144257fc6927a30e4b1f57f37a9",
     "assets/flags/en.svg": "91e2b3302b948aa0b5a3b48a12a8aa9e041f82884f47146b6059844d903cd3d1",
     "assets/flags/tw.svg": "4fcab90ebd333f6074098bc4f586bf8284baea64385f97cf6c003a81d56989e8",
@@ -992,7 +992,7 @@
     "assets/products/fitness/44766-neopren-knee-bandage/black-10/fitness__44766__black-10__de3e1ce8809afa38__44766-10-3.jpg": "de3e1ce8809afa381885085ca47944de116c2c3b9a3c4ae8609638383f12a119",
     "assets/site-overrides.css": "7d062cd2e0ca06cdb73a85e9ce9f670ac077b84ab93c22237a2f8fc916ca052e",
     "assets/site.css": "734b595e6c8293b297027ff2ae8c6675c5e94762b78269ff7c268d680f6afc8d",
-    "assets/site.js": "4fd8cbd282186a27aa98e36a3891bf381825685728331710add4e712520cf9f2",
+    "assets/site.js": "dab80dd12a6af29ce230ee16e080ff769e9cbf5e4e033dc606878275954b618a",
     "assets/size-guide/hand-circumference.png": "fce6152e0b31dc51372c625e56954681b6fcbbbd72bb951291a117acfb353e41",
     "assets/technology/bioxcell-banner.jpg": "ac8487d55e0c2097df16f622bdc06f834b7d9d520dfb5e88627220ad47adbd4d",
     "assets/technology/bioxcell-glove-palm.jpg": "5e09b5d1c93b4565ce878b8cabe80743b3ffec207c1425a637c42c9236174755",

@@ -315,33 +315,25 @@ if (document.readyState === 'loading') {
     if (shopParam !== null) {
       shopParam = shopParam.toLowerCase().trim();
       if (shopParam === '0' || shopParam === 'off' || shopParam === 'false' || shopParam === 'disable') {
-        localStorage.setItem('chiba_ecommerce_active', 'false');
+        sessionStorage.setItem('chiba_shop_disable', 'true');
       } else if (shopParam === '1' || shopParam === 'on' || shopParam === 'true' || shopParam === 'enable') {
-        localStorage.setItem('chiba_ecommerce_active', 'true');
-      } else if (shopParam === 'reset') {
-        localStorage.removeItem('chiba_ecommerce_active');
+        sessionStorage.removeItem('chiba_shop_disable');
       }
     }
   } catch (e) {}
 
-  // 2. Check Local Preference & Site Config
+  // 2. Production Default: E-Commerce is ALWAYS ACTIVE
+  // Purge any stale legacy 'false' flags from early test sessions
+  try {
+    if (localStorage.getItem('chiba_ecommerce_active') === 'false') {
+      localStorage.removeItem('chiba_ecommerce_active');
+    }
+  } catch (e) {}
+
   var isEnabled = true;
   try {
-    var localPref = localStorage.getItem('chiba_ecommerce_active');
-    if (localPref !== null) {
-      isEnabled = (localPref === 'true');
-    } else {
-      var rawCfg = localStorage.getItem('chiba_site_config_v1');
-      if (rawCfg) {
-        try {
-          var parsedCfg = JSON.parse(rawCfg);
-          if (typeof parsedCfg.enableEcommerce !== 'undefined') {
-            isEnabled = !!parsedCfg.enableEcommerce;
-          }
-        } catch(e) {}
-      } else if (typeof window.CHIBA_CONFIG.enableEcommerce !== 'undefined') {
-        isEnabled = !!window.CHIBA_CONFIG.enableEcommerce;
-      }
+    if (sessionStorage.getItem('chiba_shop_disable') === 'true') {
+      isEnabled = false;
     }
   } catch (e) {}
 
@@ -351,7 +343,11 @@ if (document.readyState === 'loading') {
   window.CHIBA_SWITCH = {
     isEnabled: function() { return !!window.CHIBA_CONFIG.enableEcommerce; },
     set: function(active) {
-      localStorage.setItem('chiba_ecommerce_active', active ? 'true' : 'false');
+      if (active) {
+        sessionStorage.removeItem('chiba_shop_disable');
+      } else {
+        sessionStorage.setItem('chiba_shop_disable', 'true');
+      }
       window.CHIBA_CONFIG.enableEcommerce = !!active;
       window.location.reload();
     },
@@ -384,17 +380,17 @@ if (document.readyState === 'loading') {
     return;
   }
 
-  // 4. If E-Commerce is Enabled: Dynamically inject decoupled assets
+  // 4. If E-Commerce is Enabled: Dynamically inject decoupled assets (versioned to avoid stale cache)
   if (!document.querySelector('link[href*="chiba-ecommerce.css"]')) {
     var link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = '/assets/chiba-ecommerce.css';
+    link.href = '/assets/chiba-ecommerce.css?v=20260926c';
     document.head.appendChild(link);
   }
 
   if (!document.querySelector('script[src*="chiba-ecommerce.js"]')) {
     var script = document.createElement('script');
-    script.src = '/assets/chiba-ecommerce.js';
+    script.src = '/assets/chiba-ecommerce.js?v=20260926c';
     script.defer = true;
     document.body.appendChild(script);
   }

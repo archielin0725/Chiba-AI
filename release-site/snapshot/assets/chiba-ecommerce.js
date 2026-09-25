@@ -8,27 +8,21 @@
   // 1. Master Kill-Switch Check
   window.CHIBA_CONFIG = window.CHIBA_CONFIG || {};
   try {
-    var localPref = localStorage.getItem('chiba_ecommerce_active');
-    if (localPref === null) {
-      var rawCfg = localStorage.getItem('chiba_site_config_v1');
-      if (rawCfg) {
-        try {
-          var parsedCfg = JSON.parse(rawCfg);
-          if (typeof parsedCfg.enableEcommerce !== 'undefined') {
-            localPref = parsedCfg.enableEcommerce ? 'true' : 'false';
-          }
-        } catch(e) {}
-      }
-    }
-    if (localPref !== null) {
-      window.CHIBA_CONFIG.enableEcommerce = (localPref === 'true');
+    if (localStorage.getItem('chiba_ecommerce_active') === 'false') {
+      localStorage.removeItem('chiba_ecommerce_active');
     }
   } catch (e) {}
-  if (window.CHIBA_CONFIG.enableEcommerce === undefined) {
-    window.CHIBA_CONFIG.enableEcommerce = true;
-  }
-  if (!window.CHIBA_CONFIG.enableEcommerce) {
-    return; // E-commerce disabled; pure static catalog mode
+
+  var isEnabled = true;
+  try {
+    if (sessionStorage.getItem('chiba_shop_disable') === 'true') {
+      isEnabled = false;
+    }
+  } catch (e) {}
+
+  window.CHIBA_CONFIG.enableEcommerce = isEnabled;
+  if (!isEnabled) {
+    return; // E-commerce explicitly disabled via ?shop=0
   }
 
   // 2. Constants & Storage Configuration
