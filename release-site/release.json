@@ -1,5 +1,5 @@
 {
-  "release_id": "chiba-ecommerce-phase4-staging-baab5152ce22a9c4",
+  "release_id": "chiba-ecommerce-phase4-staging-d1d4d1827c95f582",
   "parent_archive_sha256": "08370fcf4109eb268d250b5eed3855e044ee660183cabd253e93a9a30da90476",
   "catalogue_sha256": "cd0716b7aa1cf6d941d5c395bc5d9178f9dcd06e24cc29abcc6fcb29280ff831",
   "sku_sets": {
@@ -118,8 +118,8 @@
     "assets/categories/ski.jpg": "833c531420b436cf66c37660a29af379bf3ce63483736ed39070cade4e77224f",
     "assets/categories/wheelchair.jpg": "c63c338fa5dbb7aa40c4cb3e161cb9bcfdfca7d3e1488845437d80b39b651b23",
     "assets/chiba-config.json": "9764818e8fea01eb56567e69cef98cf73ffa50b00d742f9b961202cd0b3390d1",
-    "assets/chiba-ecommerce.css": "8e35c37a9b89800278604366478b3c8836ae291a6c28062bd74449c0153bc097",
-    "assets/chiba-ecommerce.js": "baab5152ce22a9c4d4fa6261b086ddb83b1390cff651ed2cb083b22ca56ce531",
+    "assets/chiba-ecommerce.css": "67023d0ea25701aa569a707dff0c06b81e658ec911b3232c0584bcf5e1942c59",
+    "assets/chiba-ecommerce.js": "d1d4d1827c95f582879ac1fd143e4cf8cef9eec1f432acead40275abc8abb2e0",
     "assets/flags/de.svg": "f28871e5d52de9fa81db3e71a33b91a39c4c2144257fc6927a30e4b1f57f37a9",
     "assets/flags/en.svg": "91e2b3302b948aa0b5a3b48a12a8aa9e041f82884f47146b6059844d903cd3d1",
     "assets/flags/tw.svg": "4fcab90ebd333f6074098bc4f586bf8284baea64385f97cf6c003a81d56989e8",
